@@ -1,0 +1,260 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_8" id="A2E89941-923C-5ECC-0300-D9EA03F91C87" name="Over the counter (OTC) Derivative instrument Synthetic securitisation assignment">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:10:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Over the counter (OTC) Derivative instrument Synthetic securitisation assignment is the combination of Over the counter (OTC) Derivative instrument and Synthetic securitisation assignment that indicates which Over the counter (OTC) Derivative instrument is assigned to which Synthetic securitisation assignment.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>OTC_DRVTV_INSTRMNT_SNTHTC_SCRTSTN_ASSGNMNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="0B499D59-09F1-A51A-5C72-F68E7E6B06C8" value="79CB61B5-74CF-280B-BE55-4104872B26ED"/>
+<item key="94E48331-EABB-4089-CDED-9542B70335A2" value="5C0DACA5-22F1-60CA-5326-77E5378B159E"/>
+<item key="9B67D331-F905-6920-8252-81F14774B415" value="4A9FD964-C1F1-65CE-20C4-A11F1A9D41CE"/>
+<item key="EB873D60-F659-4846-E377-5766315CC312" value="5E7D7C3A-C8E1-CF21-A208-B52FF8DF519A"/>
+</foldedAttributesMap>
+<changeRequests>
+<requestID>22768-423</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Synthetic securitisation identifier" id="B8ECCA9C-D180-7447-349C-83B1DA34EC32">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:22 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>F51A87BA-8764-5671-E56E-D67FB0F8F6EE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>8C46B590-97C8-C3A8-8009-8F3DBF6024D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SYNTHTC_SCRTSTN_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Synthetic securitisation reference date" id="4A9FD964-C1F1-65CE-20C4-A11F1A9D41CE">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:22 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>F51A87BA-8764-5671-E56E-D67FB0F8F6EE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>6BD853B6-970D-3348-DBCF-6F98D1A25EEB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTSTN_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Synthetic securitisation reporting agent identifier" id="5C0DACA5-22F1-60CA-5326-77E5378B159E">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:22 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>F51A87BA-8764-5671-E56E-D67FB0F8F6EE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>930CD809-46CA-1D40-B158-3785FF329F62</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTSTN_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Synthetic securitisation accounting consolidation level" id="5E7D7C3A-C8E1-CF21-A208-B52FF8DF519A">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>F51A87BA-8764-5671-E56E-D67FB0F8F6EE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>84BE97C0-B85D-3118-0F46-CF11FC74A8C3</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SNTHTC_SCRTSTN_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Synthetic securitisation accounting standard" id="79CB61B5-74CF-280B-BE55-4104872B26ED">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>F51A87BA-8764-5671-E56E-D67FB0F8F6EE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>D27194F5-DCB3-9788-C4A4-5BB0FF52D949</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SNTHTC_SCRTSTN_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Over the counter (OTC) Derivative instrument reference date" id="9B67D331-F905-6920-8252-81F14774B415">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>4EC43994-59BB-0C1B-D7FB-0602AB5657A8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>9ECE8643-3670-4EAE-A455-B5EF4C2CE45A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>OTC_DRVTV_INSTRMNT_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Over the counter (OTC) Derivative instrument reporting agent identifier" id="94E48331-EABB-4089-CDED-9542B70335A2">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>4EC43994-59BB-0C1B-D7FB-0602AB5657A8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>BB6D9386-34F3-FCB8-F6D0-4BB43D4EAAA8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>OTC_DRVTV_INSTRMNT_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Over the counter (OTC) Derivative instrument accounting consolidation level" id="EB873D60-F659-4846-E377-5766315CC312">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>4EC43994-59BB-0C1B-D7FB-0602AB5657A8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>5274804D-A835-BDD4-2A63-D4CA298D7206</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>OTC_DRVTV_INSTRMNT_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Over the counter (OTC) Derivative instrument accounting standard" id="0B499D59-09F1-A51A-5C72-F68E7E6B06C8">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>4EC43994-59BB-0C1B-D7FB-0602AB5657A8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>95450026-8D1A-CC69-C91F-F52DCE1C328F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>OTC_DRVTV_INSTRMNT_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Over the counter (OTC) Derivative instrument identifier" id="F5C5D4EF-4916-996E-A803-A562358C31FF">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:45 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>4EC43994-59BB-0C1B-D7FB-0602AB5657A8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>F7859051-3E5A-9707-1E2B-67B4383135E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INSTRMNT_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E34D910B-0BCA-82ED-BC56-6582F9CE2111" name="Over the counter (OTC) Derivative instrument Synthetic securitisation assignment PK">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:14:22 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B8ECCA9C-D180-7447-349C-83B1DA34EC32</attributeRef>
+<attributeRef>4A9FD964-C1F1-65CE-20C4-A11F1A9D41CE</attributeRef>
+<attributeRef>5C0DACA5-22F1-60CA-5326-77E5378B159E</attributeRef>
+<attributeRef>5E7D7C3A-C8E1-CF21-A208-B52FF8DF519A</attributeRef>
+<attributeRef>79CB61B5-74CF-280B-BE55-4104872B26ED</attributeRef>
+<attributeRef>F5C5D4EF-4916-996E-A803-A562358C31FF</attributeRef>
+<attributeRef>9B67D331-F905-6920-8252-81F14774B415</attributeRef>
+<attributeRef>94E48331-EABB-4089-CDED-9542B70335A2</attributeRef>
+<attributeRef>EB873D60-F659-4846-E377-5766315CC312</attributeRef>
+<attributeRef>0B499D59-09F1-A51A-5C72-F68E7E6B06C8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

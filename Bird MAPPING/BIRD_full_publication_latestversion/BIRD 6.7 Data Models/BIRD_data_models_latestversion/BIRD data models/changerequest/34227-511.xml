@@ -1,0 +1,66 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name='Remove text "(excluding repurchase agreement)" from LDM' id="34227-511">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+Analyse the impact of removing the text "(excluding repurchase agreement)" from the LDM. 
+
+### Contact person
+_[joerg.reddig@ecb.europa.eu]_
+
+### Description of change request
+Including the phrase "(excluding repurchase agreement)" in the LDM seems outdated and might create confusion among the users as there are now other products excluded from certain entities which are not mentioned in the title. Therefore, it should be analysed how much the efford is to update the LDM in this respect and which entity types, domains, members, arcs, subviews, etc. are affected by the proposed change. 
+
+### Summary of impacted LDM objects/attributes
+1.  entity type _Loan (excluding Repurchase agreement) and advance Collateral received assignment_
+1.  attribute `Allocated unsued collateral value`
+1.  entity type _Loan (excluding repurchase agreement) and advance Collateral received assignment derived data_
+1.  entity type _Loan (excluding repurchase agreement) and advance Collateral given assignment_
+1.  entity type _Asset pool Loan (excluding repurchase agreement) assignment_
+1.  entity type _Loan (excluding repurchase agreement)_ 
+1.  entity type _Loan (excluding repurchase agreement) and advance_
+1.  entity type _Loan (excluding repurchase agreement) and advance as a hedge_
+1.  entity type _Loan (excluding repurchase agreement) and advance derived data_
+1.  entity type _Loan (excluding repurchase agreement) derived data_
+1.  relationship type _Accounting hedge type classifies Loan and advance as a hedge_
+1.  relationship type _Asset encumbrance residual maturity band classifies Loan and advance derived data_
+1.  relationship type _Asset pool (subject to a Securitisation and other credit transfer) comprises Instrument(s) via Asset pool Loan assignment_
+1.  relationship type _Collateral given protects Loan(s) and advance via Loan and advance Collateral given assignment_
+1.  relationship type _Collateral given protects Loan(s) and advance via Off-balance instrument Collateral given assignment_
+1.  relationship type _Collateral received protects Loan(s) and advance via Loan and advance Collateral received assignment_
+1.  relationship type _Commercial real estate loan indicator classifies Loan derived data_
+1.  relationship type _Currency is assigned to Loan_
+1.  relationship type _Eligible for central bank funding type classifies Loan and advance_
+1.  relationship type _Litigation status is applied to Loan and advance_
+1.  relationship type _Loan and advance Collateral received assignment might have Loan and advance Collateral received assignment derived data_
+1.  relationship type _Loan and advance has Loan and advance as a hedge_
+1.  relationship type _Loan and advance is protected by Protection item via Loan and advance Collateral given assignment_
+1.  relationship type _Loan and advance is protected by Protection item via Loan and advance Collateral received assignment_
+1.  relationship type _Loan and advance is used as Loan and advance leg via Loan and advance leg Loan and advance assignment_
+1.  relationship type _Loan and advance may have Loan and advance derived data_
+1.  relationship type _Loan has Loan derived data_
+1.  relationship type _Loan is part of Asset pool Loan assignment_
+1.  relationship type _Type of hedge classifies Loan and advance as a hedge_
+
+
+
+### Forward Engineering considerations
+Changing names and abbreviations in the LDM impacts the names in the Input Layer. 
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/511</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

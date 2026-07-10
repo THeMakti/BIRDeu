@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="CD8E5291-A87C-578E-7536-20CECA5FA9A0" name="Balance sheet recognised exchange tradable derivative asset position">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-11-03 15:43:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Exchange tradable derivative asset position is an Exchange tradable derivative position role which is balance sheet recognised.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>6B4999C9-9ED0-E7FF-EF12-F2895351A157</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>4E309E14-0529-7D49-122C-2DE4FC2B2198</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_EXCHNG_TRDBL_DRVTV_ASST_PSTN</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Accounting classification" id="2F03B5E8-CEBB-7378-DCE4-39D26DCE862A">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-01-29 09:25:03 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>B36E4B03-7CD3-A326-4A20-DA3B42A3FD19</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>4F16D2F2-6CD4-3D16-0AB5-F958059F75B8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7631EDCB-3034-4948-BBCA-3908FF5794F5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCNTNG_CLSSFCTN</preferredAbbreviation>
+</Attribute>
+<Attribute name="Carrying amount" id="57B65B1C-E581-14A1-87C9-626421B474E4">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-09 09:24:13 UTC</createdTime>
+<comment><![CDATA[The carrying amount in accordance with Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CRRYNG_AMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Prudential portfolio type" id="24B5A74C-2220-B05C-ED04-4F69527F45CC">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-09 16:56:33 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between trading and banking (or non-trading) book.]]></comment>
+<generatorID>6619D0AF-E0C7-C34D-7B1F-A0CAC4F3E8A9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>B199CC22-8BC2-0A34-A0B2-28FCB66DAF7C</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9ECA7EA5-B456-4AD8-AA91-4AD16E2D4AD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRDNTL_PRTFL_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Balance sheet recognised exchange tradable derivative asset position type" id="8F660D8E-FB52-7D22-6672-18903B8E8A4E">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-11-02 09:48:31 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of Balance sheet recognised exchange tradable derivative asset positions.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8E9867D1-C2B2-FF1A-61C9-171225D710C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_EXCHNG_TRDBL_DRVTV_ASST_PSTN_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Balance sheet recognised exchange tradable derivative asset position accounting standard type" id="39267114-5D61-483E-7429-A1E017CBF8C5">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-07-11 12:22:10 UTC</createdTime>
+<comment><![CDATA[Balance sheet recognised exchange tradable derivative asset position by accounting standard distinguishes the Balance sheet recognised exchange tradable derivative asset position by the applied accounting standard.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A94315AA-F79B-486D-861E-476EAB318238</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_EXCHNG_TRDBL_DRVTV_ASST_PSTN_ACCNTNG_STNDRD_TYP</preferredAbbreviation>
+<changeRequests>
+<requestID>25692-459</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Balance sheet recognised exchange tradable derivative asset position taken into possession type" id="BE44E79E-AB9B-6EA8-1DAD-A92E275251F5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-09-23 14:48:17 UTC</createdTime>
+<comment><![CDATA[Balance sheet recognised exchange tradable derivative asset position obtained by taking possession type is a dsicriminant that distinguishes between Balance sheet recognised exchange tradable derivative asset position obtained by taking possession and not obtained by taking possession]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>DDD939BA-902D-8836-56A9-367FA4A01FB1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_EXCHNG_TRDBL_DRVTV_ASST_PSTN_TKN_PSSSSN_TYP</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

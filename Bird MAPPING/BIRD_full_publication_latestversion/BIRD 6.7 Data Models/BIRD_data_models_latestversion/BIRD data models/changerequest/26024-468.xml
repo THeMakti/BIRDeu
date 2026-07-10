@@ -1,0 +1,25 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Compliance with Art.129 CRR - (CVRD_BND_CRR_129) and Primary asset class of cover pool (PRMRY_ASST_CLSS_CVR_PL)" id="26024-468">
+                    <createdBy>ostarij</createdBy>
+                    <comment>According to AE Instructions, the variable Compliance with Art.129 CRR can assume the values YES or NO.
+If YES, then it is required to report the Primary asset class of cover pool.
+It is required in template F 35.00.c. For a more detailed description:
+
+![image](/uploads/791dbd9e765c93c1e3f64a438d4b0556/image.png)
+
+Currently, in the LDM, the attribute 'Asset class according to CRR_Article 129' of the entity _Asset pool (subject to a Covered bond programme)_, describes the primary asset class of the cover pool, with a domain corresponding to the categories {a,b,c,d,e,f,g,h} as described in the instructions; this implies the assumption that Compliance with Art.129 CRR = YES. 
+The new requirement is to cover in the LDM also the case Compliance with Art.129 CRR = NO.
+
+For clarity, please find an extract from the model below: 
+![image](/uploads/997958cff4b46ceb646f2b9522ffa762/image.png)</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/468</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

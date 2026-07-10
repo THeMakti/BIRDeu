@@ -1,0 +1,43 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Change to the name of FRBRNC_MSR_TYP_11" id="32715-504">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+Currently, the Domain Forbearance measure type ([FRBRNC_MSR_TYP](https://sdd.ecb.de/bycode/domain/ECB/FRBRNC_MSR_TYP)) has, among others, the following two members:
+- [FRBRNC_MSR_TYP_11](https://sdd.ecb.de/bybusinessid/member/FRBRNC_MSR_TYP_11)
+- [FRBRNC_MSR_TYP_10](https://sdd.ecb.de/bybusinessid/member/FRBRNC_MSR_TYP_10)
+
+Both with the name "Forborne: instruments with modified interest rate below market conditions". It should be:
+- FRBRNC_MSR_TYP_11 "Forborne: instruments with modified interest rate **not** below market conditions"
+- FRBRNC_MSR_TYP_10 "Forborne: instruments with modified interest rate below market conditions"
+
+### Contact person
+@Maria_Manuel.Henriques 
+
+### Description of change request
+change the name of FRBRNC_MSR_TYP_11 to "Forborne: instruments with modified interest rate **not** below market conditions"
+
+### Summary of impacted LDM objects/attributes
+Domain: FRBRNC_MSR_TYP
+Allowed Value: FRBRNC_MSR_TYP_11
+
+### Forward Engineering considerations
+_[Other considerations]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/504</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

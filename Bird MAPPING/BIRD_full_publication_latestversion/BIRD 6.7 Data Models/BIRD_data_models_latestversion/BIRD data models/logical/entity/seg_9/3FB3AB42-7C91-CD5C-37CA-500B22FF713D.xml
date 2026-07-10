@@ -1,0 +1,318 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="3FB3AB42-7C91-CD5C-37CA-500B22FF713D" name="Asset pool Collateral received assignment">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:40:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Asset pool Debt security position assignment is the combination of an Asset pool and a Debt security position that indicates which (part of a) Debt security position is comprised in which Asset pool.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>ASST_PL_CLLTRL_RCVD_ASSGNMNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="07ADEF32-C886-F8B5-DBA5-43388865E0E6" value="AC0AAA2D-5C46-ED0D-F6D9-A0A5D6F3EF39"/>
+<item key="49338BE4-290F-B0F6-284C-60FA78DD434D" value="2285AD9A-B978-0380-A4EC-F8766ACA0BC2"/>
+<item key="58E6CB06-B734-E38B-ABA2-41B95F0F19E3" value="5C090105-FFE6-7AE7-443A-959E8F647E58"/>
+<item key="A7E469A2-A5F3-91EE-8468-F1B49FC869B2" value="9E3C09FF-7D21-2A67-29D2-E9589E92B56D"/>
+</foldedAttributesMap>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Collateral received reference date" id="5C090105-FFE6-7AE7-443A-959E8F647E58">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-12 12:19:40 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>529A9061-6F60-7569-7EC0-BE740EB24129</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_RCVD_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Collateral received reporting agent identifier" id="9E3C09FF-7D21-2A67-29D2-E9589E92B56D">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-12 12:19:40 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>FD4BF3EC-797F-CED5-7227-6EA26AE008DB</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_RCVD_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Collateral received accounting consolidation level" id="2285AD9A-B978-0380-A4EC-F8766ACA0BC2">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-12 12:19:40 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>41E8E400-FCE3-8132-EFC1-6000B9A0A7AE</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_RCVD_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Collateral received accounting standard" id="AC0AAA2D-5C46-ED0D-F6D9-A0A5D6F3EF39">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-12 12:19:40 UTC</createdTime>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>966D2E45-B024-9539-E303-D9C113B3D25D</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_RCVD_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Collateral received identifier" id="5EFD28BA-3D38-B528-571A-A8E8D0616B06">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-12 12:19:40 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each collateral.]]></comment>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>2EED67F0-F3D5-4BBE-0D8D-44264773197B</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_RCVD_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Collateral received role type" id="DE57579B-1D8B-FD09-5950-D5AF853A176D">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-12 12:19:40 UTC</createdTime>
+<comment><![CDATA[Collateral role type distiguishes the Collateral role according to the role the Collateral acts in.]]></comment>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>BAF96F4D-A64C-A247-D8A6-E0AE571998D2</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A13B4F0B-A165-43F0-8FFC-52E999DE5A44</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_RCVD_RL_TYP</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Asset pool reference date" id="58E6CB06-B734-E38B-ABA2-41B95F0F19E3">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:43:49 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>053B57FF-7837-99DA-5042-392AED2A3756</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ASST_PL_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Asset pool reporting agent identifier" id="A7E469A2-A5F3-91EE-8468-F1B49FC869B2">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:43:49 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>2CD7E94C-BF27-4403-A0A0-025E848D96E2</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ASST_PL_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Asset pool accounting consolidation level" id="49338BE4-290F-B0F6-284C-60FA78DD434D">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:43:49 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>285682F6-9213-EF4D-099E-F0B26CCFB615</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ASST_PL_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Asset pool accounting standard" id="07ADEF32-C886-F8B5-DBA5-43388865E0E6">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:43:49 UTC</createdTime>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>7A3952D4-7FFD-D07F-0147-0403875E299C</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ASST_PL_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Asset pool identifier" id="E7A451BA-C992-8058-CC59-25D0248309A2">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:43:49 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each asset pool.]]></comment>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>6EAFCA4A-19AA-1F50-DD36-16F2365205C1</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ASST_PL_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26375-477</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Nominal amount transfered" id="E3FD47EF-FF4C-91A9-B659-0B1595620B74">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:40:46 UTC</createdTime>
+<comment><![CDATA[The amount of the nominal amount that has been transferred.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRNSFRRD_AMNT</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7006EF0B-899A-3669-2ADF-7FF1AC22A530" name="Asset pool Collateral assignment PK">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-28 10:43:49 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>58E6CB06-B734-E38B-ABA2-41B95F0F19E3</attributeRef>
+<attributeRef>A7E469A2-A5F3-91EE-8468-F1B49FC869B2</attributeRef>
+<attributeRef>49338BE4-290F-B0F6-284C-60FA78DD434D</attributeRef>
+<attributeRef>07ADEF32-C886-F8B5-DBA5-43388865E0E6</attributeRef>
+<attributeRef>E7A451BA-C992-8058-CC59-25D0248309A2</attributeRef>
+<attributeRef>5C090105-FFE6-7AE7-443A-959E8F647E58</attributeRef>
+<attributeRef>9E3C09FF-7D21-2A67-29D2-E9589E92B56D</attributeRef>
+<attributeRef>2285AD9A-B978-0380-A4EC-F8766ACA0BC2</attributeRef>
+<attributeRef>AC0AAA2D-5C46-ED0D-F6D9-A0A5D6F3EF39</attributeRef>
+<attributeRef>5EFD28BA-3D38-B528-571A-A8E8D0616B06</attributeRef>
+<attributeRef>DE57579B-1D8B-FD09-5950-D5AF853A176D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

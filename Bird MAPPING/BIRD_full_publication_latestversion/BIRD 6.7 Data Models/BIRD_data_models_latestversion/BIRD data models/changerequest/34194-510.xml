@@ -1,0 +1,79 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Non-preferred bonds for COREP and SRB reporting with TLAC and MREL figures" id="34194-510">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+# Overview
+We need information on which bonds are preferred bonds and which bonds are (Senior) non-preferred bonds. See also https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/393#note_1968079 for the method used in AuREP as described by OeNB.
+
+For this we propose to also include the Total Loss-Absorbing Capital (TLAC) and Minimum Requirement for Own Funds and Eligible Liabilities (MREL)
+
+### Contact person
+_[me@ecb.europa.eu]_
+
+### Business definition
+
+#### Non-preferred bonds
+
+**Ranking in Liquidation/Bankruptcy**
+
+* **Senior Non-Preferred Bonds.** In case of liquidation or bankruptcy of a company, Senior Non-Preferred Bond is ranked higher than Subordinated Bonds but remains inferior to Senior Preferred Bonds or Senior Unsecured Debt. This means that Senior Non-Preferred Bondholders have a higher priority for receiving payments from the company’s remaining assets than Subordinated Bondholders but are still lower in the hierarchy than Preferred Bondholders.
+* **Preferred Bonds.** Preferred Bonds are senior to both Senior Non-Preferred Bonds and Subordinated Bonds in the event of liquidation or bankruptcy. They have a higher priority for receiving payments from the company’s remaining assets compared to both these other types of bonds.
+
+#### "Bail-In" Procedure.
+
+* **Senior Non-Preferred Bonds.** These bonds come with an intrinsic "bail-in" procedure. If the issuing company is on the verge of bankruptcy, creditors holding Senior Non-Preferred Bonds may be subject to a conversion of their bonds into shares. If the value of these shares rises over time, the bondholders have the opportunity to recover their invested capital.
+* **Preferred Bonds.** Preferred Bonds do not have a built-in "bail-in" procedure. Their terms and conditions do not include automatic conversion into shares in case of financial distress.
+
+#### Regulatory Treatment.
+
+* **Senior Non-Preferred Bonds.** These bonds are subject to the rules of MREL (Minimum Requirements for Own Funds and Eligible Liabilities) or TLAC (Total Loss-Absorbing Capacity). These regulations set minimum requirements for the amount of loss-absorbing capital a bank must hold to protect against potential losses.
+* **Preferred Bonds.** Preferred Bonds are not subject to MREL or TLAC rules. Their regulatory treatment may differ as they are senior to Senior Non-Preferred Bonds.
+
+
+#### TLAC/MREL:
+Some further deliberation on the connection to TLAC/MREL:
+
+TLAC and MREL are part of the EBA ITS since 2021 and need to be reported by banks in separate templates: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/resolution/implementing-technical-standards-disclosure-and-reporting-mrel-and-tlac
+
+* They are not part of FINREP reporting, so we don't have requirements for them yet, that need to be included in BIRD.
+
+Judging from the reporting templates for TLAC/MREL, they request a:
+* Creditor ranking (Template 5 - TLAC2, 6 - TLAC3), Insolvency rank (0010).
+* Rank in normal insolvency proceedings (Template 7 - MTCI)
+
+According to the reporting instructions ([annex_ii\_-\_annex_ii_reporting_instructions\_-\_clean.docx](https://www.eba.europa.eu/sites/default/files/2023-12/ed896c10-2c7a-4414-9897-ab70b26ad01e/annex_i\_-\_annex\_i\_reporting_templates\_-\_clean.xlsx)) these required rankings are described as: "The number of the insolvency rank in the creditor hierarchy of the reporting entity shall be reported, starting with the most junior rank. The insolvency rank shall be one of the ranks included in the insolvency rankings published by the resolution authority of that jurisdiction."
+
+This seems to be a quite different system of the rank used for securities in the SHS reporting (issue #393). 
+
+### Legal definition
+- [Directive (EU) 2017/ of the European Parliament and of the Council of 12 December 2017 amending Directive 2014/59/EU as regards the ranking of unsecured debt instruments in insolvency hierarchy](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017L2399)
+- https://www.eba.europa.eu/sites/default/files/2023-12/ed896c10-2c7a-4414-9897-ab70b26ad01e/annex_i\_-\_annex\_i\_reporting_templates\_-\_clean.xlsx
+
+### Reason for inclusion
+_[Justifications]_
+
+### Relationships
+_[Related objects]_
+
+### Relevant Framework/Template
+
+
+### Additional documentation/links (optional)
+_[Additional info]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/510</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

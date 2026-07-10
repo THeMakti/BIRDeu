@@ -1,0 +1,324 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="D98528DD-4340-7068-DCF4-FC4EE2F41DB4" name="Balance sheet recognised financial asset instrument">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 08:12:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Balance sheet recognised financial asset instrument is a Financial asset instrument that is (at least to a certain extent) recognised in the balance sheet (of the reporting agent).]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>AC25CE06-349E-2EC8-DA05-FFD6B8759432</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_FNNCL_ASST_INSTRMNT</preferredAbbreviation>
+<changeRequests>
+<requestID>40477-565</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Balance sheet recognised financial asset instrument type" id="DCD4E4B4-B2AF-0BF7-DCEE-FCDF87B51B31">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 10:57:05 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between balance sheet recognised financial asset instruments according to IFRS and nGAAP.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>f8c1b444-c462-4a7b-b44a-3464aab16964</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_FNNCL_ASST_INSTRMNT_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accounting classification" id="ADE0880F-1372-C328-FAE3-7B5F12B0775F">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-03-07 16:59:55 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>684805F4-C777-14AF-6645-FAB5C87F2545</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>4F16D2F2-6CD4-3D16-0AB5-F958059F75B8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7631EDCB-3034-4948-BBCA-3908FF5794F5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCNTNG_CLSSFCTN</preferredAbbreviation>
+</Attribute>
+<Attribute name="Market risk induced accumulated negative value adjustments" id="EA215F07-32A8-F911-C686-6F109FD88DDC">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 08:23:15 UTC</createdTime>
+<comment><![CDATA[Accumulated negative value adjustments. Market risk induced]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_NGTV_VL_ADJSTMNT_MR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Credit risk induced accumulated negative value adjustments" id="9D9DDDA3-A683-07F1-63A0-1E6C2AC16032">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-18 16:55:54 UTC</createdTime>
+<comment><![CDATA[Accumulated negative value adjustments. Market risk induced]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_NGTV_VL_ADJSTMNT_CR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accrued interest" id="E8193DA4-D937-FA49-21FC-1A5EE6CAFB6D">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 08:23:15 UTC</createdTime>
+<comment><![CDATA[The amount of accrued interest on loans at the reporting reference date as defined in Regulation (EU) No 1071/2013 (ECB/2013/33). In accordance with the general principle of accruals accounting, interest receivable on instruments should be subject to on-balance sheet recording as it accrues (i.e. on an accruals basis) rather than when it is actually received (i.e. on a cash basis).]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCRD_INTRST</preferredAbbreviation>
+</Attribute>
+<Attribute name="Fair value changes due to hedge accounting" id="BF34C418-6CA1-4C82-5B04-3D7AB95BB8E6">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 08:23:15 UTC</createdTime>
+<comment><![CDATA[Changes in the fair value of an asset or liability, which is a hedged item and measured at amortised cost, that are recognised in the carrying amount due to the application of hedge accounting (IFRS 9.6)]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FV_CHNGS_HDG_ACCNTNG</preferredAbbreviation>
+</Attribute>
+<Attribute name="Gross carrying amount excluding accrued interest" id="2DA3A78D-DACA-5976-24A7-B2EE2640772C">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 08:23:15 UTC</createdTime>
+<comment><![CDATA[Gross carrying amount, as defined in IFRS 9 appendix A, excluding accrued interest]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GRSS_CRRYNG_AMNT_E_INTRST</preferredAbbreviation>
+</Attribute>
+<Attribute name="Impairment status" id="C1F5A09D-BA22-E123-D235-94BDDDB8FB48">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-06-28 09:22:19 UTC</createdTime>
+<comment><![CDATA[Type of impairment recorded in accordance with the accounting standard – IFRS or national GAAP.]]></comment>
+<generatorID>F57C9F32-6FD8-654F-58A3-9C148F90CA51</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>FF42EA0A-90D9-393F-4DA4-8011316B9A6E</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D53B60E1-6316-42FE-A176-CA7FD1E6AB95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>IMPRMNT_STTS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accumulated impairment" id="FFD1B52D-0CD8-1CE7-5AD4-4F81AA248F13">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 08:23:36 UTC</createdTime>
+<comment><![CDATA[The amount of loss allowances that are held against or are allocated to the asset on the reporting reference date. This data attribute applies to assets subject to impairment under the applied accounting standard. Under IFRS, the accumulated impairment relates to the following
+amounts:
+(i) loss allowance at an amount equal to 12-month expected
+credit losses;
+(ii) loss allowance at an amount equal to lifetime expected
+credit losses.
+Under GAAP, the accumulated impairment relates to the following
+amounts:
+(i) loss allowance at an amount equal to general allowances;
+(ii) loss allowance at an amount equal to specific allowances.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_IMPRMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Carrying amount" id="A43FB6D2-7FCB-B410-1390-2D85A1EC6E62">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 09:02:03 UTC</createdTime>
+<comment><![CDATA[The carrying amount in accordance with Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CRRYNG_AMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Balance sheet recognition status" id="A7F1D6C2-1546-CDA2-332D-E6400666BEAD">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-07-28 12:29:48 UTC</createdTime>
+<comment><![CDATA[Balance sheet recognition of the financial asset.]]></comment>
+<generatorID>C63A22D0-916E-13BD-49AB-A66C15511920</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>D0F04572-5C4E-50AB-F73D-EBFAB1B0BCC9</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>18433f9f-18be-4c20-97d4-e4c5c0e6cba6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RCGNTN_STTS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Prudential portfolio type" id="08C55D85-9912-F944-188C-2E6C7E6D9E1A">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-09 16:54:48 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between trading and banking (or non-trading) book.]]></comment>
+<generatorID>03669D2B-1EA3-E4F7-EA8F-ED2F43C4C2BC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>B199CC22-8BC2-0A34-A0B2-28FCB66DAF7C</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9ECA7EA5-B456-4AD8-AA91-4AD16E2D4AD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRDNTL_PRTFL_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Balance sheet recognised financial asset instrument by fair value type" id="A9DC8899-C796-CFBF-C326-D654BB8E20FF">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-10-31 09:13:39 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of Balance sheet recognised financial asset instruments by fair value.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4C9098A1-6B07-02A5-830B-F4311D919A73</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_FNNCL_ASST_INSTRMNT_FR_VL_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Initial impairment status" id="58A8401E-8C15-8C45-D4BA-05CC9C81B801">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-11-03 10:16:02 UTC</createdTime>
+<comment><![CDATA[Initial imapirment status is the impairment status, recorded in the beginning of the financial year or at the initial recognition of the impairment of the exposure after the beginning of the financial year.]]></comment>
+<generatorID>48BF81EA-7A29-4F32-EA1F-816A042CEBEE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>62C5BFF6-C2A0-8D7F-FA03-DE27AE7E6D64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>3E701DBB-AE13-4320-D402-2D9DA177F9CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INTL_IMPRMNT_STTS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Impairment assessment method" id="8949C25B-24A2-4097-3810-0D39AF17A1B9">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-09-17 10:12:12 UTC</createdTime>
+<comment><![CDATA[The method by which the impairment is assessed, if the instrument is subject to impairment in accordance with applied accounting standards. Collective and individual methods are distinguished.]]></comment>
+<generatorID>00301BB2-1AF3-E88F-7B35-A8D0D9754064</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>F7264D78-470B-6A0A-5EBC-1BEEBA00CD08</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9395498C-7C15-5871-9F22-C38B8130D93C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>IMPRMNT_ASSSSMNT_MTHD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Balance sheet recognised financial asset instrument taken into possession type" id="338BD960-419E-22FF-F4E6-CD14D6610161">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-09-23 07:43:17 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between Balance sheet recognised financial asset instrument obtained by taking possession and not obtained by taking into possesion]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E05ED97F-76C5-2F5F-3ADF-B3F6916FABC6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BLNC_SHT_RCGNSD_FNNCL_ASST_INSTRMNT_TKN_PSSSSN_TYP</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

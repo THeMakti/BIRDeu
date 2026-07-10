@@ -1,0 +1,54 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Distinction between registered and non-registered collateral differs per country" id="36078-525">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!--See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab)--&gt;
+
+### Overview
+
+The difference between _Registered collateral_ and _Not registered collateral_ differs by country
+
+### Contact person
+
+_\[__me@ecb.europa.eu__\]_
+
+### Description of change request
+
+Different countries can have different registers for collaterals. These registers allow for the annotation of the protected loan next to the collateral, which informs all lenders that the collateral is used and for which amount. Because of this, the current modelling solution is too rigid and needs to be more flexible.
+
+The current model solution with the subtyping into _Registered collateral_ and _Non registered collateral_ should be changed. Their subtypes must become a direct subtype of _Physical collateral_ and the disciminator `Physical collateral type` should be renamed to `Registered physical collateral indicator`.
+
+### Summary of impacted LDM objects/attributes
+
+- _Physical collateral_
+- `Physical collateral type`
+- _Rolling stock collateral_
+- _Machinery and equipment collateral_
+- _Commodity collateral_
+- _Other non-registered collateral_
+- _Inventory collateral_
+- _Real estate collateral_
+- _Ship collateral_
+- _Aircraft collateral_
+
+### Forward Engineering considerations
+
+_\[Other considerations\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken
+
+  ![collateral_hier_525.png](/uploads/75fb09840d6a1d1674d39e23ededfe11/collateral_hier_525.png)</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/525</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

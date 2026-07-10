@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="727C6138-6D6C-A2DF-157D-58F714FB668A" name="Natural_person_Key_management_personnel_assignment">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Natural person Key management personnel assignment is the combination of Key management personnel and Natural person that indicates which Natural person directly or indirectly influences the Key management personnel.
+
+ If an individual is related to the entity based on the criteria stated above, all their close family members are also considered related parties. Close family members are defined as family members who are likely to influence, or be influenced by, that individual in their interactions with the entity (IAS 24.9). (via https://ifrscommunity.com/knowledge-base/ias-24-related-party-disclosures/#definition-of-a-related-party)]]></commentInRDBMS>
+<generatorID>9DA1342F-49E4-FE44-0F0B-611E4FA096B3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>7A67499C-0479-82E2-9F82-A693B748701D</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Natural_person_Party_identifier" id="87542A35-19C4-6830-365D-B73D31772B61">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:42:09 UTC</createdTime>
+<comment><![CDATA[Natural person is an identifier that uniquely identifies the natural person involved in the Natural person Key management personnel assignement.]]></comment>
+<generatorID>2EFB1C17-0A64-7036-F800-D60F61FE70AE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="435A16C1-89F0-B764-7000-AE6309F907AC" referredColumn="FEE6602B-4BB4-CF64-C9BA-097037BAD5BE"/>
+</associations>
+</Column>
+<Column name="Reference_date" id="C4BC4B4B-ECA0-D2A2-3C08-88147E65CD47">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Key management personnel Party reference date is the date the data of the Key management personnel  refers to.]]></comment>
+<generatorID>FB9EEDE6-8090-2B20-E889-AD7B304504AE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECB37ED1-D960-858A-0E60-9672E4860367" referredColumn="E23C3335-F895-D6A2-1272-DA4B2290A9B6"/>
+<colAssociation fkAssociation="435A16C1-89F0-B764-7000-AE6309F907AC" referredColumn="1F4F775A-2BDF-AA8A-748D-32DB8F9A4AD3"/>
+</associations>
+</Column>
+<Column name="Reporting_agent_identifier" id="30F57343-6E7B-460A-8D3D-32A630C75542">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Natural person group role reporting agent identifier identifies the reporting agent that reports on the Natural person group role.]]></comment>
+<generatorID>B0CA7D7E-1E47-D4CB-1FD5-03EB8AD9DB73</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECB37ED1-D960-858A-0E60-9672E4860367" referredColumn="942BBC21-F0D9-C26B-E807-6FB169168737"/>
+<colAssociation fkAssociation="435A16C1-89F0-B764-7000-AE6309F907AC" referredColumn="2A2B7A85-D8DB-EC75-347F-E8A16EFD23D5"/>
+</associations>
+</Column>
+<Column name="Party_role_type" id="73342C70-5B13-7DCF-45EB-1E3A85B4C1B1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Natural person group role type indicates the role that the natural person has for the group.]]></comment>
+<generatorID>E1D66D7B-9E65-8DE1-E3C8-A0AE040ABC56</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>3DD42234-B0F5-E4C9-F931-4D20C6EF5FAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECB37ED1-D960-858A-0E60-9672E4860367" referredColumn="E42F056D-7E2F-B9B0-1110-DAB300F12C0C"/>
+</associations>
+</Column>
+<Column name="Accounting_consolidation_level" id="9BBFD03B-EA7D-E564-FC4D-4C1FB067CD9B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>5CEF3677-3887-D499-CBBA-71095DD194A2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECB37ED1-D960-858A-0E60-9672E4860367" referredColumn="3E5ED3D4-FA60-7B46-C62E-DE8332460791"/>
+<colAssociation fkAssociation="435A16C1-89F0-B764-7000-AE6309F907AC" referredColumn="756AE4AB-D2C9-98CB-211D-8BBA15D10805"/>
+</associations>
+</Column>
+<Column name="Accounting_standard" id="222EDFE2-16C6-AB76-5FE4-29DD718C9C5F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>014DC910-281E-4A84-1D00-E00CAA341C48</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2F34F4CF-5CD5-E3FD-D747-233B1B39FC14</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECB37ED1-D960-858A-0E60-9672E4860367" referredColumn="89AFF7E8-B18D-97E0-3295-6B9A9AACD40E"/>
+<colAssociation fkAssociation="435A16C1-89F0-B764-7000-AE6309F907AC" referredColumn="C6AF98AA-C4FA-C268-04C6-E185F3078AF3"/>
+</associations>
+</Column>
+<Column name="Key_management_personnel_party_identifier" id="A63E4253-FFD8-B470-02E0-A52B13328DCF">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-29 15:45:02 UTC</createdTime>
+<comment><![CDATA[An identifier to univocally identify each protection arragement.]]></comment>
+<generatorID>F90A3643-D085-FC0D-DB19-F8869E71772D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECB37ED1-D960-858A-0E60-9672E4860367" referredColumn="55F06F8D-55BA-E0A2-4ABD-510C635EE767"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A711E69-B51D-1B7C-FBE7-926B13936140" name="Natural_person_Key_management_personnel_assignment_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>CD63C851-CECE-FA21-AB58-B6D6F6937B01</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87542A35-19C4-6830-365D-B73D31772B61"/>
+<colUsage columnID="C4BC4B4B-ECA0-D2A2-3C08-88147E65CD47"/>
+<colUsage columnID="30F57343-6E7B-460A-8D3D-32A630C75542"/>
+<colUsage columnID="73342C70-5B13-7DCF-45EB-1E3A85B4C1B1"/>
+<colUsage columnID="9BBFD03B-EA7D-E564-FC4D-4C1FB067CD9B"/>
+<colUsage columnID="222EDFE2-16C6-AB76-5FE4-29DD718C9C5F"/>
+<colUsage columnID="A63E4253-FFD8-B470-02E0-A52B13328DCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3677A1F3-0E6E-A7B3-86EB-96E95A13661D" name="Natural_person_Key_management_personnel_assignment_Entity_role_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>E48E98EA-F379-D21A-E7EA-060499C9A2F4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BBFD03B-EA7D-E564-FC4D-4C1FB067CD9B"/>
+<colUsage columnID="C4BC4B4B-ECA0-D2A2-3C08-88147E65CD47"/>
+<colUsage columnID="222EDFE2-16C6-AB76-5FE4-29DD718C9C5F"/>
+<colUsage columnID="73342C70-5B13-7DCF-45EB-1E3A85B4C1B1"/>
+<colUsage columnID="A63E4253-FFD8-B470-02E0-A52B13328DCF"/>
+<colUsage columnID="30F57343-6E7B-460A-8D3D-32A630C75542"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="559D21F1-F851-93DD-DCC2-9C95FC945361" name="Natural_person_Key_management_personnel_assignment_Party_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>502102C7-A45C-F2CD-1686-1B695CC92EE1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4BC4B4B-ECA0-D2A2-3C08-88147E65CD47"/>
+<colUsage columnID="30F57343-6E7B-460A-8D3D-32A630C75542"/>
+<colUsage columnID="9BBFD03B-EA7D-E564-FC4D-4C1FB067CD9B"/>
+<colUsage columnID="222EDFE2-16C6-AB76-5FE4-29DD718C9C5F"/>
+<colUsage columnID="87542A35-19C4-6830-365D-B73D31772B61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

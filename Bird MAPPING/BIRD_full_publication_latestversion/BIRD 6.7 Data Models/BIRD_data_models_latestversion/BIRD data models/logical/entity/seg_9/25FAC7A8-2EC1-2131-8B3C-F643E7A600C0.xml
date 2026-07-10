@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="25FAC7A8-2EC1-2131-8B3C-F643E7A600C0" name="Lessee derived data">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:04:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lessee derived data is additional information about a Lessee]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<typeID>7A67499C-0479-82E2-9F82-A693B748701D</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>LSS_DRVD_DT</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Lessee reference date" id="70BC1512-D6C8-E1CC-DDAC-8E2E4736D4EC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:21 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>CF92A452-613F-1E0B-5A4F-4FB7503198A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>5B76420D-3021-663E-94A5-F94158114C45</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSS_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Lessee reporting agent identifier" id="44277191-EF2E-3EAA-DE82-F8F64CE41E21">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:21 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>CF92A452-613F-1E0B-5A4F-4FB7503198A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>2F90F307-A3F1-5C3E-5A91-DC2269DC7234</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSS_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Lessee accounting consolidation level" id="95675556-30B6-F5FB-0950-F80B434C5F3B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:21 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>CF92A452-613F-1E0B-5A4F-4FB7503198A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>8D31FEF2-3425-9FC1-D69D-50BDABFCB092</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSS_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Lessee accounting standard" id="77AA6C83-30A2-1D6C-2DA8-D9508AE44A4E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:21 UTC</createdTime>
+<generatorID>CF92A452-613F-1E0B-5A4F-4FB7503198A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>809BDE06-7101-66A2-47B9-ECE3AB5C4499</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSS_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Lessee identifier" id="BF3D0B13-CBFD-57B0-F344-7427EB8AC55B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:21 UTC</createdTime>
+<comment><![CDATA[An identifier that uniquely identifies a party.]]></comment>
+<generatorID>CF92A452-613F-1E0B-5A4F-4FB7503198A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>8DCFA2CD-B69C-D366-18A1-3C118197D87B</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSS_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Lessee role type" id="4830F0A0-A887-BCD3-EABE-62DD20B07B68">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:21 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different roles a party may act in. Examples are debtor, creditor, servicer.]]></comment>
+<generatorID>CF92A452-613F-1E0B-5A4F-4FB7503198A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>A6591081-E57E-D887-87E9-EDD5DEB61718</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D0551245-E927-3180-FE42-C9D973931F73</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSS_RL_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Aggregated commitment amount for Anacredit reporting" id="1B1A3B22-85AF-252A-FEC3-423276719E18">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:13:45 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>AGGRGTD_CMMTMNT_AMNT_ANCRDT_RPRTNG</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="26B731B9-5BA6-0AB9-036F-CAFBC8004B2A" name="Lesse derived data PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-01 17:05:55 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>70BC1512-D6C8-E1CC-DDAC-8E2E4736D4EC</attributeRef>
+<attributeRef>44277191-EF2E-3EAA-DE82-F8F64CE41E21</attributeRef>
+<attributeRef>95675556-30B6-F5FB-0950-F80B434C5F3B</attributeRef>
+<attributeRef>77AA6C83-30A2-1D6C-2DA8-D9508AE44A4E</attributeRef>
+<attributeRef>BF3D0B13-CBFD-57B0-F344-7427EB8AC55B</attributeRef>
+<attributeRef>4830F0A0-A887-BCD3-EABE-62DD20B07B68</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

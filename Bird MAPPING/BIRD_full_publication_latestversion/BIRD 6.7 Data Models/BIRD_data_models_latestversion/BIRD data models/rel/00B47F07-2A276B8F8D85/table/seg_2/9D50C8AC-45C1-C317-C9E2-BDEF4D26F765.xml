@@ -1,0 +1,266 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="9D50C8AC-45C1-C317-C9E2-BDEF4D26F765" name="Tranche_in_a_synthetic_securitisation_without_securitisation_special_purpose_entity_(SSPE)_being_a_financial_guarantee">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Tranche in a synthetic securitisation without securitisation special purpose entity (SSPE) being a Financial guarantee is a Tranche in a synthetic securitisation without securitisation special purpose entity (SSPE) that is a Financial guarantee.]]></commentInRDBMS>
+<generatorID>35F14063-6EB3-9BD1-02A6-C0C77139B8DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tranche_identifier" id="08AED2EE-41DC-ACD5-4783-7A57D5E901D6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Tranche identifier is a number that uniquely identifies the Tranche.]]></comment>
+<generatorID>628C8622-C067-9861-6AC5-EC7D6C30FE1F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tranche_name" id="94859526-8D13-D355-7A40-D069AA765890">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Tranche name is a free-format text that identifies how the tranche is colloquially known. ]]></comment>
+<generatorID>0AB6B31C-5D5E-34C1-BDD8-4FCEEDA489F1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Securitisation_tranche_type" id="E7FB41D7-3FD8-6DB1-B3F2-511628B80EAA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Type of securitisation tranche distinguishes Securitisation tranche according to the type of securitisation that is used to tranche the pool.]]></comment>
+<generatorID>3483E7B7-263A-D807-C0F1-F15ECDCF4026</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>1E7B8C9D-ED5F-063E-3CFA-EFEE110DA453</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tranche_in_a_synthetic_securitisation_type" id="6C881537-849F-C8AD-CD34-BF3B3D89D322">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of Tranche in a synthetic securitisations.]]></comment>
+<generatorID>0019CFAA-C09B-51FB-95D6-BD55230A0E37</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>33A0F2CF-E58B-9798-2B59-A99DE3C24189</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tranche_in_a_synthetic_securitisation_without_securitisation_special_purpose_entity_(SSPE)_type" id="69A5F853-1DF2-6667-731F-F81EC88E64A9">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different tranches in a synthetic securitisation, specifically between financial guarantees and deposits.]]></comment>
+<generatorID>EC179D54-690C-6ADB-731A-F41269B2F56F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>B9FFCE33-6A57-04E7-5388-7ED9EEB508B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Synthetic_securitisation_accounting_consolidation_level" id="3A82D9BF-EAFA-59C9-717E-15322A0EF684">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>B5EACFEC-B67B-0E2F-58D9-821C50AA58E7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="470D6AFF-1E35-C5EF-C4C5-117DE117EB0D" referredColumn="55F18CC3-4F74-C846-F5FE-900AF56D71C3"/>
+</associations>
+</Column>
+<Column name="Synthetic_securitisation_accounting_standard" id="18A9A09C-3553-0D08-85F4-9554BB6AEE8C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>9CE2434D-C2F1-DB00-5C61-C866E998B283</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="470D6AFF-1E35-C5EF-C4C5-117DE117EB0D" referredColumn="3555834A-9281-C615-1102-F97D6D92A812"/>
+</associations>
+</Column>
+<Column name="Synthetic_securitisation_identifier" id="B7C8B2C0-52B6-DB9A-95D6-51D9647C6A7D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>F67B3F70-6B4F-8A54-ACFE-65D0B299EADD</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="470D6AFF-1E35-C5EF-C4C5-117DE117EB0D" referredColumn="B76AD0E1-B95E-18BF-DF49-0F5A1D982A5B"/>
+</associations>
+</Column>
+<Column name="Financial_guarantee_instrument_reference_date" id="8E9D07A7-EA6A-08D1-E4C1-805FEA4AB62B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>B310628E-66E1-16DA-2B26-88E13F454B03</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC9AC1EF-C3C5-6294-14B7-550D9F2CFEB5" referredColumn="9CC8CDF1-B3E5-EC78-1849-1D172D0C11F8"/>
+</associations>
+</Column>
+<Column name="Financial_guarantee_instrument_reporting_agent_identifier" id="4D58ABF6-DDE5-9902-A978-B6708E966474">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>8E7C0416-A784-A9E6-D9AD-EA030C79D99B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC9AC1EF-C3C5-6294-14B7-550D9F2CFEB5" referredColumn="52EF0DC4-8F8C-044D-E23B-38462AF86CAC"/>
+</associations>
+</Column>
+<Column name="Financial_guarantee_instrument_accounting_consolidation_level" id="53240AC1-5C7A-3610-3286-99AA352B0D5A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>C3A35C32-CC2C-26E4-3BAB-6CCEC7BC3133</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC9AC1EF-C3C5-6294-14B7-550D9F2CFEB5" referredColumn="FA6B469E-4465-675D-9CD2-C7B7962546D8"/>
+</associations>
+</Column>
+<Column name="Financial_guarantee_instrument_accounting_standard" id="3A1281DD-691A-6AD1-D730-68DBCB66B933">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>0AE611CA-90B5-997D-3ADD-2B40006473DF</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC9AC1EF-C3C5-6294-14B7-550D9F2CFEB5" referredColumn="0649A473-83AD-FC59-8D04-6CF1C2C74344"/>
+</associations>
+</Column>
+<Column name="Financial_guarantee_Instrument_identifier" id="B244E477-7B07-ED95-A296-CED557A9E994">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The instrument identifier of the involved financial guarantee instrument.]]></comment>
+<generatorID>54CFFF46-F113-8AB1-CE65-80DBB91CBF39</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC9AC1EF-C3C5-6294-14B7-550D9F2CFEB5" referredColumn="4EFA70DE-81C7-34A8-FBB7-53E7DB9F0D16"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E870FEE-5E8D-2F24-1B11-5B0630AA9C2C" name="Tranche_in_a_synthetic_securitisation_without_securitisation_special_purpose_entity_(SSPE)_being_a_financial_guarantee_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>92B654E0-10AB-6501-D42E-64654D903133</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A82D9BF-EAFA-59C9-717E-15322A0EF684"/>
+<colUsage columnID="18A9A09C-3553-0D08-85F4-9554BB6AEE8C"/>
+<colUsage columnID="B7C8B2C0-52B6-DB9A-95D6-51D9647C6A7D"/>
+<colUsage columnID="8E9D07A7-EA6A-08D1-E4C1-805FEA4AB62B"/>
+<colUsage columnID="4D58ABF6-DDE5-9902-A978-B6708E966474"/>
+<colUsage columnID="53240AC1-5C7A-3610-3286-99AA352B0D5A"/>
+<colUsage columnID="3A1281DD-691A-6AD1-D730-68DBCB66B933"/>
+<colUsage columnID="B244E477-7B07-ED95-A296-CED557A9E994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="807CEA65-5F5E-6C2E-3599-8B8485D9E92A" name="Tranche_in_a_synthetic_securitisation_without_securitisation_special_purpose_entity_(SSPE)_being_a_financial_guarantee__IDX">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>62BA5E1A-4BB1-906A-144B-2AD762808F75</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8E9D07A7-EA6A-08D1-E4C1-805FEA4AB62B"/>
+<colUsage columnID="4D58ABF6-DDE5-9902-A978-B6708E966474"/>
+<colUsage columnID="53240AC1-5C7A-3610-3286-99AA352B0D5A"/>
+<colUsage columnID="3A1281DD-691A-6AD1-D730-68DBCB66B933"/>
+<colUsage columnID="B244E477-7B07-ED95-A296-CED557A9E994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AB1B409-F904-FD60-BB66-E794B90A7A54" name="Tranche_in_a_synthetic_securitisation_without_securitisation_special_purpose_entity_(SSPE)_being_a_financial_guarantee_Instrument_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>62BA5E1A-4BB1-906A-144B-2AD762808F75</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E9D07A7-EA6A-08D1-E4C1-805FEA4AB62B"/>
+<colUsage columnID="4D58ABF6-DDE5-9902-A978-B6708E966474"/>
+<colUsage columnID="53240AC1-5C7A-3610-3286-99AA352B0D5A"/>
+<colUsage columnID="3A1281DD-691A-6AD1-D730-68DBCB66B933"/>
+<colUsage columnID="B244E477-7B07-ED95-A296-CED557A9E994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2856CAFE-9EB3-B752-8D55-1D9307E45553" name="Tranche_in_a_synthetic_securitisation_without_securitisation_special_purpose_entity_(SSPE)_being_a_financial_guarantee_Synthetic_securitisation_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:46 UTC</createdTime>
+<generatorID>E0092DDD-75E5-3392-675E-D38DFEE03BA5</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A82D9BF-EAFA-59C9-717E-15322A0EF684"/>
+<colUsage columnID="18A9A09C-3553-0D08-85F4-9554BB6AEE8C"/>
+<colUsage columnID="B7C8B2C0-52B6-DB9A-95D6-51D9647C6A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

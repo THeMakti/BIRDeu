@@ -1,0 +1,417 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="9CEA1E08-F628-512F-3E1B-DD6B6B517EB1" name="Long balance sheet recognised security position prudential portfolio Accounting classifcation assignment derived data">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-11-02 10:30:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Long balance sheet recognised security position Accounting classification assignment derived data is additional information about Long balance sheet recognised security position Accounting classification assignment.
+]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<typeID>6B4999C9-9ED0-E7FF-EF12-F2895351A157</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_DRVD_DT</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Long/Short balance sheet recognised security position type" id="4ACA45CE-A1CD-B670-DC6B-81D3292CC38B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-18 13:03:20 UTC</createdTime>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>11B77352-DA00-2AF9-B680-264C969C9214</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7C213733-CEE9-1733-B6A9-E6255B47D9CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Source of encumbrance" id="67421707-B440-F152-B3DA-BCDF7EC05DB0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-18 15:55:12 UTC</createdTime>
+<comment><![CDATA[Type of transaction in which the exposure is encumbered in accordance with Implementing Regulation (EU) No 680/2014. An asset will be treated as encumbered if it has been pledged or if it is subject to any form of arrangement to secure, collateralise or credit enhance any instrument from which it cannot be freely withdrawn.]]></comment>
+<generatorID>8A00B243-C03A-CE26-EDEE-850D914CCFED</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>BD98A83B-6F53-40B8-CCD5-C74A3E7369F7</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>0E5DF8E5-54C3-457C-AFE3-439D057AF244</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SRC_ENCMBRNC</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accumulated coverage ratio" id="0E5983C6-CA6E-FEC8-47FA-2FBD144714EF">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-11-02 10:31:32 UTC</createdTime>
+<comment><![CDATA[Accumulated coverage ratio is calculated as the ratio between the accumulated impairments, respectively the accumulated negative changes in fair value due to credit risk related to a loan or advance as numerator, and the gross carrying amount of that loan or advance as denominator.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>8100266E-F750-48D0-B98A-821400187560</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_CVRG_RT</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Gross carrying amount" id="24DF1F7D-5F3A-F11D-0E88-A5F4B1B8D95A">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-12-01 15:51:26 UTC</createdTime>
+<comment><![CDATA[Gross carrying amount as defined in Annex V 5.2.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GRSS_CRRYNG_AMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Transfer between impairment stages" id="A9068B6F-2BC9-AD07-A81F-5600DAB7393F">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-11-08 15:37:39 UTC</createdTime>
+<comment><![CDATA[Transfer between impairment stages compares the impairment status at the beginning of the period (Initial impairment status) with the impairment status at the end of the period.]]></comment>
+<generatorID>84A367D8-0BE8-57BD-DAB5-D14BE104970F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>82B6C192-63EA-742A-23BA-8C02BD32F53A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>BAC24BD5-93CD-9579-119D-83D1FEE3CC48</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRNSFR_IMPRMNT_STGS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accumulated total write-offs" id="27A7D6AC-34E6-BE7F-F709-F35DF5059EE0">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-03-07 15:42:26 UTC</createdTime>
+<comment><![CDATA[According to FinRep Annex 5: "the accumulated (...) total amount as at the reference date of principal and accrued past due interest and fees of any debt instrument that has been de-recognised to date (...) because the institution has no reasonable expectations of recovering the contractual cash flows."
+]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_TTL_WRTFFS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accumulated partial write-offs" id="7480026B-908B-7ADE-03F2-0D130ED49BD9">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-03-07 15:42:26 UTC</createdTime>
+<comment><![CDATA[According to FinRep Annex 5: "the accumulated partial (...) amount as at the reference date of principal and accrued past due interest and fees of any debt instrument that has been de-recognised to date (...) because the institution has no reasonable expectations of recovering the contractual cash flows."]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_PRTL_WRTFFS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security position Balance sheet recognised type" id="AEA4F17C-EEC1-72E1-CA1F-38FDA8ACE111">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>8B280850-5D3B-BE27-CE16-B01F59BE859A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3A59FB3-8927-FECC-9FB2-BA080102E9B8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_PSTN_BLNC_SHT_RCGNSD_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Investor reference date" id="035DAEBF-7FF7-9F80-2D26-53AF79893041">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>BAEF3820-B25C-2375-4069-115DABE11953</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INVSTR_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Investor reporting agent identifier" id="7A2A8E6A-B4FA-3079-3894-15368799AD87">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>162E2ECB-B638-C104-BE85-04BF334AF8E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INVSTR_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Investor accounting consolidation level" id="4DE3C224-96F5-E799-1A06-D1A70348558B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>038BA583-571B-AE35-4CF9-259AAD18FE38</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INVSTR_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Investor accounting standard" id="B8C249A9-0184-22C1-1CF9-2240C5BF1DD9">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>0634A478-0709-4542-AC04-9341465BCD9A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INVSTR_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Investor identifier" id="4CB967CF-0718-CBAC-18DD-A4E5BD56EB2E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[An identifier that uniquely identifies a party.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>C43025D9-968F-3732-B6DD-39CF7689FD2F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INVSTR_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Investor role type" id="19642274-85DB-EEBE-F5B6-9BE1F144C60A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different roles a party may act in. Examples are debtor, creditor, servicer.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>FE8F8109-713F-220F-1477-AA508D5FF564</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D0551245-E927-3180-FE42-C9D973931F73</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INVSTR_RL_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security position Security reference date" id="A36D01A5-C25A-6446-0F09-09C5662BA1EE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>B4AAF004-1503-C258-4F6A-3EAED7361D60</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_PSTN_SCRTY_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security position Security reporting agent identifier" id="6032976E-671E-5097-9F3B-67D0528A73DA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>F8327B64-E707-D032-AB30-3D766ADBD4E3</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_PSTN_SCRTY_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security position Security accounting consolidation level" id="B3D7A362-99F9-9F15-5752-D81A3447D31C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>EF3910FE-6F9D-CD9F-E5CE-09FAB9C39588</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security position Security accounting standard" id="913EF082-7783-ABF6-B3E1-18DFF8463CD2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>E1A78638-D18C-2940-8937-7ADEB1B4B986</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security position Security identifier" id="B1204C29-AC34-4A52-F4E9-195C01CC0801">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-22 15:42:16 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>0A0227A4-C8C0-1F49-B640-02DBF4C4EB33</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>61A79B63-C730-48B3-F6B7-B68C3A379C9F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_PSTN_SCRTY_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9124A5B-1EA7-1804-A035-EB7E35BF9E6B" name="Long balance sheet recognised security position derived data PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-18 12:30:52 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4ACA45CE-A1CD-B670-DC6B-81D3292CC38B</attributeRef>
+<attributeRef>AEA4F17C-EEC1-72E1-CA1F-38FDA8ACE111</attributeRef>
+<attributeRef>035DAEBF-7FF7-9F80-2D26-53AF79893041</attributeRef>
+<attributeRef>7A2A8E6A-B4FA-3079-3894-15368799AD87</attributeRef>
+<attributeRef>4DE3C224-96F5-E799-1A06-D1A70348558B</attributeRef>
+<attributeRef>B8C249A9-0184-22C1-1CF9-2240C5BF1DD9</attributeRef>
+<attributeRef>4CB967CF-0718-CBAC-18DD-A4E5BD56EB2E</attributeRef>
+<attributeRef>19642274-85DB-EEBE-F5B6-9BE1F144C60A</attributeRef>
+<attributeRef>A36D01A5-C25A-6446-0F09-09C5662BA1EE</attributeRef>
+<attributeRef>6032976E-671E-5097-9F3B-67D0528A73DA</attributeRef>
+<attributeRef>B3D7A362-99F9-9F15-5752-D81A3447D31C</attributeRef>
+<attributeRef>913EF082-7783-ABF6-B3E1-18DFF8463CD2</attributeRef>
+<attributeRef>B1204C29-AC34-4A52-F4E9-195C01CC0801</attributeRef>
+<attributeRef>67421707-B440-F152-B3DA-BCDF7EC05DB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

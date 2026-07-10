@@ -1,0 +1,52 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name='Using "Derived " as a prefix for attributes in derived data entity types' id="38647-542">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+
+In the latest version of the BIRD LDM the prefix "Derived " is used for some attributes in derived data entity types.
+
+From a logical model perspective this prefix is not necessary because derived attributes are located in derived data entity types and are therefore sufficiently identifiable, e.g., is is clear that the attribute `Performing status` in the entity type `Financial asset instrument derived data` is derived. Hence, the prefix should be avoided.
+
+The most likely reason for adding such a prefix is related to implementation concerns. Specifically the fact that, when forward engineering entity types with attributes having the same name / identifier / code into one table this creates a logical conflict - a table must not have two columns with the same name / identifier / code. 
+
+If this is the case it clearly violates the BIRD LDM's design principles, especially 'Principle 1: We separate our concerns', and therefore must be avoided.
+
+### Contact person
+
+dominik.lin-ully@oenb.at
+
+### Description of change request
+
+Remove the prefix "Derived " from attributes in derived data entity types.
+
+### Summary of impacted LDM objects/attributes
+
+* attributes where the prefix "Derived " is used
+
+### Forward Engineering considerations
+
+Merging multiple entity types comprising attributes with the same identifier / code without special treatment will result in logical conflict - one table must not have two columns with the same identifier / code.
+
+Suggestion(s):
+1. (on a conceptual level) define the expected behaviour for such situations including implications (especially the translation of the BIRD LDM in SQL data modeler format into the SMCube data model),
+2. choose the most appropriate solution and implement it
+3. avoid implementation concerns leaking into the BIRD LDM
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/542</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

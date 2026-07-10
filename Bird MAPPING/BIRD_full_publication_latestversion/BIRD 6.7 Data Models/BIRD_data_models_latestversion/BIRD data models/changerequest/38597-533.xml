@@ -1,0 +1,68 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Considerations regarding the `Reverse repurchase agreement loan` entity type" id="38597-533">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+
+The added value of the introduction of the entity type `Reverse repurchase agreement loan` is unclear.
+
+Furthermore, it seems that the introduction of this entity type implies a duplication, namely the `Reverse repurchase agreement cash leg` and `Reverse repurchase agreement loan` as well as `Repurchase agreement cash leg` and `Deposit`.
+
+
+### Contact person
+
+dominik.lin-ully@oenb.at, sara.crestini@bdi.it
+
+### Background information
+
+The current model design of the `Instrument` entity type hierarchy reflects the different types of `Instrument`s, e.g., `Credit card debt`, as defined in the BIRD LDM (~input).
+The model construct of `Instrument role` allows to assign different roles to an `Instrument`, for example a `Credit card debt` that is an asset for the reporting agent would act in the `Financial asset instrument` role (or more accurately one of its subtypes).
+If we would have defined more specific `Instrument role`s instead of generic ones (see https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/25), we would for example have something like `Financial asset credit card debt` and `Financial liability credit card debt` for `Credit card debt` or `Financial asset reverse repurchase agreement` and `Financial liability repurchase agreement` for `Repurchase agreement instrument`.
+ 
+Based on the discussion related to AE requirements (see [AE Requirements - Deposits and Repurchase agreements](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/462)), the new entity type `Reverse repurchase agreement loan` has been introduced (as a subtype of the `Instrument` hierarchy) including the relationship to the entity type `Reverse repurchase agreement cash leg`. Similarly the relationship between `Repurchase agreement cash leg` and `Deposit` has been established.
+ 
+It seems to us that the only value added of integrating these data elements (i.e., entity type `Reverse repurchase agreement loan` and the relationships) is limited to the identification of the `Debtor` (for `Reverse repurchase agreement loan`s) and `Depositor` (for `Deposit`s).
+
+If this information was required it may be covered by a different modeling construct, e.g., subtyping `Instrument role` for different `Instrument` types and adding a relationship between `Financial asset reverse repurchase agreement` and `Debtor` (of course not saying this is the best solution without knowing all the underlying requirements but just adding an example).
+
+However, we do not see that this was the main purpose for the integration of these data elements (based on the discussion within the associated Gitlab issue).
+Furthermore, it seems that the integration of these data elements is in contrast to the applied modeling construct (using the `Instrument role` entity type hierarchy) for representing assets and liabilities and / or duplicates information already present in the model.
+ 
+Our understanding is that a `Reverse repurchase agreement instrument`, if it is considered an asset, would act in the `Financial asset instrument` role (or one of its subtypes) - similarly to a `Credit card debt` considered an asset.
+Hence, according to our understanding, a `Reverse repurchase agreement loan` is already represented in the BIRD LDM by an `Instrument` of type `Repurchase agreement instrument` which acts in the `Financial asset instrument` role (or one of its subtypes).
+If our understanding is accurate, this would also result in additional referential integrity constraints / business rules for the current model design.
+For example the fact that the `Debtor` (and also `Creditor`) of a `Reverse repurchase agreement loan` must be either the `Buyer` or `Seller` of a `Repurchase agreement instrument`; similar considerations apply to the `Depositor` and the `Deposit taking corporation` of a `Deposit` (which is a `Repurchase agreement cash leg`).
+Also consider that a `Repurchase agreement instrument` must not be a `Reverse repurchase agreement loan` and a `Deposit` (being a `Repurchase agreement cash leg`) at the same time, etc.
+ 
+Another 'reason' why we believe this design is flawed is that the 'container' and the 'items' are of the same type - i.e., the fact that `Reverse repurchase agreement loan`, `Deposit` (being a `Repurchase agreement cash leg`) and `Repurchase agreement instrument` are subtypes of `Instrument`, which implies that they are each identifiable by their `Instrument identifier` and are therefore (from a data modeling perspective) of the same type.
+For us this is quite odd, because (normally) a 'group of persons' is different to a 'person' - but of course we are happy to be convinced otherwise.
+
+Furthermore, what `Instrument role` does the `Repurchase agreement instrument` act in? Because of the introduction of `Reverse repurchase agreement loan` as an individual `Instrument` type and the `Deposit` (being the `Repurchase agreement cash leg`) as an individual `Instrument` type it wouldn't make sense that the `Repurchase agreement instrument` acts as a `Financial asset instrument` or a `Financial liability instrument` (these roles should most likely be assigned to the `Reverse repurchase agreement loan` and `Deposit`. Also the other `Instrument role` types do not match - at least in my opinion. However the `Instrument role` is mandatory for each `Instrument`...
+
+### Points/Questions to resolve
+
+* what problem is / was solved by the introduction of the entity type `Repurchase agreement instrument`?
+* does the introduction of this entity type and the associated relationships (between `Reverse repurchase agreement cash leg` and `Reverse repurchase agreement loan` as well as `Repurchase agreement cash leg` and `Deposit`) imply a duplication?
+* is the introduction of this entity type consistent with the application of the 'role construct' (i.e., `Instrument` acts in `Instrument role`) as regards the representation of `Instrument`(s) being `Financial asset instrument`(s) and / or `Financial liability instrument`(s)?
+
+we kindly ask the WS DM to reflect on these considerations, also considering the above stated questions and - if considered beneficial - to adjust the BIRD (E)LDM accordingly.
+
+### Related issues
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/533</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

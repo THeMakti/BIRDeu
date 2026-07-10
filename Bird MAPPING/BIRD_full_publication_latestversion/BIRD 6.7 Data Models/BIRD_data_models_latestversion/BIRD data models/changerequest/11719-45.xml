@@ -1,0 +1,30 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Integration of Party risk data information into the Party hierarchy" id="11719-45">
+                    <createdBy>ostarij</createdBy>
+                    <comment>The entity `Party risk data` comprises the following attributes:
+
+- `Default status`
+- `Date of default status`
+- `Performing status`
+
+these attributes should be integrated into the `Party` hierarchy, i.e., it should be assessed on which subtype level these attribute may belong. Afterwards a model design should be drafted to-be-discussed within the group.
+
+Please consider that:
+
+- the `Date of default status` is only applicable to Parties with a `Default status`, i.e., for `Parties` that are `Not in default` such a date would not make sense. This situation will most likely require disjoint subtyping similar to `Organisations with / without legal proceedings`.
+
+# Follow-up from the January '23 meeting
+@sdressler is currently working on the topic, he will provide the slides and a visio document. 
+
+ **ECB** will organise a meeting to discuss the topic in detail when we tackle COREP.</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/45</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

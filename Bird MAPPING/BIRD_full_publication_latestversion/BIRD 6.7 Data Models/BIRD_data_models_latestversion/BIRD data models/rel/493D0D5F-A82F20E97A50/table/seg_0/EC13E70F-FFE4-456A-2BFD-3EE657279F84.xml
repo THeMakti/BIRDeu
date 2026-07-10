@@ -1,0 +1,239 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC13E70F-FFE4-456A-2BFD-3EE657279F84" name="30%_Fair_value_decrease_contingent_encumbrance">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contingent encumbrance refers to the additional assets which may need to be encumbered when the reporting institutions faces adverse developments triggered by an external event over which the reporting institution has no control (including a downgrade, decrease of the fair value of the encumbered assets or a general loss of confidence). In these cases, the reporting institution will need to encumber additional assets as a consequence of already existing transactions. The additional amount of encumbered assets shall be net of the impact of the institution’s hedge transactions against the events described under the aforementioned stressed scenarios. (Annext 17 (Asset Encumbrance) 4. Part C)]]></commentInRDBMS>
+<generatorID>9A2BD7F7-6D4A-3F63-D1DE-ABAA2CCB0F7E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<ordsAlias>fair_value_decrease_contingent_encumbrance</ordsAlias>
+<typeID>33380944-8442-174B-069A-88F99EEEC3DC</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Reference_date" id="7CA2040E-835A-6DE1-F677-C7A5B994ECD3">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>617A964B-B16A-1DA6-0796-6F1702E611C0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Reporting_agent_identifier" id="D8562C85-7D3B-C3AB-53BF-C971189730E8">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>45239B99-94C2-1F3B-AD43-72AC8D63FF6D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Accounting_consolidation_level" id="E3BF2A08-7484-1D74-B0A8-320921467DB7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>E47E71CC-C065-EBDB-DA1E-E7E3AF64FCC0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Accounting_standard" id="248BE8CC-AEB4-94D7-8ACE-A5AF4FCEFD39">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>8807F6F3-DA83-BC60-390C-14B49788D361</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Collateralised_deposits_other_than_repurchase_agreements_additional_encumbered_carrying_amount" id="41DA60EF-194B-06E2-F242-400C01C61E08">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Collateralised deposits other than repurchase agreements additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Collateralised deposits other than repurchase agreements by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>518968BA-1871-2812-DC11-D1ED3036A7FA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Collateralised_deposits_other_than_repurchase_agreements_with_central_banks_additional_encumbered_carrying_amount" id="3F447C47-5AFC-F107-2A2C-4CCE4175FCBD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Collateralised deposits other than repurchase agreements with central banks additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Collateralised deposits other than repurchase agreements with central banks by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>8E31C85F-5E63-9D51-90DF-89DB561E5A63</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Debt_securities_issued_additional_encumbered_carrying_amount" id="6E121352-4D04-87A4-523E-D41701ADD768">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Debt securities issued additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Debt securities issued by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>3088AAD5-C924-405B-29BC-740A6D71B81B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Debt_securities_issued_as_covered_bonds_additional_encumbered_carrying_amount" id="A8251C81-30B6-AC57-1AC8-DEF34FC96555">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Debt securities issued as covered bonds additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Debt securities issued as covered bonds by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>F0870544-0ECB-BE2F-9224-ACF2C1E7D7AE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Debt_securities_issued_as_securitisations_additional_encumbered_carrying_amount" id="62717D37-971F-4139-0AED-4E59C992F3AA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Debt securities issued as securitisations additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Debt securities issued as securitisations by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>6D4B75CC-E693-EA27-13B4-ED067C0EB363</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Deposits_additional_encumbered_carrying_amount" id="B580C0ED-183C-F25B-2C7E-561A5BA69D50">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Deposits additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are deposits by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>6745A212-EABE-6C83-661A-56C2B4D20358</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Derivatives_additional_encumbered_carrying_amount" id="7952B769-13DD-44DB-3825-126F6772D88F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Derivatives additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are derivatives by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>3D8BBD27-86C8-C88A-CA74-3490378E94A3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Other_sources_of_encumbrance_additional_encumbered_carrying_amount" id="62AD3DD1-BD27-DF51-CA42-F8C0DE330F3E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Other sources of encumbrance additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Other sources of encumbrance by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>7052533E-7CE4-5C41-2289-BFEF5E3F7535</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Over-The-Counter_(OTC)_derivatives_additional_encumbered_carrying_amount" id="A15DDA83-5E0F-4835-7403-7875ECC4624B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Over-The-Counter (OTC) derivatives additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Over-The-Counter (OTC) derivatives by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>E867ED71-CA64-578B-2ED0-727998F4E4E5</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Repurchase_agreements_additional_encumbered_carrying_amount" id="6EC2F724-13F1-2144-3A26-A401307D16F1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Repurchase agreements additional encumbered carrying amount in  scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are repurchase agreements by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>9469D37B-B7D6-1874-2E12-5D34A4A2FD25</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Repurchase_agreements_with_central_banks_additional_encumbered_carrying_amount" id="537DBC08-E3FD-191B-B579-F871E8DAFD03">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Repurchase agreements with central banks additional encumbered carrying amount in  scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets that are Repurchase agreements with central banks by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>AEF9C60E-B47B-8510-FE51-3F6BD1BDF341</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Selected_financial_liabilities_additional_encumbered_carrying_amount" id="941307B7-76B4-0D2C-979C-7264011CA9CD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Selected financial liabilities additional encumbered carrying amount in  scenario A simulates the situation in which there is a decrease of the fair value of the selected financial liabilities encumbered assets by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>D01836A1-8AF9-A58D-838F-E0DC1E98A327</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total_sources_of_encumbrance_additional_encumbered_carrying_amount" id="35B6E1DC-8A37-4396-B536-398954D34207">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Total sources of encumbrance additional encumbered carrying amount in scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.]]></comment>
+<generatorID>B6E7040C-3719-5B6B-CBBF-907EB32D9A14</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E340E16-1D55-32B2-70E8-E3B783A1C6C4" name="30%_Fair_value_decrease_contingent_encumbrance_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>AE20E9D3-0A25-2A65-C359-42364236E395</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CA2040E-835A-6DE1-F677-C7A5B994ECD3"/>
+<colUsage columnID="D8562C85-7D3B-C3AB-53BF-C971189730E8"/>
+<colUsage columnID="E3BF2A08-7484-1D74-B0A8-320921467DB7"/>
+<colUsage columnID="248BE8CC-AEB4-94D7-8ACE-A5AF4FCEFD39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

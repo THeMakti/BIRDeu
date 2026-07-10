@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="C2014617-CE32-E7F2-B8AE-95111CEDC71D" name="Equity risk factor for standardised approach">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-06-19 14:58:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[The equity risk factor for SA refers to the change in the value of the instrument, according to its pricing model. (Article 325o) - Regulation (EU) No 575/2013 of the European Parliament and of the Council (CRR)]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>1B94F88B-CE04-E04E-DE88-6866B6DBCB24</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>569226D4-0B71-7630-0EE4-00E6F7A871C8</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>EQTY_RSK_FCTR</preferredAbbreviation>
+<documents usedDucuments="577C6671-054B-63C9-0FA7-48002B03D7C4"/>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Equity security reference date" id="34CB320C-7A24-109F-82F7-D246A9096D53">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-08-15 09:06:25 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>0EABFA84-186D-4E3E-518E-05F8BD90E445</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>DA168399-B716-B4C5-B7F2-C2620D929EC4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQTY_SCRTY_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Equity security reporting agent identifier" id="CB2F2C25-84A7-A162-F83A-3075457E5B75">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-08-15 09:06:25 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>0EABFA84-186D-4E3E-518E-05F8BD90E445</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>480FA821-32E6-C30D-2DB7-7BB8C85B6C0F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQTY_SCRTY_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Equity security accounting consolidation level" id="2DF063F1-EB5D-669F-2514-96AF08A71482">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>0EABFA84-186D-4E3E-518E-05F8BD90E445</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>C6316DB7-24EB-C468-C3B5-B6CDA24D6517</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQTY_SCRTY_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Equity security accounting standard" id="D7B5CBFC-FA27-76E0-4A32-AC73B80776D5">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>0EABFA84-186D-4E3E-518E-05F8BD90E445</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>78D8BA25-BE56-308F-18E6-01087F041F86</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQTY_SCRTY_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Equity security identifier" id="DA1A532D-338A-996C-C405-4036DAE0FE96">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-08-15 09:06:25 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>0EABFA84-186D-4E3E-518E-05F8BD90E445</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>70004979-0BF5-B3D8-542D-0A190D5BA5BD</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQTY_SCRTY_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Equity factor type" id="D1666B01-60AD-C8AE-5321-B6314F73C87D">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-06-19 15:01:03 UTC</createdTime>
+<comment><![CDATA[Equity factor type classifies Equity risk factorf into Spot or Repo Equity Risk Factor.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>10511173-094A-64DC-444F-BD030BDC9776</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQUTY_FCTR_TYP</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

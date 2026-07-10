@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38013587-3E0F-07E3-FABD-AEF3C2ADF02B" name="Country">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-05 08:42:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Country is a bounded area on Earth governed by a specific body.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>1312D78D-A5F6-B25F-0715-6E131635D11D</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>CNTRY</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Country code" id="D5344D64-60FF-5EB6-B5FC-A662F608FDBA">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-05 08:42:23 UTC</createdTime>
+<comment><![CDATA[The country code according to ISO3166.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E832EA39-67C9-4303-AD29-B66510B666C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CNTRY_CD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Country type by reporting" id="89CC261E-6509-1F94-DE3A-C1B3D5A5D083">
+<createdBy>ostarij</createdBy>
+<createdTime>2021-10-14 15:54:12 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between member states and non-member states according to Regulation (EU) 867/2016, Article 1 (1): "‘reporting Member State’ means a Member State whose currency is the euro; Member States whose currency is not the euro may decide to become a reporting Member State by incorporating the provisions of this Regulation into their national law or otherwise imposing relevant reporting requirements in accordance with their national law; this may include, in particular, Member States that participate in the SSM via close cooperation in accordance with Article 7 of Council Regulation (EU) No 1024/2013;"]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>cd346c04-b6d8-45fb-9793-ba8d703cc9e0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CNTRY_TYP_RPRTNG</preferredAbbreviation>
+</Attribute>
+<Attribute name="Country type" id="B314356D-B2A4-002C-F28B-419E0A32AFA8">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-12 08:46:11 UTC</createdTime>
+<comment><![CDATA[Type of country by postal code system distinguishes the country into those that have a postal code system according to the Univeral Postal Union (UPU), and those that do not.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>EADE65DD-379A-7573-703E-EEC402C9582A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CNTRY_TYP</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C48B5035-5A69-ED62-4C63-D2E541D73AE9" name="Country PK">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-05 08:42:31 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D5344D64-60FF-5EB6-B5FC-A662F608FDBA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

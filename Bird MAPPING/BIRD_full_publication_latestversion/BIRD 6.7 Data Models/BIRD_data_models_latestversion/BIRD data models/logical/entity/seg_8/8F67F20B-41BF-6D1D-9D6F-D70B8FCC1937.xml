@@ -1,0 +1,277 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_8" id="8F67F20B-41BF-6D1D-9D6F-D70B8FCC1937" name="Debt security issued (by the reporting agent) Traditional securitisation assignment">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:34:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Debt security issued (by the reporting agent) Traditional securitisation assignment is the combination of Debt security issued (by the reporting agent) and Traditional securitisation assignment that indicates which Debt security issued (by the reporting agent) is assigned to which Traditional securitisation assignment.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>DBT_SCRTY_ISSD_TRDTNL_SCRTSTN_ASSGNMNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="18318988-1A20-3382-A978-081782EE7F13" value="DFBCAC97-AB56-F94B-DFCD-164610946B39"/>
+<item key="518593AE-88DB-7A9F-8B0A-B7266490AE98" value="0072FBD6-4097-2ACD-2264-954A00A6F475"/>
+<item key="59BC4978-F7DE-607F-65C0-3C154BF33B8F" value="38C620E7-C024-8EC0-01CD-3307DF743DEE"/>
+<item key="BA96842D-F4F5-7E83-7676-163C0068C496" value="8C7696F8-4207-B935-150A-F2A6983828B8"/>
+</foldedAttributesMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Traditional securitisation reference date" id="8C7696F8-4207-B935-150A-F2A6983828B8">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:26 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>0C62A4E9-99EE-D169-3C98-1AF9BE826092</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>6BD853B6-970D-3348-DBCF-6F98D1A25EEB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRDTNL_SCRTSTN_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Traditional securitisation reporting agent identifier" id="38C620E7-C024-8EC0-01CD-3307DF743DEE">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:26 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>0C62A4E9-99EE-D169-3C98-1AF9BE826092</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>930CD809-46CA-1D40-B158-3785FF329F62</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRDTNL_SCRTSTN_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Traditional securitisation accounting consolidation level" id="DFBCAC97-AB56-F94B-DFCD-164610946B39">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>0C62A4E9-99EE-D169-3C98-1AF9BE826092</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>84BE97C0-B85D-3118-0F46-CF11FC74A8C3</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRDTNL_SCRTSTN_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Traditional securitisation identifier" id="480AFAD2-98E4-6886-8D4D-DA6B8D1ADE13">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:26 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>0C62A4E9-99EE-D169-3C98-1AF9BE826092</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>8C46B590-97C8-C3A8-8009-8F3DBF6024D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRDTNL_SCRTSTN_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Traditional securitisation accounting standard" id="0072FBD6-4097-2ACD-2264-954A00A6F475">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>0C62A4E9-99EE-D169-3C98-1AF9BE826092</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>D27194F5-DCB3-9788-C4A4-5BB0FF52D949</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRDTNL_SCRTSTN_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Debt security issued reference date" id="BA96842D-F4F5-7E83-7676-163C0068C496">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>7AEEABF3-5492-AAD1-53FA-4D2309EA7B5F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>866D6180-85AF-80D5-4AC3-E43DB2ABF14E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Debt security issued reporting agent identifier" id="59BC4978-F7DE-607F-65C0-3C154BF33B8F">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>7AEEABF3-5492-AAD1-53FA-4D2309EA7B5F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>070B0910-AF79-5AFF-98CD-DF363A304A91</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Debt security issued accounting consolidation level" id="18318988-1A20-3382-A978-081782EE7F13">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>7AEEABF3-5492-AAD1-53FA-4D2309EA7B5F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>88ECB813-524C-B4A9-277B-3083E827476E</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued accounting standard" id="518593AE-88DB-7A9F-8B0A-B7266490AE98">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>7AEEABF3-5492-AAD1-53FA-4D2309EA7B5F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>80D9374C-AA1C-6E4F-265D-46A8A057F0C0</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued accounting classification" id="7350ED63-43C3-7B58-11B0-00A04395D541">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:45 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>7AEEABF3-5492-AAD1-53FA-4D2309EA7B5F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>F3C7061B-EDCC-8CB9-5055-CFF0E40AD9B0</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A553F1FA-51FD-48C2-A80A-426CA94AD34E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ACCNTNG_CLSSFCTN</preferredAbbreviation>
+</Attribute>
+<Attribute name="Debt security issued identifier" id="9E1AD9AE-E841-3297-2903-5B17EA47EA7E">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:45 UTC</createdTime>
+<comment><![CDATA[The security identifier of the involved debt security.]]></comment>
+<generatorID>7AEEABF3-5492-AAD1-53FA-4D2309EA7B5F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>60D9D0DB-16C9-8A7E-8EAA-1D1A39C21015</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C8B2D4DF-D3C0-5C7B-A657-86866C3DDECD" name="Debt security issued (by the reporting agent) Traditional securitisation assignment PK">
+<createdBy>ostarij</createdBy>
+<createdTime>2024-03-06 15:37:26 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>480AFAD2-98E4-6886-8D4D-DA6B8D1ADE13</attributeRef>
+<attributeRef>8C7696F8-4207-B935-150A-F2A6983828B8</attributeRef>
+<attributeRef>38C620E7-C024-8EC0-01CD-3307DF743DEE</attributeRef>
+<attributeRef>DFBCAC97-AB56-F94B-DFCD-164610946B39</attributeRef>
+<attributeRef>0072FBD6-4097-2ACD-2264-954A00A6F475</attributeRef>
+<attributeRef>BA96842D-F4F5-7E83-7676-163C0068C496</attributeRef>
+<attributeRef>59BC4978-F7DE-607F-65C0-3C154BF33B8F</attributeRef>
+<attributeRef>18318988-1A20-3382-A978-081782EE7F13</attributeRef>
+<attributeRef>518593AE-88DB-7A9F-8B0A-B7266490AE98</attributeRef>
+<attributeRef>7350ED63-43C3-7B58-11B0-00A04395D541</attributeRef>
+<attributeRef>9E1AD9AE-E841-3297-2903-5B17EA47EA7E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

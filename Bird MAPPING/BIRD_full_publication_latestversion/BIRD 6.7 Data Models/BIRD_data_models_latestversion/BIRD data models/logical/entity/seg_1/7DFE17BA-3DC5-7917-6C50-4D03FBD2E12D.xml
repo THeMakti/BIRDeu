@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7DFE17BA-3DC5-7917-6C50-4D03FBD2E12D" name="Other deposit">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:22:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Other deposit is a Deposit fulfilling the definition of Regulation (EU) 549/2013, 5.85:
+Definition: other deposits are deposits other than transferable deposits. Other deposits cannot be used to make payments except on maturity or after an agreed period of notice, and they are not exchangeable for currency or for transferable deposits without some significant restriction or penalty.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>9CCB209C-1981-3086-B589-367D457CE9CD</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>OTHR_DPST</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Other deposit type" id="E8C4A83A-397A-4315-4348-A87E5ED46C26">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:23:07 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between deposits redeemable at notice and deposits with agreed maturity.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>1CE369B3-67A8-F57D-6541-FC411CC7783D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>OTHR_DPST_TYP</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

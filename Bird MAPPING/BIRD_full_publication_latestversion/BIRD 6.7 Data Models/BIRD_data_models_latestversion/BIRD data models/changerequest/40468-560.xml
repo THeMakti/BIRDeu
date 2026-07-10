@@ -1,0 +1,74 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="data attribute in EIL TYP_PRTCTN_VL" id="40468-560">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+In AnaCredit reporting  table Protection received there is the attribute "type of protection value" that we need to add in the EIL, the suggested cube is INSTRMNT_CLLTRL_RCVD_INSTRMNT_ASSGNMNT_EIL 
+
+### Contact person
+@Silvia.Giacinti 
+
+### Description of change request
+Add a Attribute  "type of protection value" in cube INSTRMNT_CLLTRL_RCVD_INSTRMNT_ASSGNMNT_EIL
+the value should be derived as following: 
+"TYP_PRTCTN_VL=TYP_PRTCTN_VL_1 
+IF
+(BIRD_CLLTRL_EIL.FV is not NULL
+OR
+  TYP_CLLTRL in (TYP_PRTCTN_13, TYP_PRTCTN_12, (TYP_PRTCTN_89,       TYP_PRTCTN_86, TYP_PRTCTN_85, TYP_PRTCTN_88, TYP_PRTCTN_84, TYP_PRTCTN_81, TYP_PRTCTN_83), (TYP_PRTCTN_111, TYP_PRTCTN_110))
+OR
+TYP_INSTRMNT_RL = ABSTRCT_INSTRMNT_RL_TYP_39
+AND TYP_INSTRMNT = TYP_INSTRMNT_2
+)
+
+Fair value: When collateral type is Gold, Equity and investment fund shares or units, Other physical collateral or Other protection
+
+(Classifications by instrument Found in Table 114 in Manual part II)"
+"TYP_PRTCTN_VL=TYP_PRTCTN_VL_2 IF 
+(BIRD_CLLTRL_EIL.LT_SSTNBL_VL is not NULL
+OR
+TYP_CLLTRL IN (TYP_PRTCTN_8, TYP_PRTCTN_106, TYP_PRTCTN_107, TYP_PRTCTN_108, TYP_PRTCTN_10)
+)
+
+When type of collateral is Residential real estate collateral, Offices and commercial premises, Commercial real estate collateral "
+"TYP_PRTCTN_VL=TYP_PRTCTN_VL_3 IF 
+(BIRD_CLLTRL_EIL.LT_SSTNBL_VL is not NULL
+OR
+TYP_CLLTRL IN (TYP_PRTCTN_8, TYP_PRTCTN_106, TYP_PRTCTN_107, TYP_PRTCTN_108, TYP_PRTCTN_10)
+)
+
+When type of collateral is Residential real estate collateral, Offices and commercial premises, Commercial real estate collateral "
+"TYP_PRTCTN_VL=TYP_PRTCTN_VL_4 IF 
+(BIRD_CLLTRL_EIL.NTNL_AMNT is not NULL
+OR
+TYP_INSTRMNT in (TYP_INSTRMNT_12, TYP_INSTRMNT_511, TYP_INSTRMNT_512, TYP_INSTRMNT_522, TYP_INSTRMNT_51, TYP_INSTRMNT_80, TYP_INSTRMNT_1022, TYP_INSTRMNT_5, TYP_INSTRMNT_6, TYP_INSTRMNT_7, TYP_INSTRMNT_8, TYP_INSTRMNT_9, TYP_INSTRMNT_10, TYP_INSTRMNT_380, TYP_INSTRMNT_13, TYP_INSTRMNT_14)
+OR
+TYP_CLLTRL IN (TYP_PRTCTN_2, TYP_PRTCTN_66, TYP_PRTCTN_72, TYP_PRTCTN_12, TYP_PRTCTN_77, TYP_PRTCTN_17)
+)
+
+In case the type of protection is Currency, Securitites, Trade receivables, Life insurance policies pledged, Other protection or when we take instruments : deposit, a loan, credit derivative, Financial guarantees other than credit derivatives, other protection, we take notional amount of the instrument."
+
+
+### Summary of impacted LDM objects/attributes
+_INSTRMNT_CLLTRL_RCVD_INSTRMNT_ASSGNMNT_EIL_
+
+### Forward Engineering considerations
+_[Other considerations]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/560</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

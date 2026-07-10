@@ -1,0 +1,38 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Model context in the primary key of Risk position (Kb) per bucket derived data" id="25285-458">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+The entity type _Risk position (Kb) per bucket derived data_ needs to have the model context in the key.
+
+### Contact person
+@Arjan.Bos 
+
+### Description of change request
+Every entity type whose data is under the specific control of the reporting agent needs to have the model context as part of its primary key. Currently _Risk position (Kb) per bucket derived data_ does not have this. We propose to add the model context as part of the key.
+
+### Summary of impacted LDM objects/attributes
+- Risk position (Kb) per bucket derived data
+- Model context
+
+### Forward Engineering considerations
+This will change the primary key for the Enriched Input Layer for _Risk position (Kb) per bucket derived data_.
+
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/458</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

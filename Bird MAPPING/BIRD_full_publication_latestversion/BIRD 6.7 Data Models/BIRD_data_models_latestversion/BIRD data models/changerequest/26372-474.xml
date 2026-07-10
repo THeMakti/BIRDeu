@@ -1,0 +1,59 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Contingent scenario - (CNTNGNT_SCNR)" id="26372-474">
+                    <createdBy>ostarij</createdBy>
+                    <comment># Overview
+
+In Asset Encumbrance, the concept of Contingent scenario is introduced in the "Contingent Encumbrance" template: in this template, institutions are required to calculate the level of asset encumbrance in a number of stressed (fictional) scenario. The underlying general idea of this template is that, under certain specific (fictional) scenario, some of the liabilities that are source of encumbrance could require more protection, and therefore, more assets to be encumbered.
+
+**From Annex XVII**: "_Contingent encumbrance refers to the additional assets which may need to be encumbered when the reporting institutions faces adverse developments triggered by **an external event over which the reporting institution has no control** (including a downgrade, decrease of the fair value of the encumbered assets or a general loss of confidence). In these cases, the reporting institution will need to encumber additional assets as a consequence of already existing transactions. The additional amount of encumbered assets shall be net of the impact of the institution’s hedge transactions against the events described under the aforementioned stressed scenarios._": the "external event…" is the contingent scenario. In other words, we could define the contingent scenario as a set of assumptions used.
+
+The concept of Contingent scenario is currently not included in the LDM, and we need to somehow include it: we will probably need to create an entity for the contingent scenario, (maybe in the part of the model regarding "Risk factor for standardised approach"?). Our opinion is that the new entity for the contingent scenario should be linked to the encumbered assets, but the additional amount that is caused by the contingent scenario shouldn't be stored in the same place of the real encumbered amount as 1. It's not an amount relevant for financial/ balance sheet reporting, and 2. It's not real, just the result of a simulation.
+
+### Contact person
+
+@Arianna.Nuvoli , @Maria_Manuel.Henriques , @Pietro.Ferroni
+
+### Business definition
+
+The scenario A simulates the situation in which there is a decrease of the fair value of the encumbered assets by 30%. This fair value reduction could cause some of the liabilities that are the source of encumbrance to require for more protection and therefore for new assets to be encumbered. In template F 34.00.b the institution needs to report the amount of this additional encumbered assets in the eventuality of scenario A.
+
+According to what AE subgroup members told us, they populate this template via a sort of calculation. More precisely, what we understood is that for Scenario A they decrease the value of the encumbered assets by the 30%, they evaluate the impact on the matching liabilities behind the encumbered assets and then estimate the value of additional encumbered assets.
+
+Scenario B instead is a simulation of a 10% depreciation in each currency in which the institution has aggregate liabilities amounting to or exceeding 5% of the institution’s total liabilities. What we understood from the AE subgroup members is that to fill in the part of the template related to Scenario B, they calculate the required figures separately and manually, and then they add it in the template.
+
+### Legal definition
+
+**Annex XVII**: "_Contingent encumbrance refers to the additional assets which may need to be encumbered when the reporting institutions faces adverse developments triggered by **an external event over which the reporting institution has no control (including a downgrade, decrease of the fair value of the encumbered assets or a general loss of confidence)**\[..\]_"
+
+### Reason for inclusion
+
+AE Integration
+
+### Relationships
+
+The modelling of the contingent scenario should be linked to the assets that can be encumbered.
+
+### Relevant Framework/Template
+
+AE (F 34.00.b, F 34.00.c)
+
+### Additional documentation/links (optional)
+
+The Contingent encumbrance template includes two contingent scenarios, A and B, which are defined in detail in Annex XVII.
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/474</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

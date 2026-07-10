@@ -1,0 +1,434 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="AC25CE06-349E-2EC8-DA05-FFD6B8759432" name="Financial asset instrument">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-08-23 07:45:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Financial asset instrument is an Instrument role where the Instrument acts in the role of a Financial asset (according to the applied accounting standard) where the instrument is intended as an asset, either for the reporting agent or for someone else. 
+Please note that a Financial asset instrument does not necessarily be recognised in the balance sheet.
+Please note too that an instrument can be both an Asset and a Liability at the same time. This can happen, for example, when a debtor overpays the fees and/or installments.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>226B02E3-A364-4829-CFBA-1E41AF016F8E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Financial asset instrument type" id="1B04E384-0C2B-DBD5-8047-257B6D7E0027">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-11-02 16:33:55 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between financial asset instrument that have been recognised in the balance sheet and those that have not been recognised.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>CD5371FB-2510-4E9A-5E41-8EC489A443A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Financial asset instrument type by CRR, Article 123 (Retail exposure)" id="D41DC802-7CDB-6D4F-D3BE-ABC3FDD82919">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-11-03 22:49:09 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between financial assets that may potentially be classified as retail exposures and non-retail exposures.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>60357A64-0605-54CC-4754-3E48E9BA78F9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT_TYP_CRR_123</preferredAbbreviation>
+</Attribute>
+<Attribute name="Financial asset instrument type by interest rate only" id="F82DCDFC-B4C8-D571-13B8-E80AE3BA3FB1">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-11-04 00:09:34 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between financial asset instruments with and without interest-only.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>98AF5502-8D97-692D-A530-E11F9E44F59A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT_TYP_INTRST_RT_ONL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Financial asset instrument type by fixed interest rate" id="990D8AFC-0DBA-4B0A-AFA4-B34FDE0EA29F">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-11-04 00:10:07 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between financial asset instruments with and without fixed interest rate.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>21064080-2482-7530-223B-1B0E3E5B9283</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT_TYP_FXD_INTRST_RT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Financial asset instrument type by renegotiation status" id="0302717A-3405-9C1B-648D-EFA903593445">
+<createdBy>lindomi</createdBy>
+<createdTime>2021-11-04 00:10:38 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between financial asset instruments with and without renegotiations.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A3877C6A-8CC5-2574-2754-4EF1DD90B7AB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT_TYP_RNGTTN_STTS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Subject to impairment indicator" id="D24D5449-BD76-5EEA-D1C2-B7F492A179AA">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-12-11 09:04:48 UTC</createdTime>
+<comment><![CDATA[Subject to impairment indicator indicates whether the Financial asset instrument is subject to impairment or not.]]></comment>
+<generatorID>050CB951-406D-E049-A83B-193AC92FC4CF</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>608EAF4B-E6B6-95B7-ED31-CEF73F3699C4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>CC130ADF-A8E8-DDD1-30A1-ABADCA0C63DC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SBJCT_IMPRMNT_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Amortisation type" id="6A3C10D0-1BAB-22EB-C00F-A42FB685751A">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:44:30 UTC</createdTime>
+<comment><![CDATA[Amortisation type of the Financial asset instrument including principal and interest.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>a8f7e3d5-41d7-4cd4-9952-7ed53c3fe964</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_AMRTSTN</preferredAbbreviation>
+<documents usedDucuments="9C66EFFB-D8C8-713F-E659-2E78086E9D90"/>
+</Attribute>
+<Attribute name="Financial asset instrument Inception date" id="C5B10294-CE33-9766-1CFA-41AE442348EB">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:44:49 UTC</createdTime>
+<comment><![CDATA[Financial asset instrument Inception date is the date on which the current contractual relationship originated, i.e. the date on which the contract agreement of the Financial asset instrument became binding for all parties.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FNNCL_ASST_INSTRMNT_INCPTN_DT</preferredAbbreviation>
+<documents usedDucuments="9C66EFFB-D8C8-713F-E659-2E78086E9D90"/>
+</Attribute>
+<Attribute name="Commitment amount at inception" id="65663185-9A19-C784-BE6B-C1CC405F9463">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:46:56 UTC</createdTime>
+<comment><![CDATA[Commitment amount at inception is the Observed agent's maximum exposure to credit risk on the inception date of the financial asset instrument, without taking into account any protection held or other credit enhancements. Total commitment amount on the inception date is established during the approval process and is intended to restrict an observed agent's amount of credit risk to a given counterparty for the relevant instrument.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CMMTMNT_INCPTN</preferredAbbreviation>
+<documents usedDucuments="9C66EFFB-D8C8-713F-E659-2E78086E9D90"/>
+</Attribute>
+<Attribute name="Specialised lending exposure type" id="5E4D1DFB-EB8E-7509-2C17-20A98E34C3E2">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:47:59 UTC</createdTime>
+<comment><![CDATA[An attribute  to specify what is the specialised lending type of an exposure.
+
+According to CRR3 art 147 (8): Those exposures shall be assigned to the exposure class referred to in paragraph 2, point (c)(ii), and shall be categorised as follows: “project finance” (PF), “object finance” (OF), “commodity finance” (CF) and “income-producing real estate” (IPRE).’]]></comment>
+<generatorID>450DB64E-6847-5032-B2A4-E0610A3F3D8E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>6B4E611E-4C0B-6CF4-481F-26D1D9FEF85E</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>F280EF3B-D5EA-8BEB-EFD4-D54B56058AD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SPCLSD_LNDNG_EXPSR_TYP</preferredAbbreviation>
+<changeRequests>
+<requestID>36388-526</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Purpose type" id="E50CD4CF-3604-3E5F-DF41-0EBE312BE90F">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:48:24 UTC</createdTime>
+<comment><![CDATA[Purpose type is the classification of Financial asset instruments according to their purpose.]]></comment>
+<generatorID>F8302FD0-CEA5-EE6A-795C-46B20AD72558</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>4DD92212-C3BD-5B09-43E9-B274E747D7D1</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2078935d-1737-4bb9-9d29-db62cdd50597</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRPS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Exposure with recourse indicator" id="4EADF7E7-6870-D68A-AE1F-9ECA048785DB">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:48:39 UTC</createdTime>
+<comment><![CDATA[Exposure with recourse indicator specifies if a Financial asset instrument is an instrument with or without recourse.]]></comment>
+<generatorID>C16D36F7-9386-67A2-E71A-1468EA250128</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>0DF0D7C2-6461-B720-545F-EC6898741BD1</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>53E48821-1FB9-9C6C-80A9-B24F4838801F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EXPSR_RCRS_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Settlement date" id="79D29CAD-D896-7CE4-ECF1-711750991E0D">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:49:58 UTC</createdTime>
+<comment><![CDATA[Settlement date is the date on which the conditions specified in the contract are or can be executed for the first time, i.e. the date on which the financial asset instrument is initially exchanged or created.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DT_STTLMNT</preferredAbbreviation>
+<documents usedDucuments="9C66EFFB-D8C8-713F-E659-2E78086E9D90"/>
+</Attribute>
+<Attribute name="Interest rate" id="A7B23432-7004-B349-78EA-604FA48406D7">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:50:29 UTC</createdTime>
+<comment><![CDATA[Interest rate is the annualised agreed rate or narrowly defined interest rate in accordance with Regulation (EU) No 1072/2013 of the European Central Bank (ECB/2013/34) that is applicable to the Financial asset instrument.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>BC929BBF-3702-4146-9332-0B5F419F991E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ANNLSD_AGRD_RT</preferredAbbreviation>
+<documents usedDucuments="9C66EFFB-D8C8-713F-E659-2E78086E9D90"/>
+</Attribute>
+<Attribute name="Next interest rate reset date" id="CC0CF47C-97E5-E539-14F5-3D9499BAF595">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 09:50:37 UTC</createdTime>
+<comment><![CDATA[Next interest rate reset date is the date that the next interest rate reset, as defined in Part 3 of Annex I to Regulation (EU) No 1071/2013 (ECB/2013/33), takes place for the Financial asset instrument. If the Financial asset instrument is not subject to a future interest rate reset, its legal final maturity date will be reported.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DT_NXT_INTRST_RT_RST</preferredAbbreviation>
+<documents usedDucuments="9C66EFFB-D8C8-713F-E659-2E78086E9D90"/>
+</Attribute>
+<Attribute name="Interest rate reset frequency" id="789850E7-BE4B-0CE4-2DDB-2A1AD807C85F">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 10:27:28 UTC</createdTime>
+<comment><![CDATA[Interest rate reset frequency is the frequency at which the interest rate is reset after the initial fixed-rate period, if any for the Financial asset instrument.]]></comment>
+<generatorID>FBB263F7-B508-3758-3027-CB58042D773A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>CBF7683E-6623-3D3F-089C-37BBF6BD4080</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A174855F-FB77-C069-AB48-AE80BD319354</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INTRST_RT_RST_FRQNCY</preferredAbbreviation>
+</Attribute>
+<Attribute name="Payment frequency" id="B3F96EDC-391E-053B-4948-DED1DF112EB5">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 10:27:28 UTC</createdTime>
+<comment><![CDATA[Payment frequency classifies the frequency of payments due, either of principal or interest, i.e. number of months between payments for the Financial asset instrument.]]></comment>
+<generatorID>4351C24B-F14B-9361-27A9-ECA3FBCD4A56</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>8FAEDFFF-F9FC-30B1-6AA8-761011A06B7F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7729ef45-af00-4b2d-b134-9612797deb10</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PYMNT_FRQNCY</preferredAbbreviation>
+</Attribute>
+<Attribute name="Subordinated debt indicator" id="CCFA7494-568F-56B2-2CDA-EA6DCFD59D30">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 10:27:28 UTC</createdTime>
+<comment><![CDATA[Subordinated debt indicator specifies if the Financial asset instrument is considered as subordinated debt or not.]]></comment>
+<generatorID>D22D98E8-F1CE-8EFD-F108-66E8029835CD</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>D3052AD2-E569-1411-5DB7-6B819CB6A6CB</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>FA2F0B8B-27AA-8340-CCE3-031C5FF66E03</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SBRDNTD_DBT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Type of interest rate" id="20B61171-F1C4-DD02-16BF-1AA6118FC609">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-01-26 10:27:28 UTC</createdTime>
+<comment><![CDATA[Type of interest rate classifies credit exposures based on the base rate for establishing the interest rate for each payment period.]]></comment>
+<generatorID>411D1435-F095-AD5E-B190-A3C3CB26CB58</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>5F84A72B-5D33-94F6-714F-44E8ACB0E36A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bec0df9e-570b-4870-bd58-3f5f0a33c1c7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_INTRST_RT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Past due financial asset instrument indicator" id="67230107-0B76-89FC-09E0-0E3C551B0356">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-02-07 07:20:19 UTC</createdTime>
+<comment><![CDATA[Past due financial instrument indicator distinguishes Financial instrument into whether or not its payments are being considered late, or past due.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>0954E815-84CB-CAF6-8CB2-D30B3D7B033D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PST_DU_FNNCL_ASST_INSTRMNT_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Accumulated write-offs" id="9B37F649-B208-D988-C590-5A183606AE79">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-09-26 10:25:09 UTC</createdTime>
+<comment><![CDATA[Accumulated write-offs is the Cumulative amount of principal and past due interest of any non-balance sheet recognised financial asset instrument that the institution is no longer recognising because they are considered uncollectible, independently of the portfolio in which they were included. Write-offs could be caused both by reductions in the carrying amount of financial assets recognised directly in profit or loss and by reductions in the amounts of the allowance accounts for credit losses set off against the carrying amount of financial assets.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCMLTD_WRTFFS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Encumbered asset indicator" id="B9E6E90F-C3FF-3680-31D7-032B5F6277ED">
+<createdBy>reddigj</createdBy>
+<createdTime>2026-01-21 12:33:21 UTC</createdTime>
+<comment><![CDATA[Encumbered asset indicator signals whether the asset is encumbered or not.]]></comment>
+<generatorID>1DED57B2-2C9A-FA1A-7C64-247101121FA6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>80DB8721-57CF-002D-52CF-B495CE72436C</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>B601809B-D51A-4008-91C7-43667208E447</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ENCMBRD_ASST_INDCTR</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="30FE22A5-7D6D-B178-7F24-11F6D029B691" name="Equity instrument that is not a security as a hedge">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:15:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan and advance as a hedge is a Loan and advance role where the Loan and advance instrument acts as a non-derivative hedge.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>EQT_INSTRMNT_NT_SCRT_HDG</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+<requestID>34227-511</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Equity instrument reference date" id="00FE0519-C371-8043-B8C9-30B96418D63D">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:24:07 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>E85215D3-072A-95A2-8335-0295CC00A2DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>9ECE8643-3670-4EAE-A455-B5EF4C2CE45A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQT_INSTRMNT_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Equity instrument reporting agent identifier" id="5DACA5ED-EBF3-85B6-C581-6BC3A7C1F65E">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:24:07 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>E85215D3-072A-95A2-8335-0295CC00A2DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>BB6D9386-34F3-FCB8-F6D0-4BB43D4EAAA8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQT_INSTRMNT_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Equity instrument accounting consolidation level" id="80CABF3B-BD25-0E5B-9844-7360E2356F6A">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:24:07 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>E85215D3-072A-95A2-8335-0295CC00A2DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>5274804D-A835-BDD4-2A63-D4CA298D7206</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQT_INSTRMNT_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Equity instrument accounting standard" id="64D21510-2D3F-8D22-45BC-697D62379983">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:24:07 UTC</createdTime>
+<generatorID>E85215D3-072A-95A2-8335-0295CC00A2DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>95450026-8D1A-CC69-C91F-F52DCE1C328F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQT_INSTRMNT_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Equity instrument identifier" id="D91EE132-6A06-D2C6-73F8-5F274EEF4DF2">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:24:07 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>E85215D3-072A-95A2-8335-0295CC00A2DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>F7859051-3E5A-9707-1E2B-67B4383135E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EQT_INSTRMNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Type of hedge" id="BA201912-15C1-7623-F56D-AF754961B8B0">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 14:12:10 UTC</createdTime>
+<comment><![CDATA[Type of hedge applicable under the relevant accounting standard.]]></comment>
+<generatorID>05EF8246-C73D-4BC6-7588-7462FC4C3FD9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>67703C00-6D9A-78C2-FF6D-8112E2ED9E60</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>5a3d5ddf-993e-4140-8c68-0f78a0b0c5bb</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_HDG</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Accounting hedge indicator" id="DBA3EB57-6536-A408-4458-0F2D38031DA3">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 14:55:49 UTC</createdTime>
+<comment><![CDATA[An indicator specifying if the hedge is considered an accounting hedge or not.]]></comment>
+<generatorID>D890C458-ECFE-6859-01DC-66EB60228335</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>AAF36D56-1761-3296-FE65-4400277E3F66</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>67BB8028-D0A7-E1BE-DD13-29EB4D4788D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCNTNG_HDG_INDCTR</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3736F929-A53F-3FBA-F85E-BC07D3340C3E" name="Equity instrument that is not a security as a hedge PK">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 13:24:07 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>00FE0519-C371-8043-B8C9-30B96418D63D</attributeRef>
+<attributeRef>5DACA5ED-EBF3-85B6-C581-6BC3A7C1F65E</attributeRef>
+<attributeRef>80CABF3B-BD25-0E5B-9844-7360E2356F6A</attributeRef>
+<attributeRef>64D21510-2D3F-8D22-45BC-697D62379983</attributeRef>
+<attributeRef>D91EE132-6A06-D2C6-73F8-5F274EEF4DF2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

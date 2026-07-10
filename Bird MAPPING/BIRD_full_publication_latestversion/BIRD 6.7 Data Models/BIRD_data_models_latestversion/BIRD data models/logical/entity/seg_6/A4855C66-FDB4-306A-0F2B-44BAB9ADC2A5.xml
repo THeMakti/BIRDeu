@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="A4855C66-FDB4-306A-0F2B-44BAB9ADC2A5" name="Non-performing debt security">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-10-25 12:41:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Non-performing debt security is a debt security that is classified as non-performing.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>BE76A78F-7CDB-648D-9F71-76109033434A</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>NN_PRFRMNG_DBT_SCRTY</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Non-performing exit criteria met indicator" id="E039B655-5D69-A3E4-BD0B-B7F404BC02FC">
+<createdBy>ostarij</createdBy>
+<createdTime>2023-10-25 13:30:44 UTC</createdTime>
+<comment><![CDATA[Non-performing forborne exposures that failed to meet the non-performing exit criteria.]]></comment>
+<generatorID>2DE63ED3-3488-6730-E399-D078324C0E9C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>BC4D9918-6BBA-EAE6-37D3-67C7E48B91CD</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D48531D1-F9C0-AFE2-212A-9198FA2A14E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>NN_PRFRMNG_EXT_CRTR_MT_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Performing status reason" id="C987AF6E-9052-6935-58DF-0CBB28C06598">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-02-02 14:40:28 UTC</createdTime>
+<comment><![CDATA[The reason for the choice of Performing status]]></comment>
+<generatorID>6A4EAEC4-C387-E7BB-6EF2-71E04595DB6D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<constraintName>Performing status reason</constraintName>
+<referedAttribute>F282F3BB-F2A7-8AA9-E9EF-9E7AC2C4AC71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>DAD0EBDC-488E-1BB8-0C1D-C0B6C87C30C6</domain>
+<listOfValues>
+<valueDef value="0" description="Not Applicable"/>
+<valueDef value="2" description="Failed reclassification to performing at end of probation period"/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRFRMNG_STTS_RSN</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

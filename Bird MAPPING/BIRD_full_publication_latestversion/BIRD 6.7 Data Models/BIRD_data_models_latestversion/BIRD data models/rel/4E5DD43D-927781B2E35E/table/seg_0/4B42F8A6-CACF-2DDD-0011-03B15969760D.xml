@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B42F8A6-CACF-2DDD-0011-03B15969760D" name="DBT_SCRTY_ISSD_DRVD_DT">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Debt security issued (by the reporting agent) derived data is extra information about Debt security issued (by the reporting agent) that can be derived from other information in the model.
+]]></commentInRDBMS>
+<generatorID>293B135E-4BE8-D75B-C459-0B4AE236D639</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SCRTY_RFRNC_DT" id="4B185BC3-3E36-8ABA-3AC3-FB60A228F93C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>D05B2324-E58E-16C0-DE73-97345EB4A9AD</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF62399D-8E9E-FB92-7B4E-FA9CA4C4322E" referredColumn="77175673-49E5-BC61-BBFE-81B9FCABACE1"/>
+</associations>
+</Column>
+<Column name="SCRTY_RPRTNG_AGNT_ID" id="DC4C0566-5CDD-63FC-F43F-C643D88B44B9">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>38E1F8EB-259E-EBED-7A0E-75B56CDB6BCD</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF62399D-8E9E-FB92-7B4E-FA9CA4C4322E" referredColumn="3C3C79C3-91B5-348A-1E7C-C5DD49E0138B"/>
+</associations>
+</Column>
+<Column name="SCRTY_ID" id="15E25360-C68D-B18F-5B1C-3D234E82D44F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The security identifier of the involved debt security.]]></comment>
+<generatorID>A5B5CE47-9A48-F88D-348D-D92453013B3B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF62399D-8E9E-FB92-7B4E-FA9CA4C4322E" referredColumn="5A632BF6-D3FF-B32C-0E17-57CE9B09C477"/>
+</associations>
+</Column>
+<Column name="SCRTY_EXCHNG_TRDBL_DRVTV_ACCNTNG_CNSLDTN_LVL" id="9375DC08-6357-629E-BB4E-C5F4E88F3D1C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>7798B189-96B6-6A4B-1A99-307EB950154E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF62399D-8E9E-FB92-7B4E-FA9CA4C4322E" referredColumn="5FA269B5-E271-582D-5AC8-55999DA2D98D"/>
+</associations>
+</Column>
+<Column name="SCRTY_EXCHNG_TRDBL_DRVTV_ACCNTNG_STNDRD" id="2617C69B-5039-308D-2175-183AA1C5420D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>DE900446-0600-49EF-017A-DD433F8F5381</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF62399D-8E9E-FB92-7B4E-FA9CA4C4322E" referredColumn="E7822D99-60FC-D594-42C5-DBDB39A22B0B"/>
+</associations>
+</Column>
+<Column name="ACCNTNG_CLSSFCTN" id="35D581F9-296E-1601-8096-8EA956C504DA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>77B49E34-5936-26FD-BCE1-7F87920B752E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A553F1FA-51FD-48C2-A80A-426CA94AD34E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF62399D-8E9E-FB92-7B4E-FA9CA4C4322E" referredColumn="B437B73B-AFF7-9327-4A71-8DA055D1C2F5"/>
+</associations>
+</Column>
+<Column name="ASST_ENCMBRNC_SRC_INDCTR" id="AECE4B40-E042-0F4F-FDE9-6AC2D3F8F0AB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Asset encumbrance source indicator signals whether the liabity or off-balance sheet item is a source of encumbrance for an asset or not.]]></comment>
+<generatorID>F9C412B4-BC0C-AE22-504F-D4D462B4AD6B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>760D4A10-7EAF-40F3-93F6-1596CE29B357</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ASST_ENCMBRNC_RSDL_MTRTY_BND" id="83D5AFB3-1FDE-DBB5-A3AD-39D4BC19FEE3">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Asset encumbrance residual maturity band divides the remaining maturity of the asset into the specific maturity band applicable to asset encumbrance reporting.]]></comment>
+<generatorID>4569EA17-2947-0D27-5B40-356CFFC52E38</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>85A72566-C4C7-D7B8-7BCB-6243CE0CDA7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D84C3B4C-2A76-E892-01FC-84B3C96D8C0B" name="DBT_SCRTY_ISSD_DRVD_DT_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>9010F121-BF74-480B-0806-4EFB35218BDA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B185BC3-3E36-8ABA-3AC3-FB60A228F93C"/>
+<colUsage columnID="DC4C0566-5CDD-63FC-F43F-C643D88B44B9"/>
+<colUsage columnID="15E25360-C68D-B18F-5B1C-3D234E82D44F"/>
+<colUsage columnID="9375DC08-6357-629E-BB4E-C5F4E88F3D1C"/>
+<colUsage columnID="2617C69B-5039-308D-2175-183AA1C5420D"/>
+<colUsage columnID="35D581F9-296E-1601-8096-8EA956C504DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13482049-020B-E8FA-4ACB-3871EB9D1A70" name="DBT_SCRTY_ISSD_DRVD_DT_DBT_SCRTY_ISSD_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:16 UTC</createdTime>
+<generatorID>660A09BC-9482-83E7-146E-7DD06BD07CEC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B185BC3-3E36-8ABA-3AC3-FB60A228F93C"/>
+<colUsage columnID="DC4C0566-5CDD-63FC-F43F-C643D88B44B9"/>
+<colUsage columnID="9375DC08-6357-629E-BB4E-C5F4E88F3D1C"/>
+<colUsage columnID="2617C69B-5039-308D-2175-183AA1C5420D"/>
+<colUsage columnID="15E25360-C68D-B18F-5B1C-3D234E82D44F"/>
+<colUsage columnID="35D581F9-296E-1601-8096-8EA956C504DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="8E67D172-8CAF-E89F-8047-C839E6491B85" name="LN_EXCLDNG_RPRCHS_AGRMNT_DRVD_DT">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan (excluding repurchase agreement) derived data is additional information about Loan (excluding repurchase agreement) 
+]]></commentInRDBMS>
+<generatorID>FAD7D90B-080B-90E8-CC31-C4C1885818FB</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INSTRMNT_RFRNC_DT" id="01B8B60B-63C2-CC2D-B2D6-C1F990643756">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>60DA6DEB-47FC-5FCA-A854-53B0030883F4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48C5C139-48B4-05AE-E840-CA6C1A553086" referredColumn="15CFFD31-F4F0-4411-35A3-D76CF00203CC"/>
+</associations>
+</Column>
+<Column name="INSTRMNT_RPRTNG_AGNT_ID" id="95974F72-AACC-E51C-B202-B11919D64512">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>6F2CF027-C4CB-5F0F-88D7-1A26641CAEB0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48C5C139-48B4-05AE-E840-CA6C1A553086" referredColumn="B8C3B03A-DCAD-0017-3117-94B77E7C6461"/>
+</associations>
+</Column>
+<Column name="INSTRMNT_ACCNTNG_CNSLDTN_LVL" id="3547DE69-3FBE-AED3-FF59-7E2F674A9523">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>61A50342-7FB9-3107-D372-1C8B883B98AC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48C5C139-48B4-05AE-E840-CA6C1A553086" referredColumn="9AA5676A-7BA3-7A1A-ECEA-C5B0DDBC9B09"/>
+</associations>
+</Column>
+<Column name="INSTRMNT_ACCNTNG_STNDRD" id="C5A6ED0F-56CC-4A3D-8234-D57EE912DCE6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>6B3B8E56-1C93-263F-9DD7-DE1FBA6A2EE4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48C5C139-48B4-05AE-E840-CA6C1A553086" referredColumn="EE0261FC-4A87-B892-7EF1-7C1374ED80D6"/>
+</associations>
+</Column>
+<Column name="INSTRMNT_ID" id="5AA337BD-D99B-6236-A71B-975E1377210D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>2471EC39-439B-4D00-DFEA-4940B05BA070</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48C5C139-48B4-05AE-E840-CA6C1A553086" referredColumn="43E728EC-30B1-61D3-5902-2875D4C2184C"/>
+</associations>
+</Column>
+<Column name="CMMRCL_RL_ESTT_LN_INDCTR" id="64E81DAB-3C65-5F8D-B5A5-86E809D14C54">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A Commercial real estate loan indicator distinguishes Loan (excluding repurchase agreement) derived data whether it is a commercial real estate loan or not.]]></comment>
+<generatorID>092F4A14-AF4F-9F34-9AB4-79BDF50A59B2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>29DE22BE-049A-8E06-7604-618C67DD23ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRRNT_LTV_RT" id="B2263407-448E-233A-3116-176F210C1256">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Current loan-to-value ratio (LTV-C) means the sum of all loans or loan tranches secured by the borrower on a property at the reporting date relative to the current value of the property (ESRB), allocated per Loan (excluding repurchase agreement) derived data.]]></comment>
+<generatorID>DFEF6C55-FBE1-B4D2-5FA6-633395051B6A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>A602B33C-0004-D05B-A4E1-4A2339C606D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2873CBBB-C3E2-FC6D-D227-AB218304DF23" name="LN_EXCLDNG_RPRCHS_AGRMNT_DRVD_DT_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>BAB8B3E4-5FE6-9352-2737-5548EADC5646</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01B8B60B-63C2-CC2D-B2D6-C1F990643756"/>
+<colUsage columnID="95974F72-AACC-E51C-B202-B11919D64512"/>
+<colUsage columnID="3547DE69-3FBE-AED3-FF59-7E2F674A9523"/>
+<colUsage columnID="C5A6ED0F-56CC-4A3D-8234-D57EE912DCE6"/>
+<colUsage columnID="5AA337BD-D99B-6236-A71B-975E1377210D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80B99816-9BC6-51F8-77D3-1DF7201BFB0E" name="LN_EXCLDNG_RPRCHS_AGRMNT_DRVD_DT_INSTRMNT_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:16 UTC</createdTime>
+<generatorID>EBF0808B-B6EC-BE7C-DEA1-C5933F2C1998</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01B8B60B-63C2-CC2D-B2D6-C1F990643756"/>
+<colUsage columnID="95974F72-AACC-E51C-B202-B11919D64512"/>
+<colUsage columnID="3547DE69-3FBE-AED3-FF59-7E2F674A9523"/>
+<colUsage columnID="C5A6ED0F-56CC-4A3D-8234-D57EE912DCE6"/>
+<colUsage columnID="5AA337BD-D99B-6236-A71B-975E1377210D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

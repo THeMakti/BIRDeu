@@ -1,0 +1,37 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Input information for Source of encumbrance for loans (according to AnaCredit) is missing" id="8348-5">
+                    <createdBy>ostarij</createdBy>
+                    <comment>AnaCredit requirement for Source of encumbrance is missing in the LDM.
+
+**\[Update for AE requirements\]**
+
+Information about the Source of encumbrance is required in F 32.03.a, F 32.04.b, F 34.00.b/c, F 35.00.a/b/d, F 36.01.a, F 36.02.a.
+
+The possible values for the source of encumbrance, as specified in F 32.04.a, are: _Derivatives, Deposits, Debt securities issued, Loan commitments received, Financial guarantee received, Securities borrowed with no cash collateral, Other commitments received._
+
+What is important to underline is that the source of encumbrance should be linked to:
+
+1. The **items that are the source of encumbrance** (listed in F 32.04.a):
+   * _Derivatives_
+   * _Deposits_
+   * _Debt securities issued_
+   * _Loan commitments received_
+   * _Financial guarantee received_
+   * _Securities borrowed with no cash collateral_
+   * _Other commitments received_
+2. The **items that can be encumbered because of the source of encumbrance**:
+   * Assets (Loans and advances, debt securities, equities, others(Cash on hands, Derivatives, Tangible assets, Intangible assets, Tax assets))
+   * Collateral Received (Loans and advances, debt securities, equities, Derivatives, Immaterial rights, Physical collaterals (real estate, aircraft, ship, property plants and equipment, gold etc.))
+   * Collateral given (only if the source of encumbrance is Own debt securities issued that are covered bonds or securitisation, please see F 32.03.a), please see collateral received
+   * Own debt instruments issued other than securitisations and covered bonds</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/5</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

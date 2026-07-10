@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="E0F148A0-9C9D-A606-1568-84FF4AB58583" name="Debt security with underlying assets">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 11:04:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Debt security with underlying assets is a Debt security where the cash flow of the Debt security is dependent on the cash flow of the underlying assets.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>BE76A78F-7CDB-648D-9F71-76109033434A</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>DBT_SCRTY_WTH_UNDRLYNG_ASSTS</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Geographical location of collateral" id="3F42B7EC-8B55-2177-C565-7969CD9C303F">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 11:06:54 UTC</createdTime>
+<comment><![CDATA[The country code of the location of the collateral according to ISO3166.]]></comment>
+<generatorID>660C6944-BAC1-0133-A49C-4C960C630C70</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>D5344D64-60FF-5EB6-B5FC-A662F608FDBA</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E832EA39-67C9-4303-AD29-B66510B666C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RL_ESTT_CLLTRL_LCTN</preferredAbbreviation>
+</Attribute>
+<Attribute name="Debt security with underlying assets type" id="96C9B5A9-F918-7F39-E230-92B87C328A0B">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 11:05:04 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between asset backed securities and covered bonds.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9BEB51AD-3E96-832B-92B2-89F5DC2CB45E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_WTH_UNDRLYNG_ASSTS_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Collateral geographical location for SHS" id="846985E8-D75A-A0E9-C342-54C8DA448CB0">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-05-19 10:44:45 UTC</createdTime>
+<comment><![CDATA[Geographical allocation of the underlying assets as defined by the SHS regulation.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>3CB48CB4-92AE-4A38-BCCE-7262DB1FB560</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CLLTRL_GGRPHCL_LCTN_SHS</preferredAbbreviation>
+<changeRequests>
+<requestID>21826-396</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Type of asset provided as security" id="D1B4508B-FD5A-FE87-A246-43710977DC41">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-07-19 09:40:11 UTC</createdTime>
+<comment><![CDATA[Specifies the type of asset backed security or covered bond, e.g. mortgage backed securities.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>14a53626-5051-48c4-9f5f-27de8fe64abf</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_ASST_PRVDD_SCRTY</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

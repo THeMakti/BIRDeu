@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="68E6CBD4-FAA8-68A0-31D1-1DDE81E3072B" name="Factoring cash reserve">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:06:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Factoring cash reserve is a cash reserve of a Factoring transaction. If such a cash reserve is not represented as a collateral it is registered as a Factoring cash reserve.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>FCTRNG_CSH_RSRV</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Factoring reference date" id="E3C7EAA5-FA23-0B38-5173-63C5EAF95AE5">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-02-03 16:49:20 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>9E6ED67A-B33C-09A4-FB0E-7531F05193B3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>9ECE8643-3670-4EAE-A455-B5EF4C2CE45A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FCTRNG_INSTRMNT_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Factoring reporting agent identifier" id="39AEC183-3E3F-7EAE-0D86-DAC79002C323">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-02-03 16:52:48 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>9E6ED67A-B33C-09A4-FB0E-7531F05193B3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>BB6D9386-34F3-FCB8-F6D0-4BB43D4EAAA8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FCTRNG_INSTRMNT_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Factoring accounting consolidation level" id="6182C4AC-33C9-4D91-C973-7D3823660431">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>9E6ED67A-B33C-09A4-FB0E-7531F05193B3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>5274804D-A835-BDD4-2A63-D4CA298D7206</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FCTRNG_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Factoring accounting standard" id="A3682FEE-0812-0E1E-6428-B10D1661D51A">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>9E6ED67A-B33C-09A4-FB0E-7531F05193B3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>95450026-8D1A-CC69-C91F-F52DCE1C328F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FCTRNG_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Factoring identifier" id="DD61ACC6-DDDE-CA84-8043-BA78677585D7">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:09:05 UTC</createdTime>
+<comment><![CDATA[The instrument identifier of the involved factoring (operation).]]></comment>
+<generatorID>9E6ED67A-B33C-09A4-FB0E-7531F05193B3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>F7859051-3E5A-9707-1E2B-67B4383135E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FCTRNG_INSTRMNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Cash reserve amount" id="53DC5CD2-42C1-5430-35D0-DA4090DAF86D">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:08:04 UTC</createdTime>
+<comment><![CDATA[The cash reserve of a factoring operation.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CSH_RSRV_AMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Cash reserve maturity date" id="79CB94FB-A6D3-52A7-6EFD-F4D6D56B0766">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:08:13 UTC</createdTime>
+<comment><![CDATA[ The contractual maturity date of the cash reserve (acting as protection), which is the earliest date at which the cash reserve may terminate or be terminated, taking into account any agreements amending initial contracts.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DT_CSH_RSRV_MTRTY</preferredAbbreviation>
+</Attribute>
+<Attribute name="Original cash reserve amount" id="F5E87718-D12B-93D0-F888-F5C86911C86E">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:08:26 UTC</createdTime>
+<comment><![CDATA[The original cash reserve amount of a factoring operation.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ORGNL_CSH_RSRV_AMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Original cash reserve amount date" id="942B6CBF-076E-A324-D397-056AA21356D5">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:08:40 UTC</createdTime>
+<comment><![CDATA[Original cash reserve amount date.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DT_ORGNL_CSH_RSRV_AMNT</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8532C503-280D-ACE7-D67C-F4CA9A835BF6" name="Factoring cash reserve PK">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 12:09:20 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E3C7EAA5-FA23-0B38-5173-63C5EAF95AE5</attributeRef>
+<attributeRef>39AEC183-3E3F-7EAE-0D86-DAC79002C323</attributeRef>
+<attributeRef>DD61ACC6-DDDE-CA84-8043-BA78677585D7</attributeRef>
+<attributeRef>6182C4AC-33C9-4D91-C973-7D3823660431</attributeRef>
+<attributeRef>A3682FEE-0812-0E1E-6428-B10D1661D51A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,36 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name='Inclusion of the "FINREP reporting scheme" information in BIRD metadata' id="40443-559">
+                    <createdBy>ostarij</createdBy>
+                    <comment>Regulation (EU) 2015/534 introduces three additional categories of supervisory financial reporting (FINREP) schemes that may be submitted by reporting agents, in addition to the full supervisory financial reporting (Full FINREP) under Articles 11 and 12 of Implementing Regulation (EU) 2021/451 for the reporting of supervisory financial information:
+
+1.	Simplified supervisory financial reporting
+2.	Over-simplified supervisory financial reporting
+3.	Supervisory financial reporting data points
+
+The reporting obligations for these additional categories are set out in the annexes of Regulation (EU) 2015/534. Although these schemes require smaller sets of data to be reported compared to full reporting, they are still based on Annexes III and IV of Implementing Regulation (EU) 2021/451.
+
+If the new input information “FINREP reporting scheme” is added to the BIRD metadata, the generation of differentiated reporting obligations could be made explicit, thereby supporting reporting agents in the preparation of their submissions.
+
+The input information “FINREP reporting scheme”, could have the following domain values:
+
+1. Full
+2. Simplified
+3. Over-simplified
+4. Data points
+
+This variable would be used in data generation as a filter to determine whether a specific template or data point should be generated.
+
+One modelling option would be to add the new variable “FINREP reporting scheme” to the Party section, referring to the reporting agent as a Party.
+
+Furthermore, it should be considered that if this new type of information is adopted in the data model, it may subsequently be necessary to introduce similar variables for other frameworks with differing output schemes.</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/559</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

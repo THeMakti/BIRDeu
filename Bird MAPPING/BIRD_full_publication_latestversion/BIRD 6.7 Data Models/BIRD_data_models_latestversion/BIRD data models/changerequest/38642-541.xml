@@ -1,0 +1,44 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Optional enumerated attributes in derived data entity types" id="38642-541">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+
+Given the currently applied convention for optionality of enumerated attributes - which is btw in contrast to Codd's 'systematic treatment of null values' - it seems that the optionality of some enumerated attributes in derived data entity types is incorrect.
+
+For example, the attribute `Financial asset instrument derived data`.`Performing status` is optional although it is an enumerated attribute.
+
+Please note that this situation is present in other locations in the model as well, for example `Balance sheet recognised financial asset instrument derived data`.`Transfer between impairment stages` - this might be a systematic issue (check forward engineering scripts).
+
+### Contact person
+
+dominik.lin-ully@oenb.at
+
+### Background information
+_[info]_
+
+### Points/Questions to resolve
+
+* please reflect on the treatment of null values
+* if the given convention is considered appropriate and there is a good reason to violate the 'systematic treatment of null values', please apply the given convention consistently
+* if the given convention is considered appropriate, maybe explore the possibility to implement validations (e.g., using SQL data modeler's validation functionality) to avoid future inconsistencies
+
+### Related issues
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/541</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

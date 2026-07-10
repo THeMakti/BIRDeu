@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="A1658D0B-EBAD-7991-5177-2104D751D16D" name="International securities identification number security">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 10:28:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[An International securities identification number security is a Security that has a (registered) International securities identification number (ISIN).]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>6B9C4C46-5617-E783-1C65-FB2BF74222E9</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>ISIN_SCRTY</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="International securities identification number" id="0689794B-B794-54F6-E2E8-5423E2E5612E">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 10:29:59 UTC</createdTime>
+<comment><![CDATA[ISIN of the security.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>5B032320-5201-9F8C-998B-035ADD0AB08B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ISIN</preferredAbbreviation>
+</Attribute>
+<Attribute name="Listed indicator" id="1E23FB00-C779-4FD7-4C3F-7D9EE6147476">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-08-04 09:15:43 UTC</createdTime>
+<comment><![CDATA[An indicator specifying is a security is listed or not.]]></comment>
+<generatorID>9853E6FF-FCED-6913-A0B4-C623437A307B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>793C0030-9180-8AB2-6846-40AAC0C75342</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D3E22836-F370-4F07-4EA5-D5D8CFA2EC97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LSTD_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Negotiable security indicator" id="88D0E793-9FC7-B8B6-D898-9E55DEF3AD64">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-10-24 15:00:59 UTC</createdTime>
+<comment><![CDATA[Negotiable security indicator indicates whether or not the ownership of the International securities identification number security is readily capable of being transferred from one unit to another by delivery or endorsement or of being offset in the case of financial derivatives.
+
+While any security can be potentially traded, negotiable securties are designed to be traded on an organised exchange or over-the-counter, although actual trading is not a necessary condition for negotiability.
+An instrument that does not fulfill these conditions is meant to be ‘non-negotiable’.]]></comment>
+<generatorID>B81FFFE3-A762-D522-D5F3-493CC07F33AE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>E4AF92AB-0D11-9675-3778-A46142332231</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>0EC0AF75-3EE0-0A5D-4028-A80BA692B3E0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>NGTBL_SCRTY_INDCTR</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

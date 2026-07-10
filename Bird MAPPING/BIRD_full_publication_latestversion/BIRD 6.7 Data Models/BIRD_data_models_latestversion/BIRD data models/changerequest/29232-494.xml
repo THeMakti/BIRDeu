@@ -1,0 +1,48 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[IReF] Materiality threshold and technical issue indicator needed for Past due date" id="29232-494">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+Past Due date in FINREP is differently interpreted than in AnaCredit. AnaCredit does not do the materiality threshold. And technical past due (because of a technical issue you can ignore it in FINREP, not in AnaCredit). EU 2018/171. 
+
+### Contact person
+@Olivia.Hauet 
+@Arjan.Bos 
+
+### Description of change request
+The reporting of the `Past due date` in AnaCredit is very straightforward. No matter the reason or the amount due or the amount of time past, the moment an _Instrument_ payment is past its due date, that moment becomes the `Past due date` for that _Instrument_.
+
+In FINREP, the interpretation of the moment of past due, must take the materiality threshold into account - how material is the fact that the payment is late. There is a threshold for this, and the moment the late payment is over that threshold, the `Past due date` starts. For retail exposures, the threshold is EUR 100 or equivalent, for non-retail exposures this threshold differs per _Asset class_.
+
+FINREP also takes the `Technical issue indicator` into account. Was the reason for the late payment because of a technical issue (and thus presumably outside of the control of the _Debtor_), then it does not count as past due and there is no `Date past due`.
+
+Therefore BIRD needs to consider the inclusion of the following attributes:
+- `Materiality threshold amount`
+- `Technical issue indicator`
+
+And perhaps model the distinction between retail and non-retail exposures and its impact on the materiality threshold.
+- Retail / non-retail exposure indicator
+- Asset class
+
+### Legal reference
+[Commission Delegated Regulation (EU) 2018/171 of 19 October 2017 on supplementing Regulation (EU) No 575/2013 of the European Parliament and of the Council with regard to regulatory technical standards for the materiality threshold for credit obligations past due (Text with EEA relevance. )](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32018R0171)
+
+### Summary of impacted LDM objects/attributes
+Impacted are all objects where the `Date past due` is located in the LDM:
+- Credit facility risk data
+- Debt security
+- Past due financial asset instrument</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/494</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

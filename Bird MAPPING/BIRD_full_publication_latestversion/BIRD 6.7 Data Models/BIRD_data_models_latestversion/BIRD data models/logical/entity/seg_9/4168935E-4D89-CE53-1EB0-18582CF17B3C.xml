@@ -1,0 +1,371 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="4168935E-4D89-CE53-1EB0-18582CF17B3C" name="Debt security issued (by the reporting agent) Protection arrangement given assignment">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:28:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Debt security issued (by the reporting agent) Protection arrangement assignment is the combination of Debt security issued and Protection arrangement stating which Debt security issued is protected by which Protection arrangement.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>DBT_SCRTY_ISSD_PRTCN_ARRNGMNT_GVN_ASSGNMNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="5709B3E3-3C28-70B1-14E4-247888502DAC" value="8CCC0F00-9AC0-6F6C-FE9A-8F7A2997C0AD"/>
+<item key="C6AFA8CF-FB54-02CF-3D6E-E75D848DE3C3" value="48C9E976-DBE9-A3CA-E69E-F698D18D0E68"/>
+<item key="D7862EB4-836C-D3CA-AE45-ECB29048A9AA" value="29C33616-4DBC-088D-D851-FDBD7F326864"/>
+<item key="EC2798DD-D05E-7628-22FA-86C6BB50A5AE" value="6E18E2DB-FF38-1BEA-EA11-906CE25C38A3"/>
+</foldedAttributesMap>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Debt security issued reference date" id="EC2798DD-D05E-7628-22FA-86C6BB50A5AE">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>F387D74B-2054-E38F-B9F0-EECB96968023</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>866D6180-85AF-80D5-4AC3-E43DB2ABF14E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued reporting agent identifier" id="C6AFA8CF-FB54-02CF-3D6E-E75D848DE3C3">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>F387D74B-2054-E38F-B9F0-EECB96968023</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>070B0910-AF79-5AFF-98CD-DF363A304A91</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued accounting consolidation level" id="D7862EB4-836C-D3CA-AE45-ECB29048A9AA">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>F387D74B-2054-E38F-B9F0-EECB96968023</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>88ECB813-524C-B4A9-277B-3083E827476E</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued accounting standard" id="5709B3E3-3C28-70B1-14E4-247888502DAC">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<generatorID>F387D74B-2054-E38F-B9F0-EECB96968023</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>80D9374C-AA1C-6E4F-265D-46A8A057F0C0</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued identifier" id="02A6DF9B-2812-CE9D-11F4-01FA46575713">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<comment><![CDATA[The security identifier of the involved debt security.]]></comment>
+<generatorID>F387D74B-2054-E38F-B9F0-EECB96968023</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>60D9D0DB-16C9-8A7E-8EAA-1D1A39C21015</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Debt security issued accounting classification" id="E2167B1A-7BC5-E7E1-CEFF-7E93C33EEA82">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>F387D74B-2054-E38F-B9F0-EECB96968023</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>F3C7061B-EDCC-8CB9-5055-CFF0E40AD9B0</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A553F1FA-51FD-48C2-A80A-426CA94AD34E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DBT_SCRTY_ISSD_ACCNTNG_CLSSFCTN</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection arrangement given reference date" id="6E18E2DB-FF38-1BEA-EA11-906CE25C38A3">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-10 16:54:35 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>F0934B10-7DAD-7B19-9C12-60E31DF3BF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>49DD79A0-EB28-40C0-9860-7BFA3A433D0A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ARRNGMNT_GVN_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection arrangement given reporting agent identifier" id="48C9E976-DBE9-A3CA-E69E-F698D18D0E68">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-10 16:54:35 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>F0934B10-7DAD-7B19-9C12-60E31DF3BF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>9AA89963-DDDE-915C-593E-5F46081DEC26</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ARRNGMNT_GVN_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection arrangement given accounting consolidation level" id="29C33616-4DBC-088D-D851-FDBD7F326864">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-10 16:54:35 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>F0934B10-7DAD-7B19-9C12-60E31DF3BF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>4E47C9F1-CC2B-AB62-04D1-73B78296398F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ARRNGMNT_GVN_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection arrangement given accounting standard" id="8CCC0F00-9AC0-6F6C-FE9A-8F7A2997C0AD">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-10 16:54:35 UTC</createdTime>
+<generatorID>F0934B10-7DAD-7B19-9C12-60E31DF3BF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>C4C51168-0772-8D4E-1A09-F1DF137F3106</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ARRNGMNT_GVN_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection arrangement given identifier" id="F2573E0B-8D27-69DA-E699-BDA11381D329">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-10 16:54:35 UTC</createdTime>
+<comment><![CDATA[An identifier to univocally identify each protection arragement.]]></comment>
+<generatorID>F0934B10-7DAD-7B19-9C12-60E31DF3BF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>2D387F3C-F08F-1923-AB6A-6DEF1189D89B</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ARRNGMNT_GVN_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection arrangement given role type" id="9A9CC9CA-4FEF-3BEF-51CC-EA6B32BA0730">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-10 16:54:35 UTC</createdTime>
+<comment><![CDATA[Protection arrangement role type distinguishes the Protection arrangement role according to their nature.]]></comment>
+<generatorID>F0934B10-7DAD-7B19-9C12-60E31DF3BF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>05307721-D94C-2EE2-DA7B-24F0A2FAFE50</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>BF3F5E49-902F-48B2-AE67-4C33CC7F9C5D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ARRNGMNT_GVN_RL_TYP</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Protection allocated value" id="7E097EDA-9E8B-B227-86A1-EC27CC9387B4">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-01-17 15:05:23 UTC</createdTime>
+<comment><![CDATA[Protection allocated value is the maximum amount of the protection value, via the Protection arrangement, that can be considered as credit protection for the Long security position. For protections that is eligible under Regulation (EU) No 575/2013, this value should be reported in accordance with Part 2 of Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ALLCTD_VL</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Allocated unused collateral value" id="75C57FE8-485B-9D34-57EE-DC759E4A963A">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-01-17 15:05:23 UTC</createdTime>
+<comment><![CDATA[Allocated unused collateral value is an amount that expresses the protection value that is not used for risk mitigation and, for FINREP reporting purposes is allocated to a specific Loan and advance, which is the Long non-negotiable security position.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>A602B33C-0004-D05B-A4E1-4A2339C606D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ALLCTD_UNSD_CLLTRL_VL</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+<requestID>34227-511</requestID>
+</changeRequests>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E829E17-54A3-E6E7-6830-5A483F8BCCC1" name="Debt security issued (by the reporting agent) Protection arrangement assignment PK">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-06 13:30:47 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>F387D74B-2054-E38F-B9F0-EECB96968023,F0934B10-7DAD-7B19-9C12-60E31DF3BF55</newElementsIDs>
+<usedAttributes>
+<attributeRef>EC2798DD-D05E-7628-22FA-86C6BB50A5AE</attributeRef>
+<attributeRef>C6AFA8CF-FB54-02CF-3D6E-E75D848DE3C3</attributeRef>
+<attributeRef>D7862EB4-836C-D3CA-AE45-ECB29048A9AA</attributeRef>
+<attributeRef>5709B3E3-3C28-70B1-14E4-247888502DAC</attributeRef>
+<attributeRef>02A6DF9B-2812-CE9D-11F4-01FA46575713</attributeRef>
+<attributeRef>E2167B1A-7BC5-E7E1-CEFF-7E93C33EEA82</attributeRef>
+<attributeRef>6E18E2DB-FF38-1BEA-EA11-906CE25C38A3</attributeRef>
+<attributeRef>48C9E976-DBE9-A3CA-E69E-F698D18D0E68</attributeRef>
+<attributeRef>29C33616-4DBC-088D-D851-FDBD7F326864</attributeRef>
+<attributeRef>8CCC0F00-9AC0-6F6C-FE9A-8F7A2997C0AD</attributeRef>
+<attributeRef>F2573E0B-8D27-69DA-E699-BDA11381D329</attributeRef>
+<attributeRef>9A9CC9CA-4FEF-3BEF-51CC-EA6B32BA0730</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

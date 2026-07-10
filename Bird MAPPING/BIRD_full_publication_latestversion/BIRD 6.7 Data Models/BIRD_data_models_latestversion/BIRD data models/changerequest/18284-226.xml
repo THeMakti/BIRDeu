@@ -1,0 +1,55 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[Asset Sec] New entities required: ABCP Programme and ABCP securitisation" id="18284-226">
+                    <createdBy>ostarij</createdBy>
+                    <comment>See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab)
+
+
+# Overview
+Asset-backed commercial papers (ABCP) securitisations consist of 2 levels: the ABCP programme (sometimes called conduit) and the ABCP transaction. There can be a many to many relationship between them.
+In all COREP reporting, but also ESMA, the securitisations reported should have one of the following types:
+ABCP Programme, ABCP transaction, Traditional non-ABCP, Synthetic. The type of securitisation in COREP can therefore be derived from the subtype of the entity where the securitisation is defined.
+At the moment, not all requirements for ABCP are clear but we can start creating the entities and the relationships. I will complete the other requirements later.
+
+
+### Contact person
+olivia.hauet@ecb.europa.eu arjan.bos@ecb.europa.eu
+
+### Business definition
+_[Business requirements]_
+
+### Legal definition
+Article 2 of the SECR
+(7) ‘asset-backed commercial paper programme’ or ‘ABCP programme’ means a programme of securitisations the
+securities issued by which predominantly take the form of asset-backed commercial paper with an original
+maturity of one year or less;
+(8) ‘asset-backed commercial paper transaction’ or ‘ABCP transaction’ means a securitisation within an ABCP
+programme;
+
+### Reason for inclusion
+COREP
+
+### Relationships
+ABCP Programme
+ABCP Transaction
+
+### Relevant Framework/Template
+C 14.00, C 14.01, C 13.01
+
+### Additional documentation/links (optional)
+_[Additional info]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/226</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="7BB9CCDD-F967-3F1D-37E4-AC8ADD17E4C9" name="Risk_position_(Kb)_per_bucket_derived_data">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[The risk position for bucket b, K(b), must be determined by aggregating the weighted sensitivities to risk factors within the same bucket using the corresponding prescribed correlation ρ(kl)
+
+KB per bucket is a term used in the standardised approach for market risk under FRTB. It is the risk capital requirement for a given bucket of risk factors within a risk class. It is computed as an aggregation of risk positions first at the bucket level, and then across buckets within a risk class defined for the sensitivities-based method.
+
+A bucket is a set of risk factors that are grouped together by common characteristics (eg all tenors of interest rate curves for the same currency), as defined in MAR21.39 to MAR21.892. A risk position is the portion of the risk of an instrument that relates to a risk factor.
+
+(https://www.bis.org/basel_framework/chapter/MAR/21.htm?inforce=20230101&published=20200327)]]></commentInRDBMS>
+<generatorID>66398151-2CB1-A911-4B68-334948A9F8D0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>1B94F88B-CE04-E04E-DE88-6866B6DBCB24</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Risk_position_(Kb)_per_bucket_derived_data_reference_date" id="C20B0E28-641E-5933-481B-C731D5E16BF2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>08B52EC9-7787-4080-AE04-C424F5418C91</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Risk_position_(Kb)_per_bucket_derived_data_reporting_agent_identifier" id="01B4EC8C-5487-7360-68B8-B5266EE6BD52">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>BDF936C4-708F-6CDD-752C-353811FEED64</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Risk_position_(Kb)_per_bucket_derived_data_accounting_consolidation_level" id="F7F89D2C-175A-B157-1455-FC5679A514DB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>3581E43C-8BAC-F1BC-C0B5-4FFABFEA47A3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Risk_position_(Kb)_per_bucket_derived_data_accounting_standard" id="EA2F4938-17F0-DE10-FE62-1CC547C240F0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>6817020D-3F86-503D-FE56-7EF2C229BD7E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bucket_identifier" id="B25E865A-C27D-7DAB-E1F3-641D24234C72">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The bucket identifier, for example the currency for interest rate risk factors.]]></comment>
+<generatorID>EA2BDDE2-0B7C-966C-7FAF-F1521644DA1F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="General_interest_rate_risk_(GIRR)_delta_Risk_position_(Kb)" id="DBF089D1-247F-2FDF-6313-935CF9CB70CC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[delta related  KB as defined in bcbs d457 21.4 (4)
+
+Within bucket aggregation: the risk position for delta (respectively vega) bucket b, must be determined by aggregating the weighted sensitivities to risk factors within the same bucket using the prescribed correlation set out in the following formula, where the quantity within the square root function is floored at zero
+
+https://www.bis.org/bcbs/publ/d457.pdf]]></comment>
+<generatorID>1B1E2DB9-A1B1-9F44-35C0-91BCCF65C387</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D7167EE-1C41-5807-1960-655E3225EF21" name="Risk_position_(Kb)_per_bucket_derived_data_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>CE1E00B6-CE3E-C36D-A315-1D09F852A3C5</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B25E865A-C27D-7DAB-E1F3-641D24234C72"/>
+<colUsage columnID="C20B0E28-641E-5933-481B-C731D5E16BF2"/>
+<colUsage columnID="01B4EC8C-5487-7360-68B8-B5266EE6BD52"/>
+<colUsage columnID="F7F89D2C-175A-B157-1455-FC5679A514DB"/>
+<colUsage columnID="EA2F4938-17F0-DE10-FE62-1CC547C240F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

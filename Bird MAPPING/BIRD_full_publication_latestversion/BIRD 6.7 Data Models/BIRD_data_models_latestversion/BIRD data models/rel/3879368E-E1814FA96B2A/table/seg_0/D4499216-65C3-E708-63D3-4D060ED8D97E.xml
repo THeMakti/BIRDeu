@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4499216-65C3-E708-63D3-4D060ED8D97E" name="INTRST_RT_RSK_HDG_PRTFL">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Interest rate risk hedge portfolio are the portfolio of instruments whose hedged postions need to be reported as one with the rows called 'Fair value changes of the hedged items in portfolio hedge of interest rate risk'.
+
+See https://www.ifrs.org/content/dam/ifrs/meetings/2010/september/iasb/vbfi0910b14bobs.pdf]]></commentInRDBMS>
+<generatorID>6492E8D9-FD91-6B31-CE87-B8CF6C5292F6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>33380944-8442-174B-069A-88F99EEEC3DC</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DT_RFRNC" id="B7444A75-0C61-B069-218A-BABF58B5A845">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>00CAEA22-F905-AEF4-A9FA-68F176120296</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RPRTNG_AGNT_ID" id="63FB2939-1EB4-B3D9-DD6D-F40B026E52FE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>1A15BB0E-BF90-6B27-C108-A932A692C78C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCNTNG_CNSLDTN_LVL" id="C43F9DDE-141F-EDE2-08BD-CBE2D1F871B6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>3A37765E-2C6F-4BE4-B3F5-391A83E243D3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCNTNG_STNDRD" id="1E7D0E0C-3C41-06D2-79A4-48E15676F5AB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>8DC1903B-3420-58AE-D8B4-2FBE2CFFD0EA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DMSTC_ACTVT_INDCTR" id="C7C2C4B7-A9B5-BFF0-EE85-2D08C33EF53A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Domestic activities indicator distinguishes the Interest rate risk hedge portfolio between domestic and non-domestic activities from the perspective of the reporting agent.]]></comment>
+<generatorID>F6521C85-6D25-8921-AFA0-4A4B30C18965</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>0F4AEE41-2C04-1243-46F9-4EEE91ED64A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HDGD_PRTFL_ASST_LBLTY_INDCTR" id="4F429137-C3F8-404C-3EEB-AA0E40A8CC1C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Hedged portfolio  asset or liability indicator classifies  the Interest rate risk hedge portfolio  into assets or liabilities.]]></comment>
+<generatorID>E8FF6C2C-2170-7729-48D4-F5B4D3130A13</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2ACF47DC-3D82-40B2-BD17-1A2C391133E3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HDGD_ITMS_FV_CHNGS" id="466D2EF9-3963-750F-DD6B-BDC57EBF88EB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Fair value changes of the hedged items in portfolio hedge of interest rate risk]]></comment>
+<generatorID>6DA28979-C228-900B-EE23-776FDCC0619F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19BD8673-BBDC-D208-5E00-B4C80CC1C690" name="INTRST_RT_RSK_HDG_PRTFL_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>C2B875AD-142C-FF8E-7244-76413B1F509B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7444A75-0C61-B069-218A-BABF58B5A845"/>
+<colUsage columnID="63FB2939-1EB4-B3D9-DD6D-F40B026E52FE"/>
+<colUsage columnID="C43F9DDE-141F-EDE2-08BD-CBE2D1F871B6"/>
+<colUsage columnID="1E7D0E0C-3C41-06D2-79A4-48E15676F5AB"/>
+<colUsage columnID="C7C2C4B7-A9B5-BFF0-EE85-2D08C33EF53A"/>
+<colUsage columnID="4F429137-C3F8-404C-3EEB-AA0E40A8CC1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

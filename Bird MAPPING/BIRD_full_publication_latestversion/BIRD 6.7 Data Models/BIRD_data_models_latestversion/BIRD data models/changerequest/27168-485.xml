@@ -1,0 +1,77 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Own debt securities issued" id="27168-485">
+                    <createdBy>ostarij</createdBy>
+                    <comment># Overview
+
+In AE Encumbrance, information about **Own debt securities** are often required. Own debt securities issued are company's own debt instruments that have been bought back from investors.  Therefore we refer to the situation where the bank has raised debt instruments to raise funds and then subsequently buys back some of these securities from investors. These repurchased debt securities are considered "own" because the issuer now holds them.
+
+In AE they distinguish between:
+
+* Own debt securities issued other than own covered bonds or securitisations
+* Own covered bonds and securitisation issued and not yet pledged
+
+Currently in the LDM we have a specific entity for debt security issued, linked to the debt security by the relationship 'Debt security issued (by the reporting agent) acts as **Financial liability** in the form of a debt security issued'
+
+![image.png](/uploads/616e30df0655838d0bdd3fabf255a853/image.png)The concept of own debt security issued differentiates from the one of debt security issued included in the model as own debt securities issued are not recognised as liabilities anymore. Hence, we need to be able to differentiate between own debt securities issued and (not own) debt securities issued.
+
+### Contact person
+
+@Arianna.Nuvoli @Maria_Manuel.De_Amaro_Brito_Henriques @Pietro.Ferroni
+
+### Business definition
+
+_\[Business requirements\]_
+
+### Legal definition
+
+_Annex XVII:_
+
+**Own debt securities issued other than own covered bonds or securitisations:**
+
+Own debt securities issued retained by the reporting institution that are not own covered bonds issued or own securitisations issued. As the retained or repurchased own debt securities issued, according to IAS 39.42, decrease the relating financial liabilities, these securities shall not be included in the category of assets of the reporting institution (row 010 of the AE-ASS template). Own debt securities that may not be derecognised from the balance sheet by a non-IFRS institution shall be included in this row.
+
+Own covered bonds issued or own securitisations issued shall not be reported in this category since different rules apply to those cases to avoid double counting:
+
+(a)   where the own debt securities are pledged, the amount of the cover pool/underlying assets that are backing those securities retained and pledged shall be reported in the AE-ASS template as encumbered assets;
+
+(b) where the own debt securities are not yet pledged, the amount of the cover pool/underlying assets that are backing those securities retained and not yet pledged shall be reported in the AE-ASS templates as non-encumbered assets. Additional information about this second type of own debt securities not yet pledged (underlying assets, fair value and eligibility of those available for encumbrance and nominal of those non‑available for encumbrance) shall be reported in the AE-NPL template.
+
+**Own covered bonds and securitisation issued and not yet pledged:**
+
+Own covered bonds and securitisations issued that are retained by the reporting institution and not encumbered. To avoid double counting, the following rule applies in relation to own covered bonds and securitisations issued and retained by the reporting institution:
+
+(a) where those securities are pledged, the amount of the cover pool/underlying assets that are backing them shall be reported in Template AE-ASS (F32.01) as encumbered assets. The source of funding in the event of pledging own covered bonds and securitisations is the new transaction in which the securities are being pledged (central bank funding or other type of secured funding) and not the original issuance of covered bonds or securitisations;
+
+(b) where those securities are not yet pledged, the amount of the cover pool/underlying assets that are backing those securities shall be reported in Template AE-ASS (F32.01) as non-encumbered assets.
+
+### Reason for inclusion
+_AE integration_
+
+### Relationships
+
+_\[Related objects\]_
+
+### Relevant Framework/Template
+
+F 32.02.a/b, F 32.03.b, F 32.04.b, F 33.00.a, F 34.00.b, F 34.00.c, F 36.02.a/b/c
+
+### Additional documentation/links (optional)
+
+_\[Additional info\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/485</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

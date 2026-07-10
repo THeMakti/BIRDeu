@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="A6BB0BF2-2285-739D-4F21-B9133B1A362B" name="Rating system applied to a Legal person">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-12 13:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Rating system applied to a Party is the combination of a Numeric rating system and a Party that indicates which Party is evaluated based on which Numeric rating system with which Probability of Default.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<typeID>6E05D22A-D6DB-0396-42A2-4B1DB49EB60E</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>RTNG_SYSTM_APPLD_LGL_PRSN</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="19C19E83-D368-9239-BDA6-8E7D2FA9B36C" value="D66122A2-60AE-C23F-0549-4FAA65A79F4B"/>
+<item key="97F29667-C922-15F0-96B8-FB70C85FC280" value="75417731-06D7-511A-0818-66F850AFD14B"/>
+</foldedAttributesMap>
+<changeRequests>
+<requestID>12859-110</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Rating system name" id="567788C1-DBF4-C0E5-79E2-7198F2E5F8E1">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-12 13:52:51 UTC</createdTime>
+<comment><![CDATA[The rating system's name.]]></comment>
+<generatorID>67A9C8AC-BC21-CB50-2F8A-5BE8A2E01D15</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>F63C3864-115A-97D4-FC33-9977C667E63A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RTNG_SYSTM_NM</preferredAbbreviation>
+</Attribute>
+<Attribute name="Rating agency name" id="C7B1AC4A-3524-A97E-73D3-6EB6259D9F9C">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-12 13:52:51 UTC</createdTime>
+<comment><![CDATA[The rating agency's name.]]></comment>
+<generatorID>67A9C8AC-BC21-CB50-2F8A-5BE8A2E01D15</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>2DF56884-6689-48F6-12A4-A3655E39122C</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RTNG_AGNCY_NM</preferredAbbreviation>
+</Attribute>
+<Attribute name="Legal person reference date" id="19C19E83-D368-9239-BDA6-8E7D2FA9B36C">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-02-03 16:49:19 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>F870BA3F-4883-2C5A-BF1D-D398AD9026B6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>851796BA-2B71-AB0C-A560-CDAAE3D5E0B4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DT_RFRNC</preferredAbbreviation>
+</Attribute>
+<Attribute name="Legal person reporting agent identifier" id="97F29667-C922-15F0-96B8-FB70C85FC280">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-02-03 16:52:48 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>F870BA3F-4883-2C5A-BF1D-D398AD9026B6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>3695D06F-9FD6-E16A-D880-CC403FF2604D</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Legal person accounting consolidation level" id="D3D8EDE2-87AD-4CF9-9C3E-7FC307B0AA16">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:11:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>F870BA3F-4883-2C5A-BF1D-D398AD9026B6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>1FA372AA-F7EF-6AB2-11E7-D9D4161379D2</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LGL_PRSN_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Legal person accounting standard" id="90DEC643-59E8-ABEE-9D60-933D7739281E">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-06 08:12:05 UTC</createdTime>
+<generatorID>F870BA3F-4883-2C5A-BF1D-D398AD9026B6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>C70BC1CA-D4B1-AFA2-6A14-3DEC0A49C3EC</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LGL_PRSN_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>12298-92</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Legal person identifier" id="FB6A884E-85B1-A9CD-9A8A-A5507BB50FBA">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-12 13:53:30 UTC</createdTime>
+<comment><![CDATA[An identifier that uniquely identifies a party.]]></comment>
+<generatorID>F870BA3F-4883-2C5A-BF1D-D398AD9026B6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>7AF04655-DC9B-5CAB-249B-924D25012A59</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTY_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Probability of default" id="8824DC85-8C97-67F8-ADE5-05C9CE54E3D3">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-12 13:48:17 UTC</createdTime>
+<comment><![CDATA[The counterparty’s probability of default over one year determined in accordance with Articles 160, 163, 179 and 180 of Regulation (EU) No 575/2013.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>8100266E-F750-48D0-B98A-821400187560</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PD</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4CDF94F-CF59-6558-C27F-D2487E35C7BD" name="Rating system applied to a Legal person PK">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-12 13:52:51 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>567788C1-DBF4-C0E5-79E2-7198F2E5F8E1</attributeRef>
+<attributeRef>C7B1AC4A-3524-A97E-73D3-6EB6259D9F9C</attributeRef>
+<attributeRef>FB6A884E-85B1-A9CD-9A8A-A5507BB50FBA</attributeRef>
+<attributeRef>19C19E83-D368-9239-BDA6-8E7D2FA9B36C</attributeRef>
+<attributeRef>97F29667-C922-15F0-96B8-FB70C85FC280</attributeRef>
+<attributeRef>D3D8EDE2-87AD-4CF9-9C3E-7FC307B0AA16</attributeRef>
+<attributeRef>90DEC643-59E8-ABEE-9D60-933D7739281E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

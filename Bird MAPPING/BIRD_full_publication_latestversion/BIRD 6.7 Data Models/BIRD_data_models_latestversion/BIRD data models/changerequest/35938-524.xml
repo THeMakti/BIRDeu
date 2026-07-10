@@ -1,0 +1,131 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Review Loan hierarchy" id="35938-524">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+The _Loan_ hierarchy in the BIRD LDM needs to be reviewed. The WS DM members feel it does not accurately fit the reporting requirements for loans, especially when _Deposit_ has been moved out of the _Loan_ hierarchy in issue #501. See also issue #522 
+
+&gt; ![462-ae-requirements-deposits-and-repurchase-agreements](/uploads/4139cede351ae169d0171e5193b5a7a6/462-ae-requirements-deposits-and-repurchase-agreements.png)
+
+&gt; (please ignore the "new" labels, they are a left-over of the picture in issue #462)
+
+&gt; Part of this picture is already implemented because of #462 and #501.
+
+### Contact person
+_[me@ecb.europa.eu]_
+
+### Background information
+I agree to the seperate Instument type, as shown in the screenshot above.
+
+We require a own instrument category for deposits (In accorddance with BSI and especially to enable granular tranformation rules for different areas, e.g. FinRep Product, AnaCredit Type of Instrument)
+
+ **However**, there is a lack of precision in the sub-categories for loans. In my opinion, this should be more detailed, analogous to the AnaCredit regulation following the **Type of instrument** ANNEX IV (p.77/144). There is a loand sub type which we do not have and which could reduce confusion if we reference to the definitions.
+
+[REGULATION (EU) 2016/ 867 OF THE EUROPEAN CENTRAL BANK - of 18 May 2016 - on the collection of granular credit and credit risk data (ECB/ 2016/ 13)](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0867)
+
+\-          **Deposits other than reverse repurchase agreements**
+
+In the OeNB Data Model the instrument type for GKE is accordingly defined „EI- Deposits with other Institutions“. (Add info, what is GKE: Granular Credit Reporting – includes the requirements for AnaCredit and the local Central Credit Register).
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;EI&lt;/td&gt;
+&lt;td&gt;Einlagen bei anderen Instituten&lt;/td&gt;
+&lt;td&gt;
+
+In den GKE-Überleitungen sind diese Instrumente unter **01. Kredite und Kreditzusagen** einzuordnen.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+This sub-category of loans is derived by the ESA (European System of Accounts) of the Counterparty (only for the category loans - other sub-types like reverse repo are exlcuded and derived seperatly).
+
+Codeliste [MDI - Instrument_Art_SL](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#mab323fda-4a33-4d4e-9a5d-98a24f5baaee)
+
+Algorithm [MDI - Art des Instruments](https://www.oenb.at/mdi/entity/m3dbf5c39-55fd-4773-b8b5-af6f5edfe12e?initWithVersion=5.7&amp;lang=DE)
+
+Excerpt of the algorithm XEN_Instrument_type:
+
+SONST WENN(_geschaeftsfallkategorie_ ENTHAELT ("[Wechselkredit (B)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#mf8e3ac97-434a-4f69-85ea-8a551ffeefef)", "[Barvorlagen (E)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m5bf4d5c0-143a-454c-b413-70c7ceddf6fd)", "[Einmalkredit (exkl. Kreditlinie) (X)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m78f5f4d4-20d7-4987-8038-2f46c1e88e45)", "[Kreditlinie (Y)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m4ff38f8c-ccc1-4fbe-beba-aa54b707a956)", "[Überziehungskredit (W)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#mfb77fd8e-4037-4ed8-bf3d-34ccdd5b7c14)", "[Kreditkartenkredit (C)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m073e49aa-03d5-44a3-815e-e4031d973dc9)", "[Revolvierender Kredit (exkl. Überziehungskredit) (V)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m404d6a91-b0ce-48e3-add9-c5a6c3964bda)", "[Operating Leasing (F)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m8698e992-9178-451c-9080-cc366ebed0b0)", "[Finance Leasing (G)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m3b0ffd5e-abe7-4402-9002-517010ce6bf3)")) DANN
+
+_//Kreditzusagen, deren allgemeine Geschäftsbedingungen nicht fixiert sind, werden grundsätzlich als Sonstige Zusagen klassifiziert (Und sind damit keine Instrumente gem. AnaCredit). Eine Ausnahme hiervon sind Mehrzweckrahmen-Geschäftsfälle, wenn unter ihnen eine revolvierende Ausnutzung ohne Sublimit existiert und sie einen NAR \&gt; 0 haben. Diese gelten als revolvierende Kredite._ 
+
+WENN(_allgemGBfixiert_ ISTGLEICH FALSCH) DANN
+
+WENN (_mehrzweckrahmenKZ_ ISTGLEICH WAHR UND _existiertRevolvierendeAusnutzungOhneSublimit_ ISTGLEICH WAHR UND _nar_ \&gt; 0) DANN
+
+_rValue =_ "[Revolvierende Kredite (RK)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#mf1b52de2-3ee2-4ede-b58a-75ce34928cf5)"
+
+SONST
+
+_rValue_ = "[Sonstige Zusagen (SZ)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#m4e1a175b-b1db-42fc-984d-190c6bddc555)"
+
+ENDE
+
+SONST WENN(_repoKZ_) DANN
+
+_rValue =_ "[Umgekehrte Pensionsgeschäfte (UP)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#mb53188f9-211e-44fd-81f7-4bcd7d19d6fa)"
+
+**SONST WENN(_esvgCode_ ENTHAELT ("**[**Zentralbank (1210)**](https://www.oenb.at/mdi/entity/m506931dd-af87-43e7-b9da-1c3b3beca4b5?initWithVersion=5.7&amp;lang=DE#mab5de3eb-efda-45a3-9a7d-0cb3ac7ea092)**", "**[**MFIs - CRD - MiRe-pflichtig (1220A)**](https://www.oenb.at/mdi/entity/m506931dd-af87-43e7-b9da-1c3b3beca4b5?initWithVersion=5.7&amp;lang=DE#m57bdaa73-32b4-41ef-b27e-a9ece3149bac)**", "**[**MFIs - Nicht-CRD, other MFI's (1220B)**](https://www.oenb.at/mdi/entity/m506931dd-af87-43e7-b9da-1c3b3beca4b5?initWithVersion=5.7&amp;lang=DE#m94495d5b-3a4d-4650-a229-e68d1d4a25dc)**", "**[**CRD - nicht MiRe-pflichtig (1220C)**](https://www.oenb.at/mdi/entity/m506931dd-af87-43e7-b9da-1c3b3beca4b5?initWithVersion=5.7&amp;lang=DE#m229fc58a-086f-4117-b648-213e86950c3b)**", "**[**Kreditinstitute (MFI) nicht zuordenbar (1220Z)**](https://www.oenb.at/mdi/entity/m506931dd-af87-43e7-b9da-1c3b3beca4b5?initWithVersion=5.7&amp;lang=DE#m178afa3f-5170-4d9e-9f57-d28c92a423a9)**")) DANN**
+
+**_rValue =_ "**[**Einlagen bei anderen Instituten (EI)**](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#mab323fda-4a33-4d4e-9a5d-98a24f5baaee)**"**
+
+SONST WENN(_forderungsAnVerkauf_ ENTHAELT ("[Ankauf ohne Einfluss auf die Bilanz (AO)](https://www.oenb.at/mdi/entity/m6c953856-2b2b-497c-8c05-e70bcab8fd10?initWithVersion=5.7&amp;lang=DE#m1a881de4-02fd-4629-a930-f8df1ef66d50)", "[Ankauf mit Einfluss auf die Bilanz (AM)](https://www.oenb.at/mdi/entity/m6c953856-2b2b-497c-8c05-e70bcab8fd10?initWithVersion=5.7&amp;lang=DE#m45fd22ca-0d34-410e-8fed-bdf51845b9b1)") UND _factoringKennzeichen_ ISTGLEICH WAHR) DANN
+
+_rValue =_ "[Forderungen aus Lieferungen und Leistungen (FW)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#m13b53ceb-1edd-456c-a799-4293bfc8b4a4)"
+
+SONST WENN(_geschaeftsfallkategorie_ ISTGLEICH "[Kreditlinie (Y)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m4ff38f8c-ccc1-4fbe-beba-aa54b707a956)") DANN
+
+_rValue =_ "[Kreditlinien ohne revolvierende Kredite (KL)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#m1ac9b4d5-6dc2-462e-a6f4-64b378b1dfc9)"
+
+SONST WENN(_geschaeftsfallkategorie_ ISTGLEICH "[Überziehungskredit (W)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#mfb77fd8e-4037-4ed8-bf3d-34ccdd5b7c14)") DANN
+
+_rValue =_ "[Überziehungskredite (UE)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#me1382461-fe7c-42eb-8473-4e16c7889f4d)"
+
+SONST WENN(_geschaeftsfallkategorie_ ISTGLEICH "[Kreditkartenkredit (C)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m073e49aa-03d5-44a3-815e-e4031d973dc9)") DANN
+
+_rValue =_ "[Kreditkartenkredite (KK)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#md7f026be-670b-4111-801b-6bf2f10bc5ac)"
+
+SONST WENN(_geschaeftsfallkategorie_ ISTGLEICH "[Revolvierender Kredit (exkl. Überziehungskredit) (V)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m404d6a91-b0ce-48e3-add9-c5a6c3964bda)") DANN
+
+_rValue =_ "[Revolvierende Kredite (RK)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#mf1b52de2-3ee2-4ede-b58a-75ce34928cf5)"
+
+SONST WENN(_geschaeftsfallkategorie_ ENTHAELT ("[Operating Leasing (F)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m8698e992-9178-451c-9080-cc366ebed0b0)", "[Finance Leasing (G)](https://www.oenb.at/mdi/entity/m17390e0b-716e-4283-8f4b-f48569fb7f42?initWithVersion=5.7&amp;lang=DE#m3b0ffd5e-abe7-4402-9002-517010ce6bf3)")) DANN
+
+_rValue =_ "[Finanzierungsleasing (FL)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#m597d7e71-a380-4073-b754-118c5700d0d8)"
+
+_//Noch nicht gezogene Einmalkredite und Barvorlagen mit nicht ausgenutztem Rahmen werden als sonstige Zusagen kategorisiert, wenn sie keinen ONA haben oder dieser im Verhältnis zum NAR sehr klein ist z.B. durch Gebühren._
+
+SONST WENN((_ona_ \&lt;= (_nar_ \* 0,03) ODER ISTNULL(_ona_)) UND _kapitalbeginn_ ISTGLEICH "99991231" UND _nar_ \&gt; 0) DANN
+
+_rValue =_ "[Sonstige Zusagen (SZ)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#m4e1a175b-b1db-42fc-984d-190c6bddc555)"
+
+SONST
+
+ _rValue =_ "[Andere Kredite (inkl. Einmalkredite) (AK)](https://www.oenb.at/mdi/entity/m00618a9e-4a92-4ca1-8a65-5593d6236190?initWithVersion=5.7&amp;lang=DE#m3806edcd-86c7-4966-9399-20197587a263)"
+
+ENDE
+ 
+
+### Points/Questions to resolve
+Stream line the Loan hierarchy
+
+### Related issues
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/524</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

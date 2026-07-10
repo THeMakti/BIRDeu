@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="678799FC-1E4F-15A7-406E-9AD82266BED5" name="Ship collateral">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-03 12:48:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship collateral is Registered collateral in the form of a Ship (or parts of a Ship).]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>9233E877-99B3-25CB-0DCC-48B7E03DC1DD</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>74CBF0BA-D8C4-24EA-B0C0-163D00A99C5C</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>SHP_CLLTRL</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Type of protection valuation approach for fair value" id="85A08266-72CB-E811-3947-E472D1CE7B5C">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-11-22 13:50:55 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>E3C08E97-C5DA-D30B-27D8-D1235589C248</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<constraintName>Type of protection valuation approach for Ship collateral</constraintName>
+<referedAttribute>42FB6796-6106-8A02-C7DA-675F442A6C5C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="3" description="Mark-to-market: Valuation method whereby the protection value is based on unadjusted quoted prices for identical assets and liabilities in an active market. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_PRTCTN_VL_APPRCH_FR_VL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Fair value amount of the collateral" id="FFA79915-D061-C84E-6035-DD8E5A8CBF55">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-05 15:13:19 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>FV_AMNT_CLLTRL</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

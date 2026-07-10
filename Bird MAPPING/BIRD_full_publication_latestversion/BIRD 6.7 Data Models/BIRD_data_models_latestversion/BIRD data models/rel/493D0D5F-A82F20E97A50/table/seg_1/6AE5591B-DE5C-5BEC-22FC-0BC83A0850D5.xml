@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="6AE5591B-DE5C-5BEC-22FC-0BC83A0850D5" name="Over_the_counter_(OTC)_Derivative_as_a_hedge">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Over the counter (OTC) Derivative as a hedge is an Over the counter (OTC) Derivative role where the Over the counter (OTC) Derivative instrument acts as a hedge.]]></commentInRDBMS>
+<generatorID>EE7AABF7-53FD-1A4B-D940-7E228C87F604</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<ordsAlias>over_the_counter_otc_derivative_as_a_hedge</ordsAlias>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Reference_date" id="6BE3156C-FA9A-CFCB-B6B0-222F7E72D2F9">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>E42E9943-0589-1986-6779-99F8C099978D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C180D9D2-12F9-9279-64BB-307C10AF55DC" referredColumn="81A5253B-C092-8F13-527F-672C4AA1ADC7"/>
+</associations>
+</Column>
+<Column name="Reporting_agent_identifier" id="9EDB5AE0-D99F-DDDC-D3A8-EAF652733D16">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>E5525021-3C50-8611-33B3-365565061B24</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C180D9D2-12F9-9279-64BB-307C10AF55DC" referredColumn="859F4C09-34C3-14E3-CEF3-4E893D4E5D43"/>
+</associations>
+</Column>
+<Column name="Accounting_consolidation_level" id="33B9AB36-3400-DDF5-6F28-44D42DFC21EF">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>4E5E5F63-DA4B-90FC-D13D-E704958A2761</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C180D9D2-12F9-9279-64BB-307C10AF55DC" referredColumn="35106D14-5072-3C8E-6977-2667E360DA30"/>
+</associations>
+</Column>
+<Column name="Accounting_standard" id="976CBEBC-CBE9-AB8B-7866-CCAE0A93E439">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>3BA7FA29-652A-3A4A-2E78-830592876D06</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C180D9D2-12F9-9279-64BB-307C10AF55DC" referredColumn="2CB200A1-0408-1F35-5428-B1D345062603"/>
+</associations>
+</Column>
+<Column name="Instrument_identifier" id="6D050E6C-74A0-8A15-8C87-ABDEC899BBC0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>C9AA2859-C115-49CC-1EE7-31049322227F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C180D9D2-12F9-9279-64BB-307C10AF55DC" referredColumn="BBB26783-05B0-884B-2921-7018F5FAD859"/>
+</associations>
+</Column>
+<Column name="Accounting_hedge_indicator" id="31A265C3-0620-0C40-0B33-0CD5354A9AD2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[An indicator specifying if the hedge is considered an accounting hedge or not.]]></comment>
+<generatorID>E3F32EC2-2EF6-594E-9741-F5F744BE784F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>67BB8028-D0A7-E1BE-DD13-29EB4D4788D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="At_cost-based_method_or_Lower_of_costs_or_market_(LOCOM)_indicator" id="19AF90DB-573D-219F-FE04-69FD321E5E4F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[At cost based method or Lower of costs or market (LOCOM) indicator distinguishes the used accounting portfolio for national General Accepted Accounting Principles (nGAAP) between those that use the At cost based method or Lower of costs or market (LOCOM), and those that do not use At cost based method or Lower of costs or carket (LOCOM).]]></comment>
+<generatorID>6460334F-990F-E411-FCD0-A58A8A12921F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4DD03E38-E9A3-FC9F-E83E-0852FFE4ED75</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Over_the_counter_(OTC)_Derivative_hedge_accounting_standard_type" id="9A2102B4-CE96-B290-C1F8-86AE0BF2E23F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[Over the counter (OTC) Derivative hedge accounting standard type distinguishes the Over the counter (OTC) Derivative as a hedge according to the applied accounting standard.]]></comment>
+<generatorID>9F1882E9-41D9-3468-6EE6-E240A109EDAC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>0DC0AE14-012A-4884-AACA-5A70E74A0861</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_of_hedge" id="3E51696B-7BDE-411F-32A4-F7C30EFE0C38">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<comment><![CDATA[Type of hedge applicable under the relevant accounting standard.]]></comment>
+<generatorID>24DC052B-D237-BE7C-F421-7CB3E13DD62E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>5a3d5ddf-993e-4140-8c68-0f78a0b0c5bb</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="070A8F63-DCC3-8BA6-EDEB-41EC29A54E37" name="Over_the_counter_(OTC)_Derivative_as_a_hedge_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>C5637359-B36E-E8AF-C030-5EAA52C5E39A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BE3156C-FA9A-CFCB-B6B0-222F7E72D2F9"/>
+<colUsage columnID="9EDB5AE0-D99F-DDDC-D3A8-EAF652733D16"/>
+<colUsage columnID="33B9AB36-3400-DDF5-6F28-44D42DFC21EF"/>
+<colUsage columnID="976CBEBC-CBE9-AB8B-7866-CCAE0A93E439"/>
+<colUsage columnID="6D050E6C-74A0-8A15-8C87-ABDEC899BBC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D56C993-3E9F-E347-1585-05795C3C6C82" name="Over_the_counter_(OTC)_Derivative_as_a_hedge_Instrument_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>53FC488B-8E58-D189-08B0-EEE9C2BB9F71</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BE3156C-FA9A-CFCB-B6B0-222F7E72D2F9"/>
+<colUsage columnID="9EDB5AE0-D99F-DDDC-D3A8-EAF652733D16"/>
+<colUsage columnID="33B9AB36-3400-DDF5-6F28-44D42DFC21EF"/>
+<colUsage columnID="976CBEBC-CBE9-AB8B-7866-CCAE0A93E439"/>
+<colUsage columnID="6D050E6C-74A0-8A15-8C87-ABDEC899BBC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

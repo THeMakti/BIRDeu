@@ -1,0 +1,32 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Current treatment of overdrafts" id="37906-529">
+                    <createdBy>ostarij</createdBy>
+                    <comment>### Overview
+Business definition
+We would like to deepen the background of the derived data “Overdraft indicator” to better understand how the banks should use it and why is necessary a derived indicator. 
+### Contact person
+Luciana.meoli@bancaditalia.it; valentina.murano@bancaditalia.it; 
+
+### Description of change request
+Currently it is a derived attribute of the transferable deposit. In particular, it is not clear the reason why “overdraft indicator” is a derived attribute We noticed that in the ESA Reg. (REGULATION (EU) No 549/2013 on the European system of national and regional accounts in the European Union) the overdrafts are included in the transferable deposit. 
+In our view the current treatment is not sufficiently clear and maybe not completely correct (as far as the sign treatment to derive such information could be not correct compared to the domain. More in detail, the SQL domain / SDD Subdomain associated with Loan (excluding repurchase agreement).Nominal amount is Non negative monetary amounts with 2 decimals and would (intuitively) not allow negative values.). It could be improved by removing the entity Transferable deposit derived data and by adding the attribute Overdraft indicator on the Transferable Deposit.  
+### Legal definition
+Reg. (REGULATION (EU) No 549/2013 on the European system of national and regional accounts in the European Union) […] 
+5.82 Transferable deposit accounts may have overdraft facilities. If the account is overdrawn, the withdrawal to zero is the withdrawal of a deposit, and the amount of the overdraft is the granting of a loan. 
+
+Other types of loans 5.136 The loans category includes the following: (a) overdrafts on transferable deposit accounts, where the amount overdrawn is not treated as a negative transferable deposit; […] 
+
+### Summary of impacted LDM objects/attributes
+
+![Logical_-_SubView_Overdrafts](/uploads/2b226f9959701a6604d0cfa9578462ec/Logical_-_SubView_Overdrafts.png)</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/529</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

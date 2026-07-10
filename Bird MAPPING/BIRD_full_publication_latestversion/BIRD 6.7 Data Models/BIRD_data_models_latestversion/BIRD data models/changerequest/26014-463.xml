@@ -1,0 +1,35 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Fair value of securities borrowed with non cash-collateral" id="26014-463">
+                    <createdBy>ostarij</createdBy>
+                    <comment>In F 32.04.a (r150, c10) the Fair value of securities borrowed with non cash-collateral is required. We are in the context of the securities lending transactions that are a source of encumbrance, i.e. they are matching liabilities that cause another asset to be encumbered, according to the instructions (Annex VII, General remarks):
+
+_Securities lending without cash collateral shall be reported as follows:_
+
+&gt; _(i) the fair value of the securities borrowed shall be reported as a **source of encumbrance** in **{AE-SOU; r150; c010}**. When the lender does not receive any securities in return for the securities lent but receives a fee instead, {AE-SOU; r150; c010} shall reported as zero;_
+
+There is also a Q&amp;A on the topic (https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2015_1852) that states in point 2):
+
+&gt;_Securities borrowing for which the securities borrower provides **securities or deposits as collateral**_ &lt;br&gt;
+&gt;The reporting for those transactions from the securities borrower’s perspective mirror the disclosure from the securities lender’s perspective, which are specified in paragraph 14d) and paragraph 19 as well as point 2.4.2 row 150 of Annex XVII of the ITS on reporting. In this transaction, the “securities borrowed” have two features: 
+&gt;1) they are securities received that can be encumbered in other transactions and 
+&gt;2) they are a “**source of encumbrance**” for the securities pledged as collateral by the borrower. Those two features of the “securities borrowed” should be disclosed as follows:\
+ _The fair value of the securities borrowed is reported as a source of encumbrance in {template F 32.04; r120 and r150; c010}._
+
+To incorporate this information in the model I would propose to either add the fair value to the entity Security against Security borrowing and lending transaction, please see below:
+
+![securities_lending.png](/uploads/dad12cd76cd90b51bc3cf32a1de9c1f7/securities_lending.png)
+
+or since these securities borrowed with non cash-collateral are flagged as **off balance sheet items** another option would be to add it to the off- balance sheet item received. This option would be more in line with what we currently have in the model for the fair value, that is most of the times associated to the role and not to the instrument.
+
+![image.png](/uploads/f62db4804878d78795d16d6a8605dccb/image.png)</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/463</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

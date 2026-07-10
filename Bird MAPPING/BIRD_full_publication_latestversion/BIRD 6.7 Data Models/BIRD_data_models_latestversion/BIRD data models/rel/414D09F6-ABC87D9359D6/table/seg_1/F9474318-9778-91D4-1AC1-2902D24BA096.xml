@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F9474318-9778-91D4-1AC1-2902D24BA096" name="Short_security_position_prudential_portfolio_assignment">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Short security position prudential portfolio assignment is the combination of Short security position and Prudential portfolio that indicates which position applies to which portfolio.]]></commentInRDBMS>
+<generatorID>FF82165F-7C48-8C6A-5BF5-1CA815A3CA74</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>6B4999C9-9ED0-E7FF-EF12-F2895351A157</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Security_identifier" id="B6764498-14B6-0C3F-96A4-2E18AB8A8910">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[Short security position security identifier is an identifier to uniquely identify each security in the Short security in the Short security position prudential portfolio assingment.]]></comment>
+<generatorID>394E5C62-7E5E-F8F4-9574-C8ED2FD4BEE4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="AEA27141-4824-9CBC-5E79-86C4853EAA7B"/>
+</associations>
+</Column>
+<Column name="Reference_date" id="EF5EB438-4844-E2C3-67A1-3660F7FE9AF8">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>0F4CFA88-7166-E8C4-C76B-26847564E535</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="3612F86C-2990-B88F-8695-58779D1F6606"/>
+</associations>
+</Column>
+<Column name="Reporting_agent_identifier" id="0EBBCD9E-18FB-C209-6691-3ABAED63EFFE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>B1D631F5-1BD8-9AC3-478A-D1072BB4B696</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="A001270E-7052-75DC-D1F8-1CBFF8A2C696"/>
+</associations>
+</Column>
+<Column name="Accounting_consolidation_level" id="B197709C-FC1B-B28C-5769-4F722D5F06A4">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>BFE3398C-A7D6-8991-4212-B8BAE0D6FAAE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="3535B9F7-E68A-46A1-02E9-10627AADE184"/>
+</associations>
+</Column>
+<Column name="Accounting_standard" id="7A924888-B5D2-4B95-EBA7-932D59479058">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<generatorID>F8FB650E-D931-E1ED-068D-55ED96CF867D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2F34F4CF-5CD5-E3FD-D747-233B1B39FC14</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="023C1CAF-4BF7-2A6D-7487-D6D5679BF826"/>
+</associations>
+</Column>
+<Column name="Investor_role_type" id="16FED463-4DFB-8279-6E00-91818DB44FF0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[The investor role.]]></comment>
+<generatorID>9E185405-0DDE-D685-CCDF-4E9D237E6D7B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>3DD42234-B0F5-E4C9-F931-4D20C6EF5FAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="ED159DBE-4644-7591-A235-411A6BEC75AA"/>
+</associations>
+</Column>
+<Column name="Investor_identifier" id="ACB2F34A-DF41-A93C-7CBC-EBAB13472296">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[Investor party identifier is the party identifier of the involved investor in the short security position prudential portfolio assignment.]]></comment>
+<generatorID>2912D7AD-8E21-F224-9D6B-3A1F0B685262</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCFB642-9A7F-402F-DC5E-8794C58C11EF" referredColumn="68287AEB-0436-9877-E69B-55BF02DBC6F3"/>
+</associations>
+</Column>
+<Column name="Prudential_portfolio_type" id="2055B23B-75B2-79C8-2210-541B59C11CE1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[Prudential portfolio type distinguishes between trading and banking (or non-trading) book positions of the Short security position prudential portfolio assignment.]]></comment>
+<generatorID>326D9635-D2EF-308C-C127-509987E5D5E8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9ECA7EA5-B456-4AD8-AA91-4AD16E2D4AD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Short_security_position_Prudential_portfolio_assignment_type" id="5A7767CE-3A03-7B12-92CD-D84709248804">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-17 13:04:19 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>FA470EAC-D872-7AB4-1FEA-4EC4985EEDB2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Haircuts_for_trading_position_valued_at_fair_value" id="B1784932-8AE4-5DCB-03DB-EEAF918F8DCF">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<comment><![CDATA[Haircut for trading position valued at fair value. 
+According to Annex V (5.29):
+Where applicable under national GAAP based on BAD, ‘Haircuts for trading positions valued at fair value’ shall be reported. The haircuts decrease the value of trading assets and increase the value of trading liabilities.]]></comment>
+<generatorID>47B5DD39-241B-FF02-3E47-8E32278CFAE9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="544E1C9B-D047-3AFB-6621-6A98D51B3997" name="Short_security_position_prudential_portfolio_assignment_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:55 UTC</createdTime>
+<generatorID>BD831C1E-E3ED-41CE-0CAC-5F7CE8D4E6A8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6764498-14B6-0C3F-96A4-2E18AB8A8910"/>
+<colUsage columnID="EF5EB438-4844-E2C3-67A1-3660F7FE9AF8"/>
+<colUsage columnID="0EBBCD9E-18FB-C209-6691-3ABAED63EFFE"/>
+<colUsage columnID="B197709C-FC1B-B28C-5769-4F722D5F06A4"/>
+<colUsage columnID="7A924888-B5D2-4B95-EBA7-932D59479058"/>
+<colUsage columnID="16FED463-4DFB-8279-6E00-91818DB44FF0"/>
+<colUsage columnID="ACB2F34A-DF41-A93C-7CBC-EBAB13472296"/>
+<colUsage columnID="2055B23B-75B2-79C8-2210-541B59C11CE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB39AE90-19DE-E558-7812-36F3B52D05D1" name="Short_security_position_prudential_portfolio_assignment_Security_position_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-11-05 09:54:57 UTC</createdTime>
+<generatorID>87BA9134-0696-73BB-D9BF-6E9787ABC101</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6764498-14B6-0C3F-96A4-2E18AB8A8910"/>
+<colUsage columnID="EF5EB438-4844-E2C3-67A1-3660F7FE9AF8"/>
+<colUsage columnID="0EBBCD9E-18FB-C209-6691-3ABAED63EFFE"/>
+<colUsage columnID="B197709C-FC1B-B28C-5769-4F722D5F06A4"/>
+<colUsage columnID="7A924888-B5D2-4B95-EBA7-932D59479058"/>
+<colUsage columnID="16FED463-4DFB-8279-6E00-91818DB44FF0"/>
+<colUsage columnID="ACB2F34A-DF41-A93C-7CBC-EBAB13472296"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

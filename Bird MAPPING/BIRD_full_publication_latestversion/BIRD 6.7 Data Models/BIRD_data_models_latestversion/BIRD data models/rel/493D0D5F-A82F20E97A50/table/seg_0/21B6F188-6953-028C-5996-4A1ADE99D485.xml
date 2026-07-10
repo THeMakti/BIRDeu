@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21B6F188-6953-028C-5996-4A1ADE99D485" name="Debt_security_issued_(by_the_reporting_agent)_as_a_hedge">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Debt security issued (by the reporting agent) as a hedge is a Debt security issued (by the reporting agent) role where the Debt security issued (by the reporting agent) acts in the role of a non-derivative hedge.]]></commentInRDBMS>
+<generatorID>FAEB9B83-BE89-F719-6667-BF2DE4448BFE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<ordsAlias>debt_security_issued_by_the_reporting_agent_as_a_hedge</ordsAlias>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Reference_date" id="9E8047EB-E110-45A9-49F5-0889CAFB06B1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>87E882CF-1554-1CE3-30A0-FB38657E28C8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA58ED5-ED52-D07C-FD27-409B9DC344FF" referredColumn="5E2A2758-A358-E40A-0941-887929A2455A"/>
+</associations>
+</Column>
+<Column name="Reporting_agent_identifier" id="238BEA92-E8D6-0853-425C-326F37B5BDF5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>E8B00FB0-929E-DEE4-4538-B628F8E7E2FC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA58ED5-ED52-D07C-FD27-409B9DC344FF" referredColumn="BCC5B955-BF59-3E64-094F-C11F5AAA6BD6"/>
+</associations>
+</Column>
+<Column name="Debt_security_issued_identifier" id="D61C738B-B3D1-D755-5305-3CE67F9D2E68">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The security identifier of the involved debt security.]]></comment>
+<generatorID>2FC3252A-67F5-4E08-348E-1F0580711835</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA58ED5-ED52-D07C-FD27-409B9DC344FF" referredColumn="11AD19AF-2828-A11F-1EB5-CA819910AE78"/>
+</associations>
+</Column>
+<Column name="Accounting_consolidation_level" id="1E2B660F-DBAE-5241-A244-06F16D2E1CD7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>02A3838C-2500-AC6C-8AB3-A6EA9E4D03AF</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA58ED5-ED52-D07C-FD27-409B9DC344FF" referredColumn="EF9D0774-673C-EA0F-968F-AB508ACA18F1"/>
+</associations>
+</Column>
+<Column name="Accounting_standard" id="64D657A1-CF49-7461-8D20-B27A8288E7EF">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>06C50FDC-9BE4-96F2-73F0-E6DE64649D8D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2F34F4CF-5CD5-E3FD-D747-233B1B39FC14</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA58ED5-ED52-D07C-FD27-409B9DC344FF" referredColumn="0ACFFA1F-A314-2E94-69B3-F561EA2EA2D4"/>
+</associations>
+</Column>
+<Column name="Accounting_classification" id="BAE62416-E948-B99D-B082-184F7F3DB1CC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>5D9FC4CD-C435-5669-F083-8DAE5B388FDB</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A553F1FA-51FD-48C2-A80A-426CA94AD34E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA58ED5-ED52-D07C-FD27-409B9DC344FF" referredColumn="31A2730A-BBF4-5ACC-FCF8-E500F4DA908E"/>
+</associations>
+</Column>
+<Column name="Accounting_hedge_indicator" id="537912C8-648D-60AB-7588-50E88853BC05">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[An indicator specifying if the hedge is considered an accounting hedge or not.]]></comment>
+<generatorID>3D695EFC-9EA8-6BEA-84B2-4D2E5478D9E9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>67BB8028-D0A7-E1BE-DD13-29EB4D4788D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_of_hedge" id="94D49F9D-249A-11E5-BBD1-98EA24364B75">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Type of hedge applicable under the relevant accounting standard.]]></comment>
+<generatorID>0F473C94-B0F9-5BB5-AE78-E3D4AE31B4F8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>5a3d5ddf-993e-4140-8c68-0f78a0b0c5bb</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="954A7159-98E7-F4D0-774C-1E1877E0445F" name="Debt_security_issued_(by_the_reporting_agent)_as_a_hedge_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>A7BE6E62-A801-5AA0-15A3-DFDC617A8D3E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E8047EB-E110-45A9-49F5-0889CAFB06B1"/>
+<colUsage columnID="238BEA92-E8D6-0853-425C-326F37B5BDF5"/>
+<colUsage columnID="D61C738B-B3D1-D755-5305-3CE67F9D2E68"/>
+<colUsage columnID="1E2B660F-DBAE-5241-A244-06F16D2E1CD7"/>
+<colUsage columnID="64D657A1-CF49-7461-8D20-B27A8288E7EF"/>
+<colUsage columnID="BAE62416-E948-B99D-B082-184F7F3DB1CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AE8E2D1-1562-D853-C8FB-DA1221CF8A95" name="Debt_security_issued_(by_the_reporting_agent)_as_a_hedge_Debt_security_issued_(by_the_reporting_agent)_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>E4B86C8C-6362-C140-0E71-10BB50972A3B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E8047EB-E110-45A9-49F5-0889CAFB06B1"/>
+<colUsage columnID="238BEA92-E8D6-0853-425C-326F37B5BDF5"/>
+<colUsage columnID="1E2B660F-DBAE-5241-A244-06F16D2E1CD7"/>
+<colUsage columnID="64D657A1-CF49-7461-8D20-B27A8288E7EF"/>
+<colUsage columnID="D61C738B-B3D1-D755-5305-3CE67F9D2E68"/>
+<colUsage columnID="BAE62416-E948-B99D-B082-184F7F3DB1CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

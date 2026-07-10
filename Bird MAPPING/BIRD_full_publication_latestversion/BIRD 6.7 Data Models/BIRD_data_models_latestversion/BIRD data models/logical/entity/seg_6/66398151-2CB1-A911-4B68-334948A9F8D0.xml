@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="66398151-2CB1-A911-4B68-334948A9F8D0" name="Risk position (Kb) per bucket derived data">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-06-19 09:36:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[The risk position for bucket b, K(b), must be determined by aggregating the weighted sensitivities to risk factors within the same bucket using the corresponding prescribed correlation ρ(kl)
+
+KB per bucket is a term used in the standardised approach for market risk under FRTB. It is the risk capital requirement for a given bucket of risk factors within a risk class. It is computed as an aggregation of risk positions first at the bucket level, and then across buckets within a risk class defined for the sensitivities-based method.
+
+A bucket is a set of risk factors that are grouped together by common characteristics (eg all tenors of interest rate curves for the same currency), as defined in MAR21.39 to MAR21.892. A risk position is the portion of the risk of an instrument that relates to a risk factor.
+
+(https://www.bis.org/basel_framework/chapter/MAR/21.htm?inforce=20230101&published=20200327)]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<typeID>1B94F88B-CE04-E04E-DE88-6866B6DBCB24</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>KB_PR_BCKT_DRVD_DT</preferredAbbreviation>
+<documents usedDucuments="577C6671-054B-63C9-0FA7-48002B03D7C4"/>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Risk position (Kb) per bucket derived data reference date" id="08B52EC9-7787-4080-AE04-C424F5418C91">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-04-29 13:15:30 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>06FED98A-AB48-1A75-8F7D-891AEA1B8E08</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>90FBD27B-EE6E-D877-F9E7-447D604CC0ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>KB_PR_BCKT_DRVD_DT_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>25285-458</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Risk position (Kb) per bucket derived data reporting agent identifier" id="BDF936C4-708F-6CDD-752C-353811FEED64">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-04-29 13:15:30 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>06FED98A-AB48-1A75-8F7D-891AEA1B8E08</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>29F5BBD5-6DF1-9F07-524A-463A45C7E70C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>KB_PR_BCKT_DRVD_DT_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>25285-458</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Risk position (Kb) per bucket derived data accounting consolidation level" id="3581E43C-8BAC-F1BC-C0B5-4FFABFEA47A3">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-16 07:37:08 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>06FED98A-AB48-1A75-8F7D-891AEA1B8E08</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>E63F0FBF-53EF-27C4-74FE-8245552D649F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>KB_PR_BCKT_DRVD_DT_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Risk position (Kb) per bucket derived data accounting standard" id="6817020D-3F86-503D-FE56-7EF2C229BD7E">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-16 07:37:08 UTC</createdTime>
+<generatorID>06FED98A-AB48-1A75-8F7D-891AEA1B8E08</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<referedAttribute>4FEA6523-92D0-8957-673E-0C2139F61B82</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>KB_PR_BCKT_DRVD_DT_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Bucket identifier" id="EA2BDDE2-0B7C-966C-7FAF-F1521644DA1F">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-06-19 09:47:43 UTC</createdTime>
+<comment><![CDATA[The bucket identifier, for example the currency for interest rate risk factors.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>BCKT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="General interest rate risk (GIRR) delta Risk position (Kb)" id="1B1E2DB9-A1B1-9F44-35C0-91BCCF65C387">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-06-19 09:47:43 UTC</createdTime>
+<comment><![CDATA[delta related  KB as defined in bcbs d457 21.4 (4)
+
+Within bucket aggregation: the risk position for delta (respectively vega) bucket b, must be determined by aggregating the weighted sensitivities to risk factors within the same bucket using the prescribed correlation set out in the following formula, where the quantity within the square root function is floored at zero
+
+https://www.bis.org/bcbs/publ/d457.pdf]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GIRR_DLTA_RSK_PSTN</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CE1E00B6-CE3E-C36D-A315-1D09F852A3C5" name="Risk position (Kb) per bucket derived data PK">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-06-19 09:47:49 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="3879368E-8C91-63C3-16A2-E1814FA96B2A" value="true"/>
+<item key="D11405B3-AA41-4944-8935-17AEC9B5E9D9" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EA2BDDE2-0B7C-966C-7FAF-F1521644DA1F</attributeRef>
+<attributeRef>08B52EC9-7787-4080-AE04-C424F5418C91</attributeRef>
+<attributeRef>BDF936C4-708F-6CDD-752C-353811FEED64</attributeRef>
+<attributeRef>3581E43C-8BAC-F1BC-C0B5-4FFABFEA47A3</attributeRef>
+<attributeRef>6817020D-3F86-503D-FE56-7EF2C229BD7E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

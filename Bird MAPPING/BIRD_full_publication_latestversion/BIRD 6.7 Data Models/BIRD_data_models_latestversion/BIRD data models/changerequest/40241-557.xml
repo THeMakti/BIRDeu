@@ -1,0 +1,59 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Collateral obtained by taking into possession - review of the current modelling" id="40241-557">
+                    <createdBy>ostarij</createdBy>
+                    <comment>### Overview
+
+The information about a collateral obtained by taking into possession is currently stored at collateral level, and collateral received instrument level: ![collateral_obtained](/uploads/948606134ebba9aafd5678dea4678c20/collateral_obtained.png) However, a collateral that is obtained looses its status as collateral and becomes a full-fledged asset. Therefore collaterals obtained are treated as any other asset that has been recognised in the balance sheet. This leads to a possible duplication in the LDM as information about collateral obtained are stored both in the part of the model specifics for collaterals and the in the part for the assets that can be collaterals (instruments, securities, non financial assets).
+
+According to Annex V par 175:
+
+_Collateral obtained by taking possession shall include assets that were **not pledged by the debtor** as collateral, but were obtained in exchange for the cancellation of debt, whether on a voluntary basis or as part of legal proceedings. The types of collateral shall be the ones referred to in paragraph 173, with the exception of those in point (b) (i) of that paragraph._
+
+But also par 341:
+
+_‘Collateral obtained by taking possession’ shall include both assets that **were pledged by the debtor as collateral and assets that were not pledged by the debtor as collateral, but were obtained in exchange for the cancellation of debt**, whether on a voluntary basis or as part of legal proceedings._
+
+In the LDM we have the following definition:
+
+* **Collateral**: _Collateral is an asset that is pledged to mitigate the credit risk that may arise from a contract that is not an Instrument._
+* **Collateral received instrument**: _A Collateral received instrument is an Instrument role where the Instrument acts in the role of a Collateral received._
+
+Given these definitions, we can deduct that _collateral obtained_ no longer qualifies as \_collateral/collateral received_for the following reasons:
+
+1. **It was pledged in the past but is no longer pledged.** According to the first definition in the LDM, an asset can only be considered collateral if it is actively pledged. Once the pledge is no longer in effect, the asset ceases to meet this criterion.
+2. **It doesn't not act as collateral received anymore**. Therefore, it no longer qualifies under the definition of "collateral received.
+
+### Contact person
+
+@Arianna.Nuvoli @luciana.meoli @maria.perricone 
+
+### Description of change request
+
+- Delete all the LDM components that refers to collateral obtained and collateral received instrument obtained
+- Delete assignments tables that links collateral to non financial assets
+- Prepare a new modelling proposal for collateral obtained with no duplications
+
+### Summary of impacted LDM objects/attributes
+
+`Collateral obtained by taking possession`, `Collateral received instrument obtained by taking possession`, `Collateral Non-financial asset assignment`, `Collateral Non-financial asset assignment`
+
+### Forward Engineering considerations
+
+_\[Other considerations\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/557</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

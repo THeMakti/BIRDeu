@@ -1,0 +1,77 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="`Date of renegotiation status`, `Date of forbearance status` , `Date of forbearance measure`: can they be harmonised?" id="38957-549">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!--See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab)--&gt;
+
+### Overview
+In the LDM we have:
+
+- `Date of renegotiation status` in `Renegotiated financial asset instrument` 
+- `Date of renegotiation status` in `Credit facility risk data`
+- `Date of forbearance measure` in `Renegotiated financial asset instrument with forbearance measure`
+- `Date of forbearance measure` in `Credit facility risk data`
+- `Date of forbearance status` in `Forborne long non-negotiable security position`
+
+Can the three variables be harmonised?
+
+Moreover, `Date of forbearance status` is included in `Forborne long non-negotiable security position` separated from `Forbearance measure type` that is in `Long security position`.
+
+
+`Date of forbearance measure` is needed for the derived attribute `Renegotiated financial asset instrument with forbearance measure derived data`.`Date / period of application of forbearance measure type`. 
+While, `Date of forbearance status` is probably needed for the derived attribute `Long security position derived data`.`Date / period of application of forbearance ` even though the derived entity type is linked to `Long security position` entity type and not to `Forborne long non-negotiable security position`.
+It would be better to move `Date of forbearance status` closer to `Forbearance measure type`.
+
+![549_forb](/uploads/277798c2ce33ef02b5b63f04ef12ed80/549_forb.png)
+
+### Contact person
+
+_\[ arianna.nuvoli_[**_@ecb.europa.eu_**](mailto:me@ecb.europa.eu)_\]_
+
+### Description of change request
+
+We have different dates referring to the renegotiation and forbearance status that could benefit of some harmonisation.  
+
+Moreover the `Forborne long non-negotiable security position`.`Date of forbearance status` could be moved closer to `Forbearance measure type`. Alternatively we should consider a structure that is similar to the one of Financial asset instrument also for security position.
+
+### Summary of impacted LDM objects/attributes
+
+Attribute:
+
+- `Date of renegotiation status` 
+- `Date of forbearance measure` 
+- `Date of forbearance status`
+
+Entity types:
+
+- `Renegotiated financial asset instrument` 
+- `Renegotiated financial asset instrument with forbearance measure`
+- `Forborne long non-negotiable security position`
+
+### Forward Engineering considerations
+`Date of renegotiation status`  and Date of forbearance status` have the same code (DT_FRBRNC_STTS)
+
+### Legal definition
+
+From Anacredit:
+
+**Date of the forbearance and renegotiation status**
+_Definition: The date on which a forbearance or renegotiation status as reported under “status of forbearance and renegotiation” is considered to have occurred.
+The data attribute “date of forbearance and renegotiation status” is reported as the date on which the respective status as reported in the data attribute “status of forbearance and renegotiation” at the reporting reference date is considered to have occurred._
+
+Finrep: please refer to template F 26.00.b and F 19.00
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/549</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

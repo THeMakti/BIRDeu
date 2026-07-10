@@ -1,0 +1,279 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_8" id="7B587593-6229-5E12-E432-44673A6E926A" name="Security lending component Security assignment">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:39:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Security lending component Security assignment is the combination of the Security lending component and the Security that indicates which Security has been lent out via the Security lending component.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="false"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>SCRTY_LNDNG_CMPNNT_SCRTY_ASSGNMNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="92B1BDFA-97FB-73E4-9A6E-2E398E0F7C1B" value="19A96466-BCEA-7D07-C75A-DAEADEBEDEEE"/>
+<item key="AE7BD7B4-F370-7F30-3C19-AC7FD7D3A5CB" value="57C73045-10FB-B46B-EDE5-D708A461525B"/>
+<item key="BE303F51-D4DB-D6DF-17A2-D4790CA498B5" value="731B7FE0-E0B6-7555-48F7-7BAE2A84EE11"/>
+<item key="DC347626-BC72-BF6B-3DEF-0EAA8B81080C" value="0021C879-B4E4-ABE1-5575-3CC123BB398B"/>
+</foldedAttributesMap>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Security borrowing and lending transaction reference date" id="731B7FE0-E0B6-7555-48F7-7BAE2A84EE11">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:50:55 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>4EE1D547-8A86-52A8-A594-0DE1067E0FD7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>137CCD25-81CA-5F90-A43B-F03B422ACEB6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security borrowing and lending transaction reporting agent identifier" id="19A96466-BCEA-7D07-C75A-DAEADEBEDEEE">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:50:55 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>4EE1D547-8A86-52A8-A594-0DE1067E0FD7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>EA2096DA-546D-B098-4051-036736A95E95</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security borrowing and lending transaction accounting consolidation level" id="57C73045-10FB-B46B-EDE5-D708A461525B">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:50:55 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>4EE1D547-8A86-52A8-A594-0DE1067E0FD7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>B8B503A7-E182-E17B-0469-9181F1370D83</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security borrowing and lending transaction accounting standard" id="0021C879-B4E4-ABE1-5575-3CC123BB398B">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:50:55 UTC</createdTime>
+<generatorID>4EE1D547-8A86-52A8-A594-0DE1067E0FD7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>917F6B65-62A4-71D9-BB7F-67638C0A0BB6</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security borrowing and lending transaction identifier" id="8105E330-B5CE-7BEE-9909-68EDA86E67AF">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:50:55 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>4EE1D547-8A86-52A8-A594-0DE1067E0FD7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>4ECD1847-CA16-B4A4-3878-6026E39E20BF</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security reference date" id="BE303F51-D4DB-D6DF-17A2-D4790CA498B5">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:42:48 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>FEC35732-752A-17B4-87D1-9492528FB4D2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>DA168399-B716-B4C5-B7F2-C2620D929EC4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security reporting agent identifier" id="92B1BDFA-97FB-73E4-9A6E-2E398E0F7C1B">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:42:48 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>FEC35732-752A-17B4-87D1-9492528FB4D2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>480FA821-32E6-C30D-2DB7-7BB8C85B6C0F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security accounting consolidation level" id="AE7BD7B4-F370-7F30-3C19-AC7FD7D3A5CB">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:42:48 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>FEC35732-752A-17B4-87D1-9492528FB4D2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>C6316DB7-24EB-C468-C3B5-B6CDA24D6517</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security accounting standard" id="DC347626-BC72-BF6B-3DEF-0EAA8B81080C">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:42:48 UTC</createdTime>
+<generatorID>FEC35732-752A-17B4-87D1-9492528FB4D2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>78D8BA25-BE56-308F-18E6-01087F041F86</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Security identifier" id="256CEDCA-E2B9-B094-0E5F-D0F6DE40DAE4">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:42:48 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>FEC35732-752A-17B4-87D1-9492528FB4D2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<referedAttribute>70004979-0BF5-B3D8-542D-0A190D5BA5BD</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="96FA7DB0-3A55-0CA5-5C41-FF63640D2A18" name="Security lending component Security assignment PK">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-16 14:42:48 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="DAAC984B-B2E8-C145-BF34-9BFB502D9CBB" value="true"/>
+<item key="4C82EC0E-87DF-70E2-243C-682AA3E09370" value="true"/>
+<item key="83B1704A-A97A-C0A9-3158-32D1A66BF66B" value="true"/>
+<item key="C514A9B1-F2A2-7294-2C10-7342CD541759" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE303F51-D4DB-D6DF-17A2-D4790CA498B5</attributeRef>
+<attributeRef>92B1BDFA-97FB-73E4-9A6E-2E398E0F7C1B</attributeRef>
+<attributeRef>AE7BD7B4-F370-7F30-3C19-AC7FD7D3A5CB</attributeRef>
+<attributeRef>DC347626-BC72-BF6B-3DEF-0EAA8B81080C</attributeRef>
+<attributeRef>256CEDCA-E2B9-B094-0E5F-D0F6DE40DAE4</attributeRef>
+<attributeRef>731B7FE0-E0B6-7555-48F7-7BAE2A84EE11</attributeRef>
+<attributeRef>19A96466-BCEA-7D07-C75A-DAEADEBEDEEE</attributeRef>
+<attributeRef>57C73045-10FB-B46B-EDE5-D708A461525B</attributeRef>
+<attributeRef>0021C879-B4E4-ABE1-5575-3CC123BB398B</attributeRef>
+<attributeRef>8105E330-B5CE-7BEE-9909-68EDA86E67AF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

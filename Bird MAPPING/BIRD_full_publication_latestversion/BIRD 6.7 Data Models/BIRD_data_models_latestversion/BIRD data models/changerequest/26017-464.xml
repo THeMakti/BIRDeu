@@ -1,0 +1,74 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Nominal Amount - (NMNL_AMNT)" id="26017-464">
+                    <createdBy>ostarij</createdBy>
+                    <comment># Overview
+
+The metric Nominal Amount is required in templates F 32.02.a/ F32.03.b (Collateral received (all assets), Own Debt securities issued) to cover the information about the **_Nominal amount of collateral received or own debt securities issued non available for encumbrance_**
+
+Therefore, the nominal amount needs to be available for all assets that can be a **collateral received** and **own debt securities issued (other than covered bonds and securitisations)** not available for encumbrance.
+
+The assets that can be a collateral received are:
+
+* Loans and advances
+* Debt securities
+* Equities
+* Other collateral received (Derivatives, Immaterial rights, Physical collaterals (real estate, aircraft, ship, property plants and equipment, gold etc.))
+
+Currently in the LDM the nominal amount is included as an attribute for the entities Off Balance Instrument, Loan (excluding repo), Debt security issued and Long debt security position (Specific for debt securities, not including equities).
+
+It is hence a missing for:
+
+* Equities
+* Other collateral received (Derivatives, Immaterial rights, Physical collaterals (real estate, aircraft, ship, property plants and equipment, gold etc.))
+* own debt securities issued (other than covered bonds and securitisations) (please see also #485) 
+
+### Contact person
+
+@Arianna.Nuvoli @Maria_Manuel.Henriques @Pietro.Ferroni
+
+### Business definition
+
+_\[Business requirements\]_
+
+### Legal definition
+
+**Nominal of collateral received or own debt securities issued non available for encumbrance:**
+
+Nominal amount of the collateral received held by the reporting institution that are non-encumbered and non-available for encumbrance
+
+It shall include the nominal amount of the own debt securities issued other than own covered bonds or securitisations retained by the reporting institution that are non-encumbered and also non-available for encumbrance.
+
+(Annex XVII)
+
+### Reason for inclusion
+
+AE integration
+
+### Relationships
+
+#479
+
+### Relevant Framework/Template
+
+AE module: F 32.02.a c070, F 32.03.b c040
+
+### Additional documentation/links (optional)
+
+_\[Additional info\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/464</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

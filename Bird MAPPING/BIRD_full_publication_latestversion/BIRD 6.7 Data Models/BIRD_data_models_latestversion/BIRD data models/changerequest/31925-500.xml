@@ -1,0 +1,24 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Minimum reserve" id="31925-500">
+                    <createdBy>ostarij</createdBy>
+                    <comment>## Follow-up from the WS DM meeting 2025-01-13
+(as discussed in issue https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/5#note_1886180)
+
+@eva.lettau pointed out that the case where the source of encumbrance is a **minimum reserve** is not yet in the model. In this case, a loan on demand is encumbered because of specific requirements (usually from central banks but in Germany also from other institutions), however the matching liability is zero as there isn't a direct source of encumbrance (liability) generating the encumbrance but a country specific requirement. This encumbered amount of loans on demand can change each time.
+
+The current modelling of source encumbrance in issue #5 is derived on the links between the liability side and the asset side (via protection, collateral etc.), for the minimum reserve case the link does not exit because the encumbered amount is not associated to any liability so we can't even really detect that the specific loan of demand is encumbered.
+
+The issue of the identification of the minimum reserve as been identified as requirement for IREF as well.
+
+An ad-hoc solution to cover the minimum reserve has to be developed.</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/500</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

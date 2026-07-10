@@ -1,0 +1,297 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_8" id="25FB7BA4-2841-84A7-990A-6213F5F91937" name="Repurchase transaction gold (given) assignment">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:00:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Repurchase transaction gold assignment is the combination of a Repurchase transaction (being a repurchase agreement) and Gold that is given in the repurchase transaction.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<typeID>BA6872F2-94CA-21F5-EE67-2D64E8105B0E</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>RPRCHS_TRNSCTN_GLD_GVN_ASSGNMNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="15BF5647-D3C3-5BB7-C0C9-A5DA661C9CAB" value="1256E060-F401-D0C7-D82C-A07500035879"/>
+<item key="35DFA167-604E-4621-3ED7-B3DAB2DF6044" value="D0B1363F-EA92-3D4F-3FF3-4B6136103DB9"/>
+<item key="5C383980-EE66-F379-4111-C0517AACC806" value="E35E1B54-41EF-E15D-BE94-A0036A42C212"/>
+<item key="AA9DA51B-D543-88AA-6AAB-A422022C171B" value="933B929B-815C-9874-5BCB-F3893930735C"/>
+</foldedAttributesMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Repurchase transaction reference date" id="1256E060-F401-D0C7-D82C-A07500035879">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:25 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>143331AD-8FDF-B198-F615-C1209D158874</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>9ECE8643-3670-4EAE-A455-B5EF4C2CE45A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RPRCHS_TRNSCTN_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Repurchase transaction reporting agent identifier" id="933B929B-815C-9874-5BCB-F3893930735C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:25 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>143331AD-8FDF-B198-F615-C1209D158874</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>BB6D9386-34F3-FCB8-F6D0-4BB43D4EAAA8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RPRCHS_TRNSCTN_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Repurchase transaction accounting consolidation level" id="D0B1363F-EA92-3D4F-3FF3-4B6136103DB9">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:25 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>143331AD-8FDF-B198-F615-C1209D158874</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>5274804D-A835-BDD4-2A63-D4CA298D7206</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RPRCHS_TRNSCTN_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Repurchase transaction accounting standard" id="E35E1B54-41EF-E15D-BE94-A0036A42C212">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:25 UTC</createdTime>
+<generatorID>143331AD-8FDF-B198-F615-C1209D158874</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>95450026-8D1A-CC69-C91F-F52DCE1C328F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RPRCHS_TRNSCTN_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Repurchase transaction identifier" id="4B08F0A7-D492-FFBC-B281-51BE2C9A3780">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:25 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>143331AD-8FDF-B198-F615-C1209D158874</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>F7859051-3E5A-9707-1E2B-67B4383135E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RPRCHS_TRNSCTN_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Gold Reference date" id="15BF5647-D3C3-5BB7-C0C9-A5DA661C9CAB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:50 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>9114A5FD-18D2-8BFE-1F24-8557E01D12B8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>21A07815-4DA2-52B9-F0D7-FA81642314D7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GLD_RFRNC_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Gold Reporting agent identifier" id="AA9DA51B-D543-88AA-6AAB-A422022C171B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:50 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>9114A5FD-18D2-8BFE-1F24-8557E01D12B8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>E23DBE59-7B67-638F-9F74-213A9783F016</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GLD_RPRTNG_AGNT_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="Gold Accounting consolidation level" id="35DFA167-604E-4621-3ED7-B3DAB2DF6044">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:50 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>9114A5FD-18D2-8BFE-1F24-8557E01D12B8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>E7F86426-44DB-AD84-234D-F61F16FB8F22</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GLD_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Gold Accounting standard" id="5C383980-EE66-F379-4111-C0517AACC806">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:50 UTC</createdTime>
+<generatorID>9114A5FD-18D2-8BFE-1F24-8557E01D12B8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>04448097-149E-EBC1-268F-041AAF2C227F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GLD_ACCNTNG_STNDRD</preferredAbbreviation>
+</Attribute>
+<Attribute name="Held for sale indicator" id="A8FF6D66-898A-818B-5D7E-ADAC1387CF10">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:50 UTC</createdTime>
+<comment><![CDATA[Held for sale  indicates the Non-current assets and instruments in disposal groups classified as held for sale in accordance with IFRS5. Is not applicable under national GAAP based on BAD.]]></comment>
+<generatorID>9114A5FD-18D2-8BFE-1F24-8557E01D12B8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>BB101996-7F6A-FC5E-99D8-17BDCF254003</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9FC05F6E-0558-F79E-96CA-F05753F58262</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>HLD_SL_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="(Encumbered) Carrying amount" id="3F2D409A-345B-4F4B-8382-5F6D5338A274">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 12:00:59 UTC</createdTime>
+<comment><![CDATA[The carrying amount in accordance with Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ENCMBRD_CRRYNG_AMNT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Treatment of securitised / transferred assets in balance sheet" id="A97EC360-1465-DFEE-3662-497FDF102446">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-02-17 13:49:27 UTC</createdTime>
+<comment><![CDATA[Specifies the treatment of the underlying assets in the balance sheet, e.g. entirely derecognised.]]></comment>
+<generatorID>D4952992-BC83-8BB1-706E-D705F28FA934</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>FBBAF557-ABA3-7342-E6C8-4C0FD5D08D59</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>3D2C44FB-1786-45C4-A183-DFBB9CC6854F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRTMNT_TRNSFRRD_ASSTS_BLNC_SHT</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FBA1A6CA-1A61-79E8-C248-BBBEE36B378B" name="Repurchase transaction gold assignment PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2026-01-26 11:05:28 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1256E060-F401-D0C7-D82C-A07500035879</attributeRef>
+<attributeRef>933B929B-815C-9874-5BCB-F3893930735C</attributeRef>
+<attributeRef>D0B1363F-EA92-3D4F-3FF3-4B6136103DB9</attributeRef>
+<attributeRef>E35E1B54-41EF-E15D-BE94-A0036A42C212</attributeRef>
+<attributeRef>4B08F0A7-D492-FFBC-B281-51BE2C9A3780</attributeRef>
+<attributeRef>15BF5647-D3C3-5BB7-C0C9-A5DA661C9CAB</attributeRef>
+<attributeRef>AA9DA51B-D543-88AA-6AAB-A422022C171B</attributeRef>
+<attributeRef>35DFA167-604E-4621-3ED7-B3DAB2DF6044</attributeRef>
+<attributeRef>5C383980-EE66-F379-4111-C0517AACC806</attributeRef>
+<attributeRef>A8FF6D66-898A-818B-5D7E-ADAC1387CF10</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

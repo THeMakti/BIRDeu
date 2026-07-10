@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="EB457300-1C88-3B83-E990-EF774E46B186" name="Exchange tradable derivative position Protection arrangement assignment">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-11 12:21:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Exchange tradable derivative position Protection arrangement assignment is the combination of Exchange tradable derivative position and Protection arrangement   stating which Exchange tradable derivative position is offering protection for which Protection arrangement.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>EXCHNG_TRDBL_DRVTV_PSTN_PRTCN_ARRNGMNT_ASSGNMNT</preferredAbbreviation>
+<changeRequests>
+<requestID>18676-278</requestID>
+<requestID>26375-477</requestID>
+<requestID>8348-5</requestID>
+<requestID>26377-479</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Protection allocated value" id="9E74FF55-38E2-133C-4826-C7CF8077490A">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-11 12:25:48 UTC</createdTime>
+<comment><![CDATA[Protection allocated value is the maximum amount of the protection value, via the Protection arrangement, that can be considered as credit protection for the Long security position. For protections that is eligible under Regulation (EU) No 575/2013, this value should be reported in accordance with Part 2 of Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRTCTN_ALLCTD_VL</preferredAbbreviation>
+<changeRequests>
+<requestID>22084-410</requestID>
+<requestID>8348-5</requestID>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Allocated unused collateral value" id="0837A68A-3164-FAC6-7095-07596D23B944">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-11 12:25:48 UTC</createdTime>
+<comment><![CDATA[Allocated unused collateral value is an amount that expresses the protection value that is not used for risk mitigation and, for FINREP reporting purposes is allocated to a specific Loan and advance, which is the Long non-negotiable security position.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>A602B33C-0004-D05B-A4E1-4A2339C606D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ALLCTD_UNSD_CLLTRL_VL</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+<requestID>34227-511</requestID>
+</changeRequests>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Exchange tradable derivative Protection arrangement assignment type" id="0F63BB87-AE25-9F8D-0EC2-87A807FD751F">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-12-11 12:23:24 UTC</createdTime>
+<comment><![CDATA[Exchange tradable derivative Protection arrangement assignment type distinguishes Exchange tradable derivative Protection arrangement assignment according to the direction, given or received.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>FCD83160-3A12-43DB-A365-054BE550FD94</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EXCHNG_TRDBL_DRVTV_PRTCN_ARRNGMNT_ASSGNMNT_TYP</preferredAbbreviation>
+<changeRequests>
+<requestID>26377-479</requestID>
+</changeRequests>
+</Attribute>
+</attributes>
+</Entity>

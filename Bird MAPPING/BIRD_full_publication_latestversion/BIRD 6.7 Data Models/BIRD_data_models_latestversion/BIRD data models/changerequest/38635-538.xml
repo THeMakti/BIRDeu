@@ -1,0 +1,48 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="`Other collateral instrument received` entity type's definition seems to exclude `Deposit`(s)" id="38635-538">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+
+It seems that the definition of the entity type `Other collateral received instrument` excludes `Deposit`(s). Hence `Deposit` as collateral would not be covered by the BIRD LDM.
+
+### Contact person
+
+dominik.lin-ully@oenb.at
+
+### Background information
+
+The `Other collateral received instrument` entity type's definition reads: "Other collateral received instrument is a Collateral received instrument that is not an Over the counter (OTC) Credit default swap received as collateral instrument.
+
+Other collateral received instrument is an instrument role that is the assignment of receivables. This assignment is where the future cash flows are pledged as collateral. It is legally not a pledge but an assignment of receivables. These could be : Finance lease, Other trade receivable, Credit card debt, Other loan. 
+It pledges future cash flow as collateral. (note: not "Factoring")"
+
+I interpret the second part as a limitation / restriction which would not cover `Deposit`(s) because in this case the `Deposit` and not the future cash flows of the `Deposit` would act as collateral.
+
+If this interpretation is correct `Deposit` as collateral would not be covered by the BIRD LDM.
+
+### Points/Questions to resolve
+
+* check if you agree with my interpretation
+* if you agree, adjust the model so that it covers the use case of `Deposit`(s) as collateral
+* if you disagree, please enhance / improve the definition
+
+### Related issues
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/538</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

@@ -1,0 +1,66 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Institutional sector - derived attributes" id="29326-498">
+                    <createdBy>ostarij</createdBy>
+                    <comment>### Overview
+
+The LDM includes two derived attributes:
+
+* `Institutional sector according to EBA ITS`
+* `Institutional sector according to SHS`
+
+The two variables are wrongly assigned the whole institutional sector domain instead of their specific domain. However looking in the sdd I found the the two subdomains:
+
+* https://sdd.ecb.de/view/Subdomain/2007773320690
+* https://sdd.ecb.de/view/Subdomain/2007773320623
+
+From what I can see, the two subdomains just include aggregated members (e.g. households s14) therefore I presume the derivation would be just an aggregation, although the EBA ITS subdomain has members that are not in the LDM domain (e.g. General government including international organisations S13_IO)
+
+I would propose to delete this two variables if they are not used (`Institutional sector according to EBA ITS` is not used for Finrep generation rules). 
+
+Additionally the aggregated member **Households, extended to the rest of the world (s14)** in the institutional sector domain  is redundant as there are already:
+
+* Households that are sole proprietorships/partnerships without legal status: Sole proprietorships and partnerships without legal status included in the sector S.14, as defined in Regulation (EU) No 549/2013 (paragraphs 2.118 to 2.121 of Annex A), extended to the rest of the world (S14_A)
+* Households other than sole proprietorships/partnerships without legal status: It corresponds to sector S.14, as defined in Regulation (EU) No 549/2013 (paragraphs 2.118 to 2.121 of Annex A), extended to the rest of the world, other than sole proprietorships and partnerships without legal status (S14_B)
+
+therefore I propose to delete it.
+
+In case the variables are not deleted the domains need to be updated accordingly.
+
+### Contact person
+
+@Arianna.Nuvoli 
+
+### Description of change request
+
+_Two options:_
+
+1. Delete variables `Institutional sector according to EBA ITS` and `Institutional sector according to SHS`  
+2. Update the domain of `Institutional sector according to EBA ITS` and `Institutional sector according to SHS`
+
+Independently from the options delete the member **Households, extended to the rest of the world (s14)** from institutional domain
+
+### Summary of impacted LDM objects/attributes
+
+* `Institutional sector according to EBA ITS` and `Institutional sector according to SHS` in `Party derived data` entity
+* Institutional sector domain
+
+### Forward Engineering considerations
+
+_\[Other considerations\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/498</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

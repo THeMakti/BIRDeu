@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5663483-AF2F-48B9-0962-26EB00394C81" name="Asset_pool_Collateral_received_assignment">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Asset pool Debt security position assignment is the combination of an Asset pool and a Debt security position that indicates which (part of a) Debt security position is comprised in which Asset pool.]]></commentInRDBMS>
+<generatorID>3FB3AB42-7C91-CD5C-37CA-500B22FF713D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Collateral_received_identifier" id="92ED3378-393B-D49B-9265-ECB13987B979">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each collateral.]]></comment>
+<generatorID>5EFD28BA-3D38-B528-571A-A8E8D0616B06</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C477FBC1-4D57-2510-18D4-6E423F4F6107" referredColumn="1B888054-016A-FC31-60EB-019AA74F6FDA"/>
+</associations>
+</Column>
+<Column name="Collateral_received_role_type" id="24016396-DA0E-F310-5F39-AB1C07D8BE87">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Collateral role type distiguishes the Collateral role according to the role the Collateral acts in.]]></comment>
+<generatorID>DE57579B-1D8B-FD09-5950-D5AF853A176D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A13B4F0B-A165-43F0-8FFC-52E999DE5A44</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C477FBC1-4D57-2510-18D4-6E423F4F6107" referredColumn="4966001C-8A82-7301-32FA-F75CF91F9C48"/>
+</associations>
+</Column>
+<Column name="Asset_pool_reference_date" id="AB6AE019-6378-E2AF-4458-43F4B9102D9B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>58E6CB06-B734-E38B-ABA2-41B95F0F19E3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD1A3A1-6D17-FA95-9AB8-232287DEFD37" referredColumn="12C5E7BA-64B4-97AD-431E-455B0D6A6463"/>
+</associations>
+</Column>
+<Column name="Asset_pool_reporting_agent_identifier" id="C28FFC36-9168-B832-79EB-74B366DA6AF7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>A7E469A2-A5F3-91EE-8468-F1B49FC869B2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD1A3A1-6D17-FA95-9AB8-232287DEFD37" referredColumn="784EC93E-0586-E349-86CC-6E6D874D966B"/>
+</associations>
+</Column>
+<Column name="Asset_pool_accounting_consolidation_level" id="EB9A3560-8E54-FA91-6691-0FEBC926C447">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>49338BE4-290F-B0F6-284C-60FA78DD434D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD1A3A1-6D17-FA95-9AB8-232287DEFD37" referredColumn="B098D7C8-3017-3A8E-A5D0-BAB6E19E30DC"/>
+</associations>
+</Column>
+<Column name="Asset_pool_accounting_standard" id="AB5933A4-7743-A899-5D83-F42F70C30A9F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>07ADEF32-C886-F8B5-DBA5-43388865E0E6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD1A3A1-6D17-FA95-9AB8-232287DEFD37" referredColumn="A004C8EB-9AC5-AC65-27A8-867494DB46BB"/>
+</associations>
+</Column>
+<Column name="Asset_pool_identifier" id="BAF47DF1-947D-15AF-2A4E-5DABA7C6712C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each asset pool.]]></comment>
+<generatorID>E7A451BA-C992-8058-CC59-25D0248309A2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD1A3A1-6D17-FA95-9AB8-232287DEFD37" referredColumn="C0583BF9-4C98-C3FC-0D57-2913A5AE0A41"/>
+</associations>
+</Column>
+<Column name="Nominal_amount_transfered" id="2DF00FCC-7EEC-21B0-8E71-0D06FDDD1B70">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The amount of the nominal amount that has been transferred.]]></comment>
+<generatorID>E3FD47EF-FF4C-91A9-B659-0B1595620B74</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F823EAD-BE13-05B0-18BA-D45930B32BA3" name="Asset_pool_Collateral_received_assignment_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>7006EF0B-899A-3669-2ADF-7FF1AC22A530</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB6AE019-6378-E2AF-4458-43F4B9102D9B"/>
+<colUsage columnID="C28FFC36-9168-B832-79EB-74B366DA6AF7"/>
+<colUsage columnID="EB9A3560-8E54-FA91-6691-0FEBC926C447"/>
+<colUsage columnID="AB5933A4-7743-A899-5D83-F42F70C30A9F"/>
+<colUsage columnID="BAF47DF1-947D-15AF-2A4E-5DABA7C6712C"/>
+<colUsage columnID="92ED3378-393B-D49B-9265-ECB13987B979"/>
+<colUsage columnID="24016396-DA0E-F310-5F39-AB1C07D8BE87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BF67C17-BC67-C0E7-D675-3ADE26528753" name="Asset_pool_Collateral_received_assignment_Asset_pool_(subject_to_a_Securitisation_and_other_credit_transfer)_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB6AE019-6378-E2AF-4458-43F4B9102D9B"/>
+<colUsage columnID="C28FFC36-9168-B832-79EB-74B366DA6AF7"/>
+<colUsage columnID="EB9A3560-8E54-FA91-6691-0FEBC926C447"/>
+<colUsage columnID="AB5933A4-7743-A899-5D83-F42F70C30A9F"/>
+<colUsage columnID="BAF47DF1-947D-15AF-2A4E-5DABA7C6712C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC97E0E5-A13E-91D9-15FF-60B71D8C17F1" name="Asset_pool_Collateral_received_assignment_Collateral_role_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92ED3378-393B-D49B-9265-ECB13987B979"/>
+<colUsage columnID="24016396-DA0E-F310-5F39-AB1C07D8BE87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

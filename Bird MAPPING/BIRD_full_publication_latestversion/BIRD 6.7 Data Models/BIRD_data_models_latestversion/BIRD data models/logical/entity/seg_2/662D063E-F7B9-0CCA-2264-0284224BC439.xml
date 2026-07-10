@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="662D063E-F7B9-0CCA-2264-0284224BC439" name="Commercial immovable property related to land (excluding agricultural land)">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-02 13:27:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Commercial Immovable property is a commercial real estate property related to land  (excluding agricultural land).]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>33380944-8442-174B-069A-88F99EEEC3DC</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>58AD3A4A-6668-545C-9E14-F3A294702D9C</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>CMMRCL_IMMVBL_PRPRTY_RLTD_LND</preferredAbbreviation>
+<changeRequests>
+<requestID>40241-557</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Planning permission for development indicator" id="A304D9F8-B9B0-5E0A-09EE-613877CAAA63">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-02 13:35:02 UTC</createdTime>
+<comment><![CDATA[Planning permission for development indicator distinguishes Land excluding agriculture based on whether planning permission for development applies or not.]]></comment>
+<generatorID>F2CC0D61-2BA0-D8CB-4401-7471FF5430FA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>B1AA7C77-05C1-6A27-0C33-5079C7BBAD3A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D0352C45-53DB-31CC-520B-8FE7C83B35E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PLNNNG_PRMSSN_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Under construction or development indicator" id="32742CB3-93C6-C4BA-4CC7-7C1F40031533">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-06 09:09:54 UTC</createdTime>
+<comment><![CDATA[Under construction or development indicator indicates whether the property is under construction or development.
+
+Finrep Annex V. Part 2.350, 352(a). With regard to collateral in the form of immovable property (a) immovable property that is under construction or development.]]></comment>
+<generatorID>76224C74-BC54-E1BA-DDEC-3EA852D690B4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>8A734025-8988-28D7-BE2A-F68A3CEE789A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2C582793-822A-A0FA-AC6E-B22B8AEEABBF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>UNDR_CNSTRCTN_INDCTR</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

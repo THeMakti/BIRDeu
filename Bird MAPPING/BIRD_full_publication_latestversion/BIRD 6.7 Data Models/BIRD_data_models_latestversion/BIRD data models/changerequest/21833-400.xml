@@ -1,0 +1,86 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[SHS] Cumulative recoveries since default for bonds is missing" id="21833-400">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+Cumulative recoveries since default for bonds is missing. 
+
+
+### Contact person
+@Arjan.Bos , @sdressler 
+
+### Description of change request
+Debt securities do not have the cumulative recoveries since default in them in the LDM. The issue is to find out if that is needed and how to model them.
+
+### Legal definition
+Needed for SHS in Point 5.3.14 in [Guidance notes to reporting agents on SHS regulation](https://www.ecb.europa.eu/pub/pdf/other/ecb.guidance_notes_to_reporting_agents_on_shs_regulation202005\~f7bce14823.en.pdf)
+
+#### Description
+Total amount recovered since the date of default.
+
+#### Additional clarifications
+This attribute may not be required for the reporting of intra-group holdings (prudential
+scope), holdings not recognised on the balance sheet and “pure” short positions
+(i.e. those where no positive amount is held and recorded on the asset side), subject
+to the discretion of NCBs.
+
+If in accordance with the accounting classification or in the case of equity and
+investment fund shares or units the attribute is not applicable, it should not be filled.
+
+The attribute informs about the amount of recoveries received in relation to defaulted
+instruments from the start of the latest default of the instrument till the reporting
+reference date. It should be clarified that the term “default” in the definition of the data attribute refers to default as specified in Article 178 of the CRR.
+
+If an instrument is in default at the reporting reference date, then an amount of
+recoveries received in the period since the start of the default must be reported. If no
+recoveries have been received since the start of the default, zero must be reported.
+
+It should be noted that the amounts of recoveries since default are not accumulated
+over multiple defaults of one and the same instrument (i.e. where an instrument
+defaults, cures and re-defaults again). Accordingly, there is no carrying-over of
+recoveries from one default to another place – every time a new default starts, the
+cumulative recoveries since default are set to zero and the accumulation starts anew.
+
+Where the reason for default is other than past due, the amounts recovered must also
+be reported in this attribute.
+
+For the purpose of calculating the cumulative recoveries after default, all recoveries
+should be taken into account irrespective of their source; for example, the attribute
+must consider any voluntary cash repayments, any proceeds from liquidating of
+collateral, amounts received as a result of calling guarantees, etc. Moreover,
+recoveries from any protection securing the instrument must be included in this
+attribute.
+
+However, the attribute should be reported net of any recovery costs – for example, if a
+cost is incurred when realising proceeds from a collateral (e.g. liquidating a real estate
+property which serves as protection), only the proceeds remaining after deduction of
+the costs of the liquidation process are reported in this attribute.
+
+In all other cases, where an instrument is no longer in default at a reporting reference
+date, the relevant NCB may dispense with the requirement to fill the attribute.
+
+In the case of proportional consolidation of holding entities (see Article 18(4) of the
+CRR), the total holding amount has to be adjusted for the reporting, in accordance with
+the proportional share of consolidation.
+
+### Summary of impacted LDM objects/attributes
+- Debt security
+- one of the Debt security position entity types
+
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/400</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

@@ -1,0 +1,57 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Add security identifier type CUSIP/SEDOL" id="35114-517">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+Securities are identified by ISIN. There are also other types of identifiers for securities in use. This request is to add both `Security identifier type` and its corresponding security identifier to the LDM
+
+
+### Contact person
+_[me@ecb.europa.eu]_
+
+### Business definition
+paragraph 5.4.1 Security identifier code of SHS guideline (see below)
+
+#### Description
+&gt; A standard code, agreed with the relevant NCB, which uniquely identifies the security
+and information on the type of code used to uniquely identify the security.
+Additional clarifications
+
+&gt; This is a security identification number of a **non-ISIN instrument**, which should ensure
+the unique and time-consistent identification of the security.
+
+&gt; Moreover, the type of identifier used for the non-ISIN security should be provided as a
+separate variable, e.g. to specify that the Committee on Uniform Securities Identification Procedures (CUSIP) code has been used as an identification number for the non-ISIN instrument.
+
+### Reason for inclusion
+Needed for IReF and for SHS
+
+### Related objects
+- _Security and exchange tradable derivative_
+- _Security_
+- _Exchange tradable derivative_
+- _International securities identification number (ISIN) security_
+
+### Relevant Framework/Template
+- SHS https://www.ecb.europa.eu/pub/pdf/other/ecb.guidance_notes_to_reporting_agents_on_shs_regulation202005~f7bce14823.en.pdf
+- IReF https://sdd.ecb.de/bycode/variable/ECB30/SCRTY_ID_TYP (ECB internal link)
+
+
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/517</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

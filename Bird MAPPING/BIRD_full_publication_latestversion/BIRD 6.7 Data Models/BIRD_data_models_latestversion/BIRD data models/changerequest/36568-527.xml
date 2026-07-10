@@ -1,0 +1,70 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Date of non-performing status versus Date of performing status - why different treatment?" id="36568-527">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+Hi
+
+I struggle a little bit with how the concept of "Performing status" is unaligned in Instrument and Credit facility.
+Also, how this correlates with the date field sub optimally.
+In the credit facility, I interpret it as it covers a two-way scenario, where it is monitoring the change regardless which "direction"; from non-performing to performing or vice-versa.
+In the instrument entity, the date and the related status, is only working in a one-way scenario.
+Maybe, the above is just an unfortunate mistake? My suggestion is that Instrument should replicate Credit facility in this matter.
+AnaCredit Reporting Manual – Part II – Datasets and data attributes
+Find example in table 63.
+
+
+From the attributes list in framework model BIRD 6.5.
+![image](/uploads/12aadb124bec584a681944ffd75ff020/image.png)
+
+
+
+### Contact person
+_[m.peters80@gmail.com]_
+
+### Business definition
+_[Business requirements]_
+
+### Legal definition
+Implementing Regulation (EU) No 680/2014.
+
+AnaCredit Reporting Manual
+Part II – Datasets and data attributes: Anacredit 5.4.10
+
+
+### Reason for inclusion
+_[Justifications]_
+
+### Relationships
+_[Related objects]_
+
+### Relevant Framework/Template
+Instruments recognised in the balance sheet in accordance with the accounting
+standard are reported with the value used for their classification in FINREP Template
+18. For further details regarding the classification as non-performing, refer to Part 2,
+paragraphs 213 to 239, of Annex V to the amended ITS.
+
+
+Definition: The date on which the performing status as reported in “performing status of
+the instrument” is considered to have been established or changed.
+
+### Additional documentation/links (optional)
+_[Additional info]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/527</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

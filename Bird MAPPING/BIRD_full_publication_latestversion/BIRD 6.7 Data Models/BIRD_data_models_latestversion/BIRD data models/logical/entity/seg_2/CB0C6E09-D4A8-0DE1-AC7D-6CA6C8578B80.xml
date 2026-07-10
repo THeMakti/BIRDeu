@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="CB0C6E09-D4A8-0DE1-AC7D-6CA6C8578B80" name="Real estate collateral">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-03 12:47:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Real estate collateral is Registered collateral in the form of real estate.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>9233E877-99B3-25CB-0DCC-48B7E03DC1DD</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>74CBF0BA-D8C4-24EA-B0C0-163D00A99C5C</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>RL_ESTT_CLLTRL</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Real estate collateral location type" id="BAB69DE6-AC05-8ADB-577F-61F11B4EFA93">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-03 12:52:26 UTC</createdTime>
+<comment><![CDATA[Real estate collateral location type is a discriminator to distinguish between real estate collateral located in a member state or not in a member state.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bd938efd-efca-482c-a9ca-102cab79784f</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RL_ESTT_CLLTRL_LCTN_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Real estate collateral type" id="83A81BD2-F5E3-6CC3-EC13-5B3F60FD1F2E">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-09-22 08:47:23 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of real estate collateral.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A6FB7A00-F314-B3E4-6E4A-83130601409F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>RL_ESTT_CLLTRL_TYP</preferredAbbreviation>
+</Attribute>
+<Attribute name="Type of protection valuation approach" id="E6912E81-2833-1CB4-7986-FE76FF316DA5">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-11-22 13:50:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>2235FCA1-CF68-19A3-6110-116AEBC2B339</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<constraintName>Type of protection valuation approach for Real estate</constraintName>
+<referedAttribute>42FB6796-6106-8A02-C7DA-675F442A6C5C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_PRTCTN_VL_APPRCH</preferredAbbreviation>
+</Attribute>
+<Attribute name="Under construction or development indicator" id="B8276881-6164-B760-BE0E-AD530AB1DD53">
+<createdBy>bosarie</createdBy>
+<createdTime>2023-09-22 12:19:16 UTC</createdTime>
+<comment><![CDATA[Under construction or development indicator indicates whether the property is under construction or development.
+
+Finrep Annex V. Part 2.350, 352(a). With regard to collateral in the form of immovable property (a) immovable property that is under construction or development.]]></comment>
+<generatorID>56DBE759-5C45-57E9-6707-2CF8BFDE3274</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>8A734025-8988-28D7-BE2A-F68A3CEE789A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2C582793-822A-A0FA-AC6E-B22B8AEEABBF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>UNDR_CNSTRCTN_INDCTR</preferredAbbreviation>
+</Attribute>
+<Attribute name="Long-term sustainable value amount of the collateral" id="23E0930F-A118-7E8A-3DFB-C785B9D17F7E">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-05 15:11:45 UTC</createdTime>
+<comment><![CDATA[Long-term sustainable value amount of the collateral is the  ‘mortgage lending value’ of immovable property as defined in Article 4(1)(74) of Regulation (EU) No 575/2013. To be used if the protection is immovable property when the 'mortgage lending value' is reported in the data attribute 'Protection value'.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LT_SSTNBL_VL</preferredAbbreviation>
+</Attribute>
+<Attribute name="Market value amount of the collateral" id="3B648236-0F66-456D-58A3-A646AFB6E488">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-12-05 15:12:16 UTC</createdTime>
+<comment><![CDATA[The market value of collateral.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>MRKT_VL</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

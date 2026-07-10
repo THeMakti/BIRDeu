@@ -1,0 +1,70 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Time past due band - update" id="29297-497">
+                    <createdBy>ostarij</createdBy>
+                    <comment># Overview
+
+According to @Olivia.Hauet analysis:
+
+1. For the purpose of FINREP, the reporting of arrears starts from the first past due date, irrespective of the materiality threshold. In that, FINREP and AnaCredit are aligned.
+2. However, if the past due amount does not breach the materiality threshold, it is to be reported in the time band 30 to 90 days even though the past due date is \&gt; 90
+3. The reporting into the time bands over 90 days (and subsequent qualification as default and non-performing) requires that the past due amount has been material during \&gt; 90 consecutive days.
+
+Most likely this will mean an update similar to your last suggestion. For BIRD I propose two extra indicators:
+
+1. `90 days material past due indicator` with values “at least 90 days past due above material threshold” and “not (yet) 90 days past due above material threshold”.
+2. `Materiality threshold breached indicator` with values “materiality threshold breached since start of past due” and “materiality threshold not breached”.
+
+@Arjan.Bos
+
+### Contact person
+
+### Business definition
+
+_\[Business requirements\]_
+
+### Legal definition
+
+References from Annex 5
+
+ 96    .Financial assets shall qualify as past due where **any amount of principal, interest or fee has not been paid at the date it was due.** Past due exposures shall be reported for their entire carrying amount and broken down according to the number of days of the oldest past due amount unpaid at the reference date. Under IFRS, the carrying amounts of assets that are not purchased or originated credit-impaired financial assets shall be reported by impairment stages; the carrying amount of purchased or originated credit-impaired financial assets shall be separately reported. Under national GAAP based on BAD, past-due assets shall be reported by impairment status in accordance with the applicable accounting standards.
+
+ 
+
+222\. For the purpose of template 18, an exposure is ‘past-due’ where it meets the criteria of paragraph 96 of this Part. For the purpose of classification of exposures as non-performing in accordance with point (a) of Article 47a(3) CRR, the counting of 90 days past due commences once the past due amount, being the sum of past due principal, interest and fees, breaches the materiality threshold as defined in paragraph 216 of this Part. If the past due part of exposures continues to be **material for 90 consecutive days**, the exposure should then be classified as non-performing. 
+
+ 
+
+235 . Past due exposures shall be reported separately within the performing and non-performing categories for their entire amount as defined in paragraph 96 of this Part. **Exposures past due by more than 90 days but that are not material in accordance with Article 178 CRR shall be reported within performing exposures in ‘Past due \&gt; 30 days \&lt;= 90 days’**.
+
+### Reason for inclusion
+
+_\[Justifications\]_
+
+### Relationships
+
+_\[Related objects\]_
+
+### Relevant Framework/Template
+
+_\[Relevance\]_
+
+### Additional documentation/links (optional)
+
+_\[Additional info\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/497</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

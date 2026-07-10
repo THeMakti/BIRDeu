@@ -1,0 +1,376 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52F708EF-7BD6-7B36-54B6-D52B6BF98575" name="Debt_security_issued_(by_the_reporting_agent)">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Debt security issued (by the Reporting agent) is the combination of the  Debt security where the Reporting agent is the Debtor and the accounting classification that represents the financial liability side of the Debt security issued (by the reporting agent).
+
+Please note: 
+- The overall information about the Debt security issued (by the reporting agent) is in the entity type Debt security.
+- The asset side of the bought back and/or retained part of the Debt security issued (by the reporting agent) is in the entity type Long debt security position.]]></commentInRDBMS>
+<generatorID>101580C7-7A41-DBA0-F668-CA0B21D0D2A3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<ordsAlias>debt_security_issued_by_the_reporting_agent</ordsAlias>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Debt_security_issued_reference_date" id="5E2A2758-A358-E40A-0941-887929A2455A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>866D6180-85AF-80D5-4AC3-E43DB2ABF14E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636F83BE-C1CC-79B0-A8D5-FC09A0B6E958" referredColumn="7CBAB427-F2AF-9A61-D92B-10E417377122"/>
+</associations>
+</Column>
+<Column name="Debt_security_issued_reporting_agent_identifier" id="BCC5B955-BF59-3E64-094F-C11F5AAA6BD6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>070B0910-AF79-5AFF-98CD-DF363A304A91</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636F83BE-C1CC-79B0-A8D5-FC09A0B6E958" referredColumn="C628A99E-9BF4-A6EE-5A4A-43FFA0D4AB62"/>
+</associations>
+</Column>
+<Column name="Debt_security_issued_accounting_consolidation_level" id="EF9D0774-673C-EA0F-968F-AB508ACA18F1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>88ECB813-524C-B4A9-277B-3083E827476E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636F83BE-C1CC-79B0-A8D5-FC09A0B6E958" referredColumn="94F4CABF-317A-C28C-85F3-2F15989AB2F2"/>
+</associations>
+</Column>
+<Column name="Debt_security_issued_accounting_standard" id="0ACFFA1F-A314-2E94-69B3-F561EA2EA2D4">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>80D9374C-AA1C-6E4F-265D-46A8A057F0C0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2F34F4CF-5CD5-E3FD-D747-233B1B39FC14</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636F83BE-C1CC-79B0-A8D5-FC09A0B6E958" referredColumn="7EA384EE-87CC-A505-BD86-A24F78BD741F"/>
+</associations>
+</Column>
+<Column name="Debt_security_issued_identifier" id="11AD19AF-2828-A11F-1EB5-CA819910AE78">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The security identifier of the involved debt security.]]></comment>
+<generatorID>60D9D0DB-16C9-8A7E-8EAA-1D1A39C21015</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636F83BE-C1CC-79B0-A8D5-FC09A0B6E958" referredColumn="A25D9031-05B9-91E5-3089-D1C3E185021C"/>
+</associations>
+</Column>
+<Column name="Accounting_classification" id="31A2730A-BBF4-5ACC-FCF8-E500F4DA908E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting portfolio where the asset or liability is recorded in accordance with the accounting standard – IFRS or national GAAP –under Regulation (EU) 2015/534 (ECB/2015/13) applied by the observed agent's legal entity.]]></comment>
+<generatorID>F3C7061B-EDCC-8CB9-5055-CFF0E40AD9B0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A553F1FA-51FD-48C2-A80A-426CA94AD34E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Asset_encumbrance_residual_maturity_band" id="6384C193-C986-4A4E-E46B-BB02E9F762B6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-31 13:23:41 UTC</createdTime>
+<comment><![CDATA[Asset encumbrance residual maturity band divides the remaining maturity of the asset into the specific maturity band applicable to asset encumbrance reporting.]]></comment>
+<generatorID>4569EA17-2947-0D27-5B40-356CFFC52E38</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>85A72566-C4C7-D7B8-7BCB-6243CE0CDA7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Asset_encumbrance_source_indicator" id="DC4BD1CF-BD1F-BD41-F37D-2B9F0FA25F78">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-31 13:23:41 UTC</createdTime>
+<comment><![CDATA[Asset encumbrance source indicator signals whether the liabity or off-balance sheet item is a source of encumbrance for an asset or not.]]></comment>
+<generatorID>F9C412B4-BC0C-AE22-504F-D4D462B4AD6B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>760D4A10-7EAF-40F3-93F6-1596CE29B357</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Carrying_amount" id="1C527F54-1415-813D-10C7-A7596E07C8A5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The carrying amount in accordance with Annex V to Implementing Regulation (EU) No 680/2014.
+
+"the carrying amount" means the amount to be reported in the balance sheet. 
+The carrying amount of financial instruments shall include accrued interest. Under the relevant national GAAP based on BAD, the carrying amount of derivatives either shall be the carrying amount under national GAAP including accruals, premium values and provisions if applicable, or it shall be equal to zero where derivatives are not recognised on-balance sheet.]]></comment>
+<generatorID>360C4B54-C8A4-4255-CA7D-7B26BB67A31C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Debt_security_issued_prudential_portfolio_type" id="EAE6C2C7-AEA2-EAA5-05A1-06A5738077AB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Debt security issued prudential portfolio type distinguishes Debt security issued (by the reporting agent) according to where in the prudential portfolio the liability is recorded, banking or trading book.]]></comment>
+<generatorID>6D1335A5-B571-B172-D5E0-DB2EC1E96D3B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>B0FBF051-B5B4-181C-94E0-4D41EDAEAC87</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Debt_security_issued_type" id="2331E6D0-F1AC-FFDA-4291-25C3E11418F1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-29 17:34:22 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D51655F7-C1E9-739D-EDF2-14EC9D6264A9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fair_value_hierarchy" id="5306E278-F97B-4B39-DF74-F7420CA07564">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Level of fair value of a financial instruments according to the hierarchy defined in IFRS 13. Applicable to national GAAP based on BAD only if the allocation of instruments is measured at fair value according to different levels.]]></comment>
+<generatorID>FD4F62A7-8AAE-8ED3-8202-18A81157D5C3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D7A59671-C427-FB17-9F03-7E27419DAB4B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fair_value_option_designation" id="9CE63A3D-4FB7-2478-9C8F-2C09B294B3B7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Fair value designation states the reason that the Fair-valued debt security issued is irrevocably designated a non-derivative debt security issued at fair value through profit or loss (use of fair value option).]]></comment>
+<generatorID>D883CC44-0637-131E-6935-D07A1274D34E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>CB2D9C46-7413-1FBA-004A-5D3C3CA2F5DC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Held_for_sale_indicator" id="8370BC9C-825E-F367-F2F5-97F340CA8072">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Held for sale  indicates the Non-current assets and instruments in disposal groups classified as held for sale in accordance with IFRS5. Is not applicable under national GAAP based on BAD.]]></comment>
+<generatorID>85A41197-B3D1-12D5-C846-12ADFEC5B414</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>9FC05F6E-0558-F79E-96CA-F05753F58262</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nominal_amount" id="345039B6-2682-EB2C-8CDE-9164505CB715">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Holding amount at nominal value]]></comment>
+<generatorID>BBB575DB-C6DD-4C16-F25A-0E7A02F826E3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Non-performing_prior_to_forbearance_indicator" id="5B50488D-8BDD-828E-30BE-1C039B48B2C2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Non-performing prior to forbearance specifies if an asset that is a debt security issued (by the reporting agent) is classified as non-performing prior to forbearance according to Regulation (EU) 680/2014, Annex V, part 2.263.]]></comment>
+<generatorID>4CD14F5C-E5CD-15D4-EC21-7854705201E9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>F88013CE-0450-6ED0-E62F-A5AC72213D59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Present_value_(swap)" id="B29F914E-716D-863A-8BFF-A2B23FFDC8E0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Present Value (swap) shall be the sum of claims to payment of principal and interest, as discounted by a foreign exchange-specific risk-free yield curve, determined in accordance with the relevant statutory covered bond regime's rules that apply for determining sufficient coverage for the Debt security (issued by the reporting agent).]]></comment>
+<generatorID>5316815E-5760-CC89-20CA-FE1AAEC181D5</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_of_product" id="F24DADFE-3A88-EFE6-51BE-1C3622B28C16">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Type of product]]></comment>
+<generatorID>A6445E0A-C3DC-EB32-E2C1-9E1F52C6AC1B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8BEB18D1-4EC5-4643-B4F3-1EBBFB071829</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Accumulated_changes_in_fair_value" id="98DFC129-E085-4A89-D35B-E5A5AE60835F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Amount of gains and losses from re-measurement of the asset accumulated from the initial recognition to the reference date.]]></comment>
+<generatorID>BD98F00D-D361-2B2A-26F1-855D7717C089</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Accumulated_changes_in_fair_value_due_to_(own)_credit_risk" id="C7D32284-2B78-3799-D0BC-5E71074AAAD5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accumulated changes in fair value due to credit risk in accordance with Part 2.46 of Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<generatorID>E8FE1840-358C-C2F5-79EB-1E90D6AC30E0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fair_value" id="01643FB2-EC95-5AE4-86FE-4DF69C533EF2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Fair value as defined in IFRS 13.9.]]></comment>
+<generatorID>6F3936EE-EB8C-3F45-8321-DFA4E256B3F2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fair_value_change" id="13D47DA5-12CA-65B8-3276-1FD9DE1B6CE1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Fair value changes in the period and before taxes.]]></comment>
+<generatorID>09A0425A-7F5C-9FDE-92FE-CA42493B8CCC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Haircuts_for_trading_position_valued_at_fair_value" id="9A4D2539-648B-E360-1C4E-8F85CDEB28CD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Haircut for trading position valued at fair value. 
+According to Annex V (5.29):
+Where applicable under national GAAP based on BAD, ‘Haircuts for trading positions valued at fair value’ shall be reported. The haircuts decrease the value of trading assets and increase the value of trading liabilities.]]></comment>
+<generatorID>638C6D40-C445-D032-C617-FB2688B544C3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Start_date_of_the_period" id="DF95C561-C4EE-4927-8390-99960EB7351B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The start date of the period.]]></comment>
+<generatorID>72870B70-A82D-7C4F-F577-EEE457B442CA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3A5163E-7654-62AE-37A7-1AE2D39F4C58" name="Debt_security_issued_(by_the_reporting_agent)_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>C196C5EF-1B22-620F-78FF-48041386A041</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E2A2758-A358-E40A-0941-887929A2455A"/>
+<colUsage columnID="BCC5B955-BF59-3E64-094F-C11F5AAA6BD6"/>
+<colUsage columnID="EF9D0774-673C-EA0F-968F-AB508ACA18F1"/>
+<colUsage columnID="0ACFFA1F-A314-2E94-69B3-F561EA2EA2D4"/>
+<colUsage columnID="11AD19AF-2828-A11F-1EB5-CA819910AE78"/>
+<colUsage columnID="31A2730A-BBF4-5ACC-FCF8-E500F4DA908E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="443A2686-2CA7-B80D-49C4-37007487D88D" name="Debt_security_issued_(by_the_reporting_agent)_Security_and_exchange_tradable_derivative_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>47734718-DAA7-65EB-119E-79BDC560AD91</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E2A2758-A358-E40A-0941-887929A2455A"/>
+<colUsage columnID="BCC5B955-BF59-3E64-094F-C11F5AAA6BD6"/>
+<colUsage columnID="EF9D0774-673C-EA0F-968F-AB508ACA18F1"/>
+<colUsage columnID="0ACFFA1F-A314-2E94-69B3-F561EA2EA2D4"/>
+<colUsage columnID="11AD19AF-2828-A11F-1EB5-CA819910AE78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

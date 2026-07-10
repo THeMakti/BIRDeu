@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="73109CC7-BE00-90EB-8DA2-E5ECADEA1F28" name="Long_debt_security_position_encumbrance_derived_data">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Long debt security position encumbrance derived data is encumbrance related information about a Long debt security position that can be derived from other information in the model.]]></commentInRDBMS>
+<generatorID>07FDEF6C-D9F8-A28F-E587-8181B8913996</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>6B4999C9-9ED0-E7FF-EF12-F2895351A157</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Reference_date" id="81C1A59D-A66E-24CD-6DC8-6241BFE17EC7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>02F1E66D-B390-5A09-3AB8-52B7DAECF4C7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="828CE1B0-C802-6BD1-C376-FDCBCC730C9E"/>
+</associations>
+</Column>
+<Column name="Reporting_agent_identifier" id="A6180505-1C8F-882E-0089-4A65BCB42D24">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>EAB36E4B-3ED2-EAA3-E704-DFEA4901DF1A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="DB09C768-4E5F-ABA4-FD98-5B1636FC31AB"/>
+</associations>
+</Column>
+<Column name="Accounting_consolidation_level" id="77142D33-4FF0-C15E-F558-0AD431C216FD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>AFDE08E6-F250-542D-DD23-C1CE0CAB7F49</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="1F4C48AC-0817-D688-9DEF-8B58D054686B"/>
+</associations>
+</Column>
+<Column name="Accounting_standard" id="5501159D-EF0F-6F0C-1E69-C0C1CB31AFC2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>5075ECE7-61D2-6323-7E97-22E902B73FBB</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2F34F4CF-5CD5-E3FD-D747-233B1B39FC14</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="A21D5956-2C34-7470-B635-0D82BD4C788D"/>
+</associations>
+</Column>
+<Column name="Source_of_encumbrance" id="4F4D2EF4-BB1E-6BBB-04EA-C62D71225B04">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[Type of transaction in which the exposure is encumbered in accordance with Implementing Regulation (EU) No 680/2014. An asset will be treated as encumbered if it has been pledged or if it is subject to any form of arrangement to secure, collateralise or credit enhance any instrument from which it cannot be freely withdrawn.]]></comment>
+<generatorID>72373939-0B80-93BD-CB1D-CEC52911FFA1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>0E5DF8E5-54C3-457C-AFE3-439D057AF244</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Investor_role_type" id="7808EAEB-371C-3672-F5E7-C60B68346706">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-29 15:12:09 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>3DD42234-B0F5-E4C9-F931-4D20C6EF5FAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="790C3E1E-7BAF-3C33-47F0-93FBC142D7A4"/>
+</associations>
+</Column>
+<Column name="Investor_identifier" id="9E28979A-00BA-A0CD-8C1F-65FABB752C4D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-29 15:31:30 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="1FEE8DA1-20A8-2D4E-D24D-4037B48DD9C2"/>
+</associations>
+</Column>
+<Column name="Security_identifier" id="26D76AAF-7731-53DA-0B34-78283B8DC46D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 15:49:11 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F847615-1B63-D47D-3866-3BD2E50C2F2C" referredColumn="4A65D90E-3367-7E78-FBE0-F86D39598BD1"/>
+</associations>
+</Column>
+<Column name="Encumbered_nominal_amount" id="D1D2E90E-914E-D73C-2F5A-811763FF1277">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<comment><![CDATA[The nominal amount that is encumbered according to ITS on Asset encumbrance, 1.7 Definition of encumbrance.]]></comment>
+<generatorID>DED659CE-ED68-8774-B0DE-4C4481C4FED9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E66FEEC-A29A-85DD-B44B-1DD87B9BAAB5" name="Long_debt_security_position_encumbrance_derived_data_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:05 UTC</createdTime>
+<generatorID>BAE1BF1A-1594-BF0A-1242-456242F68D74</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81C1A59D-A66E-24CD-6DC8-6241BFE17EC7"/>
+<colUsage columnID="A6180505-1C8F-882E-0089-4A65BCB42D24"/>
+<colUsage columnID="77142D33-4FF0-C15E-F558-0AD431C216FD"/>
+<colUsage columnID="5501159D-EF0F-6F0C-1E69-C0C1CB31AFC2"/>
+<colUsage columnID="4F4D2EF4-BB1E-6BBB-04EA-C62D71225B04"/>
+<colUsage columnID="7808EAEB-371C-3672-F5E7-C60B68346706"/>
+<colUsage columnID="9E28979A-00BA-A0CD-8C1F-65FABB752C4D"/>
+<colUsage columnID="26D76AAF-7731-53DA-0B34-78283B8DC46D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3983954-F25D-8E6D-46EA-9956132CF13E" name="Long_debt_security_position_encumbrance_derived_data_Security_position_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-28 11:34:06 UTC</createdTime>
+<generatorID>56519D50-2016-DA9B-EAD1-9CCF69C40776</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5501159D-EF0F-6F0C-1E69-C0C1CB31AFC2"/>
+<colUsage columnID="26D76AAF-7731-53DA-0B34-78283B8DC46D"/>
+<colUsage columnID="81C1A59D-A66E-24CD-6DC8-6241BFE17EC7"/>
+<colUsage columnID="A6180505-1C8F-882E-0089-4A65BCB42D24"/>
+<colUsage columnID="77142D33-4FF0-C15E-F558-0AD431C216FD"/>
+<colUsage columnID="7808EAEB-371C-3672-F5E7-C60B68346706"/>
+<colUsage columnID="9E28979A-00BA-A0CD-8C1F-65FABB752C4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

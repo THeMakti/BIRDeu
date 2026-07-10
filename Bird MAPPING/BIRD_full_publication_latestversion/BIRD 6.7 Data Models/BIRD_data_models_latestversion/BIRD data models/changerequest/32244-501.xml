@@ -1,0 +1,59 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Deposit as Loan subtype or as direct subtype of Instrument?" id="32244-501">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!--See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab)--&gt;
+
+&lt;!-- The Jeans issue ;-) --&gt;
+
+### Overview
+
+The entity type _Deposit_ is currently a subtype of _Loan_ in the LDM. From a reporting point of view, this works. However, as discussed in issue #462, and specifically in https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/462#note_1524906 and https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/462#note_1619577 and https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/462#note_1651911 and https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/462#note_1626129 there are two possible interpretations possible for Deposit.
+
+### Questions:
+
+1. Do we keep the current model structure for _Deposit_ as subtype of _Loan_?
+2. Or do we move it as direct subtype to _Instrument_ as depicted in the picture below:
+
+![462-ae-requirements-deposits-and-repurchase-agreements](/uploads/4139cede351ae169d0171e5193b5a7a6/462-ae-requirements-deposits-and-repurchase-agreements.png)
+
+(please ignore the "new" labels, they are a left-over of the picture in issue #462)
+
+Part of this picture is already implemented because of #462.
+
+### Contact person
+
+@Arjan.Bos
+
+### Description of change request
+
+- There is only one _Deposit_. IReF sees this the same way.
+- It is not a _Loan_, as is my interpretation of BSI Annex II part 2 liabilities table and ESA 5.117 - 5.119 "Distinction between transactions in loans and transactions in deposits" (See https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02013R0549-20150824)
+- It is a subtype directly of _Instrument_
+- Transferable deposit includes current account
+- Overdraft (needed for AnaCredit) is a current account with a credit balance (ESA F.22 5.82)
+- This is derivable from the sign of the nominal amount of the
+- ~~Revolving credit (new entity type) is now called Revolving loan to match the BSI definition~~ `Revolving loan indicator` remains an existing attribute of both _Trade receivables_ and of _Other Loan_.
+- Cash leg for a repo links to _Deposit_.
+- Cash leg for a reverse repo links to _Reverse repurchase agreement loan_.
+
+### Summary of impacted LDM objects/attributes
+
+- All entity types with _(excluding repuchase agreement)_ in the name.
+- ...
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/501</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

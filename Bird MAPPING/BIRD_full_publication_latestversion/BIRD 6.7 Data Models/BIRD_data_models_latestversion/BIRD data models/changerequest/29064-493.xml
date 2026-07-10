@@ -1,0 +1,57 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Derivatives - Hedge accounting. At cost based method or LOCOM" id="29064-493">
+                    <createdBy>ostarij</createdBy>
+                    <comment> ~"Status::open" ~"Assignment status::ready for assignment"
+
+# Overview
+
+In Finrep template F 11.02, it is required to specify whether the accounting classification for a Derivative is equal to 'Hedge accounting'  that in the LDM we can consider covered by either `Over the counter (OTC) Derivative as a hedge` (subtype of `Over the counter (OTC) Derivative role`) or by `Exchange tradable derivative position as a hedge` (subtype of  or `Exchange tradable derivative position role`) or 'Hedge accounting. At cost based method or LOCOM' that is currently not covered. 
+
+I would propose to add the attribute Accounting classification also at the level of the hedge role (`Over the counter (OTC) Derivative as a hedge` ,`Exchange tradable derivative position as a hedge` ), similarly to what we have for asset and liabilities, with members '_Hedge accounting'_ and '_Hedge accounting. At cost based method or LOCOM'._
+
+The only obstacle at this solution would be that `Over the counter (OTC) Derivative as a hedge`  includes already an attribute called `Accounting hedge indicator`, but why this indicator was not added also to exchange tradable derivatives?
+
+### Contact person
+
+_\[_[_arianna.nuvoli@ecb.europa.eu_](mailto:me@ecb.europa.eu)_\]_
+
+### Business definition
+
+_\[Business requirements\]_
+
+### Legal definition
+
+_\[Legal reference\]_
+
+### Reason for inclusion
+
+Finrep integration
+
+### Relationships
+
+_\[Related objects\]_
+
+### Relevant Framework/Template
+
+F 11.02
+
+### Additional documentation/links (optional)
+
+https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/337, https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/424
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/493</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

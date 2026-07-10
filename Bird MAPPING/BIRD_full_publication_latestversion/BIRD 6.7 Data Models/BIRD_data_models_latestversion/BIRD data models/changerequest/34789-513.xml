@@ -1,0 +1,43 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Compliance with article 129 of CRR indicator and Asset class according to CRR, Article 129" id="34789-513">
+                    <createdBy>ostarij</createdBy>
+                    <comment>### Overview
+
+The attribute `Compliance with article 129 of CRR indicator` (entity type `Asset pool (subject to a Covered bond programme)`) has been wrongly assigned to the domain _Primary asset cover pool_ which is the same as the attribute `Asset class according to CRR, Article 129.` The two attribute shared also the same abbreviation so just one is then included in the input layer.
+
+### Contact person
+
+@Arianna.Nuvoli 
+
+### Description of change request
+
+_Assign attribute `Compliance with article 129 of CRR indicator` the the domain Compliance with article 129 CRR type and change the abbreviation._
+
+### Summary of impacted LDM objects/attributes
+
+Entity type: `Asset pool (subject to a Covered bond programme)`
+
+Attribute: `Compliance with article 129 CRR type`
+
+![image.png](/uploads/2d7f81ef996193c27a2f69bf9f3f5efe/image.png){width=250 height=164}
+
+### Forward Engineering considerations
+
+_Update table `ASST_PL`_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/513</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

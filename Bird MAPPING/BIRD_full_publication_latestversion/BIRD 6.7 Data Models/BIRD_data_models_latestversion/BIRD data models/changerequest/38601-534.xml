@@ -1,0 +1,72 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Possible limitation to applying multiple subtype levels when using the 'role construct', e.g., `Exchange tradable derivative position role`" id="38601-534">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+
+There exists a logical constraint for applying multiple subtype levels to the 'role construct'.
+Namely, if a 'thing' can act in multiple 'thing roles' which are organised / subtypes of a 'particular thing role' (being a subype of 'thing role') multiple subtype levels are not valid due to the constraints given by the primary key (of the 'thing role' entity type).
+
+One situation where such a constraint may apply is the entity type `Exchange tradable derivative position role`.
+
+### Contact person
+
+dominik.lin-ully@oenb.at
+
+### Background information
+
+
+It seems that there is a possible limitations of the BIRD LDM as regards the entity type `Exchange tradable derivative position role`.
+Specifically the attribute `Exchange tradable derivative position role`.`Exchange tradable derivative position role type` is constraint to the following allowed values:
+* `Exchange tradable derivative asset or liability position (3)`, and
+* `Exchange tradable derivative position as a hedge (4)`.
+
+However the `Exchange tradable derivative position role` hierarchy comprises multiple levels, as illustrated in the following picture:
+
+![BIRD_LDM_-_Exchange_tradable_derivative_position_role](/uploads/d516686a7746d93f313d6e7c7494d669/BIRD_LDM_-_Exchange_tradable_derivative_position_role.png)
+
+In my opinion there is a logical problem if an `Exchange tradable derivative position` acts in more than one `Exchange tradable derivative position role` being a subtype of the first level of subtyping, e.g., if an `Exchange tradable derivative position` acts in the roles `Exchange tradable derivative asset position (1)` and `Exchange tradable derivative liability position (2)` (both being subtypes of `Exchange tradable derivative asset or liability position (3)`).
+
+In order to illustrate the (possible) problem more clearly, please consider the following example - for the sake of simplicity we are omitting primary key components originating from the `Model context` entity type and `Party role type`(s):
+
+Two `Parties`, namely `Valentina` and `Dom`, act as the `Buyer` and the `Seller` in two `Exchange tradable derivative position`s involving a the same `Exchange tradable derivative`. One of these positions would be considered a `Exchange tradable derivative asset position`, the other one a `Exchange tradable derivative liability position`.
+
+The primary key of the entity type `Exchange tradable derivative position role` is defined by the following attributes:
+* Exchange Tradable Derivative Identifier [pk], 
+* Buyer Identifier [pk], 
+* Seller Identifier [pk], 
+* Exchange Tradable Derivative Position Role Type [pk] with allowed values `Exchange tradable derivative asset or liability position` and `Exchange tradable derivative position as a hedge`.
+
+This primary key does not allow to represent the above described situation because both `Exchange tradable derivative position`s would be classified as `Exchange tradable derivative asset or liability position`. The difference between the two objects is the classification as `Exchange tradable derivative asset position`, while the other is a `Exchange tradable derivative liability position` which is captured via the (non-primary key) attribute `Exchange tradable derivative asset or liability position`.`Exchange tradable derivative asset or liability position role type`.
+
+If the given example is not a valid use case, i.e., if the situation where the same `Buyer` and `Seller` are involved in an `Exchange tradable derivative position` with the same `Exchange tradable derivative`, one being an 'asset' (`Exchange tradable derivative asset position`), the other one a 'liability' (`Exchange tradable derivative liability position`), of course there is no issue with this modeling construct.
+
+On the other hand, if a 'thing' can act in multiple 'thing roles' which are organised as subtypes of a particular 'thing role' at the same time, this modeling construct is not valid.
+
+Please also check, make sure that the applied modeling construct is valid where applied.
+
+### Points/Questions to resolve
+
+* validate the claim that there is a constraint related to using multiple subtype levels applied to the 'role construct'
+* if there exists this limitation, ensure that this situation is not present in the BIRD LDM
+* if the situation exists, adjust the model accordingly
+
+### Related issues
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/534</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

@@ -1,0 +1,71 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Change to the Domains related to the Fair Value Option Designation" id="32716-505">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!--See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab)--&gt;
+
+### Overview
+
+In the LDM, we have two Domains related to the Fair Value Option Designation, with the below Allowed Values (the codes are aligned to those in the ROL):
+
+- **Fair value designation**
+  - Management on a fair value basis (2)
+  - Management of credit risk. Upon designation (5)
+  - Management of credit risk. After the designation (6)
+- **Finrep subdomain for financial assets**
+  - Accounting mismatch (1)
+  - Management for credit risk (4)
+  - Management of credit risk. Upon designation (5)
+
+The current ROL hierarchy for this Domain can be found [here](https://sdd.ecb.de/bybusinessid/member_hierarchy/FVO_DSGNTN_HIER_1). This hierarchy includes the following Allowed Values:
+
+- Accounting mismatch (1)
+- Management on a fair value basis (2)
+- **Hybrid contract (3)**
+- Management for credit risk (4)
+- Management of credit risk. Upon designation (5)
+- Management of credit risk. After the designation (6)
+
+### Contact person
+
+@Maria_Manuel.Henriques
+
+### Description of change request
+
+Change the allowed values of the Domain "Fair value option designation" to include the following allowed values:
+
+- Accounting mismatch (1)
+- Management on a fair value basis (2)
+- **Hybrid contract (3)**
+- Management of credit risk. Upon designation (5)
+- Management of credit risk. After the designation (6)
+
+This includes:
+
+- The creation of Hybrid contract (3).
+- FVO_DSGNTN_4 is shouldn't be added considering that is the parent of FVO_DSGNTN_5 and FVO_DSGNTN_6.
+- The Domain "Finrep subdomain for financial assets" should be deleted.
+
+### Summary of impacted LDM objects/attributes
+
+Domain: Fair value option designation
+
+### Forward Engineering considerations
+
+_\[Other considerations\]_
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/505</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

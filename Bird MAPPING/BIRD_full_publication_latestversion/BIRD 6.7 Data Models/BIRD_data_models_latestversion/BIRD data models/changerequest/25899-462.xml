@@ -1,0 +1,67 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Deposits and Repurchase agreements" id="25899-462">
+                    <createdBy>ostarij</createdBy>
+                    <comment># Overview
+
+In Asset Encumbrance, the definition of Deposits includes both deposits that are part of a repurchase agreement (cash leg) and deposits other than repurchase agreements, this means that we need the same kind of information for both these types of deposits.
+
+In the model we can identify the cash legs (deposits that are repurchase agreement) and the deposits other than repurchase agreement separately, not as two possible types of the same instrument. This leads to some missing information, for instance the carry amount is required for both but it is available only for deposits (excluding repurchase agreement) as they can be assigned to the liability role and therefore have a carry amount, while for the cash leg we can assign the liability role only to the repurchase agreement and not the repurchase agreement component per se.
+
+The best solution here in my opinion should be to link the cash leg to the deposit via an assignment entity as we did for loan and advances, however I find a bit confusing that we are linking repurchase agreement components via assignment entities to instruments that by definition exclude repurchase agreements (i.e. loan (excluding repurchase agreement) and advance).
+
+For exemplification, please find an extract from the model below.
+
+### Contact person
+
+@Maria_Manuel.Henriques @Pietro.Ferroni @Arianna.Nuvoli 
+
+### Business definition
+
+_\[Business requirements\]_
+
+### Legal definition
+
+**_From Annex XVII (Template AE-SOU)_**
+
+**Deposits**: Carrying amount of the collateralised deposits of the reporting institution insofar as these deposits entail asset encumbrance for that institution
+
+**Repurchase agreements:** Gross carrying amount (without any netting allowed in the accounting framework) of the repurchase agreements of the reporting institution insofar as these transactions entail asset encumbrance for that institution. Repurchase agreements (repos) shall be the transactions in which the reporting institution receives cash in exchange for financial assets sold at a given price under a commitment to repurchase the same (or identical) assets at a fixed price on a specified future date. The following variants of repo-type operations are all required to be reported as repurchase agreements: 
+- amounts received in exchange for securities temporarily transferred to a third party in the form of securities lending against cash collateral and 
+- amounts received in exchange for securities temporarily transferred to a third party in the form of a sale/buy-back agreement.
+
+**Collateralised deposits other than repurchase agreements:** Carrying amount of the of the collateralised deposits other than repurchase agreements of the reporting institution insofar as these deposits entail asset encumbrance for that institution
+
+### Reason for inclusion
+
+AE integration
+
+### Relationships
+
+_\[Related objects\]_
+
+### Relevant Framework/Template
+
+AE (F32.04.a, F 32.04.b, F 34.00.a, F 34.00.b, F 34.00.c, F 36.01.a, F 36.01.b, F 36.02.a, F 36.02.b)
+
+### Additional documentation/links (optional)
+
+Extract from the  model:
+
+![image.png](/uploads/f4a106b99a252103cafea6b2147a087c/image.png)
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/462</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

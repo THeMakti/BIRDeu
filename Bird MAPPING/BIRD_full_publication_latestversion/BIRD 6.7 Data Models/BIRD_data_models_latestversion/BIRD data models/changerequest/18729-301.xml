@@ -1,0 +1,60 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[Asset Sec] New entities: Interest rate swap and Currency rate swap" id="18729-301">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+C 14.01 requires the reporting of memorandum items Interest rate swaps (IRS) and Currency rate swaps (CRS). I could not find these entities in LDM. They need to be defined with relevant amounts and relationships to:
+1) underlying exposures such as loans
+2) tranches 
+3) securitisation directly
+
+These may also be considered as a securitisation position depending on the structure of the securitisation. IRS can be used for example to convert loans'fixed rate into ABS floating rate.
+Note that in terms of capital treatment under SEC-ERBA, they should inherit the rating of the position they are relating to (art 263). This is called inferred rating.
+
+### Contact person
+olivia.hauet@ecb.europa.eu arjan.bos@ecb.europa.eu
+
+### Business definition
+_[Business requirements]_
+
+### Legal definition
+ITS
+&lt;dl&gt;&lt;dt&gt;IRS&lt;/dt&gt;&lt;dd&gt;IRS stands for Interest Rate Swaps&lt;/dd&gt;
+&lt;dt&gt;CRS&lt;/dt&gt;&lt;dd&gt; whereas CRS stands for Currency Rate Swaps.&lt;/dd&gt;&lt;/dl&gt;
+ Those derivatives are listed in Annex II to the of Regulation (EU) No 575/2013.
+
+### Reason for inclusion
+Indispensable for capital requirements calculations
+
+### Relationships
+1) underlying exposures such as loans
+2) tranches 
+3) securitisation directly
+
+### Relevant Framework/Template
+C 13.01 if they are considered as a securitisation position
+C 14.01
+| IRS / CRS |
+|-----------|
+| 0380      |
+
+### Additional documentation/links (optional)
+_[Additional info]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/301</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA1E1F76-D89C-E6D7-4103-64432E4144D4" name="Financial_liability_instrument_derived_data">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Financial liability instrument derived data is additional information about the Financial liability instrument that is derivable from the rest of the model.]]></commentInRDBMS>
+<generatorID>7568BF54-D0D7-C4AF-D8AF-6F5366B2B177</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Financial_liability_instrument_reference_date" id="3D8E4ADA-8C7E-0410-F1FC-E697555A4563">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>61A0B564-FC4B-2734-10C5-F9BC8AB659A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA09E18-2F80-93F9-E28C-441543457A82" referredColumn="43C076A4-02CB-2A50-55FA-ED2F80AE5F04"/>
+</associations>
+</Column>
+<Column name="Financial_liability_instrument_reporting_agent_identifier" id="C3F6011D-BF95-E4AF-C1BB-5B065CBF2A0D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>19257C57-4C85-3EDC-34A6-C70527B2FA2C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA09E18-2F80-93F9-E28C-441543457A82" referredColumn="7C42B8F6-7F14-63A0-2B55-712705DF02F3"/>
+</associations>
+</Column>
+<Column name="Financial_liability_instrument_accounting_consolidation_level" id="FC711AC7-9ED7-3033-D24F-A1EF2473D3D1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>17703C15-D68E-EB2A-AC75-52DDE8B066EA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA09E18-2F80-93F9-E28C-441543457A82" referredColumn="02304817-A99E-CA25-0F8B-7FC028F9D2E4"/>
+</associations>
+</Column>
+<Column name="Financial_liability_instrument_accounting_standard" id="E8EF2BFF-7374-730F-729D-5EFEB85FF4BC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>3D4A32A8-52E3-1EAC-6A7E-EBCDA3F40CAB</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA09E18-2F80-93F9-E28C-441543457A82" referredColumn="C66D1FDB-A803-E533-0FE3-462D6732D1AC"/>
+</associations>
+</Column>
+<Column name="Financial_liability_instrument_role_type" id="355C4E59-03A5-1349-9364-BEB8A5721268">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different roles an instrument may act in. Examples are financial asset instrument, financial liability instrument.]]></comment>
+<generatorID>829673F5-64EE-338D-ABA9-9941163D625E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8e78f30b-610e-404e-97c5-60fa855125db</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA09E18-2F80-93F9-E28C-441543457A82" referredColumn="6A91F334-481F-C84C-FB67-7E7FA4E2020E"/>
+</associations>
+</Column>
+<Column name="Financial_liability_instrument_identifier" id="94330FA1-4A6F-F346-F8B5-4E655B819DFB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>12E2ED25-242B-E17E-D985-B615F40291D2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA09E18-2F80-93F9-E28C-441543457A82" referredColumn="CEDB327C-A14B-B87F-8A87-CFDFD7AE45C5"/>
+</associations>
+</Column>
+<Column name="Asset_encumbrance_source_indicator" id="0546587A-3F6F-13F8-1348-19071C993956">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Asset encumbrance source indicator signals whether the Financial liabity instrument is a source of encumbrance for an asset or not.]]></comment>
+<generatorID>BCD1A838-6FA1-910F-F295-D954EECBF8EC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>760D4A10-7EAF-40F3-93F6-1596CE29B357</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E275E04A-B54D-5CE3-61CF-7B97E840706B" name="Financial_liability_instrument_derived_data_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>49E564D6-725F-1725-FEB1-02E5002C6A1D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D8E4ADA-8C7E-0410-F1FC-E697555A4563"/>
+<colUsage columnID="C3F6011D-BF95-E4AF-C1BB-5B065CBF2A0D"/>
+<colUsage columnID="FC711AC7-9ED7-3033-D24F-A1EF2473D3D1"/>
+<colUsage columnID="E8EF2BFF-7374-730F-729D-5EFEB85FF4BC"/>
+<colUsage columnID="355C4E59-03A5-1349-9364-BEB8A5721268"/>
+<colUsage columnID="94330FA1-4A6F-F346-F8B5-4E655B819DFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C6520E7-E217-F8AD-EF0D-FAEB1469F93B" name="Financial_liability_instrument_derived_data_Instrument_role_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>B4F41EC5-EE0A-2B7C-94AC-38BEB7D81D84</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D8E4ADA-8C7E-0410-F1FC-E697555A4563"/>
+<colUsage columnID="C3F6011D-BF95-E4AF-C1BB-5B065CBF2A0D"/>
+<colUsage columnID="FC711AC7-9ED7-3033-D24F-A1EF2473D3D1"/>
+<colUsage columnID="E8EF2BFF-7374-730F-729D-5EFEB85FF4BC"/>
+<colUsage columnID="355C4E59-03A5-1349-9364-BEB8A5721268"/>
+<colUsage columnID="94330FA1-4A6F-F346-F8B5-4E655B819DFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

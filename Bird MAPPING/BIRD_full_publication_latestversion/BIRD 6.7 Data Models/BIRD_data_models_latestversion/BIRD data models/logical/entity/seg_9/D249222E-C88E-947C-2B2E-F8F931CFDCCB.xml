@@ -1,0 +1,205 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="D249222E-C88E-947C-2B2E-F8F931CFDCCB" name="Loan and advance as a hedge">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:43:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan and advance as a hedge is a Loan and advance role where the Loan  and advance instrument acts as a non-derivative hedge.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>LN_AND_ADVNC_HDG</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+<requestID>34227-511</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Loan and advance reference date" id="BABF347A-30AA-93F8-D298-CB76CFC6AC1E">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:45:54 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>6397218F-9E80-8495-AE14-C64EC7A16511</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>9ECE8643-3670-4EAE-A455-B5EF4C2CE45A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LN_AND_ADVNC_RFRNC_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Loan and advance reporting agent identifier" id="1A7C729B-EA62-25ED-A258-E89973B42C5D">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:45:54 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>6397218F-9E80-8495-AE14-C64EC7A16511</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>BB6D9386-34F3-FCB8-F6D0-4BB43D4EAAA8</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LN_AND_ADVNC_RPRTNG_AGNT_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Loan and advance accounting consolidation level" id="BB235124-8AC6-D8C3-D375-0E4DAA60D2C4">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:45:54 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>6397218F-9E80-8495-AE14-C64EC7A16511</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>5274804D-A835-BDD4-2A63-D4CA298D7206</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LN_AND_ADVNC_ACCNTNG_CNSLDTN_LVL</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Loan and advance accounting standard" id="2730518B-E83F-0A91-805D-052DED5BBD90">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:45:54 UTC</createdTime>
+<generatorID>6397218F-9E80-8495-AE14-C64EC7A16511</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>95450026-8D1A-CC69-C91F-F52DCE1C328F</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LN_AND_ADVNC_ACCNTNG_STNDRD</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Loan and advance identifier" id="9068AFB9-AEA6-6842-B3A3-F917486A63BA">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:45:54 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>6397218F-9E80-8495-AE14-C64EC7A16511</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>F7859051-3E5A-9707-1E2B-67B4383135E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LN_AND_ADVNC_ID</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Type of hedge" id="BA394FB4-BF6E-AE95-3854-7EA9BD1F5969">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:48:39 UTC</createdTime>
+<comment><![CDATA[Type of hedge applicable under the relevant accounting standard.]]></comment>
+<generatorID>462092EB-AD6B-154B-CC2F-C64EA23947DF</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>67703C00-6D9A-78C2-FF6D-8112E2ED9E60</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>5a3d5ddf-993e-4140-8c68-0f78a0b0c5bb</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TYP_HDG</preferredAbbreviation>
+<changeRequests>
+<requestID>24045-438</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Accounting hedge indicator" id="C15FF2E9-B15B-9FC5-1D67-960C70EE1694">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 14:54:44 UTC</createdTime>
+<comment><![CDATA[An indicator specifying if the hedge is considered an accounting hedge or not.]]></comment>
+<generatorID>5D0257F8-DFB0-6374-2496-53FAA95E0908</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<referedAttribute>AAF36D56-1761-3296-FE65-4400277E3F66</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>67BB8028-D0A7-E1BE-DD13-29EB4D4788D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ACCNTNG_HDG_INDCTR</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="852AF519-7CAB-96DE-5EE7-455DBD38CC44" name="Loan and advance as a hedge PK">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-11-20 12:45:54 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="7AFB6CD5-FA49-A27F-7A6B-F80FB6EE79EC" value="true"/>
+<item key="AD51085A-89B5-9B80-E7E5-D958DCB6DFDD" value="true"/>
+<item key="EB3349D0-DAC2-8B13-8330-8A909289ACD1" value="true"/>
+<item key="8ABAF9E8-1A29-1C57-534B-70C26F5C5191" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>6397218F-9E80-8495-AE14-C64EC7A16511</newElementsIDs>
+<changeRequests>
+<requestID>34227-511</requestID>
+</changeRequests>
+<usedAttributes>
+<attributeRef>BABF347A-30AA-93F8-D298-CB76CFC6AC1E</attributeRef>
+<attributeRef>1A7C729B-EA62-25ED-A258-E89973B42C5D</attributeRef>
+<attributeRef>BB235124-8AC6-D8C3-D375-0E4DAA60D2C4</attributeRef>
+<attributeRef>2730518B-E83F-0A91-805D-052DED5BBD90</attributeRef>
+<attributeRef>9068AFB9-AEA6-6842-B3A3-F917486A63BA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

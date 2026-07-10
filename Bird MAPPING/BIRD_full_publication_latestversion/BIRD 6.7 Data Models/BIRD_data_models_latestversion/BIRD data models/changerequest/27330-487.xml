@@ -1,0 +1,48 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Model Repurchase agreement as agreement, and legs as instrument" id="27330-487">
+                    <createdBy>ostarij</createdBy>
+                    <comment>### Overview
+
+In issue #462, it came up that the current structure of the Repurchase agreements and their components do not correctly match the way banks see them.
+
+### Contact person
+
+@Arjan.Bos &lt;br&gt;
+@sdressler 
+
+### Description of change request
+
+_Repurchase agreements_ are currently a subtype of _Security financing transation (SFT)_ and a sibling of _Loan (excluding repurchase agreement) and advance_. This request proposes four things
+
+- (1) Remove the awkward "(excluding repurchase agreement)" from the various entity type names (done in #511)
+- (2) Introduce a new generalisation called _Arrangement_ that groups together the various arrangements we have in the model:
+  - Balance sheet netting arrangement
+  - Master arrangement
+  - Financial contract
+  - Protection arrangement
+- (3) Change the supertype of _Securities financing transaction_ from _Instrument_ to the new generalisation _Arrangement_.
+- (4) Make the _Repurchase agreement component_ a subtype of _Loan_ and remove the discriminator from the primary key (but keep the attribute).
+
+### Also to discuss:
+- Do the _Cash leg_ and the _Transferred asset leg_ have a unique identifier in banks that will not clash if we make them (a subtype of) loans?
+
+### Summary of impacted LDM objects/attributes
+
+Miro board: [https://miro.com/app/board/uXjVKMSyqSU=/?moveToWidget=3458764624897516616&amp;cot=14](https://miro.com/app/board/uXjVKMSyqSU=/?moveToWidget=3458764624897516616&amp;cot=14)
+
+![miro board with model sketch for arrangements](/uploads/4ff84f15e7eec6d7caec78623cbdb2f0/image.png)
+
+### Entity types affected by the potential name change:
+
+![Logical_-_SubView_1v1](/uploads/5770754713cc8e76eacf0af29c95596f/Logical_-_SubView_1v1.png)</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/487</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

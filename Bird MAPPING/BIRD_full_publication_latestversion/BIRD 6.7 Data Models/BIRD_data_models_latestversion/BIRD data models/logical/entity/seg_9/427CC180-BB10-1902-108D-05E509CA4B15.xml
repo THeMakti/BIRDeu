@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_9" id="427CC180-BB10-1902-108D-05E509CA4B15" name="On demand deposit used for minimum reserve">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-01-20 11:32:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[On demand deposit used for minimum reserve is an On demand deposit that is used to account for the minimum reserve to keep at the central bank, at the savings bank group, or similar.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>2C0A58B7-CE65-BF34-A96F-88F3EBF27CC6</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>LN_DMND_MNMM_RSRV</preferredAbbreviation>
+<changeRequests>
+<requestID>31925-500</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Minimum reserve amount" id="4BBA2CBE-6379-C643-30C8-D58E0FBF10DA">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-01-20 11:32:15 UTC</createdTime>
+<comment><![CDATA[Minimum reserve iamount is the amount, expressed in the currency of the Loan on demand, that is put into reserve at another instition and should be seen as encumbered. This is very often at a Central bank, but could also be at the overall group of savings banks, which in its turn puts it up as minimum reserve at their cental bank.
+
+This amount is calculated by the bank itself based on their respective interpretation and choices of the accounting standard.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>MNMM_RSRV_AMNT</preferredAbbreviation>
+<changeRequests>
+<requestID>31925-500</requestID>
+</changeRequests>
+</Attribute>
+</attributes>
+</Entity>

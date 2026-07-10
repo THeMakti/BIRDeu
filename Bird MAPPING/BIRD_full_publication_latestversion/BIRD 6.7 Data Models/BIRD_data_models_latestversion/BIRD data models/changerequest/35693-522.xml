@@ -1,0 +1,43 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Distinction between Deposits that are Repurchase agreements and Collateralised deposits other than repurchase agreements" id="35693-522">
+                    <createdBy>ostarij</createdBy>
+                    <comment># Overview
+
+AE regulation differentiates between Deposits that are _Repurchase agreements_ and _Collateralised deposits other than repurchase agreements_. In the model this distinction is not possible because the relationship between the Repurchase agreement cash leg points directly to the general deposit supertype, therefore all the subtypes can be a repurchase agreement:
+
+![deposit_repo.png](/uploads/c9bd9cbed1ab569da7841f88d053617d/deposit_repo.png)
+
+### Contact person
+
+@Arianna.Nuvoli 
+
+### Legal definition
+
+Annex XVII:
+
+_Repurchase agreements (repos) shall be the transactions in which the reporting institution receives cash in exchange for financial assets sold at a given price under a commitment to repurchase the same (or identical) assets at a fixed price on a specified future date. The following variants of repo-type operations are all required to be reported as repurchase agreements: - amounts received in exchange for securities temporarily transferred to a third party in the form of securities lending against cash collateral and - amounts received in exchange for securities temporarily transferred to a third party in the form of a sale/buy-back agreement._
+
+### Reason for inclusion
+
+AE integration
+
+### Relevant Framework/Template
+
+AE
+
+### Before closing checklist
+
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/522</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

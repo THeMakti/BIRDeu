@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95E6260D-C341-2030-BE71-1BDA7EC08D2F" name="INSTRMNT_HDGD_OTC_DRVTV">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Instrument hedged by Over the counter (OTC) Derivative is the combination of an Instrument and an Over the counter (OTC) Derivative as a hedge that indicates which Instrument is hedged by which Over the counter (OTC) Derivative (acting in a the role of an Over the counter (OTC) Derivative as a hedge).]]></commentInRDBMS>
+<generatorID>EB096E17-76EB-145F-9304-28FF226AD063</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INSTRMNT_ID" id="D895FCF8-DF52-24D1-A18E-2A2CA48F9820">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[The instrument identifier of the hedged instrument.]]></comment>
+<generatorID>03B297CF-2A88-EB82-1500-2C81BE54136F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD117AB-8281-13A7-9B5E-EAABF6A8F383" referredColumn="4BFA6F34-D85F-2DE0-ADA0-5F9F18616861"/>
+</associations>
+</Column>
+<Column name="DT_RFRNC" id="C8028751-2C93-E2D7-DEF0-A6D923A6A7CE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>88D79DD8-1047-FE15-EFB9-9E38DFF0BE00</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD117AB-8281-13A7-9B5E-EAABF6A8F383" referredColumn="3DFAA73E-EF88-A799-94BE-E9A5EA66DE35"/>
+<colAssociation fkAssociation="DEB7C3D9-CBBD-1303-6830-62915844EDBE" referredColumn="3AFFA73C-E357-4A94-4B87-555A59DEC0CA"/>
+</associations>
+</Column>
+<Column name="RPRTNG_AGNT_ID" id="D00EFE7D-66D4-DB12-365D-70EA7350C1A0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>CC230DB7-91A5-BCB2-5D84-0DF25F9771EC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD117AB-8281-13A7-9B5E-EAABF6A8F383" referredColumn="1D382B7D-A84B-0451-2913-33358349E20B"/>
+<colAssociation fkAssociation="DEB7C3D9-CBBD-1303-6830-62915844EDBE" referredColumn="B4C2E162-D548-5C74-CA55-20945FBD2094"/>
+</associations>
+</Column>
+<Column name="ACCNTNG_CNSLDTN_LVL" id="18EA3279-2783-ADCC-D81C-62CE430B11F1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>3A741AFC-CC42-F6B1-7ACB-29F5D4C56907</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD117AB-8281-13A7-9B5E-EAABF6A8F383" referredColumn="BBC48D95-A7B5-3C5C-6BF2-6EC44DA0AAF3"/>
+<colAssociation fkAssociation="DEB7C3D9-CBBD-1303-6830-62915844EDBE" referredColumn="5425682A-D8FC-C1A8-1F50-3E71E5D3523D"/>
+</associations>
+</Column>
+<Column name="ACCNTNG_STNDRD" id="8A6552E4-27FE-E15D-A95E-0E530525CAEC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>6EA0D34A-8629-601C-7FEC-47C74C63BBDE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD117AB-8281-13A7-9B5E-EAABF6A8F383" referredColumn="42323285-9DE5-4309-A539-B4BA363BF3EB"/>
+<colAssociation fkAssociation="DEB7C3D9-CBBD-1303-6830-62915844EDBE" referredColumn="0A0B937D-10CF-7F7B-F232-44D63859FEBE"/>
+</associations>
+</Column>
+<Column name="OTC_DRVTV_ID" id="C307F308-AA7A-8DE8-9AB0-F10BA49363D7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>03CE6391-2F95-E876-6E59-EE2F2D0775C4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEB7C3D9-CBBD-1303-6830-62915844EDBE" referredColumn="72D25CFD-51C9-3900-5571-7186DB7F28DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="706BC53D-3216-F42C-9342-C5D586C4BA69" name="INSTRMNT_HDGD_OTC_DRVTV_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>70B0C329-393C-DEF8-21CB-EA02F4E5C163</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D895FCF8-DF52-24D1-A18E-2A2CA48F9820"/>
+<colUsage columnID="C8028751-2C93-E2D7-DEF0-A6D923A6A7CE"/>
+<colUsage columnID="D00EFE7D-66D4-DB12-365D-70EA7350C1A0"/>
+<colUsage columnID="18EA3279-2783-ADCC-D81C-62CE430B11F1"/>
+<colUsage columnID="8A6552E4-27FE-E15D-A95E-0E530525CAEC"/>
+<colUsage columnID="C307F308-AA7A-8DE8-9AB0-F10BA49363D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35A420F2-DC4D-C320-6876-46BADB72DAE4" name="INSTRMNT_HDGD_OTC_DRVTV_INSTRMNT_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>B526125E-5941-395D-5B8C-86FCDEA1563F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8028751-2C93-E2D7-DEF0-A6D923A6A7CE"/>
+<colUsage columnID="D00EFE7D-66D4-DB12-365D-70EA7350C1A0"/>
+<colUsage columnID="18EA3279-2783-ADCC-D81C-62CE430B11F1"/>
+<colUsage columnID="8A6552E4-27FE-E15D-A95E-0E530525CAEC"/>
+<colUsage columnID="D895FCF8-DF52-24D1-A18E-2A2CA48F9820"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAAD2231-5563-00E9-0717-F56001E4496A" name="INSTRMNT_HDGD_OTC_DRVTV_OTC_DRVTV_HDG_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>DF3B7F67-DD6E-FEB7-5F06-35C098897302</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8028751-2C93-E2D7-DEF0-A6D923A6A7CE"/>
+<colUsage columnID="D00EFE7D-66D4-DB12-365D-70EA7350C1A0"/>
+<colUsage columnID="18EA3279-2783-ADCC-D81C-62CE430B11F1"/>
+<colUsage columnID="8A6552E4-27FE-E15D-A95E-0E530525CAEC"/>
+<colUsage columnID="C307F308-AA7A-8DE8-9AB0-F10BA49363D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

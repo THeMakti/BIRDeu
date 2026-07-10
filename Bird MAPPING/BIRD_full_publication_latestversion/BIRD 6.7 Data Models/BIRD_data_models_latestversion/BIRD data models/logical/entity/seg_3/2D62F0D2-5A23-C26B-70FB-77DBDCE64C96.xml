@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="2D62F0D2-5A23-C26B-70FB-77DBDCE64C96" name="Asset pool (subject to a Covered bond programme)">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-11 13:55:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Asset pool (subject to a Covered bond programme) is an Asset pool (subject to a Securitisation and other credit transfer) that is associated with a Covered bond programme. ]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>CF3123E9-C3A5-7650-8DD2-DBE9CABA5872</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>ASST_PL_CVRD_BND_PRGRM</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Asset class according to CRR, Article 129" id="AF2BDE63-63A6-6E1E-6F99-EEB4C5698E48">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-11 13:55:54 UTC</createdTime>
+<comment><![CDATA[Asset class of the underlying asset pool subject to a covered bond according to CRR, Article 129 Exposure in the form of covered bonds.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>cb0c0767-a13c-4be8-adef-927c6f7690e5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRMRY_ASST_CLSS_CVR_PL</preferredAbbreviation>
+<changeRequests>
+<requestID>26024-468</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Compliance with article 129 of CRR indicator" id="C6EAC143-904E-D879-50C5-C74D9D3CC1BF">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-05-24 07:33:34 UTC</createdTime>
+<comment><![CDATA[Compliance with article 129 of CRR indicator indicates if the Asset pool (subject to a Covered bond programme) is in compliance with article 129 of Regulation (EU) No 575/213 (also known as CRR).]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>F01DF8A4-BE55-44E6-B2D5-A8F7AE66392E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CMPLNC_CRR_129_INDCTR</preferredAbbreviation>
+<changeRequests>
+<requestID>26024-468</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Present value (swap)" id="72029D1C-8098-D12D-5F76-0FFBC8179FC3">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-09-09 16:11:27 UTC</createdTime>
+<comment><![CDATA[Present Value (swap) shall be the sum of claims to payment of principal and interest, as discounted by a foreign exchange-specific risk-free yield curve, determined in accordance with the relevant statutory covered bond regime's rules that apply for determining sufficient coverage for the Asset pool (subject to a Covered bond programme).]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRSNT_VL</preferredAbbreviation>
+<changeRequests>
+<requestID>26021-466</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Asset-specific value" id="38C7B719-E4BA-0586-8803-1B17E906A959">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-10-10 13:56:35 UTC</createdTime>
+<comment><![CDATA[The asset-specific value shall be the economic value of the cover pool assets, as may be described by a fair value in accordance with IFRS 13, a market value observable from executed transactions in liquid markets, or a present value that would discount future cash flows of an asset by an asset-specific interest rate curve.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ASST_SPCFC_VL</preferredAbbreviation>
+<changeRequests>
+<requestID>26023-467</requestID>
+</changeRequests>
+</Attribute>
+</attributes>
+</Entity>

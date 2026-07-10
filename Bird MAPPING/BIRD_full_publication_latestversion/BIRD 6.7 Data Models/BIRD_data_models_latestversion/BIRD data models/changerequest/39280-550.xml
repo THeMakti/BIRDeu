@@ -1,0 +1,52 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Subtype primary key - special treatment for `Short position accounting classification`" id="39280-550">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+
+It seems that the primary key of the entity type `Short position accounting classification` (which is a subtype of the entity type `Accounting classification for financial liabilities`) is subject to a different treatment than the primary key of other subtypes.
+
+### Contact person
+
+dominik.lin-ully@oenb.at
+
+### Background information
+
+The primary key attribute `Short position accounting classification`.`Short position accounting classification` is created as a primary key attribute, although the entity type `Short position accounting classification` is a subtype of the entity type `Accounting classification for financial liabilities` which is a non-abstract entity type and therefore already comprises a primary key, namely `Accounting classification`.
+
+The situation is illustrated in the following picture:
+
+![Accounting_classification_reference_entity_hierarchy](/uploads/9d814d3c78162a78157315a8f5cbd261/Accounting_classification_reference_entity_hierarchy.png)
+
+**Figure 1:** `Accounting classification` entity type hierarchy
+
+This treatment seems to be incompatible / overlapping with using constraints when only a subset of a reference data entity type's allowed values are needed - e.g., `European Central Bank`.`International organisation code` limited to the value `ECB (European Central Bank) (4F)` via constraint.
+
+Furthermore, this treatment may result in inconsistencies. For example, the data types of the two primary keys are different, i.e., `Short position accounting classification` is assigned to 'String (2)' while `Accounting classification` is assigned to 'String (3)'.
+
+### Points/Questions to resolve
+
+* assess if this treatment / construct is used for the same use case as using constraints when only a subset of a reference data entity type's allowed values is required
+   * if yes, decide on one approach and implement it consistently
+   * if no, no action is required and the treatment / construct has a defined purpose. Please add a description of the situations where this treatment / construct should be applied, e.g., in the BIRD LDM design principles document to make sure it is properly documented.
+* in any case, please fix the inconsistencies related to the assigned data types of the primary keys
+
+### Related issues
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/550</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status></status>
+                </ChangeRequest>

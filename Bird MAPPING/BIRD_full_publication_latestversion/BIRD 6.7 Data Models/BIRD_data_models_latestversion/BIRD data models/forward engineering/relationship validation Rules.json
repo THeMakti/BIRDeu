@@ -1,0 +1,1444 @@
+[
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ASST_PL_CLLTRL_RCVD_ASSGNMNT",
+    "sourceEntity": "Collateral received",
+    "sourceTable": "CLLTRL_RL",
+    "targetEntity": "Asset pool Collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Collateral received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "CLLTRL_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ASST_PL_INSTRMNT_ASSGNMNT",
+    "sourceEntity": "Over the counter (OTC) Derivative instrument",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Asset pool Over the counter (OTC) Derivative instrument assignment",
+    "sourceRelationshipConditionValue": [
+      "OTC Option other than OTC Credit spread option",
+      "Forward",
+      "Other OTC Derivative instrument",
+      "OTC Total return swap",
+      "OTC Credit default swap",
+      "Other OTC Swap",
+      "OTC Credit spread option"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ASST_PL_LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_ASSGNMNT",
+    "sourceEntity": "Long balance sheet recognised security position",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Asset pool Long balance sheet recognised security position assignment",
+    "sourceRelationshipConditionValue": [
+      "Long balance sheet recognised security position International Financial Reporting Standard (IFRS)",
+      "Long balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ASST_PL_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_ASSGNMNT",
+    "sourceEntity": "Non-balance sheet recognised security position ",
+    "sourceTable": "BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Asset pool Non-balance sheet recognised security position assignment",
+    "sourceRelationshipConditionValue": [
+      "Non-balance sheet recognised debt security position",
+      "Non-balance sheet recognised equity or fund security position"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_BLNC_SHT_RCGNSD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CLLTRL",
+    "sourceEntity": "Collateral annex",
+    "sourceTable": "PRTCTN_ARRNGMNT",
+    "targetEntity": "Financial collateral",
+    "sourceRelationshipConditionValue": [
+      "Collateral annex"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CLLTRL",
+    "sourceEntity": "Security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Security collateral",
+    "sourceRelationshipConditionValue": [
+      "Debt security without underlying assets",
+      "Asset backed security",
+      "Covered bond",
+      "Fund security",
+      "Equity security",
+      "Perpetual debt security",
+      "Non-perpetual debt security",
+      "Performing debt security",
+      "Non-performing debt security",
+      "Past due debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "PRPTL_DBT_SCRTY_INDCTR",
+      "DBT_SCRTY_PRFRMNG_STTS_TYP",
+      "PST_DU_DBT_SCRTY_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CLLTRL_GVN_INSTRMNT_DBT_SCRTY_ISSD_ASSGNMNT",
+    "sourceEntity": "Collateral given instrument",
+    "sourceTable": "INSTRMNT_RL",
+    "targetEntity": "Collateral given instrument Debt security issued assignment",
+    "sourceRelationshipConditionValue": [
+      "Collateral given instrument"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CRDT_FCLTY_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Collateral received",
+    "sourceTable": "CLLTRL_RL",
+    "targetEntity": "Credit facility Collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Collateral received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "CLLTRL_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CRDT_FCLTY_CLLTRL_RCVD_INSTRMNT_ASSGNMNT",
+    "sourceEntity": "Collateral received instrument",
+    "sourceTable": "INSTRMNT_RL",
+    "targetEntity": "Credit facility Collateral received instrument assignment",
+    "sourceRelationshipConditionValue": [
+      "Over the counter (OTC) Credit default swap received as collateral instrument",
+      "Other collateral received instrument"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CRDT_TRNSFR_OTHR_SCRTSTN_CVRD_BND_PRGRM",
+    "sourceEntity": "Asset pool (subject to a credit transfer other than securitisation and covered bond programme)",
+    "sourceTable": "ASST_PL",
+    "targetEntity": "Credit transfer other than securitisation and covered bond programme",
+    "sourceRelationshipConditionValue": [
+      "Asset pool (subject to a credit transfer other than securitisation and covered bond programme)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ASST_PL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CVRD_BND_ISSNC",
+    "sourceEntity": "Covered bond programme",
+    "sourceTable": "CVRD_BND_PRGRM",
+    "targetEntity": "Covered bond issuance",
+    "sourceRelationshipConditionValue": [
+      "Covered bond programme"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTSTN_OTHR_CRDT_TRNSFR_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CVRD_BND_ISSNC",
+    "sourceEntity": "Covered bond",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Covered bond issuance",
+    "sourceRelationshipConditionValue": [
+      "Covered bond"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CVRD_BND_PRGRM",
+    "sourceEntity": "Asset pool (subject to a Covered bond programme)",
+    "sourceTable": "ASST_PL",
+    "targetEntity": "Covered bond programme",
+    "sourceRelationshipConditionValue": [
+      "Asset pool (subject to a Covered bond programme)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ASST_PL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_AGNCY_EXCSS_MTHDLGY_CVRD_BND_PRGRMM_ASSGNMNT",
+    "sourceEntity": "Covered bond programme",
+    "sourceTable": "CVRD_BND_PRGRM",
+    "targetEntity": "Rating agency excess methodology result Covered bond programme assignment",
+    "sourceRelationshipConditionValue": [
+      "Covered bond programme"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTSTN_OTHR_CRDT_TRNSFR_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "CVRD_BND_PRGRMM_RLVNT_RGM_EXCSS",
+    "sourceEntity": "Covered bond programme",
+    "sourceTable": "CVRD_BND_PRGRM",
+    "targetEntity": "Covered bond programme relevant regime excess",
+    "sourceRelationshipConditionValue": [
+      "Covered bond programme"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTSTN_OTHR_CRDT_TRNSFR_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "DBT_SCRTY_ISSD",
+    "sourceEntity": "Debt security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Debt security issued (by the reporting agent)",
+    "sourceRelationshipConditionValue": [
+      "Debt security without underlying assets",
+      "Asset backed security",
+      "Covered bond",
+      "Perpetual debt security",
+      "Non-perpetual debt security",
+      "Performing debt security",
+      "Non-performing debt security",
+      "Past due debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "PRPTL_DBT_SCRTY_INDCTR",
+      "DBT_SCRTY_PRFRMNG_STTS_TYP",
+      "PST_DU_DBT_SCRTY_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "DBT_SCRTY_ISSD_PRTCN_ARRNGMNT_GVN_ASSGNMNT",
+    "sourceEntity": "Protection arrangement given",
+    "sourceTable": "PRTCTN_ARRNGMNT_RL",
+    "targetEntity": "Debt security issued (by the reporting agent) Protection arrangement given assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection arrangement given"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "DBT_SCRTY_ISSD_TRDTNL_SCRTSTN_ASSGNMNT",
+    "sourceEntity": "Traditional securitisation",
+    "sourceTable": "TRDTNL_SCRTSTN",
+    "targetEntity": "Debt security issued (by the reporting agent) Traditional securitisation assignment",
+    "sourceRelationshipConditionValue": [
+      "Traditional securititsation"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SGNFCNT_RSK_TRNSFR_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "EQT_INSTRMNT_NT_SCRT_HDG",
+    "sourceEntity": "Equity instrument that is not a security",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Equity instrument that is not a security as a hedge",
+    "sourceRelationshipConditionValue": [
+      "Equity instrument that is not a security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ETD_LBLTY_PSTN_SNTHTC_SCRTSTN_ASSGNMNT",
+    "sourceEntity": "Exchange tradable derivative liability position",
+    "sourceTable": "EXCHNG_TRDBL_DRVTV_PSTN_RL",
+    "targetEntity": "Exchange tradable derivative liability position Synthetic securitisation assignment",
+    "sourceRelationshipConditionValue": [
+      "Non-balance sheet recognised exchange tradable derivative liability position",
+      "Fair-valued balance sheet recognised exchange tradable derivative liability position",
+      "Non-fair-valued balance sheet recognised exchange tradable derivative liability position"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "EXCHNG_TRDBL_DRVTV_PSTN_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ETD_LBLTY_PSTN_SNTHTC_SCRTSTN_ASSGNMNT",
+    "sourceEntity": "Synthetic securitisation",
+    "sourceTable": "SNTHTC_SCRTSTN",
+    "targetEntity": "Exchange tradable derivative liability position Synthetic securitisation assignment",
+    "sourceRelationshipConditionValue": [
+      "Synthetic securitisation without involvement of an SSPE",
+      "Synthetic securitisation involving an SSPE"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_HDGD_OTC_DRVTV_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "EXCHNG_TRDBL_DRVTV_PSTN",
+    "sourceEntity": "Buyer",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Exchange tradable derivative position",
+    "sourceRelationshipConditionValue": [
+      "Buyer"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "EXCHNG_TRDBL_DRVTV_PSTN",
+    "sourceEntity": "Exchange tradable derivative",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Exchange tradable derivative position",
+    "sourceRelationshipConditionValue": [
+      "Exchange tradable option",
+      "Exchange tradable future",
+      "International securities identification number exchange tradable derivative",
+      "Non-International securities identification number exchange tradable derivative"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "EXCHNG_TRDBL_DRVTV_TYP_BY_IDNTFR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "EXCHNG_TRDBL_DRVTV_PSTN",
+    "sourceEntity": "Seller",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Exchange tradable derivative position",
+    "sourceRelationshipConditionValue": [
+      "Seller"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "EXCHNG_TRDBL_DRVTV_PSTN_PRTCN_ARRNGMNT_ASSGNMNT",
+    "sourceEntity": "Protection arrangement given",
+    "sourceTable": "PRTCTN_ARRNGMNT_RL",
+    "targetEntity": "Protection arrangement given Exchange tradable derivative position assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection arrangement given"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "EXCHNG_TRDBL_DRVTV_PSTN_PRTCN_ARRNGMNT_ASSGNMNT",
+    "sourceEntity": "Protection arrangement received",
+    "sourceTable": "PRTCTN_ARRNGMNT_RL",
+    "targetEntity": "Exchange tradable derivative position Protection arrangement received assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection arrangement received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "FNDMNTL_RVW_TRDNG_BK_STNDRD_APPRCH_RSK_MSR_OTC_PSTNS",
+    "sourceEntity": "Over the counter (OTC) Derivative instrument",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Fundamental review of the trading book standard approach risk measure for OTC positions",
+    "sourceRelationshipConditionValue": [
+      "OTC Option other than OTC Credit spread option",
+      "Forward",
+      "Other OTC Derivative instrument",
+      "OTC Total return swap",
+      "OTC Credit default swap",
+      "Other OTC Swap",
+      "OTC Credit spread option"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "FNNCL_GRNT_INSTRMNT_DBT_SCRT_DBT_SCRTY_ASSGNMNT",
+    "sourceEntity": "Financial guarantee instrument covering a Debt security",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Financial guarantee instrument covering a Debt security Debt security assignment",
+    "sourceRelationshipConditionValue": [
+      "Financial guarantee instrument for a Debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "FNNCL_GRNT_INSTRMNT_DBT_SCRT_DBT_SCRTY_ASSGNMNT",
+    "sourceEntity": "Debt security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Financial guarantee instrument covering a Debt security Debt security assignment",
+    "sourceRelationshipConditionValue": [
+      "Debt security without underlying assets",
+      "Asset backed security",
+      "Covered bond",
+      "Perpetual debt security",
+      "Non-perpetual debt security",
+      "Performing debt security",
+      "Non-performing debt security",
+      "Past due debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "PRPTL_DBT_SCRTY_INDCTR",
+      "DBT_SCRTY_PRFRMNG_STTS_TYP",
+      "PST_DU_DBT_SCRTY_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "GRP_KY_MNGMNT_PRSNLL_ASSGNMNT",
+    "sourceEntity": "Group of clients",
+    "sourceTable": "GRP",
+    "targetEntity": "Group of clients Key management personnel assignment",
+    "sourceRelationshipConditionValue": [
+      "Group of consolidated clients",
+      "Other group of clients",
+      "Group of connected clients"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "GRP_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "GRP_KY_MNGMNT_PRSNLL_ASSGNMNT",
+    "sourceEntity": "Key management personnel",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Group of clients Key management personnel assignment",
+    "sourceRelationshipConditionValue": [
+      "Key management personnel"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "GRP_KY_MNGMNT_PRSNLL_ASSGNMNT",
+    "sourceEntity": "Key management personnel",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Internal group Key management personnel assignment",
+    "sourceRelationshipConditionValue": [
+      "Key management personnel"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "GRP_KY_MNGMNT_PRSNLL_ASSGNMNT",
+    "sourceEntity": "Internal group",
+    "sourceTable": "GRP",
+    "targetEntity": "Internal group Key management personnel assignment",
+    "sourceRelationshipConditionValue": [
+      "Accounting consolidation group",
+      "Prudential consolidation group",
+      "Subsidiary, joint venture and associate",
+      "Foreign institutional unit",
+      "Domestic institutional unit"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "GRP_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "IMMDT_PRNT_ENTRPRS_ASSGNMNT",
+    "sourceEntity": "Immediate parent enterprise",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Immediate parent enterprise assignment",
+    "sourceRelationshipConditionValue": [
+      "Immediate parent enterprise"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "IMMDT_PRNT_ENTRPRS_ASSGNMNT",
+    "sourceEntity": "Central bank and private sector company",
+    "sourceTable": "PRTY",
+    "targetEntity": "Immediate parent enterprise assignment",
+    "sourceRelationshipConditionValue": [
+      "Private sector company other than corporation",
+      "European Central Bank",
+      "Central Bank that is not the European Central Bank",
+      "Other financial corporation",
+      "Non-financial corporation",
+      "Credit institution"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INSTRMNT_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Loan and advance",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Loan and advance Collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Factoring",
+      "Other loan",
+      "Other trade receivables",
+      "Transit items",
+      "Suspence items",
+      "Other advance",
+      "Credit card debt",
+      "Finance leases",
+      "Syndication or sub-participation member instrument",
+      "Non-syndicated contract nor sub-participation member instrument"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT",
+      "SNDCTN_SB_PRTCPTN_MMBR_INSTRMNT_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INSTRMNT_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Collateral received",
+    "sourceTable": "CLLTRL_RL",
+    "targetEntity": "Loan and advance Collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Collateral received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "CLLTRL_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INSTRMNT_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Collateral received",
+    "sourceTable": "CLLTRL_RL",
+    "targetEntity": "Off-balance instrument Collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Collateral received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "CLLTRL_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INSTRMNT_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Off-balance instrument",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Off-balance instrument Collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Other commitment",
+      "Financial guarantee instrument for a Debt security",
+      "Financial guarantee instrument not for a Debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INSTRMNT_HDGD_EXCHNG_TRDBL_DRVTV",
+    "sourceEntity": "Exchange tradable derivative position as a hedge",
+    "sourceTable": "EXCHNG_TRDBL_DRVTV_PSTN_RL",
+    "targetEntity": "Instrument hedged by Exchange tradable derivative position",
+    "sourceRelationshipConditionValue": [
+      "Exchange tradable derivative position as a hedge according to International Financial Reporting Standard (IFRS)",
+      "Exchange tradable derivative position as a hedge according to national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "EXCHNG_TRDBL_DRVTV_PSTN_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INSTRMNT_PRTCTN_ARRNGMNT_ASSGNMNT",
+    "sourceEntity": "Protection arrangement received",
+    "sourceTable": "PRTCTN_ARRNGMNT_RL",
+    "targetEntity": "Instrument Protection arrangement received assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection arrangement received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "INTRNL_GRP_RL",
+    "sourceEntity": "Internal group",
+    "sourceTable": "GRP",
+    "targetEntity": "Internal group role",
+    "sourceRelationshipConditionValue": [
+      "Accounting consolidation group",
+      "Prudential consolidation group",
+      "Subsidiary, joint venture and associate",
+      "Foreign institutional unit",
+      "Domestic institutional unit"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "GRP_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LN_AND_ADVNC_HDG",
+    "sourceEntity": "Loan and advance",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Loan and advance as a hedge",
+    "sourceRelationshipConditionValue": [
+      "Factoring",
+      "Other loan",
+      "Other trade receivables",
+      "Transit items",
+      "Suspence items",
+      "Other advance",
+      "Credit card debt",
+      "Finance leases",
+      "Syndication or sub-participation member instrument",
+      "Non-syndicated contract nor sub-participation member instrument"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT",
+      "SNDCTN_SB_PRTCPTN_MMBR_INSTRMNT_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_CLLTRL_RCVD_ASSGNMNT",
+    "sourceEntity": "Collateral received",
+    "sourceTable": "CLLTRL_RL",
+    "targetEntity": "Long balance sheet recognised security position collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Collateral received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "CLLTRL_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_CLLTRL_RCVD_ASSGNMNT",
+    "sourceEntity": "Long balance sheet recognised security position",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Long balance sheet recognised security position collateral received assignment",
+    "sourceRelationshipConditionValue": [
+      "Long balance sheet recognised security position International Financial Reporting Standard (IFRS)",
+      "Long balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_NGAAP_FDCRY_ITM",
+    "sourceEntity": "Long balance sheet recognised security position prudential portfolio Accounting classification assignment national general accepted accounting principles (nGAAP)",
+    "sourceTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT",
+    "targetEntity": "Long balance sheet recognised security position prudential portfolio Accounting classification assignment national general accepted accounting principles (nGAAP) fiduciary item",
+    "sourceRelationshipConditionValue": [
+      "Long balance sheet recognised security position prudential portfolio Accounting classification assignment national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_ACCNTNG_STNDRD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT",
+    "sourceEntity": "Long balance sheet recognised security position",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Long balance sheet recognised security position prudential portfolio assignment",
+    "sourceRelationshipConditionValue": [
+      "Long balance sheet recognised security position International Financial Reporting Standard (IFRS)",
+      "Long balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRTCTN_ARRNGMNT_RCVD_ASSGNMNT",
+    "sourceEntity": "Long balance sheet recognised security position",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Long balance sheet recognised security position protection arrangement received assignment",
+    "sourceRelationshipConditionValue": [
+      "Long balance sheet recognised security position International Financial Reporting Standard (IFRS)",
+      "Long balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRTCTN_ARRNGMNT_RCVD_ASSGNMNT",
+    "sourceEntity": "Protection arrangement received",
+    "sourceTable": "PRTCTN_ARRNGMNT_RL",
+    "targetEntity": "Long balance sheet recognised security position protection arrangement received assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection arrangement received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_CLLTRL_RCVD_ASSGNMNT",
+    "sourceEntity": "Collateral received",
+    "sourceTable": "CLLTRL_RL",
+    "targetEntity": "Long non-balance sheet recognised security position collateral received assigment",
+    "sourceRelationshipConditionValue": [
+      "Collateral received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "CLLTRL_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_CLLTRL_RCVD_ASSGNMNT",
+    "sourceEntity": "Non-balance sheet recognised security position ",
+    "sourceTable": "BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Long non-balance sheet recognised security position collateral received assigment",
+    "sourceRelationshipConditionValue": [
+      "Non-balance sheet recognised debt security position",
+      "Non-balance sheet recognised equity or fund security position"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_BLNC_SHT_RCGNSD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRTCTN_ARRNGMNT_RCVD_ASSGNMNT",
+    "sourceEntity": "Protection arrangement received",
+    "sourceTable": "PRTCTN_ARRNGMNT_RL",
+    "targetEntity": "Long non-balance sheet recognised security position protection arrangement received assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection arrangement received"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTCTN_ARRNGMNT_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNG_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRTCTN_ARRNGMNT_RCVD_ASSGNMNT",
+    "sourceEntity": "Non-balance sheet recognised security position ",
+    "sourceTable": "BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Long non-balance sheet recognised security position protection arrangement received assignment",
+    "sourceRelationshipConditionValue": [
+      "Non-balance sheet recognised debt security position",
+      "Non-balance sheet recognised equity or fund security position"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_BLNC_SHT_RCGNSD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNKD_ENTRPRS_ASSGNMNT",
+    "sourceEntity": "Central bank and private sector company",
+    "sourceTable": "PRTY",
+    "targetEntity": "Linked enterprise assignment",
+    "sourceRelationshipConditionValue": [
+      "Private sector company other than corporation",
+      "European Central Bank",
+      "Central Bank that is not the European Central Bank",
+      "Other financial corporation",
+      "Non-financial corporation",
+      "Credit institution"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "LNKD_ENTRPRS_ASSGNMNT",
+    "sourceEntity": "Linked enterprise",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Linked enterprise assignment",
+    "sourceRelationshipConditionValue": [
+      "Linked enterprise"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_NGAAP_FDCRY_ITM",
+    "sourceEntity": "Non-balance sheet recognised security position ",
+    "sourceTable": "BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Non-balance sheet recognised security position national general accepted accounting principles (nGAAP) fiduciary item",
+    "sourceRelationshipConditionValue": [
+      "Non-balance sheet recognised debt security position",
+      "Non-balance sheet recognised equity or fund security position"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_BLNC_SHT_RCGNSD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "NTRL_PRSN_KY_MNGMNT_PRSNLL_ASSGNMNT",
+    "sourceEntity": "Natural person",
+    "sourceTable": "PRTY",
+    "targetEntity": "Natural person Key management personnel assignment",
+    "sourceRelationshipConditionValue": [
+      "Non-self-employed natural person",
+      "Self-employed natural person"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "NTRL_PRSN_KY_MNGMNT_PRSNLL_ASSGNMNT",
+    "sourceEntity": "Key management personnel",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Natural person Key management personnel assignment",
+    "sourceRelationshipConditionValue": [
+      "Key management personnel"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "OTC_DRVTV_HDG",
+    "sourceEntity": "Over the counter (OTC) Derivative instrument",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Over the counter (OTC) Derivative as a hedge",
+    "sourceRelationshipConditionValue": [
+      "OTC Option other than OTC Credit spread option",
+      "Forward",
+      "Other OTC Derivative instrument",
+      "OTC Total return swap",
+      "OTC Credit default swap",
+      "Other OTC Swap",
+      "OTC Credit spread option"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "OTC_DRVTV_INSTRMNT_SNTHTC_SCRTSTN_ASSGNMNT",
+    "sourceEntity": "Over the counter (OTC) Derivative instrument",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Over the counter (OTC) Derivative instrument Synthetic securitisation assignment",
+    "sourceRelationshipConditionValue": [
+      "OTC Option other than OTC Credit spread option",
+      "Forward",
+      "Other OTC Derivative instrument",
+      "OTC Total return swap",
+      "OTC Credit default swap",
+      "Other OTC Swap",
+      "OTC Credit spread option"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "OTC_DRVTV_INSTRMNT_SNTHTC_SCRTSTN_ASSGNMNT",
+    "sourceEntity": "Synthetic securitisation",
+    "sourceTable": "SNTHTC_SCRTSTN",
+    "targetEntity": "Over the counter (OTC) Derivative instrument Synthetic securitisation assignment",
+    "sourceRelationshipConditionValue": [
+      "Synthetic securitisation without involvement of an SSPE",
+      "Synthetic securitisation involving an SSPE"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_HDGD_OTC_DRVTV_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "OTHR_PRTY_ID",
+    "sourceEntity": "Other party code",
+    "sourceTable": "PRTY_CD",
+    "targetEntity": "Other party identifier",
+    "sourceRelationshipConditionValue": [
+      "Other party code"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_CD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "PRTCTN_PRTCTN_PRVD_ASSGNMNT",
+    "sourceEntity": "Protection provider",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Protection Protection provider assignment",
+    "sourceRelationshipConditionValue": [
+      "Protection provider"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "PRTNR_ENTRPRS_ASSGNMNT",
+    "sourceEntity": "Central bank and private sector company",
+    "sourceTable": "PRTY",
+    "targetEntity": "Partner enterprise assignment",
+    "sourceRelationshipConditionValue": [
+      "Private sector company other than corporation",
+      "European Central Bank",
+      "Central Bank that is not the European Central Bank",
+      "Other financial corporation",
+      "Non-financial corporation",
+      "Credit institution"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "PRTNR_ENTRPRS_ASSGNMNT",
+    "sourceEntity": "Partner enterprise",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Partner enterprise assignment",
+    "sourceRelationshipConditionValue": [
+      "Partner enterprise"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "PRTY",
+    "sourceEntity": "Domestic institutional unit",
+    "sourceTable": "GRP",
+    "targetEntity": "Organisation",
+    "sourceRelationshipConditionValue": [
+      "Domestic institutional unit"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "GRP_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "ENTTY_RL",
+    "sourceEntity": "Organisation",
+    "sourceTable": "PRTY",
+    "targetEntity": "Organisation role",
+    "sourceRelationshipConditionValue": [
+      "Private sector company other than corporation",
+      "European Central Bank",
+      "Central Bank that is not the European Central Bank",
+      "Other financial corporation",
+      "Central government",
+      "State and local government and Social security funds",
+      "International organisation",
+      "Non-financial corporation",
+      "Credit institution",
+      "Organisation without legal proceeding",
+      "Organisation with legal proceeding"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP",
+      "ORGNSTN_TYP_BY_PRCDNG_STTS"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RPRCHS_TRNSCTN_GLD_GVN_ASSGNMNT",
+    "sourceEntity": "Gold",
+    "sourceTable": "NN_FNNCL_ASST",
+    "targetEntity": "Repurchase transaction gold (given) assignment",
+    "sourceRelationshipConditionValue": [
+      "Gold"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "NN_FNNCL_ASST_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RPRCHS_TRNSCTN_LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_GVN_ASSGNMNT",
+    "sourceEntity": "Long balance sheet recognised security position",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Repurchase transaction Long balance sheet recognised security position (given) assignment",
+    "sourceRelationshipConditionValue": [
+      "Long balance sheet recognised security position International Financial Reporting Standard (IFRS)",
+      "Long balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RPRCHS_TRNSCTN_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_ASSGNMNT",
+    "sourceEntity": "Non-balance sheet recognised security position ",
+    "sourceTable": "BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Repurchase transaction Non-balance sheet recognised security position (given) assignment",
+    "sourceRelationshipConditionValue": [
+      "Non-balance sheet recognised debt security position",
+      "Non-balance sheet recognised equity or fund security position"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_BLNC_SHT_RCGNSD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RSK_FAC_SA",
+    "sourceEntity": "Issuer",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Credit spread risk (CSR) non-securitisation risk factor for standardised approach",
+    "sourceRelationshipConditionValue": [
+      "Issuer"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RSK_FAC_SA",
+    "sourceEntity": "Equity security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Equity risk factor for standardised approach",
+    "sourceRelationshipConditionValue": [
+      "Equity security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_GRD_CNTRL_BNK_PRVT_SCTR_CMPN_ASSGNMNT",
+    "sourceEntity": "Central bank and private sector company",
+    "sourceTable": "PRTY",
+    "targetEntity": "Rating grade Central bank and private sector company assignment",
+    "sourceRelationshipConditionValue": [
+      "Private sector company other than corporation",
+      "European Central Bank",
+      "Central Bank that is not the European Central Bank",
+      "Other financial corporation",
+      "Non-financial corporation",
+      "Credit institution"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_GRD_CNTRL_BNK_PRVT_SCTR_CMPN_ASSGNMNT",
+    "sourceEntity": "Rating grade for issuer based rating system for non-central government",
+    "sourceTable": "RTNG_GRD",
+    "targetEntity": "Rating grade Central bank and private sector company assignment",
+    "sourceRelationshipConditionValue": [
+      "Rating grade for issuer based rating systems for non-Central government"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "RTNG_GRD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_GRD_CNTRY_ASSGNMNT",
+    "sourceEntity": "Rating grade for issuer based rating system for central government",
+    "sourceTable": "RTNG_GRD",
+    "targetEntity": "Rating grade Country assignment",
+    "sourceRelationshipConditionValue": [
+      "Rating grade for issuer based rating systems for Central government"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "RTNG_GRD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_GRD_ISS_BSD_RTNG_SSTM_DBT_SCRTY_ASSGNMNT",
+    "sourceEntity": "Debt security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Rating grade for issue-based rating system Debt security assignment",
+    "sourceRelationshipConditionValue": [
+      "Debt security without underlying assets",
+      "Asset backed security",
+      "Covered bond",
+      "Perpetual debt security",
+      "Non-perpetual debt security",
+      "Performing debt security",
+      "Non-performing debt security",
+      "Past due debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "PRPTL_DBT_SCRTY_INDCTR",
+      "DBT_SCRTY_PRFRMNG_STTS_TYP",
+      "PST_DU_DBT_SCRTY_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_GRD_ISS_BSD_RTNG_SSTM_DBT_SCRTY_ASSGNMNT",
+    "sourceEntity": "Rating grade for issue-based rating system",
+    "sourceTable": "RTNG_GRD",
+    "targetEntity": "Rating grade for issue-based rating system Debt security assignment",
+    "sourceRelationshipConditionValue": [
+      "Rating grade for issue-based rating system"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "RTNG_GRD_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_SYSTM_APPLD_LGL_PRSN",
+    "sourceEntity": "Numeric rating system",
+    "sourceTable": "RTNG_SYSTM",
+    "targetEntity": "Rating system applied to a Legal person",
+    "sourceRelationshipConditionValue": [
+      "Numeric rating system"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "RTNG_SYSTM_TYP_BY_NTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "RTNG_SYSTM_APPLD_LGL_PRSN",
+    "sourceEntity": "Legal person",
+    "sourceTable": "PRTY",
+    "targetEntity": "Rating system applied to a Legal person",
+    "sourceRelationshipConditionValue": [
+      "Non-self-employed natural person",
+      "Self-employed natural person",
+      "Private sector company other than corporation",
+      "European Central Bank",
+      "Central Bank that is not the European Central Bank",
+      "Other financial corporation",
+      "Central government",
+      "State and local government and Social security funds",
+      "International organisation",
+      "Non-financial corporation",
+      "Credit institution",
+      "Organisation without legal proceeding",
+      "Organisation with legal proceeding"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "PRTY_TYP",
+      "ORGNSTN_TYP_BY_PRCDNG_STTS"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_BRRWNG_CMPNNT_SCRTY_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Security borrowing component",
+    "sourceTable": "SCRTY_BRRWNG_LNDNG_TRNSCTN_INCLDNG_CSH_CLLTRL",
+    "targetEntity": "Security borrowing component Security Collateral assignment",
+    "sourceRelationshipConditionValue": [
+      "Security borrowing component"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_BRRWNG_LNDNG_TRNSCTN_CMPNNT_TYP_BY_DRCTN"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_BRRWNG_LNDNG_TRNSCTN_INCLDNG_CSH_CLLTRL",
+    "sourceEntity": "Security borrowing and lending transaction",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Security/Security Collateral lending component",
+    "sourceRelationshipConditionValue": [
+      "Security against a fee borrowing and lending transaction",
+      "Security against Security borrowing and lending transaction"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_CLLTRL_LNDNG_CMPNNT_SCRTY_CLLTRL_ASSGNMNT",
+    "sourceEntity": "Security collateral lending component",
+    "sourceTable": "SCRTY_BRRWNG_LNDNG_TRNSCTN_INCLDNG_CSH_CLLTRL",
+    "targetEntity": "Security collateral lending component Security collateral assignment",
+    "sourceRelationshipConditionValue": [
+      "Security collateral lending component"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_BRRWNG_LNDNG_TRNSCTN_CMPNNT_TYP_BY_DRCTN"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_HDGD_EXCHNG_TRDBL_DRVTV",
+    "sourceEntity": "Exchange tradable derivative position as a hedge",
+    "sourceTable": "EXCHNG_TRDBL_DRVTV_PSTN_RL",
+    "targetEntity": "Security position hedged by Exchange tradable derivative position",
+    "sourceRelationshipConditionValue": [
+      "Exchange tradable derivative position as a hedge according to International Financial Reporting Standard (IFRS)",
+      "Exchange tradable derivative position as a hedge according to national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "EXCHNG_TRDBL_DRVTV_PSTN_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_LNDNG_CMPNNT_SCRTY_ASSGNMNT",
+    "sourceEntity": "Security lending component",
+    "sourceTable": "SCRTY_BRRWNG_LNDNG_TRNSCTN_INCLDNG_CSH_CLLTRL",
+    "targetEntity": "Security lending component Security assignment",
+    "sourceRelationshipConditionValue": [
+      "Security lending component"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_BRRWNG_LNDNG_TRNSCTN_CMPNNT_TYP_BY_DRCTN"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_LNDNG_CMPNNT_SCRTY_ASSGNMNT",
+    "sourceEntity": "Security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Security lending component Security assignment",
+    "sourceRelationshipConditionValue": [
+      "Debt security without underlying assets",
+      "Asset backed security",
+      "Covered bond",
+      "Fund security",
+      "Equity security",
+      "Perpetual debt security",
+      "Non-perpetual debt security",
+      "Performing debt security",
+      "Non-performing debt security",
+      "Past due debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "PRPTL_DBT_SCRTY_INDCTR",
+      "DBT_SCRTY_PRFRMNG_STTS_TYP",
+      "PST_DU_DBT_SCRTY_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_PSTN",
+    "sourceEntity": "Investor",
+    "sourceTable": "ENTTY_RL",
+    "targetEntity": "Security position",
+    "sourceRelationshipConditionValue": [
+      "Investor"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ENTTY_RL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SCRTY_PSTN",
+    "sourceEntity": "Security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Security position",
+    "sourceRelationshipConditionValue": [
+      "Debt security without underlying assets",
+      "Asset backed security",
+      "Covered bond",
+      "Fund security",
+      "Equity security",
+      "Perpetual debt security",
+      "Non-perpetual debt security",
+      "Performing debt security",
+      "Non-performing debt security",
+      "Past due debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP",
+      "PRPTL_DBT_SCRTY_INDCTR",
+      "DBT_SCRTY_PRFRMNG_STTS_TYP",
+      "PST_DU_DBT_SCRTY_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_NGAAP_FDCRY_ITM",
+    "sourceEntity": "Short balance sheet recognised security position national general accepted accounting principles (nGAAP)",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Short balance sheet recognised security position national general accepted accounting principles (nGAAP) fiduciary item",
+    "sourceRelationshipConditionValue": [
+      "Short balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT",
+    "sourceEntity": "Short balance sheet recognised security position",
+    "sourceTable": "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+    "targetEntity": "Short balance sheet recognised security position prudential portfolio assignment",
+    "sourceRelationshipConditionValue": [
+      "Short balance sheet recognised security position International Financial Reporting Standard (IFRS)",
+      "Short balance sheet recognised security position national general accepted accounting principles (nGAAP)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "SNTHTC_SCRTSTN",
+    "sourceEntity": "Asset pool (subject to a Securitisation)",
+    "sourceTable": "ASST_PL",
+    "targetEntity": "Securitisation",
+    "sourceRelationshipConditionValue": [
+      "Asset pool (subject to a Securitisation)"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "ASST_PL_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "TRNCH_TRDTNL_SCRTSTN",
+    "sourceEntity": "Traditional securitisation",
+    "sourceTable": "TRDTNL_SCRTSTN",
+    "targetEntity": "Tranche in a Traditional securitisation",
+    "sourceRelationshipConditionValue": [
+      "Traditional securititsation"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SGNFCNT_RSK_TRNSFR_INDCTR"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "TRNCH_SYNTHTC_SCRTSTN_WTHT_SSPE_DPST",
+    "sourceEntity": "Deposit",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Tranche in a synthetic securitisation without securitisation special purpose entity (SSPE) being a deposit",
+    "sourceRelationshipConditionValue": [
+      "On demand deposit not used for minimum reserve",
+      "Tranferable deposit",
+      "Other overnight deposits",
+      "Deposits with agreed maturity - other than counterpart liability to non-derecognised loans"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "TRNCH_SYNTHTC_SCRTSTN_WTHT_SSPE_DPST",
+    "sourceEntity": "Synthetic securitisation without involvement of an SSPE",
+    "sourceTable": "SNTHTC_SCRTSTN",
+    "targetEntity": "Tranche in a synthetic securitisation without securitisation special purpose entity (SSPE) being a deposit",
+    "sourceRelationshipConditionValue": [
+      "Synthetic securitisation without involvement of an SSPE"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_HDGD_OTC_DRVTV_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "TRNCH_SYNTHTC_SCRTSTN_WTHT_SSPE_FNNCL_GRNT",
+    "sourceEntity": "Financial guarantee instrument",
+    "sourceTable": "INSTRMNT",
+    "targetEntity": "Tranche in a synthetic securitisation without securitisation special purpose entity (SSPE) being a financial guarantee",
+    "sourceRelationshipConditionValue": [
+      "Financial guarantee instrument for a Debt security",
+      "Financial guarantee instrument not for a Debt security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "INSTRMNT_TYP_PRDCT"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "TRNCH_SYNTHTC_SCRTSTN_WTHT_SSPE_FNNCL_GRNT",
+    "sourceEntity": "Synthetic securitisation without involvement of an SSPE",
+    "sourceTable": "SNTHTC_SCRTSTN",
+    "targetEntity": "Tranche in a synthetic securitisation without securitisation special purpose entity (SSPE) being a financial guarantee",
+    "sourceRelationshipConditionValue": [
+      "Synthetic securitisation without involvement of an SSPE"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_PSTN_HDGD_OTC_DRVTV_TYP"
+    ]
+  },
+  {
+    "type": "RELATIONSHIP",
+    "targetTable": "TRNCH_TRDTNL_SCRTSTN",
+    "sourceEntity": "Asset backed security",
+    "sourceTable": "SCRTY_EXCHNG_TRDBL_DRVTV",
+    "targetEntity": "Tranche in a Traditional securitisation",
+    "sourceRelationshipConditionValue": [
+      "Asset backed security"
+    ],
+    "sourceRelationshipConditionColumn": [
+      "SCRTY_EXCHNG_TRDBL_DRVTV_TYP"
+    ]
+  }
+]

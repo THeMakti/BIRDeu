@@ -1,0 +1,59 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[Asset Sec] Asset Securitisation identifiers" id="17478-177">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+# Overview
+Securitisation identifier needs to be reported to ESMA
+
+The Unique identifier to be reported in the ESMA data sets is regulated by Article 11 of EU 2020/1224 (“RTS specifying the information and the details of a securitisation to be made available by the originator, sponsor and SSPE”).
+
+“Article 11 Unique identifiers 1. Each securitisation shall be assigned a unique identifier composed of the following elements, in sequential order: (a) the Legal Entity Identifier of the reporting entity; (b) the letter ‘A’ where the securitisation is an ABCP securitisation or the letter ‘N’ where the securitisation is a non-ABCP securitisation; (c) the four-digit year corresponding to: (i) the year in which the first securities of the securitisation were issued, where the securitisation is a non-ABCP securitisation; (ii) the year in which the first securities within the ABCP programme were issued, where the securitisation is an ABCP securitisation; (d) the number 01 or, where there is more than one securitisation with the same identifier as referred to in points (a), (b) and (c), a two-digit sequential number corresponding to the order in which information about each securitisation is made available. The order of simultaneous securitisations shall be discretionary.”
+
+This identifier, which I refer to as the “ESMA identifier” is therefore different from the identifiers given by EDW or SecRep (the other accredited repository).
+
+Example: BNP Paribas Bas Master Issuer N.V securitisation has EDW ID = `RMBMBE000095100120084` and ESMA ID = `KGCEPHLVVKVRZYO1T647N200801`.
+
+### Contact person
+@Arjan.Bos @Olivia.Hauet 
+
+### Business definition
+The Unique identifier to be reported in the ESMA securitisation templates is regulated by Article 11 of EU 2020/1224 (“RTS specifying the information and the details of a securitisation to be made available by the originator, sponsor and SSPE”).
+
+
+
+### Legal definition
+“Article 11 Unique identifiers 1. Each securitisation shall be assigned a unique identifier composed of the following elements, in sequential order: (a) the Legal Entity Identifier of the reporting entity; (b) the letter ‘A’ where the securitisation is an ABCP securitisation or the letter ‘N’ where the securitisation is a non-ABCP securitisation; (c) the four-digit year corresponding to: (i) the year in which the first securities of the securitisation were issued, where the securitisation is a non-ABCP securitisation; (ii) the year in which the first securities within the ABCP programme were issued, where the securitisation is an ABCP securitisation; (d) the number 01 or, where there is more than one securitisation with the same identifier as referred to in points (a), (b) and (c), a two-digit sequential number corresponding to the order in which information about each securitisation is made available. The order of simultaneous securitisations shall be discretionary.”
+
+
+### Reason for inclusion
+Additional attribute to the IReF would give the possibility to connect IReF and ESMA data for public securitisations
+
+The same attribute, or different attributes could be used for Covered bond programmes (requirement by DG-M) and NPL transfers.
+
+In case of several transactions applying to the same instrument, could the attribute contain several identifiers?
+
+
+### Relationships
+_[Related objects]_
+
+### Relevant Framework/Template
+The Unique identifier to be reported in the ESMA data sets is regulated by Article 11 of EU 2020/1224 (“RTS specifying the information and the details of a securitisation to be made available by the originator, sponsor and SSPE”).
+
+### Additional documentation/links (optional)
+_[Additional info]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/177</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D06CB68-A9EF-13B9-9775-F84BBABFF783" name="ASST_PL_CLLTRL_RCVD_ASSGNMNT">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Asset pool Debt security position assignment is the combination of an Asset pool and a Debt security position that indicates which (part of a) Debt security position is comprised in which Asset pool.]]></commentInRDBMS>
+<generatorID>3FB3AB42-7C91-CD5C-37CA-500B22FF713D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>A0CBE5B5-15E4-B4F0-F88E-E83729225A42</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DT_RFRNC" id="D15EF10A-4745-1F63-65D3-D5EA29B9E5CE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>58E6CB06-B734-E38B-ABA2-41B95F0F19E3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="864D1616-AB56-8E27-CBBF-321ADB91EDF8" referredColumn="DD030E04-FD48-2C1F-5CA0-B2448D6D176F"/>
+<colAssociation fkAssociation="0E54762E-A77D-01EF-909D-2D4545FC7FDD" referredColumn="109F55DA-47D6-6B75-32CE-E063C130BBFE"/>
+</associations>
+</Column>
+<Column name="RPRTNG_AGNT_ID" id="0E07C519-596F-36DC-470D-53ACD5F3A69C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>A7E469A2-A5F3-91EE-8468-F1B49FC869B2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="864D1616-AB56-8E27-CBBF-321ADB91EDF8" referredColumn="CD3822C3-E849-36EF-3EF8-B0264F19F683"/>
+<colAssociation fkAssociation="0E54762E-A77D-01EF-909D-2D4545FC7FDD" referredColumn="3421E397-EBAF-96B3-EB2A-7D504655653D"/>
+</associations>
+</Column>
+<Column name="ACCNTNG_CNSLDTN_LVL" id="37DA3F7F-3AEC-A997-62B8-8C4FB2499E86">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>49338BE4-290F-B0F6-284C-60FA78DD434D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>50954ADF-8EFF-2970-08FC-618EDB09B7C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="864D1616-AB56-8E27-CBBF-321ADB91EDF8" referredColumn="23626029-1749-846E-AF7B-FD0888E1D00F"/>
+<colAssociation fkAssociation="0E54762E-A77D-01EF-909D-2D4545FC7FDD" referredColumn="201E4CC0-FD49-DAA0-22D5-4611A30609AE"/>
+</associations>
+</Column>
+<Column name="ACCNTNG_STNDRD" id="BB47667D-719C-148D-B672-1B9DF42F958C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>07ADEF32-C886-F8B5-DBA5-43388865E0E6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="864D1616-AB56-8E27-CBBF-321ADB91EDF8" referredColumn="DA5C526C-2E2D-F6FD-986A-479408AA0A38"/>
+<colAssociation fkAssociation="0E54762E-A77D-01EF-909D-2D4545FC7FDD" referredColumn="9319DA14-B2F8-A527-9218-2C86094BEBD9"/>
+</associations>
+</Column>
+<Column name="ASST_PL_ID" id="DF65D9AE-24BE-8FCC-63E7-B9280D2133D7">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each asset pool.]]></comment>
+<generatorID>E7A451BA-C992-8058-CC59-25D0248309A2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="864D1616-AB56-8E27-CBBF-321ADB91EDF8" referredColumn="91D67809-D5C0-D354-0F77-14762F23E318"/>
+</associations>
+</Column>
+<Column name="CLLTRL_ID" id="ADE9F8CE-65D5-D557-E6B9-28D535505536">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each collateral.]]></comment>
+<generatorID>5EFD28BA-3D38-B528-571A-A8E8D0616B06</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E54762E-A77D-01EF-909D-2D4545FC7FDD" referredColumn="4D43E960-4AA0-CE97-B3A6-B08D57343A60"/>
+</associations>
+</Column>
+<Column name="CLLTRL_RL_TYP" id="E1EEBE55-5CB4-BA62-6844-A4A997360143">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 16:26:56 UTC</createdTime>
+<comment><![CDATA[Collateral role type distiguishes the Collateral role according to the role the Collateral acts in.]]></comment>
+<generatorID>DE57579B-1D8B-FD09-5950-D5AF853A176D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>BAFAD612-C62B-4DA6-BF0C-6212B73F7926</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E54762E-A77D-01EF-909D-2D4545FC7FDD" referredColumn="ECC65120-C975-622E-5CA7-C887799C3D5D"/>
+</associations>
+</Column>
+<Column name="TRNSFRRD_AMNT" id="2ABA6176-0154-60B6-0786-5037D6EDAEA5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<comment><![CDATA[The amount of the nominal amount that has been transferred.]]></comment>
+<generatorID>E3FD47EF-FF4C-91A9-B659-0B1595620B74</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1D37612-D055-5992-D53D-E799729824FF" name="ASST_PL_CLLTRL_RCVD_ASSGNMNT_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>7006EF0B-899A-3669-2ADF-7FF1AC22A530</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D15EF10A-4745-1F63-65D3-D5EA29B9E5CE"/>
+<colUsage columnID="0E07C519-596F-36DC-470D-53ACD5F3A69C"/>
+<colUsage columnID="37DA3F7F-3AEC-A997-62B8-8C4FB2499E86"/>
+<colUsage columnID="BB47667D-719C-148D-B672-1B9DF42F958C"/>
+<colUsage columnID="DF65D9AE-24BE-8FCC-63E7-B9280D2133D7"/>
+<colUsage columnID="ADE9F8CE-65D5-D557-E6B9-28D535505536"/>
+<colUsage columnID="E1EEBE55-5CB4-BA62-6844-A4A997360143"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2743695-562F-C5A6-58C7-2B49EAAD23BA" name="ASST_PL_CLLTRL_RCVD_ASSGNMNT_ASST_PL_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>B560F6EC-8655-9E21-A94E-45DF38C7BEBA</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D15EF10A-4745-1F63-65D3-D5EA29B9E5CE"/>
+<colUsage columnID="0E07C519-596F-36DC-470D-53ACD5F3A69C"/>
+<colUsage columnID="37DA3F7F-3AEC-A997-62B8-8C4FB2499E86"/>
+<colUsage columnID="BB47667D-719C-148D-B672-1B9DF42F958C"/>
+<colUsage columnID="DF65D9AE-24BE-8FCC-63E7-B9280D2133D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3549171C-1E4C-7FFF-86DE-AE0DABE1F25B" name="ASST_PL_CLLTRL_RCVD_ASSGNMNT_CLLTRL_RL_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-10-21 12:49:55 UTC</createdTime>
+<generatorID>053CE500-811E-80CC-7116-CF1B1CD1B534</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D15EF10A-4745-1F63-65D3-D5EA29B9E5CE"/>
+<colUsage columnID="0E07C519-596F-36DC-470D-53ACD5F3A69C"/>
+<colUsage columnID="37DA3F7F-3AEC-A997-62B8-8C4FB2499E86"/>
+<colUsage columnID="BB47667D-719C-148D-B672-1B9DF42F958C"/>
+<colUsage columnID="ADE9F8CE-65D5-D557-E6B9-28D535505536"/>
+<colUsage columnID="E1EEBE55-5CB4-BA62-6844-A4A997360143"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7588A262-96B1-5613-947F-09E56CDEAF14" name="Security borrowing and lending transaction component">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 10:46:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Security borrowing and lending transaction component is a Securities borrowing and lending transaction including cash as collateral component that is either a Security borrowed or a Security lent.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>64D6FC6E-83FA-F66F-546D-B1C77045B0A3</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_CMPNNT</preferredAbbreviation>
+<foldedAttributesMap>
+<item key="9D587209-8092-D3B4-8D8D-DEB8B7047293" value="2020785D-2A86-C227-04D1-5D33ED53BC9A"/>
+<item key="AB859D0B-C3E8-42F9-05F6-A0D9F4C15B6E" value="3A4C5359-9F2D-A0B4-7214-67F37D215DAA"/>
+</foldedAttributesMap>
+<changeRequests>
+<requestID>26014-463</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Security borrowing and lending transaction component type by direction" id="52BC2059-93AF-A811-FCF3-D00114E935B6">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-07-29 10:47:57 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of security borrowing and lending transaction components by direction.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>623F812D-EB01-6DC6-FCAA-E04FD023E758</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_CMPNNT_TYP_BY_DRCTN</preferredAbbreviation>
+</Attribute>
+<Attribute name="Security borrowing and lending transaction component type by Security type" id="B6F295A1-A173-D1E2-D927-6556A955D5F6">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 11:44:33 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of security borrowing and lending transaction components by security type.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>897CAFE0-D0E2-5120-4844-1F27BD1BCEAC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SCRTY_BRRWNG_LNDNG_TRNSCTN_CMPNNT_TYP_BY_SCRTY_TYP</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,37 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Distinction between collateral given and received" id="26035-471">
+                    <createdBy>ostarij</createdBy>
+                    <comment>In many Asset Encumbrance templates information about collaterals is required and the requirements are always clearly differentiating between Collateral given and Collateral received. In particular:
+
+* **Collateral received:** templates F 32.02.a/b
+* **Collateral given:** templates F 32.03.a/b
+
+Behind both the categories of collateral, there are the type assets listed in F 32.01:
+
+* Loans and advances
+* Debt Securities
+* Equities
+* Other (derivatives, Tangible assets, Intangible assets)
+
+In case the collateral is an instrument (loans and advances, Equities that are instrument - green) in the model we have already the two different roles **Collateral Received/Collateral Given**.
+
+However if for instance we have a collateral that is a security we can't directly distinguish if it is a collateral given or received and in order to cover AE we need to be able to do it.
+
+Please find an extract from the model below:
+
+![collateral rec_giv - SubView_1v1.png](/uploads/7419fda1181517795c41a84bd928a129/collateral_rec_giv_-_SubView_1v1.png)
+
+A potential way to do it would be maybe to have a look to the financial role (asset/liability) of the item assigned to the collateral. For instance if the loan and advance instrument that is linked to the collateral via the `Loan (excluding repurchase agreement) and advance Collateral assignment` entity has the role of a financial asset we are probably talking about a collateral received while if it has the role of a liability we are talking about a collateral given. In any case we would need a sort of derivation to clearly assign to a specific asset, that is a collateral(yellow), the role of a collateral received/given.
+
+Happy to discuss further!</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/471</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>implementing</status>
+                </ChangeRequest>

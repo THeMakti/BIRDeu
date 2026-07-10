@@ -1,0 +1,1147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE7B74AB-D2BA-6FA1-87EE-7901E9BB6891" name="CLLTRL">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collateral is an asset that is pledged to mitigate the credit risk that may arise from a contract that is not an Instrument.]]></commentInRDBMS>
+<generatorID>4793B60D-47B8-57C4-12B5-6BD21499308A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>9233E877-99B3-25CB-0DCC-48B7E03DC1DD</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLLTRL_RFRNC_DT" id="A36C0C66-1015-D0C7-9C02-477E07481418">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>807DA75B-FC85-C23C-E840-261D457C87A0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLLTRL_RPRTNG_AGNT_ID" id="E5F1E796-3590-356E-FBD6-45BC9F59617E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>47D83D8D-7938-8641-4312-61BEBFAB41BE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLLTRL_ACCNTNG_CNSLDTN_LVL" id="32339AB8-8380-FE68-C92E-F97BE9117892">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>FF00AD1A-0B03-5C57-BCB9-1A84A43C5DF2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLLTRL_ACCNTNG_STNDRD" id="FCC5BFEE-682B-91E9-96B4-DFB334D9432B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>8B6CF67D-1C93-5D71-4EF0-871669AF730A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLLTRL_ID" id="5EB018C1-BE66-0DAD-54F2-7B52E9129915">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each collateral.]]></comment>
+<generatorID>1AFC8D92-A3C3-EC7E-B13B-EDFE977C5FC1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLLTRL_TYP" id="23CDDADB-63C4-7248-54C2-1D28C9822AC6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between financial and physical collateral.]]></comment>
+<generatorID>4AEEF935-E815-71A1-EF53-46C185FBD901</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>B37BC93A-07AD-028E-B847-602681672BE8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLLTRL_OBTND_TYP" id="3FA72AD4-78DA-2131-A2AF-78FA04E9EC40">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Obtained collateral type distinguishes Collateral whether it is a collateral obtained by taking possession and other collaterals that are not obtained.]]></comment>
+<generatorID>6BB71955-DA2C-0905-2CE9-5D0E94CEA769</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>72B1CCB2-1A0A-3F09-38D4-0BADD3E61CD5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORGNL_PRTCTN_VL" id="BA5A9742-08AA-50F3-EA8E-7FCD34C7AEB6">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The protection’s fair value at the date when it was originally received as a credit protection.]]></comment>
+<generatorID>30CFE6FB-0CB7-90C5-2520-F9557FCE9C4E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ORGNL_PRTCTN_VL" id="FF83AFC2-0C35-9AB0-2F43-A3677EF689FD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date of the protection’s original value, i.e. the date on which the latest appraisal or valuation of the protection was carried out prior to its initial receipt as a credit protection.]]></comment>
+<generatorID>111D022D-84DA-E570-1097-C455D0540B7A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_PRTCTN_VL" id="40173812-CD47-A3C6-BF29-AEC4EA296BBB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Protection value date is the date on which the latest appraisal or valuation of the protection was carried out prior to the reporting reference date.]]></comment>
+<generatorID>B8199D9E-BD7D-24BC-FE10-647E14372B15</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHYSCL_CLLTRL_TYP" id="9C341869-57B5-E816-7B73-E0F289739E6D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of physical collateral.]]></comment>
+<generatorID>EEEC59CB-C2BD-5C64-4BD9-73CCAAAC8AE0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>e65b0e41-e977-4f06-ae5f-07de8a14262b</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RGSTRD_CLLTRL_TYP" id="BC180974-2E44-5574-96CA-F6E4CDF91F30">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of registered collateral, like real estate collateral or ship collateral.]]></comment>
+<generatorID>9CCD6CA2-6502-95D7-B908-6FD48D473DD1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>f5d73947-ad57-46cf-8035-1bd5b96ed8d9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH9" id="FBB8B04B-486B-B823-264D-9E8E8AAEEE62">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>D761A456-CB1B-0229-A144-215A68581289</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Aircraft collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="3" description="Mark-to-market: Valuation method whereby the protection value is based on unadjusted quoted prices for identical assets and liabilities in an active market. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FV6" id="DF4C750F-0112-DB98-7041-E592D8FD371B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9.]]></comment>
+<generatorID>FF93B6FC-6530-720C-6E13-408496E8218D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RL_ESTT_CLLTRL_LCTN_TYP" id="69C90E2F-C70E-0277-DC4C-3970E38AF83B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Real estate collateral location type is a discriminator to distinguish between real estate collateral located in a member state or not in a member state.]]></comment>
+<generatorID>BAB69DE6-AC05-8ADB-577F-61F11B4EFA93</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bd938efd-efca-482c-a9ca-102cab79784f</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RL_ESTT_CLLTRL_TYP" id="0822A8E8-B893-7AFC-574D-EDF8B534CBDA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of real estate collateral.]]></comment>
+<generatorID>83A81BD2-F5E3-6CC3-EC13-5B3F60FD1F2E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A6FB7A00-F314-B3E4-6E4A-83130601409F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH8" id="C813291E-975B-B070-9D19-F82342141EF8">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>E6912E81-2833-1CB4-7986-FE76FF316DA5</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Real estate</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNDR_CNSTRCTN_INDCTR" id="3ECFE846-9EEB-5483-77A2-2DFC0AD3F4B5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Under construction or development indicator indicates whether the property is under construction or development.
+
+Finrep Annex V. Part 2.350, 352(a). With regard to collateral in the form of immovable property (a) immovable property that is under construction or development.]]></comment>
+<generatorID>B8276881-6164-B760-BE0E-AD530AB1DD53</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2C582793-822A-A0FA-AC6E-B22B8AEEABBF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LT_SSTNBL_VL" id="1AA6CB6B-2011-515A-BE4F-4A8EC5EEA963">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Long-term sustainable value amount of the collateral is the  ‘mortgage lending value’ of immovable property as defined in Article 4(1)(74) of Regulation (EU) No 575/2013. To be used if the protection is immovable property when the 'mortgage lending value' is reported in the data attribute 'Protection value'.]]></comment>
+<generatorID>23E0930F-A118-7E8A-3DFB-C785B9D17F7E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MRKT_VL" id="DEA4CCD2-06D8-B5C3-9BCA-68D604D5BD97">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The market value of collateral.]]></comment>
+<generatorID>3B648236-0F66-456D-58A3-A646AFB6E488</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NN_MMBR_STT_CNTRY_CD" id="D859A14B-DD06-DCAB-4D03-4D499D12D67A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The country code of the non-reporting member state.]]></comment>
+<generatorID>3D336041-03E8-C0A4-F5AF-7B05419C0C6A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E832EA39-67C9-4303-AD29-B66510B666C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNTRY_CD" id="98F5374B-1256-B301-1A3D-76CE428D8B92">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The country code according to ISO3166.]]></comment>
+<generatorID>C03449B2-974E-ADC3-E9A3-262EE7C8237F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E832EA39-67C9-4303-AD29-B66510B666C6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRRTRL_UNT" id="D0DD9F19-3811-3732-4BF8-63066B05AEFD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The region inside a country according to NUTS.]]></comment>
+<generatorID>3F6FA6BE-28F9-E6B7-D8AB-A9352E351D0A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>5b0b10c5-abc7-4102-a854-27ecf2cd3c95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PSTL_CD" id="AD3DF5D2-E1C8-F9C1-3EA0-1ABF59211865">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Entity's postal code.]]></comment>
+<generatorID>31A37236-68F8-9AD9-CE3B-174307A9A661</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>04F38763-DBE9-71CA-60CC-8AE479375450</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CMMRCL_RL_ESTT_OFFCS_CMMRCL_PRMSS_CLLTRL_TYP" id="0A50A8B7-22CB-E2C0-65D5-E6BF2E0B6016">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Commercial real estate and offices and commercial premises collateral type distinguishes Commercial real estate and offices and commercial premises collateral according to their type.]]></comment>
+<generatorID>8F03A859-4FBA-D7E9-1889-B58813509125</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>F46DBD3B-725C-9AA6-6E4E-AF42ABEDD9C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFC_CMMRCL_PRMS_CLLTRL_INDCTR" id="2DE04609-C3E7-054A-A4AE-9BA04024C579">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Offices and commercial premises collateral indicator distinguishes Offices and commercial premises collateral based on whether it is land or non-land related.]]></comment>
+<generatorID>1B37C603-1599-BA87-D100-42FA422704DE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>071918C6-F317-2648-9BF0-C6315CDA13FC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGRCLTR_LND_INDCTR" id="8FBE031E-2955-7BF4-8DF9-E5D3ECBDAF36">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Agriculture land indicator distinguishes Commercial real estate collateral related to land basd on whether the land includes agriculture or not.]]></comment>
+<generatorID>2FBFEBFD-6C1B-F921-493E-1335C642628F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>31D8E4D4-8434-5786-6143-C834F3DE196F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLNNNG_PRMSSN_INDCTR" id="EF56DAB2-8F25-80F2-FC0D-7FA20D2CDE23">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Planning permission for development indicator distinguishes Land excluding agriculture based on whether planning permission for development applies or not.]]></comment>
+<generatorID>D94BC29D-769E-D161-C29E-A9F271ADCBB7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D0352C45-53DB-31CC-520B-8FE7C83B35E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH7" id="8F4E28A3-4520-3C83-D4A2-00DD6CDA83D4">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>85A08266-72CB-E811-3947-E472D1CE7B5C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Ship collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="3" description="Mark-to-market: Valuation method whereby the protection value is based on unadjusted quoted prices for identical assets and liabilities in an active market. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FV5" id="346EF394-E2F0-DB0C-F00E-D9B9796D8F4A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9.]]></comment>
+<generatorID>FFA79915-D061-C84E-6035-DD8E5A8CBF55</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NN_RGSTRD_CLLTRL_TYP" id="110B6934-49AE-C9C3-9C99-1955FF3D9722">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of non-registered collateral. Examples are machinery and equipment collateral, commodity collateral.]]></comment>
+<generatorID>D590E76B-535C-A7B7-A49A-568A752FD0AF</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>70d5c86f-4390-47d4-bf13-4e776feab01a</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH6" id="1624C398-49C6-B68F-F6F6-B015C3E5AEDA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>5139F0D8-EECD-A2D9-1EB9-D4C011F4169A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Non-registered collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="3" description="Mark-to-market: Valuation method whereby the protection value is based on unadjusted quoted prices for identical assets and liabilities in an active market. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FV4" id="82786BA0-650C-9E54-0E5C-97B0EA220782">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9.]]></comment>
+<generatorID>9B4247F5-DEAA-938C-8BC5-3780FCF0F2A1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CMMDTY_CLLTRL_TYP" id="0B10ECC9-D7E3-4B58-9F4B-9E3CD3F74B5E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between gold and other commodity collateral.]]></comment>
+<generatorID>E4DB93DE-DA3E-73EC-921C-3F4536D35BE9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4d4bad55-f6ee-41de-ac56-294292a323de</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH5" id="7223F9A4-89A4-C7AE-9FE2-7C589239BD53">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>EEF847B1-0162-6886-91C4-335306FDFAA0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="4" description="Other type of valuation: Other type of valuation not included in any other valuation categories. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NTNL_AMNT2" id="7CFAB7B2-C7B4-67C9-6102-E2E1AFEA883D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The notional amount on a financial instrument is the nominal or face amount that is used to calculate payments made on that instrument.]]></comment>
+<generatorID>841EB2DC-4710-EAE9-AA77-AB63D814315F</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH4" id="A74C6453-9104-7B38-881C-443C26744B7B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>E63FDE38-9D89-953B-BA38-26D5E10BE7FC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Other non-registered collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="4" description="Other type of valuation: Other type of valuation not included in any other valuation categories. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NTNL_AMNT1" id="CF06B21B-609D-E5DE-2F92-FC1EF0ABC168">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The notional amount on a financial instrument is the nominal or face amount that is used to calculate payments made on that instrument.]]></comment>
+<generatorID>D0EC56C9-4AF6-81D4-4758-67C5B8145920</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRTCTN_ARRNGMNT_RFRNC_DT" id="D460687C-9E13-84C4-D9F6-8A5C8F389425">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>BB854F02-E55A-2342-8C6C-B68F70D2A077</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63F0C195-1D02-7360-20CC-187AEFEF7B7A" referredColumn="6F83E73A-7355-EE64-B4E1-0A4045452129"/>
+</associations>
+</Column>
+<Column name="PRTCTN_ARRNGMNT_RPRTNG_AGNT_ID" id="E616EB4A-3544-F79A-6A66-EAA60D43B4DE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>FD9B4447-AD70-24B3-DD9A-33324F80C509</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63F0C195-1D02-7360-20CC-187AEFEF7B7A" referredColumn="DEC2ACF5-2783-DBF7-91D3-4FFF08B2A2E0"/>
+</associations>
+</Column>
+<Column name="PRTCTN_ID" id="4E399D84-7729-16EF-1BE9-F409200F7FD5">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The protection arrangement of the collateral annex.]]></comment>
+<generatorID>89EE16B5-6FC3-5899-D063-1C0914264E5E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63F0C195-1D02-7360-20CC-187AEFEF7B7A" referredColumn="D2F924C9-5EBD-5BFC-545A-9603162A16C3"/>
+</associations>
+</Column>
+<Column name="PRTCTN_ARRNGMNT_ACCNTNG_CNSLDTN_LVL" id="6BF7886F-BF42-37AF-053C-A7301139889A">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>42FB76AF-D735-E7EB-B223-D6286F199C94</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63F0C195-1D02-7360-20CC-187AEFEF7B7A" referredColumn="D6BD5ABB-F261-2F28-8C9A-AF092A32D5D2"/>
+</associations>
+</Column>
+<Column name="PRTCTN_ARRNGMNT_ACCNTNG_STNDRD" id="073262AC-41C3-D405-ED58-A984494B5354">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>C4538CFE-3199-4293-2C2C-9C35EF2E4593</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63F0C195-1D02-7360-20CC-187AEFEF7B7A" referredColumn="4895F709-C866-31E6-E53F-4995502014E2"/>
+</associations>
+</Column>
+<Column name="FNNCL_CLLTRL_TYP" id="4CA7333C-6314-07A1-D296-BBFD765EB68F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between security collateral, currency collateral and other financial collateral.]]></comment>
+<generatorID>0550B626-3D1C-EFB9-5F81-0674AB46A0CE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>931c5d66-4c95-4782-9407-6b34e0d9bf79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH2" id="D383EDFA-7774-24FD-CF14-CB67F57E977D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>A67F83D0-01E7-0591-79C0-7E2D0D352A49</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of valuation approach for Fianncial collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="4" description="Other type of valuation: Other type of valuation not included in any other valuation categories. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NTNL_AMNT" id="D25B78B3-E93B-4A09-6552-F504A9C71E4E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The notional amount is the nominal or face amount contractually agreed that is used to calculate payments in the event that the protection is executed.]]></comment>
+<generatorID>95BF31C4-D406-EB19-2653-3FFCA7413957</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCRTY_RFRNC_DT1" id="668D8060-6772-68D7-7427-43F0C4979437">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>D7D4E7A5-3735-4300-7053-833FC908F9A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A1211BF-8646-407E-DA33-77AD13E89CD6" referredColumn="5ACC8DE6-C174-0EF4-D72B-5A794D0A0591"/>
+</associations>
+</Column>
+<Column name="SCRTY_RPRTNG_AGNT_ID1" id="E36956B7-F6B6-CD50-DC61-2F3FB024A6CC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>A22E0FA2-3105-C2B3-E05F-19BDCFC0818D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A1211BF-8646-407E-DA33-77AD13E89CD6" referredColumn="B9CF1427-33AF-2579-1C8B-4F0C57660B5B"/>
+</associations>
+</Column>
+<Column name="SCRTY_EXCHNG_TRDBL_DRVTV_ACCNTNG_CNSLDTN_LVL1" id="36658283-7F39-FC2D-D957-CEAC2380C623">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>04070686-3308-11B5-85B8-3B7D2E0C9E70</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A1211BF-8646-407E-DA33-77AD13E89CD6" referredColumn="DAC3278C-CA08-3913-EB43-5901A9D66E3D"/>
+</associations>
+</Column>
+<Column name="SCRTY_EXCHNG_TRDBL_DRVTV_ACCNTNG_STNDRD1" id="944AEDF9-5A06-E27A-E861-8B682B22531D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>6EFD03A2-5593-3913-C078-9EE7567421E2</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A1211BF-8646-407E-DA33-77AD13E89CD6" referredColumn="B3C31C47-A11A-FB19-D526-9BCBD8041FBC"/>
+</associations>
+</Column>
+<Column name="SCRTY_ID" id="1EFA74E7-3F1D-A070-93A1-04EC0E986358">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>E19EC8FA-6134-FCBA-27E4-FA03B4BFFA68</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A1211BF-8646-407E-DA33-77AD13E89CD6" referredColumn="5EBF9907-C9C1-7476-3D0A-18BAB3FB9B4C"/>
+</associations>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH3" id="39EAA7FF-0A5F-EA47-0EB0-B05ACF9A85AA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>A12883C0-A128-E90E-EB99-A9CB944B0AA9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Security collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="3" description="Mark-to-market: Valuation method whereby the protection value is based on unadjusted quoted prices for identical assets and liabilities in an active market. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FV3" id="90FD4854-6B4C-DE84-BD36-9B55DECD4C34">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9.]]></comment>
+<generatorID>E3B1430D-F9A3-CD05-A941-B35F7570A1B1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRRNCY" id="FD71B105-9900-DFA4-5251-3B51BF74187C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The currency code according to ISO4217.]]></comment>
+<generatorID>6DAFC4C1-4BD0-E6F5-79DF-90C3FBC24410</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2D4D0542-0954-4C82-9231-4447DC95A6DE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH1" id="059A22B5-42A7-58B4-15FF-CDDDA78E44D1">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Type of protection valuation approach.]]></comment>
+<generatorID>B90F19BC-1B15-17A7-4081-46AEFC9B1F26</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<constraintName>Type of protection valuation approach for Other financial collateral</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<listOfValues>
+<valueDef value="1" description="Counterparty estimation: Valuation method whereby the valuation is carried out by the provider of the protection. "/>
+<valueDef value="2" description="Creditor valuation: Valuation method whereby the valuation is carried out by the creditor: valuation undertaken by an external or staff appraiser who possesses the necessary qualifications, ability and experience to execute a valuation and who is not independent from the credit decision process. "/>
+<valueDef value="3" description="Mark-to-market: Valuation method whereby the protection value is based on unadjusted quoted prices for identical assets and liabilities in an active market. "/>
+<valueDef value="5" description="Third-party valuation: Valuation method in which the valuation is provided by an appraiser who is independent from the credit decision process. "/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FV2" id="A617420D-68DA-A1E2-E473-1DE84014F787">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9.]]></comment>
+<generatorID>92251590-6378-E0FB-88BC-A22BCD87FD73</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCRTY_RFRNC_DT" id="A7108308-268E-0CF3-0D60-3EDBD0548E0E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>C1C63817-971D-F3EF-896F-1C33D8E71CA3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5AE479-666A-5DC0-8DE8-D33CE1B5B265" referredColumn="5ACC8DE6-C174-0EF4-D72B-5A794D0A0591"/>
+</associations>
+</Column>
+<Column name="SCRTY_RPRTNG_AGNT_ID" id="A7C8B5D9-9F7E-FC84-83CC-C288CCFFA1F0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>D78E1685-2A35-3D75-010D-8D4CA18680AD</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5AE479-666A-5DC0-8DE8-D33CE1B5B265" referredColumn="B9CF1427-33AF-2579-1C8B-4F0C57660B5B"/>
+</associations>
+</Column>
+<Column name="SCRTY_EXCHNG_TRDBL_DRVTV_ACCNTNG_CNSLDTN_LVL" id="4A7AD455-C9AD-DADB-ED3A-085696415ADD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>354595C9-B783-9B6D-F723-899E991B4E3A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5AE479-666A-5DC0-8DE8-D33CE1B5B265" referredColumn="DAC3278C-CA08-3913-EB43-5901A9D66E3D"/>
+</associations>
+</Column>
+<Column name="SCRTY_EXCHNG_TRDBL_DRVTV_ACCNTNG_STNDRD" id="023A633B-9A9E-BE54-6589-B3818D63A088">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>4CF79302-4E1F-7AA0-3A57-ACBD3A4168D0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5AE479-666A-5DC0-8DE8-D33CE1B5B265" referredColumn="B3C31C47-A11A-FB19-D526-9BCBD8041FBC"/>
+</associations>
+</Column>
+<Column name="SCRTY_ID1" id="33FDF1F7-A258-4272-06BC-735A918B3D92">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[An identifier to uniquely identify each security.]]></comment>
+<generatorID>F5C9701F-B7B3-D4A4-21B5-FDA6CB6BED8B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5AE479-666A-5DC0-8DE8-D33CE1B5B265" referredColumn="5EBF9907-C9C1-7476-3D0A-18BAB3FB9B4C"/>
+</associations>
+</Column>
+<Column name="FV1" id="8298E384-9D24-A441-404A-FB603FBC25AB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the Exchange tradable derivative collateral as defined in IFRS 13.9.]]></comment>
+<generatorID>3460B8F4-459F-BE06-F6FE-F7EAE4AD2DC9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMMTRL_RGHTS_CLLTRL_TYP" id="9D2BF9B7-1AB8-95B7-B6D5-116A479A62C2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Immaterial rights collateral type distinguishes Immaterial rights as collateral according to its nature.]]></comment>
+<generatorID>E997AA0D-BE90-229F-4AF2-BED03610C55A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>268DADF0-0432-658F-7BEE-9C7ADBDDCD2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_PRTCTN_VL_APPRCH" id="BEE6AE28-8A4D-F326-B8AE-2EA42030EC78">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Protection valuation approach is the type of protection valuation approach used to valuate Immateral rights as collateral.]]></comment>
+<generatorID>204F4D4E-F522-72FF-D8AD-53A73BAEBAAE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>769d0172-a5b7-43b4-b2b6-354fd6af324f</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FV" id="39938D2B-95EC-7575-2E47-D4C0BE5B7944">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Fair value of the collateral as defined in IFRS 13.9. for the Immaterial rights as collateral.]]></comment>
+<generatorID>7557DE51-8919-5CD2-F5E7-738A0FA41A5E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8AF63A7D-2245-4118-9583-CEDC4D186D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TKN_PSSSSN_DT" id="9DA83A6A-CBF0-7AEB-CD66-5A6244211745">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Balance sheet recognition date is a date on which the Collateral obtained by taking possession was taken into possession and thus recognised on the balance sheet.]]></comment>
+<generatorID>29445819-5D49-3EAB-4FFB-6459C1E60C20</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRRYNG_AMNT" id="F3EB9364-0B6A-1815-75A6-F2BC3C80E391">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The carrying amount of the collateral obtained by taking possession in accordance with Annex V to Implementing Regulation (EU) No 680/2014.]]></comment>
+<generatorID>2E25E8BD-D93F-5609-843E-3BEDDE09B118</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GCA_EXPSR_DRCGNSD_EXCHNG_CLLTRL" id="E9454D45-1AB7-D686-FBE8-C80C7BDD7CEA">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Derecognised exposure gross carrying amount is an amount, that is the gross carrying amount of exposures that are derecognised on the balance sheet in exchange for Collateral obtained by taking possession.]]></comment>
+<generatorID>1BE8204D-C462-A855-BC05-B9D7308DAC52</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCMLTD_IMPRMNT" id="454D242F-1713-A05B-5989-4793F9846DAC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accumulated impairment is the amount of loss allowances that are held against or are allocated to the derecognised exposure on the reporting reference date for which the Collateral obtained by taking possession has been obtained.
+
+This data attribute applies to assets subject to impairment under the applied accounting standard. Under IFRS, the accumulated impairment relates to the following
+amounts:
+(i) loss allowance at an amount equal to 12-month expected
+credit losses;
+(ii) loss allowance at an amount equal to lifetime expected
+credit losses.
+Under GAAP, the accumulated impairment relates to the following
+amounts:
+(i) loss allowance at an amount equal to general allowances;
+(ii) loss allowance at an amount equal to specific allowances.]]></comment>
+<generatorID>CE0C001D-74BE-9475-AEE8-2B1C26A08CB1</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>FAA20A39-31D6-458E-8297-A7FD01A6501F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCMLTD_CHNGS_FV_CR" id="F1A6D062-9705-0356-0921-23B6620EA8F8">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Accumulated changes in fair value due to credit risk in accordance with Part 2.46 of Annex V to Implementing Regulation (EU) No 680/2014 of the exposure that is derecognised because of the Collateral obtained by taking possession.
+
+Note: This amount must only be reported when it is negative.]]></comment>
+<generatorID>446E063E-FBA3-9818-FBB7-19FAA250B92A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTL_RCGNTN_VL" id="866C1011-04CE-12D0-9F2B-7979B19546C2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Initial recognition value is an amount, expressed in EUR, that is the value of the Collateral obtained by taking possession at the moment of recognising it in the balance sheet.
+
+FINREP Annex V:
+Value at initial recognition shall mean the gross carrying amount of the collateral obtained by taking possession at the point in time of the initial recognition in the balance sheet of the reporting institution.]]></comment>
+<generatorID>F2E4AB68-F991-81FE-AFBE-18C89A56EC4A</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>14C89E8C-F57F-4505-832D-C97676924FD1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BAE3853-C962-C0D0-0FE6-4A06154028BE" name="CLLTRL_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>ABB106B7-5F0B-7845-04CB-8FFED1E58618</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A36C0C66-1015-D0C7-9C02-477E07481418"/>
+<colUsage columnID="E5F1E796-3590-356E-FBD6-45BC9F59617E"/>
+<colUsage columnID="32339AB8-8380-FE68-C92E-F97BE9117892"/>
+<colUsage columnID="FCC5BFEE-682B-91E9-96B4-DFB334D9432B"/>
+<colUsage columnID="5EB018C1-BE66-0DAD-54F2-7B52E9129915"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="009FE89F-E2EB-6BD7-4478-4FDAF32AAD84" name="CLLTRL_PRTCTN_ARRNGMNT_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>2AE30A7B-B386-18B1-7A59-391CAD28C7B9</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D460687C-9E13-84C4-D9F6-8A5C8F389425"/>
+<colUsage columnID="E616EB4A-3544-F79A-6A66-EAA60D43B4DE"/>
+<colUsage columnID="6BF7886F-BF42-37AF-053C-A7301139889A"/>
+<colUsage columnID="073262AC-41C3-D405-ED58-A984494B5354"/>
+<colUsage columnID="4E399D84-7729-16EF-1BE9-F409200F7FD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F77E2E48-1EBC-153F-6A2A-82BA675603C4" name="CLLTRL_SCRTY_EXCHNG_TRDBL_DRVTV_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:16 UTC</createdTime>
+<generatorID>A384A377-5D06-FC01-A19E-DE2B0F2B5723</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7108308-268E-0CF3-0D60-3EDBD0548E0E"/>
+<colUsage columnID="A7C8B5D9-9F7E-FC84-83CC-C288CCFFA1F0"/>
+<colUsage columnID="4A7AD455-C9AD-DADB-ED3A-085696415ADD"/>
+<colUsage columnID="023A633B-9A9E-BE54-6589-B3818D63A088"/>
+<colUsage columnID="33FDF1F7-A258-4272-06BC-735A918B3D92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E99AF95E-A462-BE07-B616-4456D2E11325" name="CLLTRL_SCRTY_EXCHNG_TRDBL_DRVTV_FKv2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:16 UTC</createdTime>
+<generatorID>A962B016-AF07-1554-A4B0-3C140D1C631C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="668D8060-6772-68D7-7427-43F0C4979437"/>
+<colUsage columnID="E36956B7-F6B6-CD50-DC61-2F3FB024A6CC"/>
+<colUsage columnID="36658283-7F39-FC2D-D957-CEAC2380C623"/>
+<colUsage columnID="944AEDF9-5A06-E27A-E861-8B682B22531D"/>
+<colUsage columnID="1EFA74E7-3F1D-A070-93A1-04EC0E986358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

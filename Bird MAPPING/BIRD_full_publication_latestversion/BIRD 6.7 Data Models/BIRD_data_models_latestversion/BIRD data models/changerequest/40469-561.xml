@@ -1,0 +1,41 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="create attribute RL_ESTT_CLLTRL_LCTN" id="40469-561">
+                    <createdBy>ostarij</createdBy>
+                    <comment>
+&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+### Overview
+Create attribute RL_ESTT_CLLTRL_LCTN in EIL in one of the EIL collateral tables 
+
+### Contact person
+@Silvia.Giacinti 
+
+### Description of change request
+We need in AnaCredit reporting the attribute RL_ESTT_CLLTRL_LCTN in cube protection received, in order to compute this attribute we need to compute starting form elements of the EIL. the computation will be as following: IF TYP_CLLTRL IN (TYP_PRTCTN_8 TYP_PRTCTN_106, TYP_PRTCTN_107, TYP_PRTCTN_108 TYP_PRTCTN_10) 
+RL_ESTT_CLLTRL_LCTN = TRRTRL_UNT if RL_ESTT_CLLTRL_LCTN_TYP=TYP_PRTCTN_90
+     Else RL_ESTT_CLLTRL_LCTN = NN_MMBR_STT_CNTRY_CD
+Else  RL_ESTT_CLLTRL_LCTN = “Not applicable”
+
+Only applicable when real estate collateral. When located in member state we take NUTS3 region (TRRTRL_UNT), if not in member state we use ISO code of the country (NN_MMBR_STT_CNTRY_CD). But NUTS3 codes are not expected to be populated by the reporting agents, they are expected to populate postal code, which will then be converted to NUT3 by ECB. If postal code is not available, they should populate NUTS3. 
+
+### Summary of impacted LDM objects/attributes
+_[EIL]_
+
+### Forward Engineering considerations
+_[Other considerations]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close 
+- [ ] Any other actions to be taken</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/561</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="90BE0ABD-E9B0-1B12-9274-19FF41C852DA" name="Off-balance_sheet_item_given_instrument_derived_data">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Off-balance sheet item given instrument derived data is additional information about Off-balance sheet item given instrument.]]></commentInRDBMS>
+<generatorID>41AF9BCF-3A30-E769-02F3-A0FD1ACDC86E</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>E3679F77-0ED6-93EB-F366-44CA2F802395</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Off-balance_sheet_item_given_instrument_reference_date" id="11102C18-31FB-975E-AE6B-C69FAB64D58E">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[The date the data refers to.]]></comment>
+<generatorID>4EA629FB-17F5-B50A-4ECE-5FC7C2794C31</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF9453F-1B6A-5072-66A8-BCEE4080E5B3" referredColumn="43C076A4-02CB-2A50-55FA-ED2F80AE5F04"/>
+</associations>
+</Column>
+<Column name="Off-balance_sheet_item_given_instrument_reporting_agent_identifier" id="84B2953A-9FA5-9B36-F21C-65409B870222">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Identifier of the reporting agent.]]></comment>
+<generatorID>FF8AFEA5-8EE0-0BF7-5721-A14E5239C299</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>12DFCE00-085A-4E8C-BE55-52350D849DA7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF9453F-1B6A-5072-66A8-BCEE4080E5B3" referredColumn="7C42B8F6-7F14-63A0-2B55-712705DF02F3"/>
+</associations>
+</Column>
+<Column name="Off-balance_sheet_item_given_instrument_accounting_consolidation_level" id="22847994-6435-C1C0-E2FD-545624E28DDD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Accounting consolidation level is the level on which the accounting is consolidated, Solo or group.]]></comment>
+<generatorID>7A3004E5-2D35-F6D2-D8E6-57B1CD29F657</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4CBDE993-B269-D10F-4FD3-13040004B341</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF9453F-1B6A-5072-66A8-BCEE4080E5B3" referredColumn="02304817-A99E-CA25-0F8B-7FC028F9D2E4"/>
+</associations>
+</Column>
+<Column name="Off-balance_sheet_item_given_instrument_accounting_standard" id="17AF2F2B-DCEB-7412-5EDF-9617B7A8A6FE">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>BEC9725E-1AEA-B6DF-B76C-24EC9B0572A7</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>E121E041-B09C-AB9A-70C9-78308EDD10E8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF9453F-1B6A-5072-66A8-BCEE4080E5B3" referredColumn="C66D1FDB-A803-E533-0FE3-462D6732D1AC"/>
+</associations>
+</Column>
+<Column name="Off-balance_sheet_item_given_instrument_role_type" id="2736DC00-8C8A-ADAC-4B48-6DF0F612066F">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different roles an instrument may act in. Examples are financial asset instrument, financial liability instrument.]]></comment>
+<generatorID>A4DA0C8A-3DDF-014D-3296-5AFCADDA44C8</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>8e78f30b-610e-404e-97c5-60fa855125db</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF9453F-1B6A-5072-66A8-BCEE4080E5B3" referredColumn="6A91F334-481F-C84C-FB67-7E7FA4E2020E"/>
+</associations>
+</Column>
+<Column name="Off-balance_sheet_item_given_instrument_identifier" id="BC327396-C7DE-FDAA-D0E4-A021014C8495">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[An identifier applied by the reporting agent to uniquely identify each instrument under a single contract. Each instrument must have one instrument identifier. This value will not change over time and cannot be used as the instrument identifier for any other instrument under the same contract.]]></comment>
+<generatorID>F57FA95E-5997-DEAE-6AC7-E3FB2A16DB89</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>bedac99c-65df-4709-835b-fbf0381d048e</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF9453F-1B6A-5072-66A8-BCEE4080E5B3" referredColumn="CEDB327C-A14B-B87F-8A87-CFDFD7AE45C5"/>
+</associations>
+</Column>
+<Column name="Transfer_between_impairment_stages" id="ADACBE07-9CE8-E70D-AE62-0C0922CCF232">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Transfer between impairment stages compares the impairment status at the beginning of the period (Initial impairment status) with the impairment status at the end of the period.]]></comment>
+<generatorID>510F7D38-DFEA-8F97-74AD-CE0F3D40FB47</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>BAC24BD5-93CD-9579-119D-83D1FEE3CC48</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Derived_default_status" id="6079B312-20F9-4928-FC6E-F8C85BFF0D8C">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<comment><![CDATA[Derived default status is the default status where all specific statusses of default for the Off-balance sheet item given instrument have been mapped to either "Default" or "Not in default".]]></comment>
+<generatorID>5348FAB8-159E-7962-9A2F-F688D7896B31</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>00FA2D93-66D1-EE2F-3A65-9EE72AB6BAA8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65EB6D8A-F8FE-36FA-DBFF-BC1876999441" name="Off-balance_sheet_item_given_instrument_derived_data_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:45 UTC</createdTime>
+<generatorID>75ABECDA-6D1D-FD2E-931E-3D1ACE65CDD4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11102C18-31FB-975E-AE6B-C69FAB64D58E"/>
+<colUsage columnID="84B2953A-9FA5-9B36-F21C-65409B870222"/>
+<colUsage columnID="22847994-6435-C1C0-E2FD-545624E28DDD"/>
+<colUsage columnID="17AF2F2B-DCEB-7412-5EDF-9617B7A8A6FE"/>
+<colUsage columnID="2736DC00-8C8A-ADAC-4B48-6DF0F612066F"/>
+<colUsage columnID="BC327396-C7DE-FDAA-D0E4-A021014C8495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C1EDF75-E6F0-CF45-A85A-7A73BE4F9756" name="Off-balance_sheet_item_given_instrument_derived_data_Instrument_role_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-24 08:53:46 UTC</createdTime>
+<generatorID>365628B6-B13E-792B-8D75-63894D513A0C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11102C18-31FB-975E-AE6B-C69FAB64D58E"/>
+<colUsage columnID="84B2953A-9FA5-9B36-F21C-65409B870222"/>
+<colUsage columnID="22847994-6435-C1C0-E2FD-545624E28DDD"/>
+<colUsage columnID="17AF2F2B-DCEB-7412-5EDF-9617B7A8A6FE"/>
+<colUsage columnID="2736DC00-8C8A-ADAC-4B48-6DF0F612066F"/>
+<colUsage columnID="BC327396-C7DE-FDAA-D0E4-A021014C8495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

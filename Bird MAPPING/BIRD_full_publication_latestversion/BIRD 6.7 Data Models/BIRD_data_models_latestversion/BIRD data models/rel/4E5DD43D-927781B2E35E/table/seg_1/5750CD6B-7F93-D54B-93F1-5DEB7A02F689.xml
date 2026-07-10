@@ -1,0 +1,293 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="5750CD6B-7F93-D54B-93F1-5DEB7A02F689" name="RTNG_GRD">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[A Rating grade is a grade representing the probability of default of a Party, Instrument or Debt security.]]></commentInRDBMS>
+<generatorID>A56EF320-739A-39EA-5F24-6DEB2915BAB3</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<typeID>6E05D22A-D6DB-0396-42A2-4B1DB49EB60E</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RTNG_GRD_ID" id="D4AC49B4-DCC0-BB67-84A3-DF80A49378E2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="RTNG_GRD_TYP" id="96E4DF58-E23D-CA78-E698-33FF28E27FE2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different types of rating grades.]]></comment>
+<generatorID>916115E5-3DC1-F7D6-B467-86837CB1C824</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>70AA36A8-80B3-A8BA-3E96-1CF3482AE5FC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTNG_GRD_CRDT_QLTY" id="DBD23FEF-B0BF-844F-C7C6-5E40DD9E953D">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[Rating grade credit quality distinguishes Central bank and private sector company according to the credit quality of their investment grade.]]></comment>
+<generatorID>514ACE30-8C2A-8069-CFFB-AFF43BAC3CEC</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>F2695C17-41C3-AFA6-53A1-BA53E3B7900C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTNG_GRD_ISSR_BSD_RTNG_SYSTM_TYP" id="88798DFF-C000-4259-3DB4-C854197331CC">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[A discriminator to distinguish between different rating grades for issuer based rating systems.]]></comment>
+<generatorID>699D9764-35E1-828B-7B3E-E55A38C3D7A6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>03DAE4FB-D0DC-54E4-5413-8081B5A983A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTNG_SYSTM_NM2" id="211744F3-68DD-767F-5303-7D9A2F169589">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating system's name.]]></comment>
+<generatorID>AADE57AF-018E-A833-122C-A333D2B091F0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7D7D53F-DEDD-AECD-E967-6C0CA2508D54" referredColumn="DE95B1A8-46C3-ED8E-E480-EAA19EF5F9C0"/>
+</associations>
+</Column>
+<Column name="RTNG_AGNCY_NM2" id="0FEDEA2D-4E61-1A5B-698F-D66DD59218F2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating agency's name.]]></comment>
+<generatorID>9FF1E8E7-40B5-9DB7-00D8-B3B506EE4D24</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7D7D53F-DEDD-AECD-E967-6C0CA2508D54" referredColumn="2ECCFAAB-ED1B-7B87-5C3C-14E4D9CE7D54"/>
+</associations>
+</Column>
+<Column name="RTNG_GRD2" id="0E20F7B9-C93C-E83A-BA93-0089E9FF36B4">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating grade, e.g. AAA.]]></comment>
+<generatorID>8C91C9DF-3BD0-6FAE-AABF-6AAA28332CE4</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTNG_SYSTM_NM1" id="9C2D0606-0EDC-30F8-F50D-7CA94FE66304">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating system's name.]]></comment>
+<generatorID>179F71EC-2B99-E12B-826D-3A5A9BFF9394</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7D17D8A-D87C-D535-5B61-80CA9A2BC59A" referredColumn="DE95B1A8-46C3-ED8E-E480-EAA19EF5F9C0"/>
+</associations>
+</Column>
+<Column name="RTNG_AGNCY_NM1" id="DE7AE2EF-4155-5E3E-04E2-256525C578E4">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating agency's name.]]></comment>
+<generatorID>4699060C-6731-D967-E20C-F6069247DBF0</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7D17D8A-D87C-D535-5B61-80CA9A2BC59A" referredColumn="2ECCFAAB-ED1B-7B87-5C3C-14E4D9CE7D54"/>
+</associations>
+</Column>
+<Column name="RTNG_GRD1" id="14BCF982-26AD-60E2-CAC8-BB9D6736E55B">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating grade, e.g. AAA.]]></comment>
+<generatorID>C9333499-4DAB-8828-A38B-C6CE82854CBE</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTNG_SYSTM_NM" id="AE2E35E6-3D57-48F7-A56E-D6FF6B62CFE4">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating system's name.]]></comment>
+<generatorID>B88E7EE2-D8A6-FFD7-9CFB-02900B634D7D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD5496DC-B732-8D12-C478-939F76D13D32" referredColumn="DE95B1A8-46C3-ED8E-E480-EAA19EF5F9C0"/>
+</associations>
+</Column>
+<Column name="RTNG_AGNCY_NM" id="31A6375D-EDAB-57C8-0560-5287A748DEAB">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating agency's name.]]></comment>
+<generatorID>8F0A4ED0-39FA-1430-1505-3329FE469132</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD5496DC-B732-8D12-C478-939F76D13D32" referredColumn="2ECCFAAB-ED1B-7B87-5C3C-14E4D9CE7D54"/>
+</associations>
+</Column>
+<Column name="RTNG_GRD" id="63235F81-D1C8-647C-C46F-8AE5908FBDB0">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<comment><![CDATA[The rating grade, e.g. AAA.]]></comment>
+<generatorID>2446ECCB-B322-BEAE-068C-6334F3CE17B6</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>633575D7-6D71-0889-6C6B-F95EFD65004D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB9E170B-98E8-6570-8813-23AE53561A60" name="RTNG_GRD_PK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D4AC49B4-DCC0-BB67-84A3-DF80A49378E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79FC6F54-4894-B835-BAE7-C3ABB01AF39C" name="RTNG_GRD_RTNG_SYSTM_NM_RTNG_AGNCY_NM_RTNG_GRD_UN">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>B36B6C14-C8BC-A927-657B-15787A18311D</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE2E35E6-3D57-48F7-A56E-D6FF6B62CFE4"/>
+<colUsage columnID="31A6375D-EDAB-57C8-0560-5287A748DEAB"/>
+<colUsage columnID="63235F81-D1C8-647C-C46F-8AE5908FBDB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21563099-2982-0196-A291-B8E67DDF4736" name="RTNG_GRD_RTNG_SYSTM_NM1_RTNG_AGNCY_NM1_RTNG_GRD1_UN">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>9E2CB970-5CCD-2CF0-9F90-4FB290B34B99</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C2D0606-0EDC-30F8-F50D-7CA94FE66304"/>
+<colUsage columnID="DE7AE2EF-4155-5E3E-04E2-256525C578E4"/>
+<colUsage columnID="14BCF982-26AD-60E2-CAC8-BB9D6736E55B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF7754EA-0352-1AEF-DB5E-D1FB1E698146" name="RTNG_GRD_RTNG_SYSTM_NM2_RTNG_AGNCY_NM2_RTNG_GRD2_UN">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>7E5ED9DE-A52A-763D-1A4A-10613EADF90C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="211744F3-68DD-767F-5303-7D9A2F169589"/>
+<colUsage columnID="0FEDEA2D-4E61-1A5B-698F-D66DD59218F2"/>
+<colUsage columnID="0E20F7B9-C93C-E83A-BA93-0089E9FF36B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27D94F28-ED8E-5FB0-9A63-AE218193E8B5" name="RTNG_GRD_RTNG_SYSTM_FK">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:15 UTC</createdTime>
+<generatorID>D35CBE15-BA7D-06C5-CF50-21AB7C49B44C</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C2D0606-0EDC-30F8-F50D-7CA94FE66304"/>
+<colUsage columnID="DE7AE2EF-4155-5E3E-04E2-256525C578E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA3D17F4-54E5-6BB2-A97D-6CDE8BB7BEB8" name="RTNG_GRD_RTNG_SYSTM_FKv2">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:16 UTC</createdTime>
+<generatorID>ACE2BB86-7E3C-7497-0D61-11E8C7FB254B</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE2E35E6-3D57-48F7-A56E-D6FF6B62CFE4"/>
+<colUsage columnID="31A6375D-EDAB-57C8-0560-5287A748DEAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56AE1732-B149-F3D4-D382-28C3C6D6FD87" name="RTNG_GRD_RTNG_SYSTM_FKv3">
+<createdBy>nuvolia</createdBy>
+<createdTime>2025-02-05 15:52:16 UTC</createdTime>
+<generatorID>32DFDCB7-4FCC-4F14-0CF0-FF22D1365080</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="211744F3-68DD-767F-5303-7D9A2F169589"/>
+<colUsage columnID="0FEDEA2D-4E61-1A5B-698F-D66DD59218F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

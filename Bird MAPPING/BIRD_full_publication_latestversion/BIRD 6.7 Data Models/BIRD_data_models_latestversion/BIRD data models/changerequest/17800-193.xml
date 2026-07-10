@@ -1,0 +1,54 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[Asset Sec] End of month following the transfer" id="17800-193">
+                    <createdBy>ostarij</createdBy>
+                    <comment>See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab)
+
+
+# Overview
+BSI requires the reporting of net transfers occurring during the month at month end. This is different from AnaCredit where full transfers with a residing credit institution exit the reporting before the next reference date (with the exception of write-offs which trigger the next end-of-quarter rule). Indeed, in that case the buyer credit institution takes over the reporting obligations. Since transfer acquisitions are not captured, there is no way to calculate net transfers from AnaCredit data, which is not in line with the methodology used to adjust growth rates.
+
+
+### Contact person
+@Arjan.Bos @Olivia.Hauet 
+
+### Business definition
+There are different ways to address this gap in the IReF. 
+- One way would be to extend the reporting obligation to the reference date following the transfer. 
+- Another way would be to address the issue of exiting instruments more generally in a specific table.
+
+### Legal definition
+_[Legal reference]_
+
+### Reason for inclusion
+_[Justifications]_
+
+### Relationships
+_[Related objects]_
+
+### Relevant Framework/Template
+- AnaCredit
+- BSI
+
+### Additional documentation/links (optional)
+The modelling of the so-called life cycle of a thing (entity type) is a standard pattern.
+Three standard questions are:
+1. What are the statuses? For an instrument prospective, active, ended, closed are typical
+2. Do we need to know the date on which the change of the status occurred?
+3. Do we need to know what triggered the change?
+4. Do we need to know who - Customer or Bank - made the change? 
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/193</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

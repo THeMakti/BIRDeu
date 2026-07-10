@@ -1,0 +1,47 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="Discuss handling of Observed Agent information" id="35934-523">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+Observed agent information in the LDM is hidden. Should it be more explicit, and should it be part of the _Model context_.
+
+### Contact person
+_[me@ecb.europa.eu]_
+
+### Background information
+Currently the BIRD LDM has the `Reporting agent identifier` as part of the model context information in all its entity types that contain reporting facts. The information on the _Observed agent_ can be found via the _Group_ structure where the _Internal group_ has the _Reporting agent internal group role_, and the _Group is a _Domestic institutional unit_ that links to a _Party_ that is an _Organisation_. This _Organisation_ is the _Observed agent_ for domestic purposes. If the _Organisation_ has an _Organisational unit_ that is a _Foreign branch_ and that _Foreign branch is linked to a _Foreign institutional unit_, then that _Foreign branch_ is the Observed agent.
+
+At the same time, the _Organisation_ could be a _Financial corporation_ with a _Central bank and private sector company role_ of _Subsidiary (of the reporting agent)_. But that is linked to another _Internal group_.
+
+See also https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/501#note_2017004 that shows the need for the observed agent perspective when dealing with cross-border intra-company loans. 
+
+See this model subview for reference:
+
+![observed_agent_information_in_BIRD](/uploads/6458343d59e16b94fa65a9433fe1b185/observed_agent_information_in_BIRD.png)
+
+### Points/Questions to resolve
+1. Should the entity type _Reporting agent_ as used in the model context be linked to the _Reporting agent internal group role_?
+2. Do we need to distinguish elements to be reported - like _Instrument_, _Collateral_, _Debtor_, et cetera - per observed agent?
+3. Do we need to revisit the _Internal group_ structure for subsidiaries?
+
+### Related issues
+This is related to issue #216 where the modelling of transfers per observed agent is requested.
+
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/523</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

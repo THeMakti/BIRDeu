@@ -1,0 +1,47 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="AE Requirements - Residual maturity of the liability interval - RSDL_MTRTY_LBLTY_INTRVL" id="26374-476">
+                    <createdBy>ostarij</createdBy>
+                    <comment>## Overview
+Template F 33.00.a requires information on the residual maturity of the liability, which describes the residual maturity of the matching liabilities, contingent liabilities or securities lending transactions (listed in template F 32.04.a) that are sources of encumbrance.
+
+## Contact person
+@Arianna.Nuvoli @Maria_Manuel.Henriques @Pietro.Ferroni 
+
+## Business definition
+- **Residual maturity:** time remaining until the liabilities that are identified as source of encumbrance mature (i.e. they are the reason why a set of assets are encumbered), meaning the time left until they need to be repaid or settled. We could potentially calculate it as difference between the original maturity date and the reference date.
+
+- **Liability interval:** the domain of the variable is made of time intervals, such as _open maturity (not specified)_, _less than 1 day_, _between 1 day and week_, etc (please see https://sdd.ecb.de/bycode/variable/ECB/RSDL_MTRTY_LBLTY_INTRVL).
+
+- **List of liabilities in F 32.04.a:** Derivates, Deposits, Debt securities issued, Loan commitments received, financial guarantee received, securities borrowed with non cash-collateral, other commitments received.
+
+- **Reporting of F 33.00.a:** The institutions need to report the encumbered assets depending on the residual maturity of the liability that is causing teh assets to be encumbered. If for example a bond is encumbered because it is used as a protection of an own debt security issued that has residual maturity of 1 week, the amount of the encumbered bond has to be reported in col 030.
+
+
+## Legal definition
+According to Annex XVII, section _3. Part B: Maturity data_ &lt;br&gt;
+F 33.00.a, row 0030 is described as follows:
+&gt; **Collateral received re-used (re-using leg)** &lt;br&gt;&lt;br&gt;
+See instructions for row 130 of the AE-COL template and column 040 of the AE-SOU template. &lt;br&gt;&lt;br&gt;
+The amounts are reported at fair value and distributed among the set of **residual maturity buckets** specified in the columns according to the **residual maturity of the source of its encumbrance** (re-using leg): matching liability, contingent liability or securities lending transaction. 
+
+## Reason for inclusion
+AE integration
+
+## Relevant Framework/Template
+- F 33.00.a - Asset encumbrance: Maturity data (a)
+
+### Before closing checklist
+* [ ] Assign reviewer (orignal author of the issue)
+* [ ] Assignee to close (should not be same as original author)
+* [ ] If the issue resolution does not require a logical data model, technical, or code change, a continuous improvement action should have been taken (e.g. improve documentation)</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/476</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

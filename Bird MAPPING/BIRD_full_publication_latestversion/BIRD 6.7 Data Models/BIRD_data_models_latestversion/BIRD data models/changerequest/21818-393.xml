@@ -1,0 +1,61 @@
+                <ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="[SHS] Add rank level for subordinated securities" id="21818-393">
+                    <createdBy>ostarij</createdBy>
+                    <comment>&lt;!-- See: documentation on [Issues in GitLab](https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/wikis/Issues-in-GitLab) --&gt;
+
+
+# Overview
+SHS needs the ranking of Securities and ABS's according to the table below:
+| Rank level |                                                |                                                                                  |
+|------------|------------------------------------------------|----------------------------------------------------------------------------------|
+| X1X        | Subordinated - Junior level                    | Subordinated securities have a lower priority than the issuer’s other securities |
+| X2X        | Subordinated - Senior level                    | in the event of liquidation. A further differentiation can be made between       |
+| X3X        | Subordinated - No further breakdown available  | Junior and Senior level with the Senior level having a higher priority.          |
+| X4X        | Senior                                         | Senior securities are required to be repaid before subordinated securities.      |
+| X5X        | ABS Class - Junior                             | In case of Asset-backed securities, a breakdown of the tranch level is to be     |
+| X6X        | ABS Class - Mezzanine                          | provided.                                                                        |
+| X7X        | ABS Class - Senior                             |                                                                                  |
+| X9X        | Rank level - No detailed information available | To be reported, in case the rank level is not available / applicable.            |
+
+Questions to answer:
+1. Are the values for ABS and Subordinated mutually exclusive, or can a security classified as _ABS Class - Mezzanine_ also have the classification _Subordinated - Senior level_?
+2. Is the seniority level we have at the ABS the same as what is meant here with ABS Class - Junior/mezzanine/senior?
+3. Or do the ABS members apply only to subordinated debts?
+4. Can the "Senior" value be applicable to subordinated debts, or only to non-subordinated debts? 
+5. If "Senior is only applicable to non-subordinated debts, are all non-subordinated debts always classified as "Senior"?
+
+
+### Contact person
+@Arjan.Bos, @sdressler 
+
+
+### Legal definition
+SHS
+
+### Reason for inclusion
+SHS
+
+### Relationships
+_[Related objects]_
+
+### Relevant Framework/Template
+_[Relevance]_
+
+### Additional documentation/links (optional)
+_[Additional info]_
+
+### Before closing checklist
+- [ ] Assignee for review
+- [ ] Assignee to close
+- [ ] Other actions</comment>
+                    <notes>https://gitlab.sofa.dev/sdd-bird-team/bird-logical-data-model/-/issues/393</notes>
+                    <ownerDesignName>BIRD data models</ownerDesignName>
+                    <engineerTo>
+                        <item key="9F71AC75-C64B-3A4F-AE9B-7E0028CEC114" value="true"/>
+                        <item key="AEFDAE93-361A-74FC-D9B0-896822C5F2BB" value="true"/>
+                        <item key="963C5E00-5517-19DF-A89B-FDB8671036FF" value="true"/>
+                        <item key="24FC9E45-18D3-C550-6BAD-4693BE2883E4" value="true"/>
+                        <item key="48078BB1-66DB-629F-6B3D-FE6F84461BCA" value="true"/>
+                        <item key="6BCEF519-13E1-B08A-2794-C031B6E1ADA6" value="true"/>
+                    </engineerTo>
+                    <status>proposed</status>
+                </ChangeRequest>

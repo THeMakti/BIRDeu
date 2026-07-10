@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="A6C92F7E-77E2-595C-9979-8277C560E2E9" name="Exchange tradable derivative">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 09:43:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[An Exchange tradable derivative is a Security and  Exchange tradable derivative attesting the right to ownership connected with tradable derivatives.]]></commentInRDBMS>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="false"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="false"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="false"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="false"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="false"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="false"/>
+</engineerTo>
+<typeID>178C245A-208C-578D-F0C5-C390D8542711</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>3EAB1EAE-8096-61A6-EEA8-6D5701B68A0D</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>EXCHNG_TRDBL_DRVTV</preferredAbbreviation>
+<changeRequests>
+<requestID>26374-476</requestID>
+</changeRequests>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Start date" id="314C891B-B26D-F711-5615-F6EDE5ADA2B4">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-03-14 12:30:36 UTC</createdTime>
+<comment><![CDATA[Start date is a date that indicates when the Exchange tradable derivative goes into effect.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>STRT_DT</preferredAbbreviation>
+</Attribute>
+<Attribute name="Expiration date" id="E0ABD25E-451E-EC9E-3797-3004E437CDE3">
+<createdBy>reddigj</createdBy>
+<createdTime>2025-01-07 15:08:11 UTC</createdTime>
+<comment><![CDATA[The Expiration date of an option is a date that is the last day on which the option holder can exercise their right to buy or sell the underlying asset. ]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EXPRTN_DT</preferredAbbreviation>
+<changeRequests>
+<requestID>26374-476</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Significant asset class" id="D6E48C63-6681-59DA-D529-FC5294771D33">
+<createdBy>ostarij</createdBy>
+<createdTime>2022-06-30 14:17:48 UTC</createdTime>
+<comment><![CDATA[Significant asset class distinguishes Exchange tradable derivative into specific asset classes, like interest rate, equity, foreign exchange.]]></comment>
+<generatorID>03AB0810-703F-9311-A46A-A9942BE7C785</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>D6A78D7F-1562-442C-64BB-10887873536A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>89975CC9-B22F-2DED-78DD-4E08EB65BDFF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>SGNFCNT_ASST_CLSS</preferredAbbreviation>
+</Attribute>
+<Attribute name="Currency" id="1733D84F-48A3-7FD1-FC52-8515A307BC3E">
+<createdBy>bosarie</createdBy>
+<createdTime>2024-09-24 13:05:18 UTC</createdTime>
+<comment><![CDATA[Currency is a code that identifies the currency that the Exchange tradable derivative is noted in.]]></comment>
+<generatorID>E7563D79-C65D-ADC2-6320-D4E8B2267C94</generatorID>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<referedAttribute>4CA512E4-A54A-933E-24C1-3D8E2D31E7C6</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>2D4D0542-0954-4C82-9231-4447DC95A6DE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>CRRNCY</preferredAbbreviation>
+<changeRequests>
+<requestID>26372-474</requestID>
+<requestID>26373-475</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Exchange tradable derivative type" id="383A2776-AF43-3447-8066-86D17B40FE01">
+<createdBy>Dominik</createdBy>
+<createdTime>2021-08-04 09:43:56 UTC</createdTime>
+<comment><![CDATA[Exchange tradable derivative type distinguishes Exchange tradable derivative between exchange tradable options and futures.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>2BB0BC4F-2625-4B6E-BFB9-85C466713314</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>DT_LGL_FNL_MTRTY</preferredAbbreviation>
+<changeRequests>
+<requestID>26374-476</requestID>
+</changeRequests>
+</Attribute>
+<Attribute name="Exchange tradable derivative type by identifier" id="2A6346A6-F9BB-402B-FA57-745C12390728">
+<createdBy>bosarie</createdBy>
+<createdTime>2025-03-24 12:48:53 UTC</createdTime>
+<comment><![CDATA[Exchange tradable derivative type by identifier distinguishes between those Exchange tradable derivatives with an ISIN and those without.]]></comment>
+<ownerDesignName>BIRD data models</ownerDesignName>
+<engineerTo>
+<item key="780293C8-A204-016F-8833-7CCF1C90D7D7" value="true"/>
+<item key="414D09F6-857A-1CF2-4BE0-ABC87D9359D6" value="true"/>
+<item key="E2B6E82B-89DC-CF0E-EE99-C3901080D2EC" value="true"/>
+<item key="705B4CB0-BD9F-9D5A-426A-B5DA4C39FA24" value="true"/>
+<item key="493D0D5F-46C6-EF66-9CDF-A82F20E97A50" value="true"/>
+<item key="4146278C-4654-567E-9F7B-2C4CFE27A753" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>00F37A4D-2E44-454E-87AB-9DDF283B3FBA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EXCHNG_TRDBL_DRVTV_TYP_BY_IDNTFR</preferredAbbreviation>
+</Attribute>
+</attributes>
+</Entity>
